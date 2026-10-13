@@ -76,7 +76,9 @@ Grep; never read a section file whole (the large ones are 3,000 to 6,000 lines).
 - **Two sources that answer different questions.** The portal tables (`objects/`) say what a create or update accepts
   and show examples; the snapshot (`snapshot/`) says which fields, values and relationships the API reports. A
   `REQUIRED` of `true` in the snapshot describes the object, not a request (`SODOCUMENT.DOCNO` is required and
-  read-only). The snapshot is one clean company on 2026 Release 3 without `docparid`: a client's custom fields,
+  read-only; `ITEM.COST_METHOD` is required there but optional on create). Valid-value lists can be longer in the
+  snapshot than in the portal's code tables (`SODOCUMENT.STATE` has four values with no documented `readByQuery`
+  character). The snapshot is one clean company on 2026 Release 3 without `docparid`: a client's custom fields,
   user-defined dimensions and transaction-definition fields are not in it.
 - **The schema is permissive.** `functions.md` reflects the XSD: it marks `password` and `dtdversion` optional in
   `control` and types most elements as plain text; the portal's rules (`api-basics.md`) win where stricter.

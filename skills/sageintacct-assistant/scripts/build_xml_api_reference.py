@@ -136,7 +136,7 @@ class Renderer:
                 name = c.attrs.get("name") or c.attrs.get("id")
                 txt = self.inline(c, in_table)
                 if name and not href:
-                    parts.append(f'<a id="{self.prefix}{name}"></a>')
+                    parts.append(f'<a id="{self.prefix}{name}"></a>' + txt)  # keep the visible text of a named anchor
                 elif href.startswith("#"):
                     parts.append(f"[{txt}](#{self.prefix}{href[1:]})" if txt.strip() else "")
                 elif href:

@@ -145,8 +145,8 @@ Backed by `references/xml-api/api-basics.md` unless another file is named.
   **inclusive tax and `TAXENTRIES` are AU/GB/ZA only.** (§ 8; `common-mistakes.md` 32-34)
 - **Do not pin TLS certificates.** (§ 2)
 - **`lookup`'s `REQUIRED` describes the object, not a create call**: `SODOCUMENT.DOCNO` and `DOCID` are required
-  *and* read-only in the snapshot; the create parameter tables in `objects/` say what a request must carry.
-  (`snapshot/INDEX.md`)
+  *and* read-only in the snapshot, `ITEM.COST_METHOD` is required there but optional in the create table; the
+  create parameter tables in `objects/` say what a request must carry. (`snapshot/INDEX.md`)
 - **`inspect` lists document objects once per transaction definition** (`SODOCUMENT`, `PODOCUMENT`, `INVDOCUMENT`,
   lines, recurring), and `lookup` without `docparid` returns the base fields only. **Absence from the snapshot is not
   proof of absence**: custom fields, definition-specific fields and later releases are not in it; say "not in the

@@ -190,6 +190,13 @@ class Schema:
         if ct is not None:
             self.walk(ct, rows, 0, name)
         out = []
+        order = {"all": "Child elements may appear in **any order** (`xs:all`).",
+                 "sequence": "Child elements must appear **in this order** (`xs:sequence`).",
+                 "choice": "Exactly one of the child elements (`xs:choice`)."}
+        top = next((c.tag.replace(XS, "") for c in ct if c.tag.replace(XS, "") in order), None) if ct is not None else None
+        if top and rows:
+            out.append(order[top])
+            out.append("")
         if not rows:
             t = self.content_of(el)[0] if el is not None else ""
             out.append(f"No child elements: `<{name}/>`" + (f" ({t})" if t and t not in ("", "(empty element)") else "") + ".")
@@ -263,7 +270,9 @@ def main():
             "function, then the structures they share. `Occurs` is the schema's minOccurs/maxOccurs (`required` = exactly "
             "one, `optional` = at most one, `0..n` = any number). Nested elements are indented with `·`; `(choice)` means "
             "exactly one of the indented alternatives; `(any elements)` means the schema does not validate the content "
-            "(the object's own fields, documented per object in `objects/`). The schema says nothing about responses, "
+            "(the object's own fields, documented per object in `objects/`). Each table says whether the schema fixes the "
+            "element order (`xs:sequence`, as in every legacy function) or allows any order (`xs:all`, as in `query`, `read` and "
+            "`readByQuery`). The schema says nothing about responses, "
             "meanings or limits beyond the ranges shown: those come from the developer portal (`api-basics.md`, `objects/`). "
             "Where the schema is more permissive than the portal (it marks `password` and `dtdversion` optional in `control`), "
             "the portal's rule applies.", "",

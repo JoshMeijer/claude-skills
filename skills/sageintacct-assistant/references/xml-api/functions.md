@@ -2,7 +2,7 @@
 
 # Sage Intacct XML API: request envelope and generic functions (from the 3.0 schema)
 
-What the gateway's request schema accepts, element by element: the request envelope, then every generic function, then the structures they share. `Occurs` is the schema's minOccurs/maxOccurs (`required` = exactly one, `optional` = at most one, `0..n` = any number). Nested elements are indented with `·`; `(choice)` means exactly one of the indented alternatives; `(any elements)` means the schema does not validate the content (the object's own fields, documented per object in `objects/`). The schema says nothing about responses, meanings or limits beyond the ranges shown: those come from the developer portal (`api-basics.md`, `objects/`). Where the schema is more permissive than the portal (it marks `password` and `dtdversion` optional in `control`), the portal's rule applies.
+What the gateway's request schema accepts, element by element: the request envelope, then every generic function, then the structures they share. `Occurs` is the schema's minOccurs/maxOccurs (`required` = exactly one, `optional` = at most one, `0..n` = any number). Nested elements are indented with `·`; `(choice)` means exactly one of the indented alternatives; `(any elements)` means the schema does not validate the content (the object's own fields, documented per object in `objects/`). Each table says whether the schema fixes the element order (`xs:sequence`, as in every legacy function) or allows any order (`xs:all`, as in `query`, `read` and `readByQuery`). The schema says nothing about responses, meanings or limits beyond the ranges shown: those come from the developer portal (`api-basics.md`, `objects/`). Where the schema is more permissive than the portal (it marks `password` and `dtdversion` optional in `control`), the portal's rule applies.
 
 | Name | Kind |
 |---|---|
@@ -99,6 +99,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="env-request"></a>
 ### `request`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `control` | required |  | see [`control`](#env-control) |
@@ -106,6 +108,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="env-control"></a>
 ### `control`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -123,6 +127,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="env-operation"></a>
 ### `operation`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `authentication` | required |  | see [`authentication`](#env-authentication) |
@@ -132,6 +138,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="env-authentication"></a>
 ### `authentication`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -143,6 +151,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="env-login"></a>
 ### `login`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `userid` | required | text |  |
@@ -153,6 +163,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="env-content"></a>
 ### `content`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -171,6 +183,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-getapisession"></a>
 ### `getAPISession`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following, 0..1 times |
@@ -178,6 +192,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="fn-inspect"></a>
 ### `inspect`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -189,6 +205,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-lookup"></a>
 ### `lookup`
 
+Child elements may appear in **any order** (`xs:all`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `object` | required | string |  |
@@ -196,6 +214,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="fn-read"></a>
 ### `read`
+
+Child elements may appear in **any order** (`xs:all`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -208,6 +228,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-readbyname"></a>
 ### `readByName`
 
+Child elements may appear in **any order** (`xs:all`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `object` | required | string |  |
@@ -218,6 +240,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="fn-readrelated"></a>
 ### `readRelated`
+
+Child elements may appear in **any order** (`xs:all`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -230,6 +254,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-readbyquery"></a>
 ### `readByQuery`
 
+Child elements may appear in **any order** (`xs:all`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `object` | required | string |  |
@@ -241,6 +267,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="fn-query"></a>
 ### `query`
+
+Child elements may appear in **any order** (`xs:all`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -271,6 +299,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-readmore"></a>
 ### `readMore`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -282,6 +312,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-create"></a>
 ### `create`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (any elements) | required |  | the object's own XML, not validated by the schema; see the object's parameter tables in `objects/` |
@@ -289,12 +321,16 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-update"></a>
 ### `update`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (any elements) | required |  | the object's own XML, not validated by the schema; see the object's parameter tables in `objects/` |
 
 <a id="fn-delete"></a>
 ### `delete`
+
+Child elements may appear in **any order** (`xs:all`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -304,12 +340,16 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-validate"></a>
 ### `validate`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (any elements) | required |  | the object's own XML, not validated by the schema; see the object's parameter tables in `objects/` |
 
 <a id="fn-post"></a>
 ### `post`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -358,6 +398,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-unpost"></a>
 ### `unpost`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -368,6 +410,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="fn-approve"></a>
 ### `approve`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -387,6 +431,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-decline"></a>
 ### `decline`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -404,6 +450,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="fn-hold"></a>
 ### `hold`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -429,6 +477,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="fn-resume"></a>
 ### `resume`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -457,6 +507,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-cancel"></a>
 ### `cancel`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -465,6 +517,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="fn-uncancel"></a>
 ### `uncancel`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -477,6 +531,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-deliver"></a>
 ### `deliver`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -487,6 +543,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-promote"></a>
 ### `promote`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -496,6 +554,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-renew"></a>
 ### `renew`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -504,6 +564,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="fn-reallocate"></a>
 ### `reallocate`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -532,6 +594,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-clearallmea"></a>
 ### `clearallmea`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -541,6 +605,8 @@ What the gateway's request schema accepts, element by element: the request envel
 <a id="fn-clearlastactivemea"></a>
 ### `clearlastactivemea`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -549,6 +615,8 @@ What the gateway's request schema accepts, element by element: the request envel
 
 <a id="fn-retrievepdf"></a>
 ### `retrievepdf`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -581,6 +649,8 @@ No child elements: `<getDimensionAutofillDetails/>`.
 <a id="fn-getdimensionautofilldata"></a>
 ### `getDimensionAutofillData`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `dimension` | required | string |  |
@@ -588,6 +658,8 @@ No child elements: `<getDimensionAutofillDetails/>`.
 
 <a id="fn-getdimensionrestricteddata"></a>
 ### `getDimensionRestrictedData`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -597,6 +669,8 @@ No child elements: `<getDimensionAutofillDetails/>`.
 
 <a id="fn-getuserpermissions"></a>
 ### `getUserPermissions`
+
+Child elements may appear in **any order** (`xs:all`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -615,6 +689,8 @@ No child elements: `<readEntityDetails/>`.
 <a id="fn-readuserformatting"></a>
 ### `readUserFormatting`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -623,6 +699,8 @@ No child elements: `<readEntityDetails/>`.
 
 <a id="fn-getaudittrail"></a>
 ### `getAuditTrail`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -634,12 +712,16 @@ No child elements: `<readEntityDetails/>`.
 <a id="fn-gettransactionstoapprove"></a>
 ### `getTransactionsToApprove`
 
+Child elements may appear in **any order** (`xs:all`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `module` | required | text |  |
 
 <a id="fn-getapprovalhistory"></a>
 ### `getApprovalHistory`
+
+Child elements may appear in **any order** (`xs:all`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -649,6 +731,8 @@ No child elements: `<readEntityDetails/>`.
 <a id="fn-approvevendor"></a>
 ### `approveVendor`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `recordno` | required | string |  |
@@ -656,6 +740,8 @@ No child elements: `<readEntityDetails/>`.
 
 <a id="fn-declinevendor"></a>
 ### `declineVendor`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -670,12 +756,16 @@ No child elements: `<getVendorsToApprove/>` (text).
 <a id="fn-getvendorapprovalhistory"></a>
 ### `getVendorApprovalHistory`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `recordno` | required | string |  |
 
 <a id="fn-readreport"></a>
 ### `readReport`
+
+Child elements may appear in **any order** (`xs:all`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -694,6 +784,8 @@ No child elements: `<getVendorsToApprove/>` (text).
 <a id="fn-readview"></a>
 ### `readView`
 
+Child elements may appear in **any order** (`xs:all`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `view` | required | string |  |
@@ -703,6 +795,8 @@ No child elements: `<getVendorsToApprove/>` (text).
 
 <a id="fn-runddsjob"></a>
 ### `runDdsJob`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -726,12 +820,16 @@ No child elements: `<getDdsObjects/>`.
 <a id="fn-getddsddl"></a>
 ### `getDdsDdl`
 
+Child elements may appear in **any order** (`xs:all`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `object` | required | string |  |
 
 <a id="fn-consolidate"></a>
 ### `consolidate`
+
+Child elements may appear in **any order** (`xs:all`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -746,6 +844,8 @@ No child elements: `<getDdsObjects/>`.
 <a id="fn-installapp"></a>
 ### `installApp`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (any elements) | required |  | the object's own XML, not validated by the schema; see the object's parameter tables in `objects/` |
@@ -757,6 +857,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-preferences"></a>
 ### `preferences`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `companyprefs` | 0..n |  | structure: see [`companyprefs`](#shared-companyprefs) |
@@ -764,6 +866,8 @@ Global elements and named types referenced from more than one place above, each 
 
 <a id="shared-filteroption"></a>
 ### type `filteroption`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -789,6 +893,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-arguments"></a>
 ### `arguments`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -798,6 +904,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-filters"></a>
 ### `filters`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `filterCondition` | optional | string |  |
@@ -805,6 +913,8 @@ Global elements and named types referenced from more than one place above, each 
 
 <a id="shared-fileconfiguration"></a>
 ### `fileConfiguration`
+
+Child elements may appear in **any order** (`xs:all`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -818,6 +928,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-additional_parameters"></a>
 ### `additional_parameters`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following |
@@ -826,12 +938,16 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-entities"></a>
 ### `entities`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `csnentity` | 1..n |  | structure: see [`csnentity`](#shared-csnentity) |
 
 <a id="shared-companyprefs"></a>
 ### `companyprefs`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -840,12 +956,16 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-moduleprefs"></a>
 ### `moduleprefs`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `modulepref` | 1..n |  | nested structure not expanded here: see the schema |
 
 <a id="shared-and"></a>
 ### `and`
+
+Exactly one of the child elements (`xs:choice`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -871,6 +991,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-or"></a>
 ### `or`
 
+Exactly one of the child elements (`xs:choice`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | (choice) |  |  | one of the following, 2..n times |
@@ -895,6 +1017,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-equalto"></a>
 ### `equalto`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `field` | required | string |  |
@@ -902,6 +1026,8 @@ Global elements and named types referenced from more than one place above, each 
 
 <a id="shared-notequalto"></a>
 ### `notequalto`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -911,6 +1037,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-lessthan"></a>
 ### `lessthan`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `field` | required | string |  |
@@ -918,6 +1046,8 @@ Global elements and named types referenced from more than one place above, each 
 
 <a id="shared-lessthanorequalto"></a>
 ### `lessthanorequalto`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -927,6 +1057,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-greaterthan"></a>
 ### `greaterthan`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `field` | required | string |  |
@@ -934,6 +1066,8 @@ Global elements and named types referenced from more than one place above, each 
 
 <a id="shared-greaterthanorequalto"></a>
 ### `greaterthanorequalto`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -943,6 +1077,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-between"></a>
 ### `between`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `field` | required | string |  |
@@ -950,6 +1086,8 @@ Global elements and named types referenced from more than one place above, each 
 
 <a id="shared-in"></a>
 ### `in`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -959,6 +1097,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-notin"></a>
 ### `notin`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `field` | required | string |  |
@@ -966,6 +1106,8 @@ Global elements and named types referenced from more than one place above, each 
 
 <a id="shared-like"></a>
 ### `like`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -975,6 +1117,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-notlike"></a>
 ### `notlike`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `field` | required | string |  |
@@ -983,6 +1127,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-isnull"></a>
 ### `isnull`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `field` | required | string |  |
@@ -990,12 +1136,16 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-isnotnull"></a>
 ### `isnotnull`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `field` | required | string |  |
 
 <a id="shared-get_accountbalancesbydimensions"></a>
 ### `get_accountbalancesbydimensions`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
@@ -1065,6 +1215,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-filterexpression"></a>
 ### `filterExpression`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `field` | required | text |  |
@@ -1074,6 +1226,8 @@ Global elements and named types referenced from more than one place above, each 
 <a id="shared-parameter"></a>
 ### `parameter`
 
+Child elements must appear **in this order** (`xs:sequence`).
+
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|
 | `name` | required | text |  |
@@ -1081,6 +1235,8 @@ Global elements and named types referenced from more than one place above, each 
 
 <a id="shared-csnentity"></a>
 ### `csnentity`
+
+Child elements must appear **in this order** (`xs:sequence`).
 
 | Element | Occurs | Type / allowed values | Notes |
 |---|---|---|---|

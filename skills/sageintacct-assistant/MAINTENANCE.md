@@ -166,7 +166,11 @@ Services** (Smart Events, Smart Rules, triggers, custom objects; the guide pages
 ## Validate
 
 After any change to SKILL.md wording or the references, run the evals in `evals/evals.json` by hand or with
-skill-creator's eval loop and compare against `expected_output`. Evals 6 (line index), 9 (no invented fields) and
+skill-creator's eval loop and compare against `expected_output`. Last run 2026-10-13: all 15 evals, one run each in fresh
+agents that saw the prompts but not the expected outputs, graded by hand: 15 of 15 pass (minor omissions: eval 13
+did not mention subtotal templates, eval 7 did not mention the generic `delete`); the run surfaced the `xs:all` /
+`xs:sequence` ordering note in `functions.md`, the four undocumented `SODOCUMENT.STATE` codes and the named-anchor
+rendering fix. Evals 6 (line index), 9 (no invented fields) and
 12 (REST question answered with the caveat) must always pass. Check the frontmatter against the spec with
 `skills-ref validate ./sageintacct-assistant` (`pip install skills-ref`, github.com/agentskills/agentskills) if
 you want an independent pass, and run `python scripts/package_skill.py skills/sageintacct-assistant dist` to

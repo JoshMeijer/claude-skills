@@ -42,7 +42,11 @@ confirmed on the client's company.
   record number."
 - **`STATE` database values** for `readByQuery` on `SODOCUMENT`: `S` Submitted, `A` Approved, `X` Partially Approved,
   `R` Declined, `I` Draft, `O` Pending, `D` Closed, `G` In Progress, `C` Converted, `P` Partially Converted (Order
-  Entry Transactions, readByQuery query fields). `query` filters and `read` use the values `lookup` reports.
+  Entry Transactions, readByQuery query fields). `query` filters and `read` use the values `lookup` reports. The 2026
+  Release 3 snapshot lists four more values (`Converted By Line`, `Partially Converted By Line`, `Exception`,
+  `Analyzing`) with no documented database character: filter on them with `query` and the display value, or
+  confirm the character on the company (`snapshot/`, `SODOCUMENT`). An In Progress, Converted or Partially
+  Converted transaction cannot be updated with `update_sotransaction` (Order Entry Transactions, update note).
 - Lines are **owned objects**: no standalone create, update or delete on `SODOCUMENTENTRY` / `PODOCUMENTENTRY` /
   `INVDOCUMENTENTRY` (their pages document `lookup`, `query`, `readByQuery` and `read` only); change them through
   the header (§ 3).

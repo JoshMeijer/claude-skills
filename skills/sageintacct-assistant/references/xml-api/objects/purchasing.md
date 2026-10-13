@@ -1626,7 +1626,7 @@ Function: `create_potransaction`
 | unit | Optional | string | Unit of measure for `quantity` |
 | linelevelsimpletaxtype | Optional | string | Simple tax rate to apply at the line level. Available only if Enable subtotals and Enable line level Simple Tax are enabled for the transaction definition. |
 | price | Optional | currency | Price |
-| <a id="purchasing-transactions--potransitem.sourcelinekey"></a> | Optional | integer | `RECORDNO` of the source line to convert from in the `createdfrom` transaction document. |
+| <a id="purchasing-transactions--potransitem.sourcelinekey"></a>sourcelinekey | Optional | integer | `RECORDNO` of the source line to convert from in the `createdfrom` transaction document. |
 | overridetaxamount | Optional | currency | Override tax amount |
 | deliverto | Optional | object | Deliver to contact for tax calculation |
 | tax | Optional | currency | Tax amount |
