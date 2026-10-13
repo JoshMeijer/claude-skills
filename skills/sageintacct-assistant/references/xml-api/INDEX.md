@@ -83,7 +83,8 @@ Grep; never read a section file whole (the large ones are 3,000 to 6,000 lines).
   `consolidatebytier` exists as an element but is not in the schema's `function` choice, so it is not listed.
 - **Portal irregularities reproduced as written:** a few parameter tables write `No` instead of `Optional`
   (Inventory Work Queue pages); the work-queue `lookup` examples use mixed-case object names while the tables use
-  upper case; Warehouse Transfers spells `VENDDORID`; 39 operations have no `<object>` in their examples (the
+  upper case (the snapshot reports `INVENTORYWQORDER` / `INVENTORYWQDETAIL`); Warehouse Transfers spells `VENDDORID`
+  (the snapshot reports `ICTRANSFERITEM.VENDORID`); 39 operations have no `<object>` in their examples (the
   `Object` column of `objects.md` is then empty); some pages label a non-function heading (`Response`) at the same
   level as function names, rendered here as a bold label.
 - **No error-code catalogue, no rate-limit figures, no field-level validation messages** beyond the examples the

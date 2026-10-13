@@ -39,6 +39,15 @@ def find_all_ci(el, name):
     return [c for c in el.iter() if c.tag.lower() == name.lower()]
 
 
+def count_of(v):
+    """A dump manifest lists removed names; a packed one carries counts only. Either way, the total."""
+    if isinstance(v, int):
+        return v
+    if isinstance(v, dict):
+        return sum(count_of(x) for x in v.values())
+    return len(v)
+
+
 def cell(s):
     return re.sub(r"\s+", " ", s or "").replace("|", "\\|").strip()
 
@@ -143,9 +152,7 @@ def main():
     if tmp:
         shutil.rmtree(tmp, ignore_errors=True)
     os.makedirs(args.out, exist_ok=True)
-    for old in os.listdir(args.out):
-        if old.endswith(".md"):
-            os.remove(os.path.join(args.out, old))
+    outputs = {}  # file name -> text, written only when everything has been built
 
     # bundles
     head = prov + "\n\n# Object definitions snapshot: fields and relationships\n\nOne `##` block per object, as `lookup` reported it. Grep `## APBILL` or the field ID.\n\n"
@@ -169,8 +176,7 @@ def main():
             where[e[0]] = (fname, line, text.count("\n") + 1)
             parts.append(text + "\n\n")
             line += text.count("\n") + 2
-        with open(os.path.join(args.out, fname), "w", encoding="utf-8", newline="\n") as f:
-            f.write("".join(parts).rstrip("\n") + "\n")
+        outputs[fname] = "".join(parts).rstrip("\n") + "\n"
 
     # objects.md
     rows = [prov, "", f"# Object definitions snapshot: objects ({args.release})", "",
@@ -180,8 +186,7 @@ def main():
     for n, label, fields, rels, _ in entries:
         fname, line, n_lines = where[n]
         rows.append(f"| `{n}` | {cell(label)} | {len(fields)} | {len(rels)} | [{fname}]({fname}#{n.lower()}) | {line} | {n_lines} |")
-    with open(os.path.join(args.out, "objects.md"), "w", encoding="utf-8", newline="\n") as f:
-        f.write("\n".join(rows) + "\n")
+    outputs["objects.md"] = "\n".join(rows) + "\n"
 
     # INDEX.md
     idx = [prov, "", f"# Object definitions snapshot index ({args.release})", "",
@@ -206,13 +211,18 @@ def main():
             "- One company, one release, standard objects only; custom fields, user-defined dimensions and transaction-definition fields "
             "(`docparid`) are not included.",
             f"- Dump manifest: {len(manifest.get('lookups_failed', {}))} objects failed `lookup` and are absent; "
-            f"{len(manifest.get('custom_objects_removed', []))} custom objects and "
-            f"{sum(len(v) for v in manifest.get('custom_fields_removed', {}).values())} custom fields were removed.",
+            f"{count_of(manifest.get('custom_objects_removed', []))} custom objects and "
+            f"{count_of(manifest.get('custom_fields_removed', {}))} custom fields were removed.",
             "- `inspect` lists `SODOCUMENT`, `PODOCUMENT`, `INVDOCUMENT`, their line objects and the recurring variants once per "
             "transaction definition; only the generic entry is kept here, and `lookup` was called without `docparid`, so the field "
             "lists of those objects are the base fields, without any definition's custom fields."]
-    with open(os.path.join(args.out, "INDEX.md"), "w", encoding="utf-8", newline="\n") as f:
-        f.write("\n".join(idx) + "\n")
+    outputs["INDEX.md"] = "\n".join(idx) + "\n"
+    for fname, text in outputs.items():
+        with open(os.path.join(args.out, fname), "w", encoding="utf-8", newline="\n") as f:
+            f.write(text)
+    for old in os.listdir(args.out):
+        if old.endswith(".md") and old not in outputs:
+            os.remove(os.path.join(args.out, old))
     print(f"objects={len(entries)} fields={total_fields} relationships={total_rels} bundles={len(bundles)} -> {args.out}")
 
 

@@ -148,14 +148,17 @@ Backed by `references/xml-api/api-basics.md` unless another file is named.
   *and* read-only in the snapshot; the create parameter tables in `objects/` say what a request must carry.
   (`snapshot/INDEX.md`)
 - **`inspect` lists document objects once per transaction definition** (`SODOCUMENT`, `PODOCUMENT`, `INVDOCUMENT`,
-  lines, recurring), and `lookup` without `docparid` returns the base fields only. (`snapshot/INDEX.md`)
+  lines, recurring), and `lookup` without `docparid` returns the base fields only. **Absence from the snapshot is not
+  proof of absence**: custom fields, definition-specific fields and later releases are not in it; say "not in the
+  2026 Release 3 snapshot", not "does not exist". (`snapshot/INDEX.md`)
 - **`lookup`'s `REQUIRED` describes the object, not a create call**: `SODOCUMENT.DOCNO` and `DOCID` are required
   *and* read-only in the snapshot; the create parameter tables in `objects/` say what a request must carry.
   (`snapshot/INDEX.md`)
 - **`inspect` lists document objects once per transaction definition** (`SODOCUMENT`, `PODOCUMENT`, `INVDOCUMENT`,
   lines, recurring), and `lookup` without `docparid` returns the base fields only. (`snapshot/INDEX.md`)
 - **The portal is not perfect**: mixed-case object names, `No` for `Optional`, a `VENDDORID` typo
-  (`references/xml-api/INDEX.md`, known limits); say "to confirm on your company" for those.
+  (`references/xml-api/INDEX.md`, known limits). Where the snapshot settles it (`INVENTORYWQORDER`,
+  `ICTRANSFERITEM.VENDORID`) say so; otherwise say "to confirm on your company".
 
 ## 5. Layout
 

@@ -125,8 +125,8 @@ Warehouse Transfers page. A generic object, unlike the documents above.
   `Draft` or `Post` (default `Post`); `In transit` has its own values (see the table). `OUTDATE` and `INDATE` are
   required for `In transit` and must not precede `TRANSACTIONDATE` / `OUTDATE`.
 - `ICTRANSFERITEMS` "Must be one or more matched pairs" of `ICTRANSFERITEM`: `IN_OUT` `O` (outgoing warehouse) and
-  `I` (incoming), `ITEMID`, `WAREHOUSEID`, `QUANTITY`, `UNIT` all required; dimensions optional (the table spells the
-  vendor field `VENDDORID`; confirm with `lookup`).
+  `I` (incoming), `ITEMID`, `WAREHOUSEID`, `QUANTITY`, `UNIT` all required; dimensions optional (the portal table spells
+  the vendor field `VENDDORID`; the 2026 Release 3 snapshot reports `VENDORID` on `ICTRANSFERITEM`, `snapshot/`).
 - Exchange rate fields (`EXCH_RATE_TYPE_ID` or `EXCHANGE_RATE`, `EXCH_RATE_DATE`) for warehouses with different base
   currencies.
 
@@ -164,8 +164,9 @@ Inventory Work Queue Orders and Details pages (fulfilment must be enabled on the
   invoice`, `invoiced`; "No default value"), `PICKCONTAINER`, `PACKCONTAINER`, `SHIPTRACKING`; on the detail also
   `HOLDPROGRESS` (pause within the workflow, "no impact on either the customer or the order"), `QUANTITYPICKED`,
   `QUANTITYPACKED`, `ASSIGNED` (picker), `NOTES`.
-- The pages' `lookup` examples write the object as `InventoryWQOrder` / `InventoryWQDetail` while the parameter
-  tables say `INVENTORYWQORDER` / `INVENTORYWQDETAIL`: confirm the integration name with `inspect` on the company.
+- The pages' `lookup` examples write the object as `InventoryWQOrder` / `InventoryWQDetail`; the parameter tables
+  and the 2026 Release 3 snapshot report `INVENTORYWQORDER` / `INVENTORYWQDETAIL`. The snapshot's `STATUS` valid
+  values also include `ready to pack`, which the portal's table omits (`snapshot/`).
 
 ## 8. A warehouse integration, call by call
 

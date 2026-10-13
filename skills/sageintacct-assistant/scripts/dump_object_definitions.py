@@ -167,23 +167,48 @@ def collapse_inspect(text):
     return ET.tostring(data, encoding="unicode"), dropped
 
 
+FORBIDDEN = ("<control>", "<senderid>", "<password>", "<sessionid>", "<companyid>", "<userid>", "xmlgw.phtml")
+
+
 def pack(folder, zip_path):
-    """Write the committable zip of a dump folder: collapsed inspect.xml, lookup/*.xml, manifest.json."""
+    """Write the committable zip of a dump folder: collapsed inspect.xml, lookup/*.xml, manifest.json (counts only).
+
+    Every text is checked before the zip is created: no response envelope or credential element may appear, nor any
+    identifier set in INTACCT_SENDER_ID / INTACCT_COMPANY_ID / INTACCT_USER_ID if those variables are present.
+    The names of removed custom fields and objects are replaced by counts, so a company's customisation names never
+    enter the repository.
+    """
     with open(os.path.join(folder, "inspect.xml"), encoding="utf-8") as f:
         inspect_xml, dropped = collapse_inspect(f.read())
     with open(os.path.join(folder, "manifest.json"), encoding="utf-8") as f:
         manifest = json.load(f)
+    cf = manifest.get("custom_fields_removed", {})
+    manifest["custom_fields_removed"] = {k: (len(v) if isinstance(v, list) else v) for k, v in cf.items()} if isinstance(cf, dict) else cf
+    co = manifest.get("custom_objects_removed", [])
+    manifest["custom_objects_removed"] = len(co) if isinstance(co, list) else co
     manifest["inspect_entries_collapsed"] = dropped
+    manifest_json = json.dumps(manifest, indent=1, sort_keys=True)
+    lookups = []
+    for name in sorted(os.listdir(os.path.join(folder, "lookup"))):
+        if name.endswith(".xml"):
+            with open(os.path.join(folder, "lookup", name), encoding="utf-8") as f:
+                lookups.append((name, f.read()))
+    needles = list(FORBIDDEN) + [v for v in (os.environ.get("INTACCT_SENDER_ID"), os.environ.get("INTACCT_COMPANY_ID"),
+                                             os.environ.get("INTACCT_USER_ID")) if v]
+    for fname, text in [("inspect.xml", inspect_xml), ("manifest.json", manifest_json)] + [("lookup/" + n, t) for n, t in lookups]:
+        low = text.lower()
+        for needle in needles:
+            if needle.lower() in low:
+                sys.exit(f"not packed: {fname} contains {needle!r}")
     os.makedirs(os.path.dirname(os.path.abspath(zip_path)) or ".", exist_ok=True)
-    n = 0
-    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
+    tmp = zip_path + ".tmp"
+    with zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         z.writestr("inspect.xml", inspect_xml)
-        z.writestr("manifest.json", json.dumps(manifest, indent=1, sort_keys=True))
-        for name in sorted(os.listdir(os.path.join(folder, "lookup"))):
-            if name.endswith(".xml"):
-                z.write(os.path.join(folder, "lookup", name), "lookup/" + name)
-                n += 1
-    print(f"packed {n} lookups, inspect.xml (per-definition entries dropped: "
+        z.writestr("manifest.json", manifest_json)
+        for name, text in lookups:
+            z.writestr("lookup/" + name, text)
+    os.replace(tmp, zip_path)
+    print(f"packed {len(lookups)} lookups, inspect.xml (per-definition entries dropped: "
           + ", ".join(f"{k} x{v}" for k, v in dropped.items()) + f") and manifest.json -> {zip_path} "
           f"({os.path.getsize(zip_path) / 1e6:.1f} MB)")
 
