@@ -30,7 +30,7 @@ An employee group categories employee dimension records, mainly for the purpose 
 <a id="employee-groups--get-employee-group-object-definition"></a>
 ### Get Employee Group Object Definition
 
-<a id="employee-groups--lookup-2"></a>
+<a id="employee-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the employee group object:
@@ -53,7 +53,7 @@ Function: `lookup`
 <a id="employee-groups--query-and-list-employee-groups"></a>
 ### Query and List Employee Groups
 
-<a id="employee-groups--query-2"></a>
+<a id="employee-groups--query"></a>
 Function: `query`
 
 > List the record number, description, and ID for each employee group:
@@ -87,7 +87,7 @@ Function: `query`
 <a id="employee-groups--query-and-list-employee-groups-legacy"></a>
 ### Query and List Employee Groups (Legacy)
 
-<a id="employee-groups--readbyquery-2"></a>
+<a id="employee-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -114,7 +114,7 @@ Function: `readByQuery`
 <a id="employee-groups--get-employee-group"></a>
 ### Get Employee Group
 
-<a id="employee-groups--read-2"></a>
+<a id="employee-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -140,7 +140,7 @@ Function: `read`
 <a id="employee-groups--get-employee-group-by-id"></a>
 ### Get Employee Group by ID
 
-<a id="employee-groups--readbyname-2"></a>
+<a id="employee-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -183,7 +183,7 @@ Examples include full time, part time, intern, and so forth.
 <a id="employee-types--get-employee-type-object-definition"></a>
 ### Get Employee Type Object Definition
 
-<a id="employee-types--lookup-2"></a>
+<a id="employee-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the employee type object:
@@ -206,7 +206,7 @@ Function: `lookup`
 <a id="employee-types--query-and-list-employee-types"></a>
 ### Query and List Employee Types
 
-<a id="employee-types--readbyquery-2"></a>
+<a id="employee-types--readbyquery"></a>
 Function: `readByQuery`
 
 > List employee types:
@@ -282,7 +282,7 @@ Function: `readByQuery`
 <a id="employee-types--get-employee-type"></a>
 ### Get Employee Type
 
-<a id="employee-types--read-2"></a>
+<a id="employee-types--read"></a>
 Function: `read`
 
 ```xml
@@ -308,7 +308,7 @@ Function: `read`
 <a id="employee-types--get-employee-type-by-id"></a>
 ### Get Employee Type by ID
 
-<a id="employee-types--readbyname-2"></a>
+<a id="employee-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -354,7 +354,7 @@ If the employee is also a user in Sage Intacct (which is required if they will b
 <a id="employees--get-employee-object-definition"></a>
 #### Get Employee Object Definition
 
-<a id="employees--lookup-2"></a>
+<a id="employees--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the employee object:
@@ -377,7 +377,7 @@ Function: `lookup`
 <a id="employees--query-and-list-employees"></a>
 #### Query and List Employees
 
-<a id="employees--query-2"></a>
+<a id="employees--query"></a>
 Function: `query`
 
 > List the record number, employee ID, and employee’s location :
@@ -438,7 +438,7 @@ Function: `query`
 <a id="employees--query-and-list-employees-legacy"></a>
 #### Query and List Employees (Legacy)
 
-<a id="employees--readbyquery-2"></a>
+<a id="employees--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -473,7 +473,7 @@ Function: `readByQuery`
 <a id="employees--get-employees"></a>
 #### Get Employees
 
-<a id="employees--read-2"></a>
+<a id="employees--read"></a>
 Function: `read`
 
 ```xml
@@ -499,7 +499,7 @@ Function: `read`
 <a id="employees--get-employees-by-id"></a>
 #### Get Employees by ID
 
-<a id="employees--readbyname-2"></a>
+<a id="employees--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -531,7 +531,7 @@ Release history:
 |---|---|
 | 2022 Release 2 | Added EMPPOSITIONID |
 
-<a id="employees--create-2"></a>
+<a id="employees--create"></a>
 Function: `create`
 
 ```xml
@@ -605,7 +605,7 @@ Release history:
 |---|---|
 | 2022 Release 2 | Added emppositionid |
 
-<a id="employees--create_employee-2"></a>
+<a id="employees--create_employee"></a>
 Function: `create_employee`
 
 ```xml
@@ -696,7 +696,7 @@ Release history:
 |---|---|
 | 2022 Release 2 | Added EMPPOSITIONID |
 
-<a id="employees--update-2"></a>
+<a id="employees--update"></a>
 Function: `update`
 
 ```xml
@@ -768,7 +768,7 @@ Release history:
 |---|---|
 | 2022 Release 2 | Added emppositionid |
 
-<a id="employees--update_employee-2"></a>
+<a id="employees--update_employee"></a>
 Function: `update_employee`
 
 ```xml
@@ -851,7 +851,7 @@ Function: `update_employee`
 <a id="employees--delete-employee"></a>
 #### Delete Employee
 
-<a id="employees--delete-2"></a>
+<a id="employees--delete"></a>
 Function: `delete`
 
 ```xml
@@ -874,7 +874,7 @@ Function: `delete`
 <a id="employees--delete-employee-legacy"></a>
 #### Delete Employee (Legacy)
 
-<a id="employees--delete_employee-2"></a>
+<a id="employees--delete_employee"></a>
 Function: `delete_employee`
 
 ```xml
@@ -896,7 +896,7 @@ Function: `delete_employee`
 <a id="employees--create-employee-cost-rate-legacy"></a>
 #### Create Employee Cost Rate (Legacy)
 
-<a id="employees--create_employeerate-2"></a>
+<a id="employees--create_employeerate"></a>
 Function: `create_employeerate`
 
 ```xml
@@ -943,7 +943,7 @@ Function: `create_employeerate`
 <a id="employees--update-employee-cost-rate-legacy"></a>
 #### Update Employee Cost Rate (Legacy)
 
-<a id="employees--update_employeerate-2"></a>
+<a id="employees--update_employeerate"></a>
 Function: `update_employeerate`
 
 ```xml
@@ -989,7 +989,7 @@ Function: `update_employeerate`
 <a id="employees--delete-employee-cost-rate-legacy"></a>
 #### Delete Employee Cost Rate (Legacy)
 
-<a id="employees--delete_employeerate-2"></a>
+<a id="employees--delete_employeerate"></a>
 Function: `delete_employeerate`
 
 ```xml
@@ -1026,7 +1026,7 @@ Expense adjustments provide a way to fix the balance for an employee who was ove
 <a id="expense-adjustments--get-expense-adjustment-object-definition"></a>
 #### Get Expense Adjustment Object Definition
 
-<a id="expense-adjustments--lookup-2"></a>
+<a id="expense-adjustments--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the expense adjustment object:
@@ -1049,7 +1049,7 @@ Function: `lookup`
 <a id="expense-adjustments--query-and-list-expense-adjustments"></a>
 #### Query and List Expense Adjustments
 
-<a id="expense-adjustments--query-2"></a>
+<a id="expense-adjustments--query"></a>
 Function: `query`
 
 > List the record number, total entered, and employee ID for each expense adjustment:
@@ -1083,7 +1083,7 @@ Function: `query`
 <a id="expense-adjustments--query-and-list-expense-adjustments-legacy"></a>
 #### Query and List Expense Adjustments (Legacy)
 
-<a id="expense-adjustments--readbyquery-2"></a>
+<a id="expense-adjustments--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1110,7 +1110,7 @@ Function: `readByQuery`
 <a id="expense-adjustments--get-expense-adjustment"></a>
 #### Get Expense Adjustment
 
-<a id="expense-adjustments--read-2"></a>
+<a id="expense-adjustments--read"></a>
 Function: `read`
 
 ```xml
@@ -1144,7 +1144,7 @@ Release history:
 | 2020 Release 2 | Added costtypeid |
 | 2019 Release 4 | Added taskid |
 
-<a id="expense-adjustments--create_expenseadjustmentreport-2"></a>
+<a id="expense-adjustments--create_expenseadjustmentreport"></a>
 Function: `create_expenseadjustmentreport`
 
 ```xml
@@ -1307,7 +1307,7 @@ Release history:
 | 2020 Release 2 | Added costtypeid |
 | 2019 Release 4 | Added taskid |
 
-<a id="expense-adjustments--update_expenseadjustmentreport-2"></a>
+<a id="expense-adjustments--update_expenseadjustmentreport"></a>
 Function: `update_expenseadjustmentreport`
 
 ```xml
@@ -1451,7 +1451,7 @@ Specifies a tax rate (defined in the system) and a manually calculated tax for t
 <a id="expense-adjustments--delete-expense-adjustment"></a>
 #### Delete Expense Adjustment
 
-<a id="expense-adjustments--delete-2"></a>
+<a id="expense-adjustments--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1474,7 +1474,7 @@ Function: `delete`
 <a id="expense-adjustments--delete-expense-adjustment-legacy"></a>
 #### Delete Expense Adjustment (Legacy)
 
-<a id="expense-adjustments--delete_expenseadjustmentreport-2"></a>
+<a id="expense-adjustments--delete_expenseadjustmentreport"></a>
 Function: `delete_expenseadjustmentreport`
 
 ```xml
@@ -1496,7 +1496,7 @@ Function: `delete_expenseadjustmentreport`
 <a id="expense-adjustments--get-expense-adjustment-line-object-definition"></a>
 #### Get Expense Adjustment Line Object Definition
 
-<a id="expense-adjustments--lookup-1-2"></a>
+<a id="expense-adjustments--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the expense adjustment line object:
@@ -1519,7 +1519,7 @@ Function: `lookup`
 <a id="expense-adjustments--query-and-list-adjustment-lines"></a>
 #### Query and List Adjustment Lines
 
-<a id="expense-adjustments--query-1-2"></a>
+<a id="expense-adjustments--query-1"></a>
 Function: `query`
 
 > List the record number, amount, and employee ID for each adjustment line :
@@ -1553,7 +1553,7 @@ Function: `query`
 <a id="expense-adjustments--query-and-list-expense-adjustment-lines-legacy"></a>
 #### Query and List Expense Adjustment Lines (Legacy)
 
-<a id="expense-adjustments--readbyquery-1-2"></a>
+<a id="expense-adjustments--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1580,7 +1580,7 @@ Function: `readByQuery`
 <a id="expense-adjustments--get-expense-adjustment-line"></a>
 #### Get Expense Adjustment Line
 
-<a id="expense-adjustments--read-1-2"></a>
+<a id="expense-adjustments--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1621,7 +1621,7 @@ Expense payment types are used to track how expenses are paid, such as by a comp
 <a id="expense-payment-types--get-expense-payment-type-object-definition"></a>
 ### Get Expense Payment Type Object Definition
 
-<a id="expense-payment-types--lookup-2"></a>
+<a id="expense-payment-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the expense payment type object:
@@ -1644,7 +1644,7 @@ Function: `lookup`
 <a id="expense-payment-types--query-and-list-expense-payment-types"></a>
 ### Query and List Expense Payment Types
 
-<a id="expense-payment-types--query-2"></a>
+<a id="expense-payment-types--query"></a>
 Function: `query`
 
 > List the record number, name, and description for each expense payment type:
@@ -1678,7 +1678,7 @@ Function: `query`
 <a id="expense-payment-types--query-and-list-expense-payment-types-legacy"></a>
 ### Query and List Expense Payment Types (Legacy)
 
-<a id="expense-payment-types--readbyquery-2"></a>
+<a id="expense-payment-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1705,7 +1705,7 @@ Function: `readByQuery`
 <a id="expense-payment-types--get-expense-payment-type"></a>
 ### Get Expense Payment Type
 
-<a id="expense-payment-types--read-2"></a>
+<a id="expense-payment-types--read"></a>
 Function: `read`
 
 ```xml
@@ -1731,7 +1731,7 @@ Function: `read`
 <a id="expense-payment-types--get-expense-payment-type-by-id"></a>
 ### Get Expense Payment Type by ID
 
-<a id="expense-payment-types--readbyname-2"></a>
+<a id="expense-payment-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1757,7 +1757,7 @@ Function: `readByName`
 <a id="expense-payment-types--create-expense-payment-type-legacy"></a>
 ### Create Expense Payment Type (Legacy)
 
-<a id="expense-payment-types--create_expensepaymenttype-2"></a>
+<a id="expense-payment-types--create_expensepaymenttype"></a>
 Function: `create_expensepaymenttype`
 
 ```xml
@@ -1785,7 +1785,7 @@ Function: `create_expensepaymenttype`
 <a id="expense-payment-types--update-expense-payment-type-legacy"></a>
 ### Update Expense Payment Type (Legacy)
 
-<a id="expense-payment-types--update_expensepaymenttype-2"></a>
+<a id="expense-payment-types--update_expensepaymenttype"></a>
 Function: `update_expensepaymenttype`
 
 ```xml
@@ -1810,7 +1810,7 @@ Function: `update_expensepaymenttype`
 <a id="expense-payment-types--delete-expense-payment-type-legacy"></a>
 ### Delete Expense Payment Type (Legacy)
 
-<a id="expense-payment-types--delete_expensepaymenttype-2"></a>
+<a id="expense-payment-types--delete_expensepaymenttype"></a>
 Function: `delete_expensepaymenttype`
 
 ```xml
@@ -1844,7 +1844,7 @@ Expense report for an employee.
 <a id="expense-reports--get-expense-report-object-definition"></a>
 ### Get Expense Report Object Definition
 
-<a id="expense-reports--lookup-2"></a>
+<a id="expense-reports--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the expense report object:
@@ -1867,7 +1867,7 @@ Function: `lookup`
 <a id="expense-reports--query-and-list-expense-reports"></a>
 ### Query and List Expense Reports
 
-<a id="expense-reports--query-2"></a>
+<a id="expense-reports--query"></a>
 Function: `query`
 
 > List the record number and state for each expense report that is approved:
@@ -1906,7 +1906,7 @@ Function: `query`
 <a id="expense-reports--query-and-list-expense-reports-legacy"></a>
 ### Query and List Expense Reports (Legacy)
 
-<a id="expense-reports--readbyquery-2"></a>
+<a id="expense-reports--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1933,7 +1933,7 @@ Function: `readByQuery`
 <a id="expense-reports--get-expense-report"></a>
 ### Get Expense Report
 
-<a id="expense-reports--read-2"></a>
+<a id="expense-reports--read"></a>
 Function: `read`
 
 ```xml
@@ -1967,7 +1967,7 @@ Release history:
 | 2020 Release 2 | Added costtypeid |
 | 2019 Release 4 | Added taskid |
 
-<a id="expense-reports--create_expensereport-2"></a>
+<a id="expense-reports--create_expensereport"></a>
 Function: `create_expensereport`
 
 ```xml
@@ -2121,7 +2121,7 @@ Release history:
 | 2020 Release 2 | Added costtypeid |
 | 2019 Release 4 | Added taskid |
 
-<a id="expense-reports--update_expensereport-2"></a>
+<a id="expense-reports--update_expensereport"></a>
 Function: `update_expensereport`
 
 ```xml
@@ -2277,7 +2277,7 @@ Specifies a tax rate (defined in the system) and a manually calculated tax for t
 <a id="expense-reports--reverse-expense-report-legacy"></a>
 ### Reverse Expense Report (Legacy)
 
-<a id="expense-reports--reverse_expensereport-2"></a>
+<a id="expense-reports--reverse_expensereport"></a>
 Function: `reverse_expensereport`
 
 ```xml
@@ -2312,7 +2312,7 @@ Function: `reverse_expensereport`
 <a id="expense-reports--delete-expense-report"></a>
 ### Delete Expense Report
 
-<a id="expense-reports--delete-2"></a>
+<a id="expense-reports--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2335,7 +2335,7 @@ Function: `delete`
 <a id="expense-reports--delete-expense-report-legacy"></a>
 ### Delete Expense Report (Legacy)
 
-<a id="expense-reports--delete_expensereport-2"></a>
+<a id="expense-reports--delete_expensereport"></a>
 Function: `delete_expensereport`
 
 ```xml
@@ -2369,7 +2369,7 @@ Expense summaries are collections of the same type of transactions, grouped toge
 <a id="expense-summaries--list-expense-report-summaries-legacy"></a>
 ### List Expense Report Summaries (Legacy)
 
-<a id="expense-summaries--get_list-2"></a>
+<a id="expense-summaries--get_list"></a>
 Function: `get_list`
 
 ```xml
@@ -2423,7 +2423,7 @@ Function: `get_list`
 <a id="expense-summaries--create-expense-report-summary-legacy"></a>
 ### Create Expense Report Summary (Legacy)
 
-<a id="expense-summaries--create_expensereportbatch-2"></a>
+<a id="expense-summaries--create_expensereportbatch"></a>
 Function: `create_expensereportbatch`
 
 ```xml
@@ -2473,7 +2473,7 @@ An expense type is a user-defined type that is applied to line items in an expen
 <a id="expense-types--get-expense-type-object-definition"></a>
 ### Get Expense Type Object Definition
 
-<a id="expense-types--lookup-2"></a>
+<a id="expense-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the expense type object:
@@ -2496,7 +2496,7 @@ Function: `lookup`
 <a id="expense-types--query-and-list-expense-types"></a>
 ### Query and List Expense Types
 
-<a id="expense-types--query-2"></a>
+<a id="expense-types--query"></a>
 Function: `query`
 
 > List the record number and description for each expense type:
@@ -2529,7 +2529,7 @@ Function: `query`
 <a id="expense-types--query-and-list-expense-types-legacy"></a>
 ### Query and List Expense Types (Legacy)
 
-<a id="expense-types--readbyquery-2"></a>
+<a id="expense-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2556,7 +2556,7 @@ Function: `readByQuery`
 <a id="expense-types--get-expense-type"></a>
 ### Get Expense Type
 
-<a id="expense-types--read-2"></a>
+<a id="expense-types--read"></a>
 Function: `read`
 
 ```xml
@@ -2582,7 +2582,7 @@ Function: `read`
 <a id="expense-types--get-expense-type-by-id"></a>
 ### Get Expense Type by ID
 
-<a id="expense-types--readbyname-2"></a>
+<a id="expense-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2608,7 +2608,7 @@ Function: `readByName`
 <a id="expense-types--create-expense-type"></a>
 ### Create Expense Type
 
-<a id="expense-types--create-2"></a>
+<a id="expense-types--create"></a>
 Function: `create`
 
 ```xml
@@ -2645,7 +2645,7 @@ Function: `create`
 <a id="expense-types--create-expense-type-legacy"></a>
 ### Create Expense Type (Legacy)
 
-<a id="expense-types--create_expensetype-2"></a>
+<a id="expense-types--create_expensetype"></a>
 Function: `create_expensetype`
 
 ```xml
@@ -2674,7 +2674,7 @@ Function: `create_expensetype`
 <a id="expense-types--update-expense-type"></a>
 ### Update Expense Type
 
-<a id="expense-types--update-2"></a>
+<a id="expense-types--update"></a>
 Function: `update`
 
 ```xml
@@ -2712,7 +2712,7 @@ Function: `update`
 <a id="expense-types--update-expense-type-legacy"></a>
 ### Update Expense Type (Legacy)
 
-<a id="expense-types--update_expensetype-2"></a>
+<a id="expense-types--update_expensetype"></a>
 Function: `update_expensetype`
 
 ```xml
@@ -2737,7 +2737,7 @@ Function: `update_expensetype`
 <a id="expense-types--delete-expense-type"></a>
 ### Delete Expense Type
 
-<a id="expense-types--delete-2"></a>
+<a id="expense-types--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2760,7 +2760,7 @@ Function: `delete`
 <a id="expense-types--delete-expense-type-legacy"></a>
 ### Delete Expense Type (Legacy)
 
-<a id="expense-types--delete_expensetype-2"></a>
+<a id="expense-types--delete_expensetype"></a>
 Function: `delete_expensetype`
 
 ```xml
@@ -2797,7 +2797,7 @@ Reimbursing employees for expenses involves a workflow in which entered expenses
 <a id="reimbursements--get-reimbursement-object-definition"></a>
 #### Get Reimbursement Object Definition
 
-<a id="reimbursements--lookup-2"></a>
+<a id="reimbursements--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the reimbursement object:
@@ -2820,7 +2820,7 @@ Function: `lookup`
 <a id="reimbursements--query-and-list-reimbursements"></a>
 #### Query and List Reimbursements
 
-<a id="reimbursements--query-2"></a>
+<a id="reimbursements--query"></a>
 Function: `query`
 
 > List the record number, payment type, and amount for each reimbursement:
@@ -2854,7 +2854,7 @@ Function: `query`
 <a id="reimbursements--query-and-list-reimbursements-legacy"></a>
 #### Query and List Reimbursements (Legacy)
 
-<a id="reimbursements--readbyquery-2"></a>
+<a id="reimbursements--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2881,7 +2881,7 @@ Function: `readByQuery`
 <a id="reimbursements--get-reimbursement"></a>
 #### Get Reimbursement
 
-<a id="reimbursements--read-2"></a>
+<a id="reimbursements--read"></a>
 Function: `read`
 
 ```xml
@@ -2910,7 +2910,7 @@ Function: `read`
 <a id="reimbursements--get-reimbursement-request-object-definition"></a>
 #### Get Reimbursement Request Object Definition
 
-<a id="reimbursements--lookup-1-2"></a>
+<a id="reimbursements--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the reimbursement request object:
@@ -2933,7 +2933,7 @@ Function: `lookup`
 <a id="reimbursements--query-and-list-reimbursement-requests"></a>
 #### Query and List Reimbursement Requests
 
-<a id="reimbursements--query-1-2"></a>
+<a id="reimbursements--query-1"></a>
 Function: `query`
 
 > List the record number, payment amount, and employee ID for each reimbursement:
@@ -2967,7 +2967,7 @@ Function: `query`
 <a id="reimbursements--query-and-list-reimbursement-requests-legacy"></a>
 #### Query and List Reimbursement Requests (Legacy)
 
-<a id="reimbursements--readbyquery-1-2"></a>
+<a id="reimbursements--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2994,7 +2994,7 @@ Function: `readByQuery`
 <a id="reimbursements--get-reimbursement-request"></a>
 #### Get Reimbursement Request
 
-<a id="reimbursements--read-1-2"></a>
+<a id="reimbursements--read-1"></a>
 Function: `read`
 
 ```xml
@@ -3022,7 +3022,7 @@ Function: `read`
 
 Creating a reimbursement request begins the process of selecting an existing expense report to be reimbursed.
 
-<a id="reimbursements--create_reimbursementrequest-2"></a>
+<a id="reimbursements--create_reimbursementrequest"></a>
 Function: `create_reimbursementrequest`
 
 ```xml

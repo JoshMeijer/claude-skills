@@ -25,7 +25,7 @@ Contact tax groups enable you to apply different taxes to customers, vendors, an
 <a id="contact-tax-groups--create-contact-tax-group-legacy"></a>
 ### Create Contact Tax Group (Legacy)
 
-<a id="contact-tax-groups--create_contacttaxgroup-2"></a>
+<a id="contact-tax-groups--create_contacttaxgroup"></a>
 Function: `create_contacttaxgroup`
 
 ```xml
@@ -46,7 +46,7 @@ Function: `create_contacttaxgroup`
 <a id="contact-tax-groups--delete-contact-tax-group-legacy"></a>
 ### Delete Contact Tax Group (Legacy)
 
-<a id="contact-tax-groups--delete_contacttaxgroup-2"></a>
+<a id="contact-tax-groups--delete_contacttaxgroup"></a>
 Function: `delete_contacttaxgroup`
 
 ```xml
@@ -80,7 +80,7 @@ A tax detail defines a specific type of tax that can be applied to a line item. 
 <a id="tax-details--get-tax-detail-object-definition"></a>
 ### Get Tax Detail Object Definition
 
-<a id="tax-details--lookup-2"></a>
+<a id="tax-details--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the tax detail object:
@@ -103,7 +103,7 @@ Function: `lookup`
 <a id="tax-details--query-and-list-tax-details"></a>
 ### Query and List Tax Details
 
-<a id="tax-details--query-2"></a>
+<a id="tax-details--query"></a>
 Function: `query`
 
 > List the record number, tax type, and description for each tax detail:
@@ -137,7 +137,7 @@ Function: `query`
 <a id="tax-details--query-and-list-tax-details-legacy"></a>
 ### Query and List Tax Details (Legacy)
 
-<a id="tax-details--readbyquery-2"></a>
+<a id="tax-details--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -170,7 +170,7 @@ Function: `readByQuery`
 <a id="tax-details--get-tax-detail"></a>
 ### Get Tax Detail
 
-<a id="tax-details--read-2"></a>
+<a id="tax-details--read"></a>
 Function: `read`
 
 ```xml
@@ -209,7 +209,7 @@ A tax record is an object used for creating reports about taxes, such as VAT or 
 <a id="tax-records--get-tax-record-object-definition"></a>
 ### Get Tax Record Object Definition
 
-<a id="tax-records--lookup-2"></a>
+<a id="tax-records--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the tax record object:
@@ -232,7 +232,7 @@ Function: `lookup`
 <a id="tax-records--query-and-list-tax-records"></a>
 ### Query and List Tax Records
 
-<a id="tax-records--query-2"></a>
+<a id="tax-records--query"></a>
 Function: `query`
 
 > List the record number, description, and tax type for each tax record:
@@ -266,7 +266,7 @@ Function: `query`
 <a id="tax-records--query-and-list-tax-records-legacy"></a>
 ### Query and List Tax Records (Legacy)
 
-<a id="tax-records--readbyquery-2"></a>
+<a id="tax-records--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -300,7 +300,7 @@ Function: `readByQuery`
 <a id="tax-records--get-tax-record"></a>
 ### Get Tax Record
 
-<a id="tax-records--read-2"></a>
+<a id="tax-records--read"></a>
 Function: `read`
 
 ```xml
@@ -328,7 +328,7 @@ Function: `read`
 
 You can update custom fields on a tax record. Update of standard fields is not supported.
 
-<a id="tax-records--update-2"></a>
+<a id="tax-records--update"></a>
 Function: `update`
 
 > Update the MCA_NOTES custom field with the given text:
@@ -376,7 +376,7 @@ The tax solution also includes information about the GL accounts for input and o
 <a id="tax-solutions--get-tax-solution-object-definition"></a>
 ### Get Tax Solution Object Definition
 
-<a id="tax-solutions--lookup-2"></a>
+<a id="tax-solutions--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the tax solution object:
@@ -399,7 +399,7 @@ Function: `lookup`
 <a id="tax-solutions--query-and-list-tax-solutions"></a>
 ### Query and List Tax Solutions
 
-<a id="tax-solutions--query-2"></a>
+<a id="tax-solutions--query"></a>
 Function: `query`
 
 > List the record number, tax solution ID, and tax calculation method for each tax solution:
@@ -433,7 +433,7 @@ Function: `query`
 <a id="tax-solutions--query-and-list-tax-solutions-legacy"></a>
 ### Query and List Tax Solutions (Legacy)
 
-<a id="tax-solutions--readbyquery-2"></a>
+<a id="tax-solutions--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -460,7 +460,7 @@ Function: `readByQuery`
 <a id="tax-solutions--get-tax-solution"></a>
 ### Get Tax Solution
 
-<a id="tax-solutions--read-2"></a>
+<a id="tax-solutions--read"></a>
 Function: `read`
 
 ```xml
@@ -486,7 +486,7 @@ Function: `read`
 <a id="tax-solutions--get-tax-solution-by-id"></a>
 ### Get Tax Solution by ID
 
-<a id="tax-solutions--readbyname-2"></a>
+<a id="tax-solutions--readbyname"></a>
 Function: `readByName`
 
 ```xml

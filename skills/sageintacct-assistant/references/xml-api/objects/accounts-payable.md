@@ -37,7 +37,7 @@ This functionality must be enabled by configuring AP in the Sage Intacct UI.
 <a id="ap-account-labels--get-ap-account-label-object-definition"></a>
 ### Get AP Account Label Object Definition
 
-<a id="ap-account-labels--lookup-2"></a>
+<a id="ap-account-labels--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AP account label object:
@@ -60,7 +60,7 @@ Function: `lookup`
 <a id="ap-account-labels--query-and-list-ap-account-labels"></a>
 ### Query and List AP Account Labels
 
-<a id="ap-account-labels--query-2"></a>
+<a id="ap-account-labels--query"></a>
 Function: `query`
 
 > List each active account label:
@@ -98,7 +98,7 @@ Function: `query`
 <a id="ap-account-labels--query-and-list-ap-account-labels-legacy"></a>
 ### Query and List AP Account Labels (Legacy)
 
-<a id="ap-account-labels--readbyquery-2"></a>
+<a id="ap-account-labels--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -131,7 +131,7 @@ Function: `readByQuery`
 <a id="ap-account-labels--get-ap-account-label"></a>
 ### Get AP Account Label
 
-<a id="ap-account-labels--read-2"></a>
+<a id="ap-account-labels--read"></a>
 Function: `read`
 
 ```xml
@@ -157,7 +157,7 @@ Function: `read`
 <a id="ap-account-labels--get-ap-account-label-by-id"></a>
 ### Get AP Account Label by ID
 
-<a id="ap-account-labels--readbyname-2"></a>
+<a id="ap-account-labels--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -183,7 +183,7 @@ Function: `readByName`
 <a id="ap-account-labels--create-ap-account-label"></a>
 ### Create AP Account Label
 
-<a id="ap-account-labels--create-2"></a>
+<a id="ap-account-labels--create"></a>
 Function: `create`
 
 ```xml
@@ -220,7 +220,7 @@ Function: `create`
 <a id="ap-account-labels--create-ap-account-label-legacy"></a>
 ### Create AP Account Label (Legacy)
 
-<a id="ap-account-labels--create_apaccountlabel-2"></a>
+<a id="ap-account-labels--create_apaccountlabel"></a>
 Function: `create_apaccountlabel`
 
 ```xml
@@ -249,7 +249,7 @@ Function: `create_apaccountlabel`
 <a id="ap-account-labels--update-ap-account-label"></a>
 ### Update AP Account Label
 
-<a id="ap-account-labels--update-2"></a>
+<a id="ap-account-labels--update"></a>
 Function: `update`
 
 ```xml
@@ -286,7 +286,7 @@ Function: `update`
 <a id="ap-account-labels--update-ap-account-label-legacy"></a>
 ### Update AP Account Label (Legacy)
 
-<a id="ap-account-labels--update_apaccountlabel-2"></a>
+<a id="ap-account-labels--update_apaccountlabel"></a>
 Function: `update_apaccountlabel`
 
 ```xml
@@ -311,7 +311,7 @@ Function: `update_apaccountlabel`
 <a id="ap-account-labels--delete-ap-account-label"></a>
 ### Delete AP Account Label
 
-<a id="ap-account-labels--delete-2"></a>
+<a id="ap-account-labels--delete"></a>
 Function: `delete`
 
 ```xml
@@ -334,7 +334,7 @@ Function: `delete`
 <a id="ap-account-labels--delete-ap-account-label-legacy"></a>
 ### Delete AP Account Label (Legacy)
 
-<a id="ap-account-labels--delete_apaccountlabel-2"></a>
+<a id="ap-account-labels--delete_apaccountlabel"></a>
 Function: `delete_apaccountlabel`
 
 ```xml
@@ -371,7 +371,7 @@ An AP adjustment is a transaction that applies an AP credit or debit memo in ord
 <a id="ap-adjustments--get-ap-adjustment-object-definition"></a>
 #### Get AP Adjustment Object Definition
 
-<a id="ap-adjustments--lookup-2"></a>
+<a id="ap-adjustments--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AP adjustment object:
@@ -394,7 +394,7 @@ Function: `lookup`
 <a id="ap-adjustments--query-and-list-ap-adjustments"></a>
 #### Query and List AP Adjustments
 
-<a id="ap-adjustments--query-2"></a>
+<a id="ap-adjustments--query"></a>
 Function: `query`
 
 > List the record number and vendor ID for each AP adjustment where the vendor ID is `Acme Supply`:
@@ -433,7 +433,7 @@ Function: `query`
 <a id="ap-adjustments--query-and-list-ap-adjustments-legacy"></a>
 #### Query and List AP Adjustments (Legacy)
 
-<a id="ap-adjustments--readbyquery-2"></a>
+<a id="ap-adjustments--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -460,7 +460,7 @@ Function: `readByQuery`
 <a id="ap-adjustments--get-ap-adjustment"></a>
 #### Get AP Adjustment
 
-<a id="ap-adjustments--read-2"></a>
+<a id="ap-adjustments--read"></a>
 Function: `read`
 
 ```xml
@@ -560,7 +560,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="ap-adjustments--create_apadjustment-2"></a>
+<a id="ap-adjustments--create_apadjustment"></a>
 Function: `create_apadjustment`
 
 > Use inclusive tax so that the system calculates the transaction amount (`trx_amount`) for the adjustment line and the transaction tax (`trx_tax`) for the tax entry based on the value supplied for `totaltrxamount` on the adjustment line and the tax rate of the tax detail (`detailid`) for the tax entry. (AU, GB, ZA only).
@@ -759,7 +759,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="ap-adjustments--update_apadjustment-2"></a>
+<a id="ap-adjustments--update_apadjustment"></a>
 Function: `update_apadjustment`
 
 <a id="ap-adjustments--parameters-5"></a>
@@ -887,7 +887,7 @@ Specifies a tax rate (defined in the system) and a manually calculated tax for t
 <a id="ap-adjustments--delete-ap-adjustment"></a>
 #### Delete AP Adjustment
 
-<a id="ap-adjustments--delete-2"></a>
+<a id="ap-adjustments--delete"></a>
 Function: `delete`
 
 ```xml
@@ -910,7 +910,7 @@ Function: `delete`
 <a id="ap-adjustments--delete-ap-adjustment-legacy"></a>
 #### Delete AP Adjustment (Legacy)
 
-<a id="ap-adjustments--delete_apadjustment-2"></a>
+<a id="ap-adjustments--delete_apadjustment"></a>
 Function: `delete_apadjustment`
 
 ```xml
@@ -932,7 +932,7 @@ Function: `delete_apadjustment`
 <a id="ap-adjustments--query-and-list-ap-adjustment-lines"></a>
 #### Query and List AP Adjustment Lines
 
-<a id="ap-adjustments--readbyquery-1-2"></a>
+<a id="ap-adjustments--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -959,7 +959,7 @@ Function: `readByQuery`
 <a id="ap-adjustments--get-ap-adjustment-line"></a>
 #### Get AP Adjustment Line
 
-<a id="ap-adjustments--read-1-2"></a>
+<a id="ap-adjustments--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1010,7 +1010,7 @@ See the AP Payment [entity relationship diagram](https://developer.intacct.com/e
 <a id="ap-payments--get-ap-payment-object-definition"></a>
 #### Get AP Payment Object Definition
 
-<a id="ap-payments--lookup-2"></a>
+<a id="ap-payments--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AP payment object:
@@ -1033,7 +1033,7 @@ Function: `lookup`
 <a id="ap-payments--query-and-list-ap-payments"></a>
 #### Query and List AP Payments
 
-<a id="ap-payments--query-2"></a>
+<a id="ap-payments--query"></a>
 Function: `query`
 
 > List the record number for each AP payment without a description:
@@ -1070,7 +1070,7 @@ Function: `query`
 <a id="ap-payments--query-and-list-ap-payments-legacy"></a>
 #### Query and List AP Payments (Legacy)
 
-<a id="ap-payments--readbyquery-2"></a>
+<a id="ap-payments--readbyquery"></a>
 Function: `readByQuery`
 
 > List submitted payments:
@@ -1105,7 +1105,7 @@ Function: `readByQuery`
 <a id="ap-payments--get-ap-payment"></a>
 #### Get AP Payment
 
-<a id="ap-payments--read-2"></a>
+<a id="ap-payments--read"></a>
 Function: `read`
 
 ```xml
@@ -1162,7 +1162,7 @@ For a sample query that shows bills available to pay for a given vendor, see [Li
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="ap-payments--create-2"></a>
+<a id="ap-payments--create"></a>
 Function: `create`
 
 > Create a record transfer for a specific line of a bill:
@@ -1386,7 +1386,7 @@ For example, if you need to update header information for a payment that include
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="ap-payments--update-2"></a>
+<a id="ap-payments--update"></a>
 Function: `update`
 
 <a id="ap-payments--parameters-5"></a>
@@ -1446,7 +1446,7 @@ A payment detail has two parts:
 <a id="ap-payments--delete-ap-payment"></a>
 #### Delete AP Payment
 
-<a id="ap-payments--delete-2"></a>
+<a id="ap-payments--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1472,7 +1472,7 @@ Function: `delete`
 <a id="ap-payments--get-ap-payment-detail-object-definition"></a>
 #### Get AP Payment Detail Object Definition
 
-<a id="ap-payments--lookup-1-2"></a>
+<a id="ap-payments--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AP payment detail object:
@@ -1495,7 +1495,7 @@ Function: `lookup`
 <a id="ap-payments--query-and-list-ap-payment-details"></a>
 #### Query and List AP Payment Details
 
-<a id="ap-payments--query-1-2"></a>
+<a id="ap-payments--query-1"></a>
 Function: `query`
 
 > List the record number and payment amount for each AP payment detail:
@@ -1528,7 +1528,7 @@ Function: `query`
 <a id="ap-payments--query-and-list-ap-payment-details-legacy"></a>
 #### Query and List AP Payment Details (Legacy)
 
-<a id="ap-payments--readbyquery-1-2"></a>
+<a id="ap-payments--readbyquery-1"></a>
 Function: `readByQuery`
 
 > List all submitted payment details:
@@ -1579,7 +1579,7 @@ Function: `readByQuery`
 <a id="ap-payments--get-ap-payment-details"></a>
 #### Get AP Payment Details
 
-<a id="ap-payments--read-1-2"></a>
+<a id="ap-payments--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1605,7 +1605,7 @@ Function: `read`
 <a id="ap-payments--get-ap-payment-legacy"></a>
 #### Get AP Payment (Legacy)
 
-<a id="ap-payments--read-2-3"></a>
+<a id="ap-payments--read-2"></a>
 Function: `read`
 
 ```xml
@@ -1640,7 +1640,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="ap-payments--create_appayment-2"></a>
+<a id="ap-payments--create_appayment"></a>
 Function: `create_appayment`
 
 ```xml
@@ -1723,7 +1723,7 @@ Function: `create_appayment`
 <a id="ap-payments--reverse-ap-payment-legacy"></a>
 #### Reverse AP Payment (Legacy)
 
-<a id="ap-payments--reverse_appayment-2"></a>
+<a id="ap-payments--reverse_appayment"></a>
 Function: `reverse_appayment`
 
 ```xml
@@ -1761,7 +1761,7 @@ Function: `reverse_appayment`
 <a id="ap-payments--get-ap-payment-request-object-definition"></a>
 #### Get AP Payment Request Object Definition
 
-<a id="ap-payments--lookup-2-3"></a>
+<a id="ap-payments--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AP payment request object:
@@ -1784,7 +1784,7 @@ Function: `lookup`
 <a id="ap-payments--query-and-list-ap-payment-requests"></a>
 #### Query and List AP Payment Requests
 
-<a id="ap-payments--query-2-3"></a>
+<a id="ap-payments--query-2"></a>
 Function: `query`
 
 > List the record number and payment amount for each AP payment request:
@@ -1817,7 +1817,7 @@ Function: `query`
 <a id="ap-payments--query-and-list-ap-payment-requests-legacy"></a>
 #### Query and List AP Payment Requests (Legacy)
 
-<a id="ap-payments--readbyquery-2-3"></a>
+<a id="ap-payments--readbyquery-2"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1844,7 +1844,7 @@ Function: `readByQuery`
 <a id="ap-payments--get-ap-payment-request-legacy"></a>
 #### Get AP Payment Request (Legacy)
 
-<a id="ap-payments--read-3-2"></a>
+<a id="ap-payments--read-3"></a>
 Function: `read`
 
 ```xml
@@ -1872,7 +1872,7 @@ Function: `read`
 
 Creating an AP payment request begins the process of selecting an existing bill to be paid.
 
-<a id="ap-payments--create_paymentrequest-2"></a>
+<a id="ap-payments--create_paymentrequest"></a>
 Function: `create_paymentrequest`
 
 > Creates a simple payment request:
@@ -1971,7 +1971,7 @@ Function: `create_paymentrequest`
 <a id="ap-payments--approve-ap-payment-request-legacy"></a>
 #### Approve AP Payment Request (Legacy)
 
-<a id="ap-payments--approve_appaymentrequest-2"></a>
+<a id="ap-payments--approve_appaymentrequest"></a>
 Function: `approve_appaymentrequest`
 
 ```xml
@@ -1996,7 +1996,7 @@ Function: `approve_appaymentrequest`
 
 This function requires the Vendor Payment Services subscription.
 
-<a id="ap-payments--send_appaymentrequest-2"></a>
+<a id="ap-payments--send_appaymentrequest"></a>
 Function: `send_appaymentrequest`
 
 ```xml
@@ -2021,7 +2021,7 @@ Function: `send_appaymentrequest`
 
 Use this to confirm checks have been successfully printed.
 
-<a id="ap-payments--confirm_appaymentrequest-2"></a>
+<a id="ap-payments--confirm_appaymentrequest"></a>
 Function: `confirm_appaymentrequest`
 
 ```xml
@@ -2044,7 +2044,7 @@ Function: `confirm_appaymentrequest`
 <a id="ap-payments--decline-ap-payment-request-legacy"></a>
 #### Decline AP Payment Request (Legacy)
 
-<a id="ap-payments--decline_appaymentrequest-2"></a>
+<a id="ap-payments--decline_appaymentrequest"></a>
 Function: `decline_appaymentrequest`
 
 ```xml
@@ -2067,7 +2067,7 @@ Function: `decline_appaymentrequest`
 <a id="ap-payments--void-ap-payment-request-legacy"></a>
 #### Void AP Payment Request (Legacy)
 
-<a id="ap-payments--void_appaymentrequest-2"></a>
+<a id="ap-payments--void_appaymentrequest"></a>
 Function: `void_appaymentrequest`
 
 ```xml
@@ -2090,7 +2090,7 @@ Function: `void_appaymentrequest`
 <a id="ap-payments--delete-ap-payment-request-legacy"></a>
 #### Delete AP Payment Request (Legacy)
 
-<a id="ap-payments--delete_paymentrequest-2"></a>
+<a id="ap-payments--delete_paymentrequest"></a>
 Function: `delete_paymentrequest`
 
 ```xml
@@ -2127,7 +2127,7 @@ AP summaries are collections of the same type of transactions, grouped together 
 <a id="ap-summaries--get-bill-summary-object-definition"></a>
 #### Get Bill Summary Object Definition
 
-<a id="ap-summaries--lookup-2"></a>
+<a id="ap-summaries--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the bill summary object:
@@ -2150,7 +2150,7 @@ Function: `lookup`
 <a id="ap-summaries--query-and-list-bill-summaries"></a>
 #### Query and List Bill Summaries
 
-<a id="ap-summaries--query-2"></a>
+<a id="ap-summaries--query"></a>
 Function: `query`
 
 > List the record number for each active and open bill summary:
@@ -2194,7 +2194,7 @@ Function: `query`
 <a id="ap-summaries--query-and-list-bill-summaries-legacy-readbyquery"></a>
 #### Query and List Bill Summaries (Legacy readByQuery)
 
-<a id="ap-summaries--readbyquery-2"></a>
+<a id="ap-summaries--readbyquery"></a>
 Function: `readByQuery`
 
 > List active and open bill summaries:
@@ -2223,7 +2223,7 @@ Function: `readByQuery`
 <a id="ap-summaries--list-bill-summaries-legacy-get_list"></a>
 #### List Bill Summaries (Legacy get_list)
 
-<a id="ap-summaries--get_list-2"></a>
+<a id="ap-summaries--get_list"></a>
 Function: `get_list`
 
 ```xml
@@ -2277,7 +2277,7 @@ Function: `get_list`
 <a id="ap-summaries--get-bill-summary"></a>
 #### Get Bill Summary
 
-<a id="ap-summaries--read-2"></a>
+<a id="ap-summaries--read"></a>
 Function: `read`
 
 ```xml
@@ -2303,7 +2303,7 @@ Function: `read`
 <a id="ap-summaries--create-bill-summary-legacy"></a>
 #### Create Bill Summary (Legacy)
 
-<a id="ap-summaries--create_billbatch-2"></a>
+<a id="ap-summaries--create_billbatch"></a>
 Function: `create_billbatch`
 
 ```xml
@@ -2341,7 +2341,7 @@ Function: `create_billbatch`
 <a id="ap-summaries--list-ap-adjustment-summaries-legacy"></a>
 #### List AP Adjustment Summaries (Legacy)
 
-<a id="ap-summaries--get_list-1-2"></a>
+<a id="ap-summaries--get_list-1"></a>
 Function: `get_list`
 
 ```xml
@@ -2442,7 +2442,7 @@ An AP term is a rule (such as net 30) that a vendor establishes for extending cr
 <a id="ap-terms--get-ap-term-object-definition"></a>
 ### Get AP Term Object Definition
 
-<a id="ap-terms--lookup-2"></a>
+<a id="ap-terms--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AP term object:
@@ -2465,7 +2465,7 @@ Function: `lookup`
 <a id="ap-terms--query-and-list-ap-terms"></a>
 ### Query and List AP Terms
 
-<a id="ap-terms--query-2"></a>
+<a id="ap-terms--query"></a>
 Function: `query`
 
 > List information about each AP term:
@@ -2500,7 +2500,7 @@ Function: `query`
 <a id="ap-terms--query-and-list-ap-terms-legacy"></a>
 ### Query and List AP Terms (Legacy)
 
-<a id="ap-terms--readbyquery-2"></a>
+<a id="ap-terms--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2527,7 +2527,7 @@ Function: `readByQuery`
 <a id="ap-terms--get-ap-term"></a>
 ### Get AP Term
 
-<a id="ap-terms--read-2"></a>
+<a id="ap-terms--read"></a>
 Function: `read`
 
 ```xml
@@ -2553,7 +2553,7 @@ Function: `read`
 <a id="ap-terms--get-ap-term-by-id"></a>
 ### Get AP Term by ID
 
-<a id="ap-terms--readbyname-2"></a>
+<a id="ap-terms--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2579,7 +2579,7 @@ Function: `readByName`
 <a id="ap-terms--create-ap-term-legacy"></a>
 ### Create AP Term (Legacy)
 
-<a id="ap-terms--create_apterm-2"></a>
+<a id="ap-terms--create_apterm"></a>
 Function: `create_apterm`
 
 ```xml
@@ -2651,7 +2651,7 @@ Function: `create_apterm`
 <a id="ap-terms--update-ap-term-legacy"></a>
 ### Update AP Term (Legacy)
 
-<a id="ap-terms--update_apterm-2"></a>
+<a id="ap-terms--update_apterm"></a>
 Function: `update_apterm`
 
 ```xml
@@ -2704,7 +2704,7 @@ Function: `update_apterm`
 <a id="ap-terms--delete-ap-term-legacy"></a>
 ### Delete AP Term (Legacy)
 
-<a id="ap-terms--delete_apterm-2"></a>
+<a id="ap-terms--delete_apterm"></a>
 Function: `delete_apterm`
 
 ```xml
@@ -2743,7 +2743,7 @@ Certain types of transaction definitions in Purchasing (e.g. Vendor Invoice) are
 <a id="bills--get-bill-object-definition"></a>
 #### Get Bill Object Definition
 
-<a id="bills--lookup-2"></a>
+<a id="bills--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AP bill object:
@@ -2766,7 +2766,7 @@ Function: `lookup`
 <a id="bills--query-and-list-bills"></a>
 #### Query and List Bills
 
-<a id="bills--query-2"></a>
+<a id="bills--query"></a>
 Function: `query`
 
 > List the record number and vendor ID for each bill where the vendor name starts with the letter `B`:
@@ -2832,7 +2832,7 @@ Function: `query`
 <a id="bills--query-and-list-bills-legacy"></a>
 #### Query and List Bills (Legacy)
 
-<a id="bills--readbyquery-2"></a>
+<a id="bills--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2866,7 +2866,7 @@ Function: `readByQuery`
 <a id="bills--get-bill"></a>
 #### Get Bill
 
-<a id="bills--read-2"></a>
+<a id="bills--read"></a>
 Function: `read`
 
 ```xml
@@ -2904,7 +2904,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="bills--create-2"></a>
+<a id="bills--create"></a>
 Function: `create`
 
 > Create a bill with one line:
@@ -3062,7 +3062,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="bills--create_bill-2"></a>
+<a id="bills--create_bill"></a>
 Function: `create_bill`
 
 > Create a bill:
@@ -3462,7 +3462,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="bills--update_bill-2"></a>
+<a id="bills--update_bill"></a>
 Function: `update_bill`
 
 ```xml
@@ -3610,7 +3610,7 @@ Specifies a tax rate (defined in the system) and a manually calculated tax for t
 <a id="bills--reverse-bill-legacy"></a>
 #### Reverse Bill (Legacy)
 
-<a id="bills--reverse_bill-2"></a>
+<a id="bills--reverse_bill"></a>
 Function: `reverse_bill`
 
 ```xml
@@ -3645,7 +3645,7 @@ Function: `reverse_bill`
 <a id="bills--delete-bill"></a>
 #### Delete Bill
 
-<a id="bills--delete-2"></a>
+<a id="bills--delete"></a>
 Function: `delete`
 
 ```xml
@@ -3668,7 +3668,7 @@ Function: `delete`
 <a id="bills--delete-bill-legacy"></a>
 #### Delete Bill (Legacy)
 
-<a id="bills--delete_bill-2"></a>
+<a id="bills--delete_bill"></a>
 Function: `delete_bill`
 
 ```xml
@@ -3693,7 +3693,7 @@ Release history:
 |---|---|
 | 2023 Release 4 | Added recallApBill |
 
-<a id="bills--recallapbill-2"></a>
+<a id="bills--recallapbill"></a>
 Function: `recallApBill`
 
 ```xml
@@ -3717,7 +3717,7 @@ Function: `recallApBill`
 <a id="bills--get-bill-line-object-definition"></a>
 #### Get Bill Line Object Definition
 
-<a id="bills--lookup-1-2"></a>
+<a id="bills--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the bill line object:
@@ -3740,7 +3740,7 @@ Function: `lookup`
 <a id="bills--query-and-list-bill-lines"></a>
 #### Query and List Bill Lines
 
-<a id="bills--query-1-2"></a>
+<a id="bills--query-1"></a>
 Function: `query`
 
 > List the record number, amount, and GL account title for each bill line:
@@ -3774,7 +3774,7 @@ Function: `query`
 <a id="bills--query-and-list-bill-lines-legacy"></a>
 #### Query and List Bill Lines (Legacy)
 
-<a id="bills--readbyquery-1-2"></a>
+<a id="bills--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3801,7 +3801,7 @@ Function: `readByQuery`
 <a id="bills--get-bill-line"></a>
 #### Get Bill Line
 
-<a id="bills--read-1-2"></a>
+<a id="bills--read-1"></a>
 Function: `read`
 
 ```xml
@@ -3854,7 +3854,7 @@ Joint Checks must be enabled in the Accounts Payable Configuration to use this f
 <a id="joint-payee--get-joint-payee-object-definition"></a>
 ### Get Joint Payee Object Definition
 
-<a id="joint-payee--lookup-2"></a>
+<a id="joint-payee--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Joint Payee object:
@@ -3877,7 +3877,7 @@ Function: `lookup`
 <a id="joint-payee--query-and-list-joint-payees"></a>
 ### Query and List Joint Payees
 
-<a id="joint-payee--query-2"></a>
+<a id="joint-payee--query"></a>
 Function: `query`
 
 > List the record number and AP bill key for each joint payee object where the payee name is “DW Drywall”:
@@ -3916,7 +3916,7 @@ Function: `query`
 <a id="joint-payee--query-and-list-joint-payees-legacy"></a>
 ### Query and List Joint Payees (Legacy)
 
-<a id="joint-payee--readbyquery-2"></a>
+<a id="joint-payee--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3943,7 +3943,7 @@ Function: `readByQuery`
 <a id="joint-payee--get-joint-payee"></a>
 ### Get Joint Payee
 
-<a id="joint-payee--read-2"></a>
+<a id="joint-payee--read"></a>
 Function: `read`
 
 ```xml
@@ -3969,7 +3969,7 @@ Function: `read`
 <a id="joint-payee--create-joint-payee"></a>
 ### Create Joint Payee
 
-<a id="joint-payee--create-2"></a>
+<a id="joint-payee--create"></a>
 Function: `create`
 
 ```xml
@@ -4004,7 +4004,7 @@ Function: `create`
 
 A joint payee cannot be updated if it has been used in a payment.
 
-<a id="joint-payee--update-2"></a>
+<a id="joint-payee--update"></a>
 Function: `update`
 
 ```xml
@@ -4039,7 +4039,7 @@ Function: `update`
 
 A joint payee cannot be deleted if it has been used in a payment.
 
-<a id="joint-payee--delete-2"></a>
+<a id="joint-payee--delete"></a>
 Function: `delete`
 
 ```xml
@@ -4079,7 +4079,7 @@ A subscription to Outbound Payment Services is required.
 <a id="payment-provider-bank-account--get-payment-provider-bank-account-object-definition"></a>
 ### Get Payment Provider Bank Account Object Definition
 
-<a id="payment-provider-bank-account--lookup-2"></a>
+<a id="payment-provider-bank-account--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the payment provider bank account object:
@@ -4102,7 +4102,7 @@ Function: `lookup`
 <a id="payment-provider-bank-account--query-and-list-payment-provider-bank-accounts"></a>
 ### Query and List Payment Provider Bank Accounts
 
-<a id="payment-provider-bank-account--query-2"></a>
+<a id="payment-provider-bank-account--query"></a>
 Function: `query`
 
 > List the objects that map a bank account to a payment provider:
@@ -4135,7 +4135,7 @@ Function: `query`
 <a id="payment-provider-bank-account--query-and-list-payment-provider-bank-accounts-legacy"></a>
 ### Query and List Payment Provider Bank Accounts (Legacy)
 
-<a id="payment-provider-bank-account--readbyquery-2"></a>
+<a id="payment-provider-bank-account--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4162,7 +4162,7 @@ Function: `readByQuery`
 <a id="payment-provider-bank-account--get-payment-provider-bank-account"></a>
 ### Get Payment Provider Bank Account
 
-<a id="payment-provider-bank-account--read-2"></a>
+<a id="payment-provider-bank-account--read"></a>
 Function: `read`
 
 ```xml
@@ -4195,7 +4195,7 @@ Release history:
 | 2021 Release 4 | Added ISREBATEACCOUNT |
 | 2021 Release 2 | Added CHECKSTARTNO |
 
-<a id="payment-provider-bank-account--create-2"></a>
+<a id="payment-provider-bank-account--create"></a>
 Function: `create`
 
 ```xml
@@ -4236,7 +4236,7 @@ Release history:
 | 2021 Release 4 | Added ISREBATEACCOUNT |
 | 2021 Release 2 | Added CHECKSTARTNO |
 
-<a id="payment-provider-bank-account--update-2"></a>
+<a id="payment-provider-bank-account--update"></a>
 Function: `update`
 
 ```xml
@@ -4290,7 +4290,7 @@ A subscription to Outbound Payment Services is required.
 <a id="payment-provider-payment-method--get-payment-provider-payment-method-object-definition"></a>
 ### Get Payment Provider Payment Method Object Definition
 
-<a id="payment-provider-payment-method--lookup-2"></a>
+<a id="payment-provider-payment-method--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the payment provider payment method object:
@@ -4313,7 +4313,7 @@ Function: `lookup`
 <a id="payment-provider-payment-method--query-and-list-payment-provider-payment-methods"></a>
 ### Query and List Payment Provider Payment Methods
 
-<a id="payment-provider-payment-method--query-2"></a>
+<a id="payment-provider-payment-method--query"></a>
 Function: `query`
 
 > List the record number, provider ID, and payment type for each provider payment method:
@@ -4347,7 +4347,7 @@ Function: `query`
 <a id="payment-provider-payment-method--query-and-list-payment-provider-payment-methods-legacy"></a>
 ### Query and List Payment Provider Payment Methods (Legacy)
 
-<a id="payment-provider-payment-method--readbyquery-2"></a>
+<a id="payment-provider-payment-method--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4374,7 +4374,7 @@ Function: `readByQuery`
 <a id="payment-provider-payment-method--get-payment-provider-payment-method"></a>
 ### Get Payment Provider Payment Method
 
-<a id="payment-provider-payment-method--read-2"></a>
+<a id="payment-provider-payment-method--read"></a>
 Function: `read`
 
 ```xml
@@ -4421,7 +4421,7 @@ A subscription to Outbound Payment Services is required.
 <a id="payment-provider-vendor--get-payment-provider-vendor-object-definition"></a>
 ### Get Payment Provider Vendor Object Definition
 
-<a id="payment-provider-vendor--lookup-2"></a>
+<a id="payment-provider-vendor--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the payment provider vendor object:
@@ -4444,7 +4444,7 @@ Function: `lookup`
 <a id="payment-provider-vendor--query-and-list-payment-provider-vendors"></a>
 ### Query and List Payment Provider Vendors
 
-<a id="payment-provider-vendor--query-2"></a>
+<a id="payment-provider-vendor--query"></a>
 Function: `query`
 
 > List the objects that map a vendor to a payment provider:
@@ -4477,7 +4477,7 @@ Function: `query`
 <a id="payment-provider-vendor--query-and-list-payment-provider-vendors-legacy"></a>
 ### Query and List Payment Provider Vendors (Legacy)
 
-<a id="payment-provider-vendor--readbyquery-2"></a>
+<a id="payment-provider-vendor--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4504,7 +4504,7 @@ Function: `readByQuery`
 <a id="payment-provider-vendor--get-payment-provider-vendor"></a>
 ### Get Payment Provider Vendor
 
-<a id="payment-provider-vendor--read-2"></a>
+<a id="payment-provider-vendor--read"></a>
 Function: `read`
 
 ```xml
@@ -4530,7 +4530,7 @@ Function: `read`
 <a id="payment-provider-vendor--create-payment-provider-vendor"></a>
 ### Create Payment Provider Vendor
 
-<a id="payment-provider-vendor--create-2"></a>
+<a id="payment-provider-vendor--create"></a>
 Function: `create`
 
 ```xml
@@ -4563,7 +4563,7 @@ Function: `create`
 <a id="payment-provider-vendor--update-payment-provider-vendor"></a>
 ### Update Payment Provider Vendor
 
-<a id="payment-provider-vendor--update-2"></a>
+<a id="payment-provider-vendor--update"></a>
 Function: `update`
 
 ```xml
@@ -4612,7 +4612,7 @@ An AP recurring bill provides the ability to schedule and automate the process o
 <a id="recurring-bills--get-recurring-bill-object-definition"></a>
 #### Get Recurring Bill Object Definition
 
-<a id="recurring-bills--lookup-2"></a>
+<a id="recurring-bills--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the recurring bill object:
@@ -4635,7 +4635,7 @@ Function: `lookup`
 <a id="recurring-bills--query-and-list-recurring-bills"></a>
 #### Query and List Recurring Bills
 
-<a id="recurring-bills--query-2"></a>
+<a id="recurring-bills--query"></a>
 Function: `query`
 
 > List the record number and vendor name for each recurring bill where the vendor name starts with the letter `B`:
@@ -4674,7 +4674,7 @@ Function: `query`
 <a id="recurring-bills--query-and-list-recurring-bills-legacy"></a>
 #### Query and List Recurring Bills (Legacy)
 
-<a id="recurring-bills--readbyquery-2"></a>
+<a id="recurring-bills--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4701,7 +4701,7 @@ Function: `readByQuery`
 <a id="recurring-bills--get-recurring-bill"></a>
 #### Get Recurring Bill
 
-<a id="recurring-bills--read-2"></a>
+<a id="recurring-bills--read"></a>
 Function: `read`
 
 ```xml
@@ -4736,7 +4736,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="recurring-bills--create_recurringbill-2"></a>
+<a id="recurring-bills--create_recurringbill"></a>
 Function: `create_recurringbill`
 
 ```xml
@@ -4861,7 +4861,7 @@ Function: `create_recurringbill`
 <a id="recurring-bills--delete-recurring-bill-legacy"></a>
 #### Delete Recurring Bill (Legacy)
 
-<a id="recurring-bills--delete_bill-2"></a>
+<a id="recurring-bills--delete_bill"></a>
 Function: `delete_bill`
 
 ```xml
@@ -4883,7 +4883,7 @@ Function: `delete_bill`
 <a id="recurring-bills--get-recurring-bill-line-object-definition"></a>
 #### Get Recurring Bill Line Object Definition
 
-<a id="recurring-bills--lookup-1-2"></a>
+<a id="recurring-bills--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the recurring bill line object:
@@ -4906,7 +4906,7 @@ Function: `lookup`
 <a id="recurring-bills--query-and-list-recurring-bill-lines"></a>
 #### Query and List Recurring Bill Lines
 
-<a id="recurring-bills--query-1-2"></a>
+<a id="recurring-bills--query-1"></a>
 Function: `query`
 
 > List the record number and amount for each recurring bill line:
@@ -4939,7 +4939,7 @@ Function: `query`
 <a id="recurring-bills--query-and-list-recurring-bill-lines-legacy"></a>
 #### Query and List Recurring Bill Lines (Legacy)
 
-<a id="recurring-bills--readbyquery-1-2"></a>
+<a id="recurring-bills--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4966,7 +4966,7 @@ Function: `readByQuery`
 <a id="recurring-bills--get-recurring-bill-line"></a>
 #### Get Recurring Bill Line
 
-<a id="recurring-bills--read-1-2"></a>
+<a id="recurring-bills--read-1"></a>
 Function: `read`
 
 ```xml
@@ -5007,7 +5007,7 @@ A vendor group categorizes vendor dimension records, mainly for the purpose of s
 <a id="vendor-groups--get-vendor-group-object-definition"></a>
 ### Get Vendor Group Object Definition
 
-<a id="vendor-groups--lookup-2"></a>
+<a id="vendor-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the vendor group object:
@@ -5030,7 +5030,7 @@ Function: `lookup`
 <a id="vendor-groups--query-and-list-vendor-groups"></a>
 ### Query and List Vendor Groups
 
-<a id="vendor-groups--query-2"></a>
+<a id="vendor-groups--query"></a>
 Function: `query`
 
 > List information about each vendor group:
@@ -5063,7 +5063,7 @@ Function: `query`
 <a id="vendor-groups--query-and-list-vendor-groups-legacy"></a>
 ### Query and List Vendor Groups (Legacy)
 
-<a id="vendor-groups--readbyquery-2"></a>
+<a id="vendor-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5090,7 +5090,7 @@ Function: `readByQuery`
 <a id="vendor-groups--get-vendor-group"></a>
 ### Get Vendor Group
 
-<a id="vendor-groups--read-2"></a>
+<a id="vendor-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -5116,7 +5116,7 @@ Function: `read`
 <a id="vendor-groups--get-vendor-group-by-id"></a>
 ### Get Vendor Group by ID
 
-<a id="vendor-groups--readbyname-2"></a>
+<a id="vendor-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5157,7 +5157,7 @@ Vendor types organize vendors into categories that define meaningful segments fo
 <a id="vendor-types--get-vendor-type-object-definition"></a>
 ### Get Vendor Type Object Definition
 
-<a id="vendor-types--lookup-2"></a>
+<a id="vendor-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the vendor type object:
@@ -5180,7 +5180,7 @@ Function: `lookup`
 <a id="vendor-types--query-and-list-vendor-types"></a>
 ### Query and List Vendor Types
 
-<a id="vendor-types--query-2"></a>
+<a id="vendor-types--query"></a>
 Function: `query`
 
 > List the record number and name for each vendor type:
@@ -5213,7 +5213,7 @@ Function: `query`
 <a id="vendor-types--query-and-list-vendor-types-legacy"></a>
 ### Query and List Vendor Types (Legacy)
 
-<a id="vendor-types--readbyquery-2"></a>
+<a id="vendor-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5240,7 +5240,7 @@ Function: `readByQuery`
 <a id="vendor-types--get-vendor-type"></a>
 ### Get Vendor Type
 
-<a id="vendor-types--read-2"></a>
+<a id="vendor-types--read"></a>
 Function: `read`
 
 ```xml
@@ -5266,7 +5266,7 @@ Function: `read`
 <a id="vendor-types--get-vendor-type-by-id"></a>
 ### Get Vendor Type by ID
 
-<a id="vendor-types--readbyname-2"></a>
+<a id="vendor-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5310,7 +5310,7 @@ Vendors are companies or individuals that are paid for goods and services.
 <a id="vendors--get-vendor-object-definition"></a>
 #### Get Vendor Object Definition
 
-<a id="vendors--lookup-2"></a>
+<a id="vendors--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the vendor object:
@@ -5333,7 +5333,7 @@ Function: `lookup`
 <a id="vendors--query-and-list-vendors"></a>
 #### Query and List Vendors
 
-<a id="vendors--query-2"></a>
+<a id="vendors--query"></a>
 Function: `query`
 
 > For each vendor owed more than 100.00, list the record number, pay-to contact name, and total due:
@@ -5373,7 +5373,7 @@ Function: `query`
 <a id="vendors--query-and-list-vendors-legacy"></a>
 #### Query and List Vendors (Legacy)
 
-<a id="vendors--readbyquery-2"></a>
+<a id="vendors--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5407,7 +5407,7 @@ Function: `readByQuery`
 <a id="vendors--get-vendor"></a>
 #### Get Vendor
 
-<a id="vendors--read-2"></a>
+<a id="vendors--read"></a>
 Function: `read`
 
 ```xml
@@ -5433,7 +5433,7 @@ Function: `read`
 <a id="vendors--get-vendor-by-id"></a>
 #### Get Vendor by ID
 
-<a id="vendors--readbyname-2"></a>
+<a id="vendors--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5470,7 +5470,7 @@ Release history:
 | 2018 Release 4 | Added DEFAULT_LEAD_TIME |
 |  | Updated note about RETAINAGEPERCENTAGE |
 
-<a id="vendors--create-2"></a>
+<a id="vendors--create"></a>
 Function: `create`
 
 > Creates a vendor and specifies a display contact:
@@ -5803,7 +5803,7 @@ Release history:
 | 2020 Release 2 | Added retainagepercentage |
 |  | Updated note about RETAINAGEPERCENTAGE |
 
-<a id="vendors--create_vendor-2"></a>
+<a id="vendors--create_vendor"></a>
 Function: `create_vendor`
 
 ```xml
@@ -5975,7 +5975,7 @@ Release history:
 | 2018 Release 4 | Added DEFAULT_LEAD_TIME |
 |  | Updated note about RETAINAGEPERCENTAGE |
 
-<a id="vendors--update-2"></a>
+<a id="vendors--update"></a>
 Function: `update`
 
 > Updates a vendor with a new payment term:
@@ -6228,7 +6228,7 @@ Release history:
 | 2020 Release 2 | Added retainagepercentage |
 |  | Updated note about RETAINAGEPERCENTAGE |
 
-<a id="vendors--update_vendor-2"></a>
+<a id="vendors--update_vendor"></a>
 Function: `update_vendor`
 
 ```xml
@@ -6385,7 +6385,7 @@ If the category and contact name you provide matches one already in the contact 
 <a id="vendors--delete-vendor"></a>
 #### Delete Vendor
 
-<a id="vendors--delete-2"></a>
+<a id="vendors--delete"></a>
 Function: `delete`
 
 ```xml
@@ -6408,7 +6408,7 @@ Function: `delete`
 <a id="vendors--delete-vendor-legacy"></a>
 #### Delete Vendor (Legacy)
 
-<a id="vendors--delete_vendor-2"></a>
+<a id="vendors--delete_vendor"></a>
 Function: `delete_vendor`
 
 ```xml
@@ -6427,7 +6427,7 @@ Function: `delete_vendor`
 <a id="vendors--create-location-specific-vendor-account-number-legacy"></a>
 #### Create Location Specific Vendor Account Number (Legacy)
 
-<a id="vendors--create_vendorentityaccountno-2"></a>
+<a id="vendors--create_vendorentityaccountno"></a>
 Function: `create_vendorentityaccountno`
 
 ```xml
@@ -6463,7 +6463,7 @@ When vendor approval is enabled, new and recently edited vendors are automatical
 <a id="vendors--get-vendors-to-approve"></a>
 #### Get Vendors to Approve
 
-<a id="vendors--getvendorstoapprove-2"></a>
+<a id="vendors--getvendorstoapprove"></a>
 Function: `getVendorsToApprove`
 
 ```xml
@@ -6475,7 +6475,7 @@ Function: `getVendorsToApprove`
 <a id="vendors--approve-vendors"></a>
 #### Approve Vendors
 
-<a id="vendors--approvevendor-2"></a>
+<a id="vendors--approvevendor"></a>
 Function: `approveVendor`
 
 ```xml
@@ -6498,7 +6498,7 @@ Function: `approveVendor`
 <a id="vendors--decline-vendors"></a>
 #### Decline Vendors
 
-<a id="vendors--declinevendor-2"></a>
+<a id="vendors--declinevendor"></a>
 Function: `declineVendor`
 
 ```xml
@@ -6521,7 +6521,7 @@ Function: `declineVendor`
 <a id="vendors--get-vendor-approval-history"></a>
 #### Get Vendor Approval History
 
-<a id="vendors--getvendorapprovalhistory-2"></a>
+<a id="vendors--getvendorapprovalhistory"></a>
 Function: `getVendorApprovalHistory`
 
 ```xml
@@ -6545,7 +6545,7 @@ Function: `getVendorApprovalHistory`
 <a id="vendors--get-vendor-email-template-object-definition"></a>
 #### Get Vendor Email Template Object Definition
 
-<a id="vendors--lookup-1-2"></a>
+<a id="vendors--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the vendor email template object:
@@ -6568,7 +6568,7 @@ Function: `lookup`
 <a id="vendors--query-and-list-vendor-email-templates"></a>
 #### Query and List Vendor Email Templates
 
-<a id="vendors--query-1-2"></a>
+<a id="vendors--query-1"></a>
 Function: `query`
 
 > List the template name and vendor ID for each vendor email template:
@@ -6601,7 +6601,7 @@ Function: `query`
 <a id="vendors--query-and-list-vendor-email-templates-legacy"></a>
 #### Query and List Vendor Email Templates (Legacy)
 
-<a id="vendors--readbyquery-1-2"></a>
+<a id="vendors--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6628,7 +6628,7 @@ Function: `readByQuery`
 <a id="vendors--get-vendor-email-template"></a>
 #### Get Vendor Email Template
 
-<a id="vendors--read-1-2"></a>
+<a id="vendors--read-1"></a>
 Function: `read`
 
 ```xml
@@ -6657,7 +6657,7 @@ Function: `read`
 <a id="vendors--get-vendor-visibility-object-definition"></a>
 #### Get Vendor Visibility Object Definition
 
-<a id="vendors--lookup-2-3"></a>
+<a id="vendors--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the vendor visibility object:
@@ -6678,7 +6678,7 @@ Function: `lookup`
 <a id="vendors--get-vendor-visibility"></a>
 #### Get Vendor Visibility
 
-<a id="vendors--read-2-3"></a>
+<a id="vendors--read-2"></a>
 Function: `read`
 
 ```xml

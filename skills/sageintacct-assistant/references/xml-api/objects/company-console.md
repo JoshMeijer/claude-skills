@@ -58,7 +58,7 @@ The Advanced Audit Trail subscription is required, and the user associated with 
 <a id="advanced-audit-trails--get-advanced-audit-trails-object-definition"></a>
 ### Get Advanced Audit Trails Object Definition
 
-<a id="advanced-audit-trails--lookup-2"></a>
+<a id="advanced-audit-trails--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the advanced audit trails object:
@@ -81,7 +81,7 @@ Function: `lookup`
 <a id="advanced-audit-trails--query-and-list-advanced-audit-trails"></a>
 ### Query and List Advanced Audit Trails
 
-<a id="advanced-audit-trails--query-2"></a>
+<a id="advanced-audit-trails--query"></a>
 Function: `query`
 
 > List the access mode, user ID, source, and access time for each advanced audit trail involving personal data, sorting from the newest entries to the oldest:
@@ -178,7 +178,7 @@ Function: `query`
 <a id="advanced-audit-trails--query-and-list-advanced-audit-trails-legacy"></a>
 ### Query and List Advanced Audit Trails (Legacy)
 
-<a id="advanced-audit-trails--readbyquery-2"></a>
+<a id="advanced-audit-trails--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -289,7 +289,7 @@ Release history:
 
 You should not mix `getAPISession` with other functions in one request.
 
-<a id="api-sessions--getapisession-2"></a>
+<a id="api-sessions--getapisession"></a>
 Function: `getAPISession`
 
 > Gets an API session for a company:
@@ -370,7 +370,7 @@ An attachment can be any document, such as a bill, spreadsheet, or tax form, tha
 
 Consider limiting the fields and `maxitems` returned because attachment data, which can be very large, is also sent.
 
-<a id="attachments--get_list-2"></a>
+<a id="attachments--get_list"></a>
 Function: `get_list`
 
 ```xml
@@ -426,7 +426,7 @@ Function: `get_list`
 
 Consider limiting the fields and `maxitems` returned because attachment data, which can be very large, is also sent.
 
-<a id="attachments--get-2"></a>
+<a id="attachments--get"></a>
 Function: `get`
 
 ```xml
@@ -448,7 +448,7 @@ Function: `get`
 <a id="attachments--create-attachment-legacy"></a>
 #### Create Attachment (Legacy)
 
-<a id="attachments--create_supdoc-2"></a>
+<a id="attachments--create_supdoc"></a>
 Function: `create_supdoc`
 
 ```xml
@@ -494,7 +494,7 @@ You can update the header information for the attachment, and you can provide ad
 
 You cannot use update to modify the contents of an existing attachment file directly. To work around this, [delete](#attachments--delete-attachment-legacy) the existing attachment and start over, providing the new attachment file in the [create](#attachments--create-attachment-legacy) call.
 
-<a id="attachments--update_supdoc-2"></a>
+<a id="attachments--update_supdoc"></a>
 Function: `update_supdoc`
 
 > Update the header information and provide an additional attachment file.
@@ -538,7 +538,7 @@ Function: `update_supdoc`
 <a id="attachments--delete-attachment-legacy"></a>
 #### Delete Attachment (Legacy)
 
-<a id="attachments--delete_supdoc-2"></a>
+<a id="attachments--delete_supdoc"></a>
 Function: `delete_supdoc`
 
 ```xml
@@ -560,7 +560,7 @@ Function: `delete_supdoc`
 <a id="attachments--list-attachment-folders-legacy"></a>
 #### List Attachment Folders (Legacy)
 
-<a id="attachments--get_list-1-2"></a>
+<a id="attachments--get_list-1"></a>
 Function: `get_list`
 
 ```xml
@@ -614,7 +614,7 @@ Function: `get_list`
 <a id="attachments--get-attachment-folder-by-name-legacy"></a>
 #### Get Attachment Folder by Name (Legacy)
 
-<a id="attachments--get-1-2"></a>
+<a id="attachments--get-1"></a>
 Function: `get`
 
 ```xml
@@ -636,7 +636,7 @@ Function: `get`
 <a id="attachments--create-attachment-folder-legacy"></a>
 #### Create Attachment Folder (Legacy)
 
-<a id="attachments--create_supdocfolder-2"></a>
+<a id="attachments--create_supdocfolder"></a>
 Function: `create_supdocfolder`
 
 ```xml
@@ -661,7 +661,7 @@ Function: `create_supdocfolder`
 <a id="attachments--update-attachment-folder-legacy"></a>
 #### Update Attachment Folder (Legacy)
 
-<a id="attachments--update_supdocfolder-2"></a>
+<a id="attachments--update_supdocfolder"></a>
 Function: `update_supdocfolder`
 
 ```xml
@@ -686,7 +686,7 @@ Function: `update_supdocfolder`
 <a id="attachments--delete-attachment-folder-legacy"></a>
 #### Delete Attachment Folder (Legacy)
 
-<a id="attachments--delete_supdocfolder-2"></a>
+<a id="attachments--delete_supdocfolder"></a>
 Function: `delete_supdocfolder`
 
 ```xml
@@ -727,7 +727,7 @@ To work with this object the user associated with the API session must have **Vi
 <a id="audit-trails--get-audit-history-object-definition"></a>
 #### Get Audit History Object Definition
 
-<a id="audit-trails--lookup-2"></a>
+<a id="audit-trails--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the audit history object:
@@ -752,7 +752,7 @@ Function: `lookup`
 
 Return information about multiple types of objects based on query parameters. This object is a combination of standard object record audit trail logs, custom object record audit trail logs, user access logs, and smart event log records. You can use this function to return the aggregated history for a given user, return all records of a specific object type, return all records across a defined period of time, and so forth.
 
-<a id="audit-trails--query-2"></a>
+<a id="audit-trails--query"></a>
 Function: `query`
 
 > List the object type, source ID, and user ID for each audit history log item where the user ID is `jjackson`:
@@ -794,7 +794,7 @@ Function: `query`
 
 Return information about multiple types of objects based on query parameters. This object is a combination of standard object record audit trail logs, custom object record audit trail logs, user access logs, and smart event log records. You can use this function to return the aggregated history for a given user, return all records of a specific object type, return all records across a defined period of time, and so forth.
 
-<a id="audit-trails--readbyquery-2"></a>
+<a id="audit-trails--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -837,7 +837,7 @@ Function: `readByQuery`
 
 Return information about field level changes for a given record. The user associated with the API session must have permission to view the object in the audit trail.
 
-<a id="audit-trails--getaudittrail-2"></a>
+<a id="audit-trails--getaudittrail"></a>
 Function: `getAuditTrail`
 
 > List all audit trail logs for the given record:
@@ -903,7 +903,7 @@ Function: `getAuditTrail`
 <a id="audit-trails--get-custom-object-record-audit-trail-logs-object-definition"></a>
 #### Get Custom Object Record Audit Trail Logs Object Definition
 
-<a id="audit-trails--lookup-1-2"></a>
+<a id="audit-trails--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the custom object record audit trail logs object:
@@ -926,7 +926,7 @@ Function: `lookup`
 <a id="audit-trails--query-and-list-custom-object-record-audit-trail-logs"></a>
 #### Query and List Custom Object Record Audit Trail Logs
 
-<a id="audit-trails--query-1-2"></a>
+<a id="audit-trails--query-1"></a>
 Function: `query`
 
 > List the record number, object ID, relevant user, and created-at time for custom objects (IDs greater than 10000):
@@ -1011,7 +1011,7 @@ Function: `query`
 <a id="audit-trails--query-and-list-custom-object-record-audit-trail-logs-legacy"></a>
 #### Query and List Custom Object Record Audit Trail Logs (Legacy)
 
-<a id="audit-trails--readbyquery-1-2"></a>
+<a id="audit-trails--readbyquery-1"></a>
 Function: `readByQuery`
 
 > List audit trail logs for all records on April 19, 2012:
@@ -1083,7 +1083,7 @@ Function: `readByQuery`
 
 > Please note this only works on **custom objects**.
 
-<a id="audit-trails--read-2"></a>
+<a id="audit-trails--read"></a>
 Function: `read`
 
 ```xml
@@ -1124,7 +1124,7 @@ A class group categorizes class dimension records, mainly for the purpose of str
 <a id="class-groups--get-class-group-object-definition"></a>
 ### Get Class Group Object Definition
 
-<a id="class-groups--lookup-2"></a>
+<a id="class-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the class group object:
@@ -1147,7 +1147,7 @@ Function: `lookup`
 <a id="class-groups--query-and-list-class-groups"></a>
 ### Query and List Class Groups
 
-<a id="class-groups--query-2"></a>
+<a id="class-groups--query"></a>
 Function: `query`
 
 > List the record number and name for each class group:
@@ -1180,7 +1180,7 @@ Function: `query`
 <a id="class-groups--query-and-list-class-groups-legacy"></a>
 ### Query and List Class Groups (Legacy)
 
-<a id="class-groups--readbyquery-2"></a>
+<a id="class-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1207,7 +1207,7 @@ Function: `readByQuery`
 <a id="class-groups--get-class-group"></a>
 ### Get Class Group
 
-<a id="class-groups--read-2"></a>
+<a id="class-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -1233,7 +1233,7 @@ Function: `read`
 <a id="class-groups--get-class-group-by-id"></a>
 ### Get Class Group by ID
 
-<a id="class-groups--readbyname-2"></a>
+<a id="class-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1274,7 +1274,7 @@ Class is a dimension that can be defined by the company and set on transactions 
 <a id="classes--get-class-object-definition"></a>
 ### Get Class Object Definition
 
-<a id="classes--lookup-2"></a>
+<a id="classes--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the class object:
@@ -1297,7 +1297,7 @@ Function: `lookup`
 <a id="classes--query-and-list-classes"></a>
 ### Query and List Classes
 
-<a id="classes--query-2"></a>
+<a id="classes--query"></a>
 Function: `query`
 
 > List the record number and class ID for each class:
@@ -1330,7 +1330,7 @@ Function: `query`
 <a id="classes--query-and-list-classes-legacy"></a>
 ### Query and List Classes (Legacy)
 
-<a id="classes--readbyquery-2"></a>
+<a id="classes--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1363,7 +1363,7 @@ Function: `readByQuery`
 <a id="classes--get-class"></a>
 ### Get Class
 
-<a id="classes--read-2"></a>
+<a id="classes--read"></a>
 Function: `read`
 
 ```xml
@@ -1389,7 +1389,7 @@ Function: `read`
 <a id="classes--get-class-by-id"></a>
 ### Get Class by ID
 
-<a id="classes--readbyname-2"></a>
+<a id="classes--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1415,7 +1415,7 @@ Function: `readByName`
 <a id="classes--create-class"></a>
 ### Create Class
 
-<a id="classes--create-2"></a>
+<a id="classes--create"></a>
 Function: `create`
 
 ```xml
@@ -1450,7 +1450,7 @@ Function: `create`
 <a id="classes--create-class-legacy"></a>
 ### Create Class (Legacy)
 
-<a id="classes--create_class-2"></a>
+<a id="classes--create_class"></a>
 Function: `create_class`
 
 ```xml
@@ -1484,7 +1484,7 @@ Function: `create_class`
 <a id="classes--update-class"></a>
 ### Update Class
 
-<a id="classes--update-2"></a>
+<a id="classes--update"></a>
 Function: `update`
 
 ```xml
@@ -1520,7 +1520,7 @@ Function: `update`
 <a id="classes--update-class-legacy"></a>
 ### Update Class (Legacy)
 
-<a id="classes--update_class-2"></a>
+<a id="classes--update_class"></a>
 Function: `update_class`
 
 ```xml
@@ -1553,7 +1553,7 @@ Function: `update_class`
 <a id="classes--delete-class"></a>
 ### Delete Class
 
-<a id="classes--delete-2"></a>
+<a id="classes--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1576,7 +1576,7 @@ Function: `delete`
 <a id="classes--delete-class-legacy"></a>
 ### Delete Class (Legacy)
 
-<a id="classes--delete_class-2"></a>
+<a id="classes--delete_class"></a>
 Function: `delete_class`
 
 ```xml
@@ -1610,7 +1610,7 @@ Contacts are shared across the entire system and are used to send event notifica
 <a id="contacts--get-contact-object-definition"></a>
 ### Get Contact Object Definition
 
-<a id="contacts--lookup-2"></a>
+<a id="contacts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contact object:
@@ -1633,7 +1633,7 @@ Function: `lookup`
 <a id="contacts--query-and-list-contacts"></a>
 ### Query and List Contacts
 
-<a id="contacts--query-2"></a>
+<a id="contacts--query"></a>
 Function: `query`
 
 > List the record number and name for each contact:
@@ -1666,7 +1666,7 @@ Function: `query`
 <a id="contacts--query-and-list-contacts-legacy"></a>
 ### Query and List Contacts (Legacy)
 
-<a id="contacts--readbyquery-2"></a>
+<a id="contacts--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1693,7 +1693,7 @@ Function: `readByQuery`
 <a id="contacts--get-contact"></a>
 ### Get Contact
 
-<a id="contacts--read-2"></a>
+<a id="contacts--read"></a>
 Function: `read`
 
 ```xml
@@ -1719,7 +1719,7 @@ Function: `read`
 <a id="contacts--get-contact-by-id"></a>
 ### Get Contact by ID
 
-<a id="contacts--readbyname-2"></a>
+<a id="contacts--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1745,7 +1745,7 @@ Function: `readByName`
 <a id="contacts--create-contact"></a>
 ### Create Contact
 
-<a id="contacts--create-2"></a>
+<a id="contacts--create"></a>
 Function: `create`
 
 ```xml
@@ -1809,7 +1809,7 @@ Function: `create`
 <a id="contacts--create-contact-legacy"></a>
 ### Create Contact (Legacy)
 
-<a id="contacts--create_contact-2"></a>
+<a id="contacts--create_contact"></a>
 Function: `create_contact`
 
 ```xml
@@ -1868,7 +1868,7 @@ Function: `create_contact`
 <a id="contacts--update-contact"></a>
 ### Update Contact
 
-<a id="contacts--update-2"></a>
+<a id="contacts--update"></a>
 Function: `update`
 
 ```xml
@@ -1933,7 +1933,7 @@ Function: `update`
 <a id="contacts--update-contact-legacy"></a>
 ### Update Contact (Legacy)
 
-<a id="contacts--update_contact-2"></a>
+<a id="contacts--update_contact"></a>
 Function: `update_contact`
 
 ```xml
@@ -1991,7 +1991,7 @@ Function: `update_contact`
 <a id="contacts--delete-contact"></a>
 ### Delete Contact
 
-<a id="contacts--delete-2"></a>
+<a id="contacts--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2014,7 +2014,7 @@ Function: `delete`
 <a id="contacts--delete-contact-legacy"></a>
 ### Delete Contact (Legacy)
 
-<a id="contacts--delete_contact-2"></a>
+<a id="contacts--delete_contact"></a>
 Function: `delete_contact`
 
 ```xml
@@ -2048,7 +2048,7 @@ Department groups categorize department dimension records, mainly for the purpos
 <a id="department-groups--get-department-group-object-definition"></a>
 ### Get Department Group Object Definition
 
-<a id="department-groups--lookup-2"></a>
+<a id="department-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the department group object:
@@ -2071,7 +2071,7 @@ Function: `lookup`
 <a id="department-groups--query-and-list-department-groups"></a>
 ### Query and List Department Groups
 
-<a id="department-groups--query-2"></a>
+<a id="department-groups--query"></a>
 Function: `query`
 
 > List the record number and ID for each department group:
@@ -2104,7 +2104,7 @@ Function: `query`
 <a id="department-groups--query-and-list-department-groups-legacy"></a>
 ### Query and List Department Groups (Legacy)
 
-<a id="department-groups--readbyquery-2"></a>
+<a id="department-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2131,7 +2131,7 @@ Function: `readByQuery`
 <a id="department-groups--get-department-group"></a>
 ### Get Department Group
 
-<a id="department-groups--read-2"></a>
+<a id="department-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -2157,7 +2157,7 @@ Function: `read`
 <a id="department-groups--get-department-group-by-id"></a>
 ### Get Department Group by ID
 
-<a id="department-groups--readbyname-2"></a>
+<a id="department-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2198,7 +2198,7 @@ Department is a dimension that can be defined by the company and set on transact
 <a id="departments--get-department-object-definition"></a>
 ### Get Department Object Definition
 
-<a id="departments--lookup-2"></a>
+<a id="departments--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the department object:
@@ -2221,7 +2221,7 @@ Function: `lookup`
 <a id="departments--query-and-list-departments"></a>
 ### Query and List Departments
 
-<a id="departments--query-2"></a>
+<a id="departments--query"></a>
 Function: `query`
 
 > List the department ID and the employee ID of the manager for each department:
@@ -2254,7 +2254,7 @@ Function: `query`
 <a id="departments--query-and-list-departments-legacy"></a>
 ### Query and List Departments (Legacy)
 
-<a id="departments--readbyquery-2"></a>
+<a id="departments--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2287,7 +2287,7 @@ Function: `readByQuery`
 <a id="departments--get-department"></a>
 ### Get Department
 
-<a id="departments--read-2"></a>
+<a id="departments--read"></a>
 Function: `read`
 
 ```xml
@@ -2313,7 +2313,7 @@ Function: `read`
 <a id="departments--get-department-by-id"></a>
 ### Get Department by ID
 
-<a id="departments--readbyname-2"></a>
+<a id="departments--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2339,7 +2339,7 @@ Function: `readByName`
 <a id="departments--create-department"></a>
 ### Create Department
 
-<a id="departments--create-2"></a>
+<a id="departments--create"></a>
 Function: `create`
 
 ```xml
@@ -2378,7 +2378,7 @@ Function: `create`
 <a id="departments--create-department-legacy"></a>
 ### Create Department (Legacy)
 
-<a id="departments--create_department-2"></a>
+<a id="departments--create_department"></a>
 Function: `create_department`
 
 ```xml
@@ -2413,7 +2413,7 @@ Function: `create_department`
 <a id="departments--update-department"></a>
 ### Update Department
 
-<a id="departments--update-2"></a>
+<a id="departments--update"></a>
 Function: `update`
 
 ```xml
@@ -2453,7 +2453,7 @@ Function: `update`
 <a id="departments--update-department-legacy"></a>
 ### Update Department (Legacy)
 
-<a id="departments--update_department-2"></a>
+<a id="departments--update_department"></a>
 Function: `update_department`
 
 ```xml
@@ -2487,7 +2487,7 @@ Function: `update_department`
 <a id="departments--delete-department"></a>
 ### Delete Department
 
-<a id="departments--delete-2"></a>
+<a id="departments--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2510,7 +2510,7 @@ Function: `delete`
 <a id="departments--delete-department-legacy"></a>
 ### Delete Department (Legacy)
 
-<a id="departments--delete_department-2"></a>
+<a id="departments--delete_department"></a>
 Function: `delete_department`
 
 ```xml
@@ -2546,7 +2546,7 @@ An entity can represent a business unit, company, division, legal entity, office
 <a id="entities--get-entity-object-definition"></a>
 ### Get Entity Object Definition
 
-<a id="entities--lookup-2"></a>
+<a id="entities--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the entity object:
@@ -2569,7 +2569,7 @@ Function: `lookup`
 <a id="entities--query-and-list-entities"></a>
 ### Query and List Entities
 
-<a id="entities--query-2"></a>
+<a id="entities--query"></a>
 Function: `query`
 
 > List the Location ID, record number, and name for each entity:
@@ -2603,7 +2603,7 @@ Function: `query`
 <a id="entities--query-and-list-entities-legacy"></a>
 ### Query and List Entities (Legacy)
 
-<a id="entities--readbyquery-2"></a>
+<a id="entities--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2636,7 +2636,7 @@ Function: `readByQuery`
 <a id="entities--get-entity"></a>
 ### Get Entity
 
-<a id="entities--read-2"></a>
+<a id="entities--read"></a>
 Function: `read`
 
 ```xml
@@ -2662,7 +2662,7 @@ Function: `read`
 <a id="entities--get-entity-by-id"></a>
 ### Get Entity by ID
 
-<a id="entities--readbyname-2"></a>
+<a id="entities--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2688,7 +2688,7 @@ Function: `readByName`
 <a id="entities--list-entity-details"></a>
 ### List Entity Details
 
-<a id="entities--readentitydetails-2"></a>
+<a id="entities--readentitydetails"></a>
 Function: `readEntityDetails`
 
 Provides information about the entities that the current user can access.
@@ -2757,7 +2757,7 @@ All companies have the `Intacct Daily Rate`, but this is hidden from the API lis
 <a id="exchange-rates--get-exchange-rate-type-object-definition"></a>
 #### Get Exchange Rate Type Object Definition
 
-<a id="exchange-rates--lookup-2"></a>
+<a id="exchange-rates--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the exchange rate type object:
@@ -2780,7 +2780,7 @@ Function: `lookup`
 <a id="exchange-rates--query-and-list-exchange-rate-types"></a>
 #### Query and List Exchange Rate Types
 
-<a id="exchange-rates--query-2"></a>
+<a id="exchange-rates--query"></a>
 Function: `query`
 
 > List the ID, name, and default behavior for each exchange rate type:
@@ -2814,7 +2814,7 @@ Function: `query`
 <a id="exchange-rates--query-and-list-exchange-rate-types-legacy"></a>
 #### Query and List Exchange Rate Types (Legacy)
 
-<a id="exchange-rates--readbyquery-2"></a>
+<a id="exchange-rates--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2841,7 +2841,7 @@ Function: `readByQuery`
 <a id="exchange-rates--get-exchange-rate-type"></a>
 #### Get Exchange Rate Type
 
-<a id="exchange-rates--read-2"></a>
+<a id="exchange-rates--read"></a>
 Function: `read`
 
 ```xml
@@ -2867,7 +2867,7 @@ Function: `read`
 <a id="exchange-rates--get-exchange-rate-type-by-id"></a>
 #### Get Exchange Rate Type by ID
 
-<a id="exchange-rates--readbyname-2"></a>
+<a id="exchange-rates--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2896,7 +2896,7 @@ Function: `readByName`
 <a id="exchange-rates--get-exchange-rate-object-definition"></a>
 #### Get Exchange Rate Object Definition
 
-<a id="exchange-rates--lookup-1-2"></a>
+<a id="exchange-rates--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the exchange rate object:
@@ -2919,7 +2919,7 @@ Function: `lookup`
 <a id="exchange-rates--query-and-list-exchange-rates"></a>
 #### Query and List Exchange Rates
 
-<a id="exchange-rates--query-1-2"></a>
+<a id="exchange-rates--query-1"></a>
 Function: `query`
 
 > List the record number and type name for each exchange rate:
@@ -2952,7 +2952,7 @@ Function: `query`
 <a id="exchange-rates--query-and-list-exchange-rates-legacy"></a>
 #### Query and List Exchange Rates (Legacy)
 
-<a id="exchange-rates--readbyquery-1-2"></a>
+<a id="exchange-rates--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2979,7 +2979,7 @@ Function: `readByQuery`
 <a id="exchange-rates--get-exchange-rate"></a>
 #### Get Exchange Rate
 
-<a id="exchange-rates--read-1-2"></a>
+<a id="exchange-rates--read-1"></a>
 Function: `read`
 
 ```xml
@@ -3005,7 +3005,7 @@ Function: `read`
 <a id="exchange-rates--create-exchange-rate"></a>
 #### Create Exchange Rate
 
-<a id="exchange-rates--create-2"></a>
+<a id="exchange-rates--create"></a>
 Function: `create`
 
 ```xml
@@ -3062,7 +3062,7 @@ Function: `create`
 <a id="exchange-rates--get-exchange-rate-entry-object-definition"></a>
 #### Get Exchange Rate Entry Object Definition
 
-<a id="exchange-rates--lookup-2-3"></a>
+<a id="exchange-rates--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the exchange rate entry object:
@@ -3085,7 +3085,7 @@ Function: `lookup`
 <a id="exchange-rates--query-and-list-exchange-rate-entries"></a>
 #### Query and List Exchange Rate Entries
 
-<a id="exchange-rates--query-2-3"></a>
+<a id="exchange-rates--query-2"></a>
 Function: `query`
 
 > List the record number and exchange rate for each entry:
@@ -3118,7 +3118,7 @@ Function: `query`
 <a id="exchange-rates--query-and-list-exchange-rate-entries-legacy"></a>
 #### Query and List Exchange Rate Entries (Legacy)
 
-<a id="exchange-rates--readbyquery-2-3"></a>
+<a id="exchange-rates--readbyquery-2"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3145,7 +3145,7 @@ Function: `readByQuery`
 <a id="exchange-rates--get-exchange-rate-entry"></a>
 #### Get Exchange Rate Entry
 
-<a id="exchange-rates--read-2-3"></a>
+<a id="exchange-rates--read-2"></a>
 Function: `read`
 
 ```xml
@@ -3188,7 +3188,7 @@ Provides basic financial setup information for a company such as its base curren
 
 Get financial setup of a company.
 
-<a id="financial-setup--getfinancialsetup-2"></a>
+<a id="financial-setup--getfinancialsetup"></a>
 Function: `getFinancialSetup`
 
 ```xml
@@ -3392,7 +3392,7 @@ Your company will use one type of configuration or the other—they cannot be us
 
 When you get an inter-entity configuration, the type of configuration (`ADVANCED` or `BASIC`) is returned via the `IEMAPPLAN` parameter in the response.
 
-<a id="iet-configuration--read-2"></a>
+<a id="iet-configuration--read"></a>
 Function: `read`
 
 > Get the inter-entity configuration object using the record number, which is always 1.
@@ -3587,7 +3587,7 @@ With advanced configuration, you create a relationship between two entities usin
 - To update an existing relationship, supply both sides of the relationship as ENTITYACCTOVERRIDE objects and include their record numbers and the other fields. You must provide two ENTITYACCTOVERRIDE objects, so if you only want to change one, include the changed one and the one you want to keep. Any existing relationships not specified in the update remain untouched.
 - To delete an existing relationship, provide both involved ENTITYACCTOVERRIDE objects by record number and provide null values for both accounts for either one of these two objects (it doesn’t matter which one—the entire relationship will be delted).
 
-<a id="iet-configuration--update-2"></a>
+<a id="iet-configuration--update"></a>
 Function: `update`
 
 > Provides a new default account and updates an existing default account for a company with basic configuration:
@@ -3740,7 +3740,7 @@ Function: `update`
 <a id="iet-configuration--delete-inter-entity-account-default"></a>
 ### Delete Inter-Entity Account Default
 
-<a id="iet-configuration--delete-2"></a>
+<a id="iet-configuration--delete"></a>
 Function: `delete`
 
 ```xml
@@ -3763,7 +3763,7 @@ Function: `delete`
 <a id="iet-configuration--delete-inter-entity-account-override"></a>
 ### Delete Inter-Entity Account Override
 
-<a id="iet-configuration--delete-1-2"></a>
+<a id="iet-configuration--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -3801,7 +3801,7 @@ Location groups categorize location dimension records, mainly for the purpose of
 <a id="location-groups--get-location-group-object-definition"></a>
 ### Get Location Group Object Definition
 
-<a id="location-groups--lookup-2"></a>
+<a id="location-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the location group object:
@@ -3824,7 +3824,7 @@ Function: `lookup`
 <a id="location-groups--query-and-list-location-groups"></a>
 ### Query and List Location Groups
 
-<a id="location-groups--query-2"></a>
+<a id="location-groups--query"></a>
 Function: `query`
 
 > List the ID, name, and record number for each location group:
@@ -3858,7 +3858,7 @@ Function: `query`
 <a id="location-groups--query-and-list-location-groups-legacy"></a>
 ### Query and List Location Groups (Legacy)
 
-<a id="location-groups--readbyquery-2"></a>
+<a id="location-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3885,7 +3885,7 @@ Function: `readByQuery`
 <a id="location-groups--get-location-group"></a>
 ### Get Location Group
 
-<a id="location-groups--read-2"></a>
+<a id="location-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -3911,7 +3911,7 @@ Function: `read`
 <a id="location-groups--get-location-group-by-id"></a>
 ### Get Location Group by ID
 
-<a id="location-groups--readbyname-2"></a>
+<a id="location-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3952,7 +3952,7 @@ Location is a dimension that can be defined by the company and set on transactio
 <a id="locations--get-location-object-definition"></a>
 ### Get Location Object Definition
 
-<a id="locations--lookup-2"></a>
+<a id="locations--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the location object:
@@ -3975,7 +3975,7 @@ Function: `lookup`
 <a id="locations--query-and-list-locations"></a>
 ### Query and List Locations
 
-<a id="locations--readbyquery-2"></a>
+<a id="locations--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4008,7 +4008,7 @@ Function: `readByQuery`
 <a id="locations--get-location"></a>
 ### Get Location
 
-<a id="locations--read-2"></a>
+<a id="locations--read"></a>
 Function: `read`
 
 ```xml
@@ -4034,7 +4034,7 @@ Function: `read`
 <a id="locations--get-location-by-id"></a>
 ### Get Location by ID
 
-<a id="locations--readbyname-2"></a>
+<a id="locations--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -4060,7 +4060,7 @@ Function: `readByName`
 <a id="locations--create-location"></a>
 ### Create Location
 
-<a id="locations--create-2"></a>
+<a id="locations--create"></a>
 Function: `create`
 
 ```xml
@@ -4123,7 +4123,7 @@ Function: `create`
 <a id="locations--create-location-legacy"></a>
 ### Create Location (Legacy)
 
-<a id="locations--create_location-2"></a>
+<a id="locations--create_location"></a>
 Function: `create_location`
 
 ```xml
@@ -4176,7 +4176,7 @@ Function: `create_location`
 <a id="locations--update-location"></a>
 ### Update Location
 
-<a id="locations--update-2"></a>
+<a id="locations--update"></a>
 Function: `update`
 
 ```xml
@@ -4240,7 +4240,7 @@ Function: `update`
 <a id="locations--update-location-legacy"></a>
 ### Update Location (Legacy)
 
-<a id="locations--update_location-2"></a>
+<a id="locations--update_location"></a>
 Function: `update_location`
 
 ```xml
@@ -4292,7 +4292,7 @@ Function: `update_location`
 <a id="locations--delete-location"></a>
 ### Delete Location
 
-<a id="locations--delete-2"></a>
+<a id="locations--delete"></a>
 Function: `delete`
 
 ```xml
@@ -4315,7 +4315,7 @@ Function: `delete`
 <a id="locations--delete-location-legacy"></a>
 ### Delete Location (Legacy)
 
-<a id="locations--delete_location-2"></a>
+<a id="locations--delete_location"></a>
 Function: `delete_location`
 
 ```xml
@@ -4355,7 +4355,7 @@ Usage information for [queue administration](https://www.intacct.com/ia/docs/en_
 <a id="queue-administration--get-offline-job-object-definition"></a>
 ### Get Offline Job Object Definition
 
-<a id="queue-administration--lookup-2"></a>
+<a id="queue-administration--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the offline job object:
@@ -4378,7 +4378,7 @@ Function: `lookup`
 <a id="queue-administration--query-and-list-offline-jobs"></a>
 ### Query and List Offline Jobs
 
-<a id="queue-administration--query-2"></a>
+<a id="queue-administration--query"></a>
 Function: `query`
 
 > List the job ID, job type, and time queued for each offline job:
@@ -4450,7 +4450,7 @@ Function: `query`
 <a id="queue-administration--query-and-list-offline-jobs-legacy"></a>
 ### Query and List Offline Jobs (Legacy)
 
-<a id="queue-administration--readbyquery-2"></a>
+<a id="queue-administration--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4522,7 +4522,7 @@ Function: `readByQuery`
 <a id="queue-administration--get-offline-job"></a>
 ### Get Offline Job
 
-<a id="queue-administration--read-2"></a>
+<a id="queue-administration--read"></a>
 Function: `read`
 
 ```xml
@@ -4548,7 +4548,7 @@ Function: `read`
 <a id="queue-administration--prioritize-a-job"></a>
 ### Prioritize a Job
 
-<a id="queue-administration--promote-2"></a>
+<a id="queue-administration--promote"></a>
 Function: `promote`
 
 ```xml
@@ -4572,7 +4572,7 @@ Function: `promote`
 <a id="queue-administration--cancel-a-job"></a>
 ### Cancel a Job
 
-<a id="queue-administration--cancel-2"></a>
+<a id="queue-administration--cancel"></a>
 Function: `cancel`
 
 ```xml
@@ -4614,7 +4614,7 @@ Permissions to perform certain tasks can be assigned to specific roles, and role
 <a id="roles--get-role-object-definition"></a>
 #### Get Role Object Definition
 
-<a id="roles--lookup-2"></a>
+<a id="roles--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the role object:
@@ -4637,7 +4637,7 @@ Function: `lookup`
 <a id="roles--query-and-list-roles"></a>
 #### Query and List Roles
 
-<a id="roles--query-2"></a>
+<a id="roles--query"></a>
 Function: `query`
 
 > List the record number and name of each role:
@@ -4689,7 +4689,7 @@ Function: `query`
 <a id="roles--query-and-list-roles-legacy"></a>
 #### Query and List Roles (Legacy)
 
-<a id="roles--readbyquery-2"></a>
+<a id="roles--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4716,7 +4716,7 @@ Function: `readByQuery`
 <a id="roles--get-role"></a>
 #### Get Role
 
-<a id="roles--read-2"></a>
+<a id="roles--read"></a>
 Function: `read`
 
 ```xml
@@ -4742,7 +4742,7 @@ Function: `read`
 <a id="roles--get-role-by-id"></a>
 #### Get Role by ID
 
-<a id="roles--readbyname-2"></a>
+<a id="roles--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -4771,7 +4771,7 @@ Function: `readByName`
 <a id="roles--get-role-assignment-object-definition"></a>
 #### Get Role Assignment Object Definition
 
-<a id="roles--lookup-1-2"></a>
+<a id="roles--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the role assignment object:
@@ -4794,7 +4794,7 @@ Function: `lookup`
 <a id="roles--query-and-list-role-assignments"></a>
 #### Query and List Role Assignments
 
-<a id="roles--query-1-2"></a>
+<a id="roles--query-1"></a>
 Function: `query`
 
 > List the record number and role name for each role assignment:
@@ -4827,7 +4827,7 @@ Function: `query`
 <a id="roles--query-and-list-role-assignments-legacy"></a>
 #### Query and List Role Assignments (Legacy)
 
-<a id="roles--readbyquery-1-2"></a>
+<a id="roles--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4854,7 +4854,7 @@ Function: `readByQuery`
 <a id="roles--get-role-assignment"></a>
 #### Get Role Assignment
 
-<a id="roles--read-1-2"></a>
+<a id="roles--read-1"></a>
 Function: `read`
 
 ```xml
@@ -4883,7 +4883,7 @@ Function: `read`
 <a id="roles--get-role-permission-object-definition"></a>
 #### Get Role Permission Object Definition
 
-<a id="roles--lookup-2-3"></a>
+<a id="roles--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the role permission object for Sage Intacct subscriptions:
@@ -4906,7 +4906,7 @@ Function: `lookup`
 <a id="roles--query-and-list-role-permissions"></a>
 #### Query and List Role Permissions
 
-<a id="roles--query-2-3"></a>
+<a id="roles--query-2"></a>
 Function: `query`
 
 > List the record number, policy name, and role name for each role permission:
@@ -4953,7 +4953,7 @@ Function: `query`
 <a id="roles--query-and-list-role-permissions-legacy"></a>
 #### Query and List Role Permissions (Legacy)
 
-<a id="roles--readbyquery-2-3"></a>
+<a id="roles--readbyquery-2"></a>
 Function: `readByQuery`
 
 > List role permissions for Sage Intacct subscriptions:
@@ -4993,7 +4993,7 @@ Function: `readByQuery`
 <a id="roles--get-role-permission"></a>
 #### Get Role Permission
 
-<a id="roles--read-2-3"></a>
+<a id="roles--read-2"></a>
 Function: `read`
 
 > Get role permission for Sage Intacct subscriptions:
@@ -5046,7 +5046,7 @@ Subscriptions are the financial management applications offered by Sage Intacct.
 <a id="subscriptions--list-subscriptions"></a>
 ### List Subscriptions
 
-<a id="subscriptions--get_applications-2"></a>
+<a id="subscriptions--get_applications"></a>
 Function: `get_applications`
 
 ```xml
@@ -5075,7 +5075,7 @@ Function: `get_applications`
 <a id="subscriptions--list-subscription-preferences"></a>
 ### List Subscription Preferences
 
-<a id="subscriptions--get_companyprefs-2"></a>
+<a id="subscriptions--get_companyprefs"></a>
 Function: `get_companyprefs`
 
 > Lists preferences for the General Ledger application:
@@ -5158,7 +5158,7 @@ User groups organize users into groups, which are useful for managing many users
 <a id="user-groups--get-user-group-object-definition"></a>
 #### Get User Group Object Definition
 
-<a id="user-groups--lookup-2"></a>
+<a id="user-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the user group object:
@@ -5181,7 +5181,7 @@ Function: `lookup`
 <a id="user-groups--query-and-list-user-groups"></a>
 #### Query and List User Groups
 
-<a id="user-groups--query-2"></a>
+<a id="user-groups--query"></a>
 Function: `query`
 
 > List the record number, name, and description for each user group:
@@ -5215,7 +5215,7 @@ Function: `query`
 <a id="user-groups--query-and-list-user-groups-legacy"></a>
 #### Query and List User Groups (Legacy)
 
-<a id="user-groups--readbyquery-2"></a>
+<a id="user-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5242,7 +5242,7 @@ Function: `readByQuery`
 <a id="user-groups--get-user-group"></a>
 #### Get User Group
 
-<a id="user-groups--read-2"></a>
+<a id="user-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -5271,7 +5271,7 @@ Function: `read`
 <a id="user-groups--get-user-group-member-object-definition"></a>
 #### Get User Group Member Object Definition
 
-<a id="user-groups--lookup-1-2"></a>
+<a id="user-groups--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the user group member object:
@@ -5294,7 +5294,7 @@ Function: `lookup`
 <a id="user-groups--query-and-list-user-group-members"></a>
 #### Query and List User Group Members
 
-<a id="user-groups--query-1-2"></a>
+<a id="user-groups--query-1"></a>
 Function: `query`
 
 > For each user group member, provide its record number and the user key and login ID of the associated user:
@@ -5328,7 +5328,7 @@ Function: `query`
 <a id="user-groups--query-and-list-user-group-members-legacy"></a>
 #### Query and List User Group Members (Legacy)
 
-<a id="user-groups--readbyquery-1-2"></a>
+<a id="user-groups--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5355,7 +5355,7 @@ Function: `readByQuery`
 <a id="user-groups--get-user-group-member"></a>
 #### Get User Group Member
 
-<a id="user-groups--read-1-2"></a>
+<a id="user-groups--read-1"></a>
 Function: `read`
 
 ```xml
@@ -5384,7 +5384,7 @@ Function: `read`
 <a id="user-groups--get-user-group-role-assignment-object-definition"></a>
 #### Get User Group Role Assignment Object Definition
 
-<a id="user-groups--lookup-2-3"></a>
+<a id="user-groups--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the user group role assignment object:
@@ -5407,7 +5407,7 @@ Function: `lookup`
 <a id="user-groups--query-and-list-user-group-role-assignments"></a>
 #### Query and List User Group Role Assignments
 
-<a id="user-groups--query-2-3"></a>
+<a id="user-groups--query-2"></a>
 Function: `query`
 
 > List the record number and name for each user group role assignment:
@@ -5453,7 +5453,7 @@ Function: `query`
 <a id="user-groups--query-and-list-user-group-role-assignments-legacy"></a>
 #### Query and List User Group Role Assignments (Legacy)
 
-<a id="user-groups--readbyquery-2-3"></a>
+<a id="user-groups--readbyquery-2"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5480,7 +5480,7 @@ Function: `readByQuery`
 <a id="user-groups--get-user-group-role-assignment"></a>
 #### Get User Group Role Assignment
 
-<a id="user-groups--read-2-3"></a>
+<a id="user-groups--read-2"></a>
 Function: `read`
 
 ```xml
@@ -5524,7 +5524,7 @@ Any user that needs to sign into Sage Intacct must have a unique user record.
 <a id="users--get-user-object-definition"></a>
 #### Get User Object Definition
 
-<a id="users--lookup-2"></a>
+<a id="users--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the user object:
@@ -5547,7 +5547,7 @@ Function: `lookup`
 <a id="users--query-and-list-users"></a>
 #### Query and List Users
 
-<a id="users--query-2"></a>
+<a id="users--query"></a>
 Function: `query`
 
 > List the login ID and record number of each active user:
@@ -5586,7 +5586,7 @@ Function: `query`
 <a id="users--query-and-list-users-legacy"></a>
 #### Query and List Users (Legacy)
 
-<a id="users--readbyquery-2"></a>
+<a id="users--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5619,7 +5619,7 @@ Function: `readByQuery`
 <a id="users--get-user"></a>
 #### Get User
 
-<a id="users--read-2"></a>
+<a id="users--read"></a>
 Function: `read`
 
 ```xml
@@ -5645,7 +5645,7 @@ Function: `read`
 <a id="users--get-user-by-id"></a>
 #### Get User by ID
 
-<a id="users--readbyname-2"></a>
+<a id="users--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5675,7 +5675,7 @@ When a user is created, it must be associated with a contact. The new user can b
 
 > Only users with Administrative privileges can create users.
 
-<a id="users--create-2"></a>
+<a id="users--create"></a>
 Function: `create`
 
 > Create a user with a new contact:
@@ -5765,7 +5765,7 @@ When updating a user, you must include the original restrictions for entities, d
 
 > Only users with Administrative privileges can update users. Contact info cannot be changed from the API.
 
-<a id="users--update-2"></a>
+<a id="users--update"></a>
 Function: `update`
 
 > Update a user’s location and department restrictions:
@@ -5817,7 +5817,7 @@ Function: `update`
 
 Only users with Administrative privileges can delete users. Also, a user with Administrative privileges cannot be deleted—you can use the `update` function to set the user status to `inactive` instead.
 
-<a id="users--delete-2"></a>
+<a id="users--delete"></a>
 Function: `delete`
 
 ```xml
@@ -5847,7 +5847,7 @@ Effective permissions mean either the specific user-defined permissions or the e
 
 > This function is only available to users who have the Company -> Lists -> Users -> Permissions -> View permission.
 
-<a id="users--getuserpermissions-2"></a>
+<a id="users--getuserpermissions"></a>
 Function: `getUserPermissions`
 
 ```xml
@@ -5892,7 +5892,7 @@ The `rights` value is a pipe-delimited list you will need to parse appropriately
 <a id="users--get-user-permission-object-definition"></a>
 #### Get User Permission Object Definition
 
-<a id="users--lookup-1-2"></a>
+<a id="users--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the user permission object:
@@ -5915,7 +5915,7 @@ Function: `lookup`
 <a id="users--query-and-list-user-permissions"></a>
 #### Query and List User Permissions
 
-<a id="users--query-1-2"></a>
+<a id="users--query-1"></a>
 Function: `query`
 
 > List the record number and user login ID for each user permission:
@@ -5948,7 +5948,7 @@ Function: `query`
 <a id="users--query-and-list-user-permissions-legacy"></a>
 #### Query and List User Permissions (Legacy)
 
-<a id="users--readbyquery-1-2"></a>
+<a id="users--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5975,7 +5975,7 @@ Function: `readByQuery`
 <a id="users--get-user-permission"></a>
 #### Get User Permission
 
-<a id="users--read-1-2"></a>
+<a id="users--read-1"></a>
 Function: `read`
 
 ```xml
@@ -6004,7 +6004,7 @@ Function: `read`
 <a id="users--get-user-role-assignment-object-definition"></a>
 #### Get User Role Assignment Object Definition
 
-<a id="users--lookup-2-3"></a>
+<a id="users--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the user role assignment object:
@@ -6027,7 +6027,7 @@ Function: `lookup`
 <a id="users--query-and-list-user-role-assignments"></a>
 #### Query and List User Role Assignments
 
-<a id="users--query-2-3"></a>
+<a id="users--query-2"></a>
 Function: `query`
 
 > List the user ID and role name for each user role for `tsmith`:
@@ -6066,7 +6066,7 @@ Function: `query`
 <a id="users--query-and-list-user-role-assignments-legacy"></a>
 #### Query and List User Role Assignments (Legacy)
 
-<a id="users--readbyquery-2-3"></a>
+<a id="users--readbyquery-2"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6093,7 +6093,7 @@ Function: `readByQuery`
 <a id="users--get-user-role-assignment"></a>
 #### Get User Role Assignment
 
-<a id="users--read-2-3"></a>
+<a id="users--read-2"></a>
 Function: `read`
 
 ```xml
@@ -6121,7 +6121,7 @@ Function: `read`
 
 > Only users with Administrative privileges can create user role assignments.
 
-<a id="users--create-1-2"></a>
+<a id="users--create-1"></a>
 Function: `create`
 
 ```xml
@@ -6152,7 +6152,7 @@ Function: `create`
 <a id="users--get-computed-user-role-assignment-object-definition"></a>
 #### Get Computed User Role Assignment Object Definition
 
-<a id="users--lookup-3-2"></a>
+<a id="users--lookup-3"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the computed user role assignment object:
@@ -6177,7 +6177,7 @@ Function: `lookup`
 
 User role assignments can either come from direct assignment on the user, or inherited from a user group.
 
-<a id="users--query-3-2"></a>
+<a id="users--query-3"></a>
 Function: `query`
 
 > List the user login ID and role name for each computed role assignment:
@@ -6212,7 +6212,7 @@ Function: `query`
 
 User role assignments can either come from direct assignment on the user, or inherited from a user group.
 
-<a id="users--readbyquery-3-2"></a>
+<a id="users--readbyquery-3"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6241,7 +6241,7 @@ Function: `readByQuery`
 
 User role assignments can either come from direct assignment on the user, or inherited from a user group.
 
-<a id="users--read-3-2"></a>
+<a id="users--read-3"></a>
 Function: `read`
 
 ```xml
@@ -6270,7 +6270,7 @@ Function: `read`
 <a id="users--get-user-restriction-object-definition"></a>
 #### Get User Restriction Object Definition
 
-<a id="users--lookup-4-2"></a>
+<a id="users--lookup-4"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the user restriction object:
@@ -6293,7 +6293,7 @@ Function: `lookup`
 <a id="users--query-and-list-user-restrictions"></a>
 #### Query and List User Restrictions
 
-<a id="users--query-4-2"></a>
+<a id="users--query-4"></a>
 Function: `query`
 
 > List the login ID and user type for each user restriction:
@@ -6370,7 +6370,7 @@ Users can be restricted to given departments or locations.
 
 > Only users with Administrative privileges can list or get user restrictions.
 
-<a id="users--readbyquery-4-2"></a>
+<a id="users--readbyquery-4"></a>
 Function: `readByQuery`
 
 > List user restrictions for all users:
@@ -6450,7 +6450,7 @@ A user restriction object is returned for each user found. If a user’s access 
 <a id="users--get-user-restrictions"></a>
 #### Get User Restrictions
 
-<a id="users--read-4-2"></a>
+<a id="users--read-4"></a>
 Function: `read`
 
 ```xml
@@ -6481,7 +6481,7 @@ Function: `read`
 
 Returns the user preferences for date and time format, locale, timezone (GMT offset), and time clock (12 or 24). The locale, such as en_US, is also returned.
 
-<a id="users--readuserformatting-2"></a>
+<a id="users--readuserformatting"></a>
 Function: `readUserFormatting`
 
 ```xml

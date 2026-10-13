@@ -38,7 +38,7 @@ You can also use account allocation groups to set up the order for sequential pr
 <a id="account-allocation-groups--get-account-allocation-group-object-definition"></a>
 ### Get Account Allocation Group Object Definition
 
-<a id="account-allocation-groups--lookup-2"></a>
+<a id="account-allocation-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the account allocation group object:
@@ -61,7 +61,7 @@ Function: `lookup`
 <a id="account-allocation-groups--query-and-list-account-allocation-groups"></a>
 ### Query and List Account Allocation Groups
 
-<a id="account-allocation-groups--query-2"></a>
+<a id="account-allocation-groups--query"></a>
 Function: `query`
 
 > List the record number, name, and group error processing method in use for each account allocation group:
@@ -95,7 +95,7 @@ Function: `query`
 <a id="account-allocation-groups--query-and-list-account-allocation-groups-legacy"></a>
 ### Query and List Account Allocation Groups (Legacy)
 
-<a id="account-allocation-groups--readbyquery-2"></a>
+<a id="account-allocation-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -128,7 +128,7 @@ Function: `readByQuery`
 <a id="account-allocation-groups--get-account-allocation-group"></a>
 ### Get Account Allocation Group
 
-<a id="account-allocation-groups--read-2"></a>
+<a id="account-allocation-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -152,7 +152,7 @@ Function: `read`
 <a id="account-allocation-groups--create-account-allocation-group"></a>
 ### Create Account Allocation Group
 
-<a id="account-allocation-groups--create-2"></a>
+<a id="account-allocation-groups--create"></a>
 Function: `create`
 
 ```xml
@@ -201,7 +201,7 @@ Function: `create`
 <a id="account-allocation-groups--update-account-allocation-group"></a>
 ### Update Account Allocation Group
 
-<a id="account-allocation-groups--update-2"></a>
+<a id="account-allocation-groups--update"></a>
 Function: `update`
 
 > Building on the example above that creates an allocation group, updates the array of members to include the original ones plus a new one (Allocation-3):
@@ -254,7 +254,7 @@ Function: `update`
 <a id="account-allocation-groups--delete-account-allocation-group"></a>
 ### Delete Account Allocation Group
 
-<a id="account-allocation-groups--delete-2"></a>
+<a id="account-allocation-groups--delete"></a>
 Function: `delete`
 
 ```xml
@@ -303,7 +303,7 @@ Your company must have a subscription for Dynamic Allocations, and you need the 
 <a id="account-allocations--get-account-allocation-definition-object-definition"></a>
 #### Get Account Allocation Definition Object Definition
 
-<a id="account-allocations--lookup-2"></a>
+<a id="account-allocations--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the account allocation definition object:
@@ -326,7 +326,7 @@ Function: `lookup`
 <a id="account-allocations--query-and-list-account-allocation-definitions"></a>
 #### Query and List Account Allocation Definitions
 
-<a id="account-allocations--query-2"></a>
+<a id="account-allocations--query"></a>
 Function: `query`
 
 > List the record number and ID for each account allocation definition:
@@ -359,7 +359,7 @@ Function: `query`
 <a id="account-allocations--query-and-list-account-allocation-definitions-legacy"></a>
 #### Query and List Account Allocation Definitions (Legacy)
 
-<a id="account-allocations--readbyquery-2"></a>
+<a id="account-allocations--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -393,7 +393,7 @@ Function: `readByQuery`
 <a id="account-allocations--get-account-allocation-definition"></a>
 #### Get Account Allocation Definition
 
-<a id="account-allocations--read-2"></a>
+<a id="account-allocations--read"></a>
 Function: `read`
 
 ```xml
@@ -424,7 +424,7 @@ Release history:
 | 2022 Release 3 | Added "Per dimension value" allocation type for FOCUSEMPLOYEE and FOCUSPROJECT. |
 | 2020 Release 3 | Added ALLOWALLOCATION, EXCH_RATE_TYPE_ID |
 
-<a id="account-allocations--create-2"></a>
+<a id="account-allocations--create"></a>
 Function: `create`
 
 > Distributes expenses for the month to the departments that generate revenue:
@@ -619,7 +619,7 @@ Release history:
 | 2022 Release 3 | Added "Per dimension value" allocation type for FOCUSEMPLOYEE and FOCUSPROJECT. |
 | 2020 Release 3 | Added ALLOWALLOCATION, EXCH_RATE_TYPE_ID |
 
-<a id="account-allocations--update-2"></a>
+<a id="account-allocations--update"></a>
 Function: `update`
 
 > Change the account allocation such that negative basis lines are excluded:
@@ -772,7 +772,7 @@ When choosing dimensions for filtering to the target, you can override dimension
 <a id="account-allocations--delete-account-allocation-definition"></a>
 #### Delete Account Allocation Definition
 
-<a id="account-allocations--delete-2"></a>
+<a id="account-allocations--delete"></a>
 Function: `delete`
 
 ```xml
@@ -798,7 +798,7 @@ Function: `delete`
 <a id="account-allocations--get-account-allocation-run-object-definition"></a>
 #### Get Account Allocation Run Object Definition
 
-<a id="account-allocations--lookup-1-2"></a>
+<a id="account-allocations--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the account allocation run object:
@@ -821,7 +821,7 @@ Function: `lookup`
 <a id="account-allocations--query-and-list-account-allocation-runs"></a>
 #### Query and List Account Allocation Runs
 
-<a id="account-allocations--query-1-2"></a>
+<a id="account-allocations--query-1"></a>
 Function: `query`
 
 > List the record number, GL allocation, and posting date for each run:
@@ -855,7 +855,7 @@ Function: `query`
 <a id="account-allocations--query-and-list-account-allocation-runs-legacy"></a>
 #### Query and List Account Allocation Runs (Legacy)
 
-<a id="account-allocations--readbyquery-1-2"></a>
+<a id="account-allocations--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -886,7 +886,7 @@ Function: `readByQuery`
 <a id="account-allocations--get-account-allocation-run"></a>
 #### Get Account Allocation Run
 
-<a id="account-allocations--read-1-2"></a>
+<a id="account-allocations--read-1"></a>
 Function: `read`
 
 ```xml
@@ -910,7 +910,7 @@ Function: `read`
 <a id="account-allocations--create-account-allocation-run"></a>
 #### Create Account Allocation Run
 
-<a id="account-allocations--create-1-2"></a>
+<a id="account-allocations--create-1"></a>
 Function: `create`
 
 ```xml
@@ -970,7 +970,7 @@ Release history:
 
 Account balances include a starting balance, for period/net change amounts, ending balance, and adjustments together with all book and dimension combinations. Parent-child hierarchy dimensions can be included as well. This function provides information in a readable format similar to that provided by the Sage Intacct Account Balance standard report.
 
-<a id="account-balances--get_accountbalances-2"></a>
+<a id="account-balances--get_accountbalances"></a>
 Function: `get_accountbalances`
 
 > List balances of an account for a reporting period:
@@ -1118,7 +1118,7 @@ Release history:
 
 This function lists account balances grouped by any dimensions (standard or user-defined) such as location and department. You can use this function to return budget data or both actual and budget data.
 
-<a id="account-balances--get_accountbalancesbydimensions-2"></a>
+<a id="account-balances--get_accountbalancesbydimensions"></a>
 Function: `get_accountbalancesbydimensions`
 
 > List balances for a range of accounts for a date range and group by location and department:
@@ -1343,7 +1343,7 @@ If your Account Balances by Dimensions report contains a lot of data, or if proc
 </readReport>
 ```
 
-<a id="account-balances--readreport-2"></a>
+<a id="account-balances--readreport"></a>
 Function: `readReport`
 
 | Name | Required | Type | Description |
@@ -1390,7 +1390,7 @@ You use the reportId in a `readReport` response to retrieve the status of a repo
 </readMore>
 ```
 
-<a id="account-balances--readmore-2"></a>
+<a id="account-balances--readmore"></a>
 Function: `readMore`
 
 <a id="account-balances--parameters-3"></a>
@@ -1413,7 +1413,7 @@ When you retrieve the last page of a report, the system deletes the entire repor
 <a id="account-balances--get-raw-account-balance-object-definition"></a>
 ### Get Raw Account Balance Object Definition
 
-<a id="account-balances--lookup-2"></a>
+<a id="account-balances--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the raw account balance object:
@@ -1448,7 +1448,7 @@ There can be performance issues as well, since filtering–let’s say for a sin
 
 > **Note:** Using the legacy function above is recommended instead—it provides information in a summarized format similar to that provided by the Sage Intacct Account Balance standard report and Financial Report Writer.
 
-<a id="account-balances--readbyquery-2"></a>
+<a id="account-balances--readbyquery"></a>
 Function: `readByQuery`
 
 > List raw account balances for the given period:
@@ -1565,7 +1565,7 @@ Account group purposes let you filter account groups according to why you might 
 <a id="account-group-purposes--get-account-group-purpose-object-definition"></a>
 ### Get Account Group Purpose Object Definition
 
-<a id="account-group-purposes--lookup-2"></a>
+<a id="account-group-purposes--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the account group purpose object:
@@ -1588,7 +1588,7 @@ Function: `lookup`
 <a id="account-group-purposes--query-and-list-account-group-purposes"></a>
 ### Query and List Account Group Purposes
 
-<a id="account-group-purposes--query-2"></a>
+<a id="account-group-purposes--query"></a>
 Function: `query`
 
 > List the record number and name for each account group purpose:
@@ -1621,7 +1621,7 @@ Function: `query`
 <a id="account-group-purposes--query-and-list-account-group-purposes-legacy"></a>
 ### Query and List Account Group Purposes (Legacy)
 
-<a id="account-group-purposes--readbyquery-2"></a>
+<a id="account-group-purposes--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1652,7 +1652,7 @@ Function: `readByQuery`
 <a id="account-group-purposes--get-account-group-purpose"></a>
 ### Get Account Group Purpose
 
-<a id="account-group-purposes--read-2"></a>
+<a id="account-group-purposes--read"></a>
 Function: `read`
 
 ```xml
@@ -1678,7 +1678,7 @@ Function: `read`
 <a id="account-group-purposes--get-account-group-purpose-by-id"></a>
 ### Get Account Group Purpose by ID
 
-<a id="account-group-purposes--readbyname-2"></a>
+<a id="account-group-purposes--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1704,7 +1704,7 @@ Function: `readByName`
 <a id="account-group-purposes--create-account-group-purpose"></a>
 ### Create Account Group Purpose
 
-<a id="account-group-purposes--create-2"></a>
+<a id="account-group-purposes--create"></a>
 Function: `create`
 
 ```xml
@@ -1734,7 +1734,7 @@ Function: `create`
 <a id="account-group-purposes--update-account-group-purpose"></a>
 ### Update Account Group Purpose
 
-<a id="account-group-purposes--update-2"></a>
+<a id="account-group-purposes--update"></a>
 Function: `update`
 
 ```xml
@@ -1765,7 +1765,7 @@ Function: `update`
 <a id="account-group-purposes--delete-account-group-purpose"></a>
 ### Delete Account Group Purpose
 
-<a id="account-group-purposes--delete-2"></a>
+<a id="account-group-purposes--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1808,7 +1808,7 @@ Every account must be part of an account group if its data is to be used in a ba
 <a id="account-groups--get-account-group-object-definition"></a>
 #### Get Account Group Object Definition
 
-<a id="account-groups--lookup-2"></a>
+<a id="account-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the account group object:
@@ -1831,7 +1831,7 @@ Function: `lookup`
 <a id="account-groups--query-and-list-account-groups"></a>
 #### Query and List Account Groups
 
-<a id="account-groups--query-2"></a>
+<a id="account-groups--query"></a>
 Function: `query`
 
 > List the record number and name for each account group:
@@ -1864,7 +1864,7 @@ Function: `query`
 <a id="account-groups--query-and-list-account-groups-legacy"></a>
 #### Query and List Account Groups (Legacy)
 
-<a id="account-groups--readbyquery-2"></a>
+<a id="account-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1891,7 +1891,7 @@ Function: `readByQuery`
 <a id="account-groups--get-account-group"></a>
 #### Get Account Group
 
-<a id="account-groups--read-2"></a>
+<a id="account-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -1916,7 +1916,7 @@ Function: `read`
 <a id="account-groups--get-account-group-by-id"></a>
 #### Get Account Group by ID
 
-<a id="account-groups--readbyname-2"></a>
+<a id="account-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1948,7 +1948,7 @@ Release history:
 |---|---|
 | 2019 Release 4 | Added GLACCTGRPPURPOSEID, ACCTGROUPMANAGER |
 
-<a id="account-groups--create-2"></a>
+<a id="account-groups--create"></a>
 Function: `create`
 
 ```xml
@@ -2086,7 +2086,7 @@ Release history:
 
 The members, based on the structure type of the group, must also be passed with any update.
 
-<a id="account-groups--update-2"></a>
+<a id="account-groups--update"></a>
 Function: `update`
 
 ```xml
@@ -2192,7 +2192,7 @@ Function: `update`
 <a id="account-groups--delete-account-group"></a>
 #### Delete Account Group
 
-<a id="account-groups--delete-2"></a>
+<a id="account-groups--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2218,7 +2218,7 @@ Function: `delete`
 <a id="account-groups--get-account-group-hierarchy-object-definition"></a>
 #### Get Account Group Hierarchy Object Definition
 
-<a id="account-groups--lookup-1-2"></a>
+<a id="account-groups--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the account group hierarchy object:
@@ -2241,7 +2241,7 @@ Function: `lookup`
 <a id="account-groups--query-and-list-account-group-hierarchy"></a>
 #### Query and List Account Group Hierarchy
 
-<a id="account-groups--query-1-2"></a>
+<a id="account-groups--query-1"></a>
 Function: `query`
 
 > List the entire hierarchy of the Revenue group:
@@ -2300,7 +2300,7 @@ Function: `query`
 <a id="account-groups--query-and-list-account-group-hierarchy-legacy"></a>
 #### Query and List Account Group Hierarchy (Legacy)
 
-<a id="account-groups--readbyquery-1-2"></a>
+<a id="account-groups--readbyquery-1"></a>
 Function: `readByQuery`
 
 > List the entire hierarchy of the Assets group:
@@ -2367,7 +2367,7 @@ The chart of accounts is the base for users tracking financial data.
 <a id="accounts--get-account-object-definition"></a>
 #### Get Account Object Definition
 
-<a id="accounts--lookup-2"></a>
+<a id="accounts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the account object:
@@ -2390,7 +2390,7 @@ Function: `lookup`
 <a id="accounts--query-and-list-accounts"></a>
 #### Query and List Accounts
 
-<a id="accounts--query-2"></a>
+<a id="accounts--query"></a>
 Function: `query`
 
 > List the record number, account number, and account type for each income account:
@@ -2430,7 +2430,7 @@ Function: `query`
 <a id="accounts--query-and-list-accounts-legacy"></a>
 #### Query and List Accounts (Legacy)
 
-<a id="accounts--readbyquery-2"></a>
+<a id="accounts--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2463,7 +2463,7 @@ Function: `readByQuery`
 <a id="accounts--get-account"></a>
 #### Get Account
 
-<a id="accounts--read-2"></a>
+<a id="accounts--read"></a>
 Function: `read`
 
 ```xml
@@ -2489,7 +2489,7 @@ Function: `read`
 <a id="accounts--get-account-by-id"></a>
 #### Get Account by ID
 
-<a id="accounts--readbyname-2"></a>
+<a id="accounts--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2515,7 +2515,7 @@ Function: `readByName`
 <a id="accounts--create-account"></a>
 #### Create Account
 
-<a id="accounts--create-2"></a>
+<a id="accounts--create"></a>
 Function: `create`
 
 ```xml
@@ -2565,7 +2565,7 @@ Function: `create`
 <a id="accounts--create-account-legacy"></a>
 #### Create Account (Legacy)
 
-<a id="accounts--create_glaccount-2"></a>
+<a id="accounts--create_glaccount"></a>
 Function: `create_glaccount`
 
 ```xml
@@ -2614,7 +2614,7 @@ Function: `create_glaccount`
 <a id="accounts--update-account"></a>
 #### Update Account
 
-<a id="accounts--update-2"></a>
+<a id="accounts--update"></a>
 Function: `update`
 
 ```xml
@@ -2665,7 +2665,7 @@ Function: `update`
 <a id="accounts--update-account-legacy"></a>
 #### Update Account (Legacy)
 
-<a id="accounts--update_glaccount-2"></a>
+<a id="accounts--update_glaccount"></a>
 Function: `update_glaccount`
 
 ```xml
@@ -2713,7 +2713,7 @@ Function: `update_glaccount`
 <a id="accounts--delete-account"></a>
 #### Delete Account
 
-<a id="accounts--delete-2"></a>
+<a id="accounts--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2736,7 +2736,7 @@ Function: `delete`
 <a id="accounts--delete-account-legacy"></a>
 #### Delete Account (Legacy)
 
-<a id="accounts--delete_glaccount-2"></a>
+<a id="accounts--delete_glaccount"></a>
 Function: `delete_glaccount`
 
 ```xml
@@ -2758,7 +2758,7 @@ Function: `delete_glaccount`
 <a id="accounts--get-entity-level-account-title-object-definition"></a>
 #### Get Entity Level Account Title Object Definition
 
-<a id="accounts--lookup-1-2"></a>
+<a id="accounts--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the entity level account title object:
@@ -2781,7 +2781,7 @@ Function: `lookup`
 <a id="accounts--query-and-list-entity-level-account-titles"></a>
 #### Query and List Entity Level Account Titles
 
-<a id="accounts--query-1-2"></a>
+<a id="accounts--query-1"></a>
 Function: `query`
 
 > List the record number, account number, and location ID for each entity level account title:
@@ -2815,7 +2815,7 @@ Function: `query`
 <a id="accounts--query-and-list-entity-level-account-titles-legacy"></a>
 #### Query and List Entity Level Account Titles (Legacy)
 
-<a id="accounts--readbyquery-1-2"></a>
+<a id="accounts--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2842,7 +2842,7 @@ Function: `readByQuery`
 <a id="accounts--get-entity-level-account-title"></a>
 #### Get Entity Level Account Title
 
-<a id="accounts--read-1-2"></a>
+<a id="accounts--read-1"></a>
 Function: `read`
 
 ```xml
@@ -2890,7 +2890,7 @@ You create a budget and its details by creating a GLBUDGETHEADER object with own
 <a id="budgets--get-budget-object-definition"></a>
 #### Get Budget Object Definition
 
-<a id="budgets--lookup-2"></a>
+<a id="budgets--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the budget object:
@@ -2913,7 +2913,7 @@ Function: `lookup`
 <a id="budgets--query-and-list-budgets"></a>
 #### Query and List Budgets
 
-<a id="budgets--query-2"></a>
+<a id="budgets--query"></a>
 Function: `query`
 
 > List the record number and budget ID for each budget:
@@ -2952,7 +2952,7 @@ Release history:
 |---|---|
 | 2019 Release 3 | Added support for GLBUDGETHEADER |
 
-<a id="budgets--readbyquery-2"></a>
+<a id="budgets--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2979,7 +2979,7 @@ Function: `readByQuery`
 <a id="budgets--get-budget"></a>
 #### Get Budget
 
-<a id="budgets--read-2"></a>
+<a id="budgets--read"></a>
 Function: `read`
 
 ```xml
@@ -3005,7 +3005,7 @@ Function: `read`
 <a id="budgets--get-budget-by-id"></a>
 #### Get Budget by ID
 
-<a id="budgets--readbyname-2"></a>
+<a id="budgets--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3031,7 +3031,7 @@ Function: `readByName`
 <a id="budgets--create-budget"></a>
 #### Create Budget
 
-<a id="budgets--create-2"></a>
+<a id="budgets--create"></a>
 Function: `create`
 
 ```xml
@@ -3096,7 +3096,7 @@ Function: `create`
 
 Use this function to add new budget details or modify existing budget details. To delete existing budget details, use the [delete](#budgets--delete-budget-detail) function.
 
-<a id="budgets--update-2"></a>
+<a id="budgets--update"></a>
 Function: `update`
 
 > Add one new budget detail and modify an existing one:
@@ -3163,7 +3163,7 @@ You can add new details or modify fields on existing details.
 <a id="budgets--delete-budget"></a>
 #### Delete Budget
 
-<a id="budgets--delete-2"></a>
+<a id="budgets--delete"></a>
 Function: `delete`
 
 ```xml
@@ -3189,7 +3189,7 @@ Function: `delete`
 <a id="budgets--get-budget-detail-object-definition"></a>
 #### Get Budget Detail Object Definition
 
-<a id="budgets--lookup-1-2"></a>
+<a id="budgets--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the budget detail object:
@@ -3212,7 +3212,7 @@ Function: `lookup`
 <a id="budgets--query-and-list-budget-details"></a>
 #### Query and List Budget Details
 
-<a id="budgets--query-1-2"></a>
+<a id="budgets--query-1"></a>
 Function: `query`
 
 > List the record number and budget ID for each budget detail for the `Proj-05-Budget` budget:
@@ -3251,7 +3251,7 @@ Function: `query`
 <a id="budgets--query-and-list-budget-details-legacy-query"></a>
 #### Query and List Budget Details (Legacy Query)
 
-<a id="budgets--readbyquery-1-2"></a>
+<a id="budgets--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3278,7 +3278,7 @@ Function: `readByQuery`
 <a id="budgets--get-budget-detail"></a>
 #### Get Budget Detail
 
-<a id="budgets--read-1-2"></a>
+<a id="budgets--read-1"></a>
 Function: `read`
 
 ```xml
@@ -3306,7 +3306,7 @@ Function: `read`
 
 If deleting a budget detail will result in an empty period, that budget detail will not be deleted. Instead, its value is set to zero (and its record number is retained).
 
-<a id="budgets--delete-1-2"></a>
+<a id="budgets--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -3355,7 +3355,7 @@ Alternatively, for dimensional line-level detail with GL entries, consider gathe
 <a id="general-ledger-detail--get-general-ledger-detail-object-definition"></a>
 ### Get General Ledger Detail Object Definition
 
-<a id="general-ledger-detail--lookup-2"></a>
+<a id="general-ledger-detail--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the general ledger detail object:
@@ -3378,7 +3378,7 @@ Function: `lookup`
 <a id="general-ledger-detail--query-and-list-general-ledger-details"></a>
 ### Query and List General Ledger Details
 
-<a id="general-ledger-detail--query-2"></a>
+<a id="general-ledger-detail--query"></a>
 Function: `query`
 
 > List the record number and module key for each General Ledger Detail for Cash Management:
@@ -3445,7 +3445,7 @@ Function: `query`
 <a id="general-ledger-detail--query-and-list-general-ledger-details-legacy"></a>
 ### Query and List General Ledger Details (Legacy)
 
-<a id="general-ledger-detail--readbyquery-2"></a>
+<a id="general-ledger-detail--readbyquery"></a>
 Function: `readByQuery`
 
 > List General Ledger Details:
@@ -3514,7 +3514,7 @@ When writing journal entries, be sure to balance the general ledger by posting o
 <a id="journal-entries--get-journal-entry-object-definition"></a>
 #### Get Journal Entry Object Definition
 
-<a id="journal-entries--lookup-2"></a>
+<a id="journal-entries--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the journal entry object:
@@ -3537,7 +3537,7 @@ Function: `lookup`
 <a id="journal-entries--query-and-list-journal-entries"></a>
 #### Query and List Journal Entries
 
-<a id="journal-entries--query-2"></a>
+<a id="journal-entries--query"></a>
 Function: `query`
 
 > List the record number, description, and date for each journal entry:
@@ -3600,7 +3600,7 @@ Function: `query`
 
 > List journal entries:
 
-<a id="journal-entries--readbyquery-2"></a>
+<a id="journal-entries--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3690,7 +3690,7 @@ Function: `readByQuery`
 <a id="journal-entries--get-journal-entry"></a>
 #### Get Journal Entry
 
-<a id="journal-entries--read-2"></a>
+<a id="journal-entries--read"></a>
 Function: `read`
 
 ```xml
@@ -3726,7 +3726,7 @@ Release history:
 | 2019 Release 4 | Added TASKID |
 | 2019 Release 3 | Added TAXIMPLICATIONS, VATVENDORID, VATCUSTOMERID, VATCONTACTID, TAXENTRIES |
 
-<a id="journal-entries--create-2"></a>
+<a id="journal-entries--create"></a>
 Function: `create`
 
 > Create a journal entry with a reversal:
@@ -3951,7 +3951,7 @@ Release history:
 | 2020 Release 2 | Added costtypeid |
 | 2019 Release 4 | Added taskid |
 
-<a id="journal-entries--create_gltransaction-2"></a>
+<a id="journal-entries--create_gltransaction"></a>
 Function: `create_gltransaction`
 
 ```xml
@@ -4072,7 +4072,7 @@ Release history:
 
 To add an entry, supply all the original entries along with the new one. To delete an entry, supply only the entries you want to keep.
 
-<a id="journal-entries--update-2"></a>
+<a id="journal-entries--update"></a>
 Function: `update`
 
 ```xml
@@ -4201,7 +4201,7 @@ Specifies a tax rate (defined in the system) and a manually calculated tax for t
 <a id="journal-entries--delete-journal-entry"></a>
 #### Delete Journal Entry
 
-<a id="journal-entries--delete-2"></a>
+<a id="journal-entries--delete"></a>
 Function: `delete`
 
 ```xml
@@ -4224,7 +4224,7 @@ Function: `delete`
 <a id="journal-entries--delete-journal-entry-legacy"></a>
 #### Delete Journal Entry (Legacy)
 
-<a id="journal-entries--delete_gltransaction-2"></a>
+<a id="journal-entries--delete_gltransaction"></a>
 Function: `delete_gltransaction`
 
 ```xml
@@ -4246,7 +4246,7 @@ Function: `delete_gltransaction`
 <a id="journal-entries--get-journal-entry-line-object-definition"></a>
 #### Get Journal Entry Line Object Definition
 
-<a id="journal-entries--lookup-1-2"></a>
+<a id="journal-entries--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the journal entry line object:
@@ -4269,7 +4269,7 @@ Function: `lookup`
 <a id="journal-entries--query-and-list-journal-entry-lines"></a>
 #### Query and List Journal Entry Lines
 
-<a id="journal-entries--query-1-2"></a>
+<a id="journal-entries--query-1"></a>
 Function: `query`
 
 > List the record number, batch number, and amount for each journal entry line:
@@ -4322,7 +4322,7 @@ Function: `query`
 <a id="journal-entries--query-and-list-journal-entry-lines-legacy"></a>
 #### Query and List Journal Entry Lines (Legacy)
 
-<a id="journal-entries--readbyquery-1-2"></a>
+<a id="journal-entries--readbyquery-1"></a>
 Function: `readByQuery`
 
 > Lists journal entry lines:
@@ -4403,7 +4403,7 @@ Function: `readByQuery`
 <a id="journal-entries--get-journal-entry-line"></a>
 #### Get Journal Entry Line
 
-<a id="journal-entries--read-1-2"></a>
+<a id="journal-entries--read-1"></a>
 Function: `read`
 
 ```xml
@@ -4453,7 +4453,7 @@ Your company must have a subscription for Dynamic Allocations, and you need the 
 <a id="recurring-account-allocations--get-recurring-account-allocation-object-definition"></a>
 ### Get Recurring Account Allocation Object Definition
 
-<a id="recurring-account-allocations--lookup-2"></a>
+<a id="recurring-account-allocations--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the recurring account allocation object:
@@ -4476,7 +4476,7 @@ Function: `lookup`
 <a id="recurring-account-allocations--query-and-list-recurring-account-allocations"></a>
 ### Query and List Recurring Account Allocations
 
-<a id="recurring-account-allocations--query-2"></a>
+<a id="recurring-account-allocations--query"></a>
 Function: `query`
 
 > List the record number and plan name for each recurring account allocation:
@@ -4509,7 +4509,7 @@ Function: `query`
 <a id="recurring-account-allocations--query-and-list-recurring-account-allocations-legacy"></a>
 ### Query and List Recurring Account Allocations (Legacy)
 
-<a id="recurring-account-allocations--readbyquery-2"></a>
+<a id="recurring-account-allocations--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4536,7 +4536,7 @@ Function: `readByQuery`
 <a id="recurring-account-allocations--get-recurring-account-allocation"></a>
 ### Get Recurring Account Allocation
 
-<a id="recurring-account-allocations--read-2"></a>
+<a id="recurring-account-allocations--read"></a>
 Function: `read`
 
 ```xml
@@ -4562,7 +4562,7 @@ Function: `read`
 <a id="recurring-account-allocations--create-recurring-account-allocation"></a>
 ### Create Recurring Account Allocation
 
-<a id="recurring-account-allocations--create-2"></a>
+<a id="recurring-account-allocations--create"></a>
 Function: `create`
 
 > Creates an ongoing recurring account allocation that runs every month:
@@ -4625,7 +4625,7 @@ Function: `create`
 <a id="recurring-account-allocations--delete-recurring-account-allocation"></a>
 ### Delete Recurring Account Allocation
 
-<a id="recurring-account-allocations--delete-2"></a>
+<a id="recurring-account-allocations--delete"></a>
 Function: `delete`
 
 ```xml
@@ -4665,7 +4665,7 @@ They limit the information on the report to specific time ranges.
 <a id="reporting-periods--get-reporting-period-object-definition"></a>
 ### Get Reporting Period Object Definition
 
-<a id="reporting-periods--lookup-2"></a>
+<a id="reporting-periods--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the budgetable period object:
@@ -4688,7 +4688,7 @@ Function: `lookup`
 <a id="reporting-periods--query-and-list-reporting-periods"></a>
 ### Query and List Reporting Periods
 
-<a id="reporting-periods--query-2"></a>
+<a id="reporting-periods--query"></a>
 Function: `query`
 
 > List the record number and name for each budgetable period:
@@ -4728,7 +4728,7 @@ Function: `query`
 <a id="reporting-periods--query-and-list-reporting-periods-legacy"></a>
 ### Query and List Reporting Periods (Legacy)
 
-<a id="reporting-periods--readbyquery-2"></a>
+<a id="reporting-periods--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4761,7 +4761,7 @@ Function: `readByQuery`
 <a id="reporting-periods--get-reporting-period"></a>
 ### Get Reporting Period
 
-<a id="reporting-periods--read-2"></a>
+<a id="reporting-periods--read"></a>
 Function: `read`
 
 ```xml
@@ -4787,7 +4787,7 @@ Function: `read`
 <a id="reporting-periods--get-reporting-period-by-id"></a>
 ### Get Reporting Period by ID
 
-<a id="reporting-periods--readbyname-2"></a>
+<a id="reporting-periods--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -4813,7 +4813,7 @@ Function: `readByName`
 <a id="reporting-periods--create-reporting-period"></a>
 ### Create Reporting Period
 
-<a id="reporting-periods--create-2"></a>
+<a id="reporting-periods--create"></a>
 Function: `create`
 
 ```xml
@@ -4854,7 +4854,7 @@ Function: `create`
 <a id="reporting-periods--update-reporting-period"></a>
 ### Update Reporting Period
 
-<a id="reporting-periods--update-2"></a>
+<a id="reporting-periods--update"></a>
 Function: `update`
 
 ```xml
@@ -4896,7 +4896,7 @@ Function: `update`
 <a id="reporting-periods--delete-reporting-period"></a>
 ### Delete Reporting Period
 
-<a id="reporting-periods--delete-2"></a>
+<a id="reporting-periods--delete"></a>
 Function: `delete`
 
 ```xml
@@ -4934,7 +4934,7 @@ Statistical accounts are used for tracking non-financial data.
 <a id="stat-accounts--get-statistical-account-object-definition"></a>
 ### Get Statistical Account Object Definition
 
-<a id="stat-accounts--lookup-2"></a>
+<a id="stat-accounts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the statistical account object:
@@ -4957,7 +4957,7 @@ Function: `lookup`
 <a id="stat-accounts--query-and-list-statistical-accounts"></a>
 ### Query and List Statistical Accounts
 
-<a id="stat-accounts--query-2"></a>
+<a id="stat-accounts--query"></a>
 Function: `query`
 
 > List the record number, account number, and title for each statistical account:
@@ -4991,7 +4991,7 @@ Function: `query`
 <a id="stat-accounts--query-and-list-statistical-accounts-legacy"></a>
 ### Query and List Statistical Accounts (Legacy)
 
-<a id="stat-accounts--readbyquery-2"></a>
+<a id="stat-accounts--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5018,7 +5018,7 @@ Function: `readByQuery`
 <a id="stat-accounts--get-statistical-account"></a>
 ### Get Statistical Account
 
-<a id="stat-accounts--read-2"></a>
+<a id="stat-accounts--read"></a>
 Function: `read`
 
 ```xml
@@ -5044,7 +5044,7 @@ Function: `read`
 <a id="stat-accounts--get-statistical-account-by-id"></a>
 ### Get Statistical Account by ID
 
-<a id="stat-accounts--readbyname-2"></a>
+<a id="stat-accounts--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5070,7 +5070,7 @@ Function: `readByName`
 <a id="stat-accounts--create-statistical-account"></a>
 ### Create Statistical Account
 
-<a id="stat-accounts--create-2"></a>
+<a id="stat-accounts--create"></a>
 Function: `create`
 
 ```xml
@@ -5115,7 +5115,7 @@ Function: `create`
 <a id="stat-accounts--create-statistical-account-legacy"></a>
 ### Create Statistical Account (Legacy)
 
-<a id="stat-accounts--create_statglaccount-2"></a>
+<a id="stat-accounts--create_statglaccount"></a>
 Function: `create_statglaccount`
 
 ```xml
@@ -5159,7 +5159,7 @@ Function: `create_statglaccount`
 <a id="stat-accounts--update-statistical-account"></a>
 ### Update Statistical Account
 
-<a id="stat-accounts--update-2"></a>
+<a id="stat-accounts--update"></a>
 Function: `update`
 
 ```xml
@@ -5205,7 +5205,7 @@ Function: `update`
 <a id="stat-accounts--update-statistical-account-legacy"></a>
 ### Update Statistical Account (Legacy)
 
-<a id="stat-accounts--update_statglaccount-2"></a>
+<a id="stat-accounts--update_statglaccount"></a>
 Function: `update_statglaccount`
 
 ```xml
@@ -5248,7 +5248,7 @@ Function: `update_statglaccount`
 <a id="stat-accounts--delete-statistical-account"></a>
 ### Delete Statistical Account
 
-<a id="stat-accounts--delete-2"></a>
+<a id="stat-accounts--delete"></a>
 Function: `delete`
 
 ```xml
@@ -5271,7 +5271,7 @@ Function: `delete`
 <a id="stat-accounts--delete-statistical-account-legacy"></a>
 ### Delete Statistical Account (Legacy)
 
-<a id="stat-accounts--delete_statglaccount-2"></a>
+<a id="stat-accounts--delete_statglaccount"></a>
 Function: `delete_statglaccount`
 
 ```xml
@@ -5308,7 +5308,7 @@ Statistical journals hold all non-financial transactions.
 <a id="stat-journal-entries--get-statistical-journal-entry-object-definition"></a>
 #### Get Statistical Journal Entry Object Definition
 
-<a id="stat-journal-entries--lookup-2"></a>
+<a id="stat-journal-entries--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the statistical journal entry object:
@@ -5331,7 +5331,7 @@ Function: `lookup`
 <a id="stat-journal-entries--query-and-list-statistical-journal-entries"></a>
 #### Query and List Statistical Journal Entries
 
-<a id="stat-journal-entries--query-2"></a>
+<a id="stat-journal-entries--query"></a>
 Function: `query`
 
 > List the record number, batch number, and description for each statistical journal with the given symbol (SHC):
@@ -5371,7 +5371,7 @@ Function: `query`
 <a id="stat-journal-entries--query-and-list-statistical-journal-entries-legacy"></a>
 #### Query and List Statistical Journal Entries (Legacy)
 
-<a id="stat-journal-entries--readbyquery-2"></a>
+<a id="stat-journal-entries--readbyquery"></a>
 Function: `readByQuery`
 
 > List entries for the statistical journal with the given symbol (SHC):
@@ -5406,7 +5406,7 @@ Function: `readByQuery`
 <a id="stat-journal-entries--get-statistical-journal-entry"></a>
 #### Get Statistical Journal Entry
 
-<a id="stat-journal-entries--read-2"></a>
+<a id="stat-journal-entries--read"></a>
 Function: `read`
 
 ```xml
@@ -5439,7 +5439,7 @@ Release history:
 | 2020 Release 2 | Added COSTTYPEID |
 | 2019 Release 4 | Added TASKID |
 
-<a id="stat-journal-entries--create-2"></a>
+<a id="stat-journal-entries--create"></a>
 Function: `create`
 
 ```xml
@@ -5539,7 +5539,7 @@ Release history:
 | 2020 Release 2 | Added costtypeid |
 | 2019 Release 4 | Added taskid |
 
-<a id="stat-journal-entries--create_statgltransaction-2"></a>
+<a id="stat-journal-entries--create_statgltransaction"></a>
 Function: `create_statgltransaction`
 
 ```xml
@@ -5633,7 +5633,7 @@ Release history:
 | 2020 Release 2 | Added COSTTYPEID |
 | 2019 Release 4 | Added TASKID |
 
-<a id="stat-journal-entries--update-2"></a>
+<a id="stat-journal-entries--update"></a>
 Function: `update`
 
 ```xml
@@ -5725,7 +5725,7 @@ Function: `update`
 <a id="stat-journal-entries--delete-statistical-journal-entry"></a>
 #### Delete Statistical Journal Entry
 
-<a id="stat-journal-entries--delete-2"></a>
+<a id="stat-journal-entries--delete"></a>
 Function: `delete`
 
 ```xml
@@ -5751,7 +5751,7 @@ Function: `delete`
 <a id="stat-journal-entries--get-statistical-journal-entry-line-object-definition"></a>
 #### Get Statistical Journal Entry Line Object Definition
 
-<a id="stat-journal-entries--lookup-1-2"></a>
+<a id="stat-journal-entries--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the statistical journal entry line object:
@@ -5774,7 +5774,7 @@ Function: `lookup`
 <a id="stat-journal-entries--query-and-list-statistical-journal-entry-lines"></a>
 #### Query and List Statistical Journal Entry Lines
 
-<a id="stat-journal-entries--query-1-2"></a>
+<a id="stat-journal-entries--query-1"></a>
 Function: `query`
 
 > Lists information for journal entry lines for the statistical journal whose record number is 1819:
@@ -5814,7 +5814,7 @@ Function: `query`
 <a id="stat-journal-entries--query-and-list-statistical-journal-entry-lines-legacy"></a>
 #### Query and List Statistical Journal Entry Lines (Legacy)
 
-<a id="stat-journal-entries--readbyquery-1-2"></a>
+<a id="stat-journal-entries--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5841,7 +5841,7 @@ Function: `readByQuery`
 <a id="stat-journal-entries--get-statistical-journal-entry-line"></a>
 #### Get Statistical Journal Entry Line
 
-<a id="stat-journal-entries--read-1-2"></a>
+<a id="stat-journal-entries--read-1"></a>
 Function: `read`
 
 ```xml
@@ -5889,7 +5889,7 @@ If you want to automatically pull updated source balances and distribute them ac
 <a id="transaction-allocations--get-transaction-allocation-object-definition"></a>
 #### Get Transaction Allocation Object Definition
 
-<a id="transaction-allocations--lookup-2"></a>
+<a id="transaction-allocations--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the transaction allocation object:
@@ -5912,7 +5912,7 @@ Function: `lookup`
 <a id="transaction-allocations--query-and-list-transaction-allocations"></a>
 #### Query and List Transaction Allocations
 
-<a id="transaction-allocations--query-2"></a>
+<a id="transaction-allocations--query"></a>
 Function: `query`
 
 > List the record number, description, and status for each transaction allocation:
@@ -5946,7 +5946,7 @@ Function: `query`
 <a id="transaction-allocations--query-and-list-transaction-allocations-legacy"></a>
 #### Query and List Transaction Allocations (Legacy)
 
-<a id="transaction-allocations--readbyquery-2"></a>
+<a id="transaction-allocations--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5973,7 +5973,7 @@ Function: `readByQuery`
 <a id="transaction-allocations--get-transaction-allocation"></a>
 #### Get Transaction Allocation
 
-<a id="transaction-allocations--read-2"></a>
+<a id="transaction-allocations--read"></a>
 Function: `read`
 
 ```xml
@@ -5999,7 +5999,7 @@ Function: `read`
 <a id="transaction-allocations--get-transaction-allocation-by-id"></a>
 #### Get Transaction Allocation by ID
 
-<a id="transaction-allocations--readbyname-2"></a>
+<a id="transaction-allocations--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -6031,7 +6031,7 @@ Release history:
 |---|---|
 | 2019 Release 4 | Added Fixed amount with over/under logic for TYPE, added VALUETYPE |
 
-<a id="transaction-allocations--create-2"></a>
+<a id="transaction-allocations--create"></a>
 Function: `create`
 
 > Allocates expenses for locations using percentages:
@@ -6156,7 +6156,7 @@ Release history:
 |---|---|
 | 2019 Release 4 | Added Fixed amount with over/under logic for TYPE, added VALUETYPE |
 
-<a id="transaction-allocations--update-2"></a>
+<a id="transaction-allocations--update"></a>
 Function: `update`
 
 ```xml
@@ -6242,7 +6242,7 @@ Function: `update`
 <a id="transaction-allocations--delete-transaction-allocation"></a>
 #### Delete Transaction Allocation
 
-<a id="transaction-allocations--delete-2"></a>
+<a id="transaction-allocations--delete"></a>
 Function: `delete`
 
 ```xml
@@ -6268,7 +6268,7 @@ Function: `delete`
 <a id="transaction-allocations--get-transaction-allocation-line-object-definition"></a>
 #### Get Transaction Allocation Line Object Definition
 
-<a id="transaction-allocations--lookup-1-2"></a>
+<a id="transaction-allocations--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the transaction allocation line object:
@@ -6291,7 +6291,7 @@ Function: `lookup`
 <a id="transaction-allocations--query-and-list-allocation-lines"></a>
 #### Query and List Allocation Lines
 
-<a id="transaction-allocations--query-1-2"></a>
+<a id="transaction-allocations--query-1"></a>
 Function: `query`
 
 > List the record number, value, and the record number of the owning allocation for each entry:
@@ -6325,7 +6325,7 @@ Function: `query`
 <a id="transaction-allocations--query-and-list-allocation-lines-legacy"></a>
 #### Query and List Allocation Lines (Legacy)
 
-<a id="transaction-allocations--readbyquery-1-2"></a>
+<a id="transaction-allocations--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6352,7 +6352,7 @@ Function: `readByQuery`
 <a id="transaction-allocations--get-allocation-line"></a>
 #### Get Allocation Line
 
-<a id="transaction-allocations--read-1-2"></a>
+<a id="transaction-allocations--read-1"></a>
 Function: `read`
 
 ```xml
@@ -6400,7 +6400,7 @@ Release history:
 | 2019 Release 4 | Added taskid, taskid_subs |
 | 2023 Release 1 | Added debitcreditbalance option |
 
-<a id="trial-balances--get_trialbalance-2"></a>
+<a id="trial-balances--get_trialbalance"></a>
 Function: `get_trialbalance`
 
 > List trial balances for a reporting period, including debit and credit starting balances:

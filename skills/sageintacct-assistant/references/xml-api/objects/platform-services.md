@@ -26,7 +26,7 @@ A Platform Services application is an XML wrapper around a group of objects and 
 <a id="applications--get-platform-services-application-object-definition"></a>
 ### Get Platform Services Application Object Definition
 
-<a id="applications--lookup-2"></a>
+<a id="applications--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Platform Services application object:
@@ -49,7 +49,7 @@ Function: `lookup`
 <a id="applications--query-and-list-platform-services-applications"></a>
 ### Query and List Platform Services Applications
 
-<a id="applications--query-2"></a>
+<a id="applications--query"></a>
 Function: `query`
 
 > List the record number and application name for each Platform Services application:
@@ -100,7 +100,7 @@ Function: `query`
 <a id="applications--query-and-list-platform-services-applications-legacy"></a>
 ### Query and List Platform Services Applications (Legacy)
 
-<a id="applications--readbyquery-2"></a>
+<a id="applications--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -127,7 +127,7 @@ Function: `readByQuery`
 <a id="applications--get-platform-services-application"></a>
 ### Get Platform Services Application
 
-<a id="applications--read-2"></a>
+<a id="applications--read"></a>
 Function: `read`
 
 ```xml
@@ -196,7 +196,7 @@ Function: `read`
 <a id="applications--get-platform-services-application-by-id"></a>
 ### Get Platform Services Application by ID
 
-<a id="applications--readbyname-2"></a>
+<a id="applications--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -226,7 +226,7 @@ As you build and deploy Platform Services applications on client companies, the 
 
 Applications with user-defined dimensions require authorization from a designated administrator before they can be installed. If you run `installApp` on such an application, a request for authorization will be added in the **Requests for authorization** section under **Platform Services > Applications** in the UI. Alternatively, you can generate an email request for authorization by running the installation from **Platform Services > Applications > Install From XML**.
 
-<a id="applications--installapp-2"></a>
+<a id="applications--installapp"></a>
 Function: `installApp`
 
 ```xml
@@ -276,7 +276,7 @@ Given that the relationship from `PARTNER` to `PARTNER_TYPE` is to one, the syst
 
 Lists all standard dimensions and UDDs in a company along with helpful integration information about the object.
 
-<a id="dimensions--getdimensions-2"></a>
+<a id="dimensions--getdimensions"></a>
 Function: `getDimensions`
 
 ```xml
@@ -338,7 +338,7 @@ No parameters
 
 Lists all standard dimensions and UDDs and provides information about their to-one and to-many relationships to other dimensions.
 
-<a id="dimensions--getdimensionrelationships-2"></a>
+<a id="dimensions--getdimensionrelationships"></a>
 Function: `getDimensionRelationships`
 
 ```xml
@@ -441,7 +441,7 @@ No parameters
 
 Provides information about auto-fill settings for to-one relationships between dimensions. (If the relationship is to-many, auto-fill is not available.)
 
-<a id="dimensions--getdimensionautofilldetails-2"></a>
+<a id="dimensions--getdimensionautofilldetails"></a>
 Function: `getDimensionAutofillDetails`
 
 ```xml
@@ -521,7 +521,7 @@ No parameters
 
 Provides information about dimensions with to-one restrictions.
 
-<a id="dimensions--getdimensionrestrictions-2"></a>
+<a id="dimensions--getdimensionrestrictions"></a>
 Function: `getDimensionRestrictions`
 
 ```xml
@@ -570,7 +570,7 @@ Lists the IDs of related dimensions that are the target(s) of to-many relationsh
 
 > **Note:** To get to-one relationship values, list the dimension object and look for related fields (r*fields*) in the output. For more information, see the [FAQ](https://developer.intacct.com/support/faq/#how-do-i-get-the-targets-of-to-one-relationships-when-working-with-dimension-restrictions).
 
-<a id="dimensions--getdimensionrestricteddata-2"></a>
+<a id="dimensions--getdimensionrestricteddata"></a>
 Function: `getDimensionRestrictedData`
 
 ```xml
@@ -641,7 +641,7 @@ An object is either a Sage Intacct standard object, such as AP Bill, or a custom
 
 Lists all standard and custom objects in a company, regardless of your permissions or the company’s subscriptions.
 
-<a id="objects--inspect-2"></a>
+<a id="objects--inspect"></a>
 Function: `inspect`
 
 ```xml
@@ -664,7 +664,7 @@ Function: `inspect`
 
 The `lookup` function lists all fields and relationships for standard or custom objects. Information about owned objects is not provided.
 
-<a id="objects--lookup-2"></a>
+<a id="objects--lookup"></a>
 Function: `lookup`
 
 > List fields and relationships for a custom object:
@@ -778,7 +778,7 @@ Function: `lookup`
 
 Returns the object definition and all field details for a specific standard or custom object.
 
-<a id="objects--inspect-1-2"></a>
+<a id="objects--inspect-1"></a>
 Function: `inspect`
 
 Note when retrieving object metadata: When using `inspect` with detail=”1”, do not include fields marked as read-only (`isReadOnly: true`) in your create or update requests. Including read-only fields might cause the operation to fail with a validation error. Read-only fields are system-managed and should not be written to.
@@ -818,7 +818,7 @@ To avoid issues:
 <a id="objects--query-and-list-object-audit-trail-logs"></a>
 ### Query and List Object Audit Trail Logs
 
-<a id="objects--query-2"></a>
+<a id="objects--query"></a>
 Function: `query`
 
 > List the record number, object ID, and the ‘created-by’ user for each object audit trail log:
@@ -851,7 +851,7 @@ Function: `query`
 <a id="objects--query-and-list-object-audit-trail-logs-legacy"></a>
 ### Query and List Object Audit Trail Logs (Legacy)
 
-<a id="objects--readbyquery-2"></a>
+<a id="objects--readbyquery"></a>
 Function: `readByQuery`
 
 > List changes made to all objects on April 19, 2012:
@@ -914,7 +914,7 @@ Function: `readByQuery`
 <a id="objects--get-object-audit-trail-log"></a>
 ### Get Object Audit Trail Log
 
-<a id="objects--read-2"></a>
+<a id="objects--read"></a>
 Function: `read`
 
 ```xml
@@ -955,7 +955,7 @@ A record is an instance of a custom or standard object.
 <a id="records--get-object-definitions"></a>
 ### Get Object Definitions
 
-<a id="records--lookup-2"></a>
+<a id="records--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the vendor standard object:
@@ -986,7 +986,7 @@ Function: `lookup`
 <a id="records--query-and-list-records"></a>
 ### Query and List Records
 
-<a id="records--query-2"></a>
+<a id="records--query"></a>
 Function: `query`
 
 > List vendor standard object records:
@@ -1037,7 +1037,7 @@ Function: `query`
 <a id="records--query-and-list-records-legacy"></a>
 ### Query and List Records (Legacy)
 
-<a id="records--readbyquery-2"></a>
+<a id="records--readbyquery"></a>
 Function: `readByQuery`
 
 > List vendor standard object records:
@@ -1078,7 +1078,7 @@ Function: `readByQuery`
 <a id="records--get-record"></a>
 ### Get Record
 
-<a id="records--read-2"></a>
+<a id="records--read"></a>
 Function: `Read`
 
 > Get standard object record:
@@ -1137,7 +1137,7 @@ Function: `Read`
 <a id="records--get-record-by-id"></a>
 ### Get Record by ID
 
-<a id="records--readbyname-2"></a>
+<a id="records--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1164,7 +1164,7 @@ Function: `readByName`
 <a id="records--create-record"></a>
 ### Create Record
 
-<a id="records--create-2"></a>
+<a id="records--create"></a>
 Function: `create`
 
 > Create a standard object record:
@@ -1244,7 +1244,7 @@ Function: `create`
 <a id="records--update-record"></a>
 ### Update Record
 
-<a id="records--update-2"></a>
+<a id="records--update"></a>
 Function: `update`
 
 > Update a standard object record:
@@ -1314,7 +1314,7 @@ Function: `update`
 <a id="records--delete-record"></a>
 ### Delete Record
 
-<a id="records--delete-2"></a>
+<a id="records--delete"></a>
 Function: `delete`
 
 > Delete a standard object record:
@@ -1368,7 +1368,7 @@ Function: `delete`
 
 Setting an object to a file type field enables three fields for use on your object.
 
-<a id="records--object-2"></a>
+<a id="records--object"></a>
 Function: `OBJECT`
 
 ```xml
@@ -1397,7 +1397,7 @@ This will retrieve records related to one or more records by a given relationshi
 
 > Please note this only works on **custom objects**.
 
-<a id="records--readrelated-2"></a>
+<a id="records--readrelated"></a>
 Function: `readRelated`
 
 ```xml
@@ -1444,7 +1444,7 @@ For example, the vendor object definition has an **All Vendors** view with an or
 
 > Filters an existing vendor view to list vendors where the total due is greater than 30,000 and the credit limit is less than 25,000.
 
-<a id="views--readview-2"></a>
+<a id="views--readview"></a>
 Function: `readView`
 
 ```xml

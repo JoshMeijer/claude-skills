@@ -33,7 +33,7 @@ ACH banks are used for making automated clearing house (ACH) transactions.
 <a id="ach-bank-configs--get-ach-bank-configuration-object-definition"></a>
 ### Get ACH Bank Configuration Object Definition
 
-<a id="ach-bank-configs--lookup-2"></a>
+<a id="ach-bank-configs--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the ACH bank configuration object:
@@ -56,7 +56,7 @@ Function: `lookup`
 <a id="ach-bank-configs--query-and-list-ach-bank-configurations"></a>
 ### Query and List ACH Bank Configurations
 
-<a id="ach-bank-configs--query-2"></a>
+<a id="ach-bank-configs--query"></a>
 Function: `query`
 
 > List the ID and record number for each bank configuration:
@@ -89,7 +89,7 @@ Function: `query`
 <a id="ach-bank-configs--query-and-list-ach-bank-configurations-legacy"></a>
 ### Query and List ACH Bank Configurations (Legacy)
 
-<a id="ach-bank-configs--readbyquery-2"></a>
+<a id="ach-bank-configs--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -116,7 +116,7 @@ Function: `readByQuery`
 <a id="ach-bank-configs--get-ach-bank-configuration"></a>
 ### Get ACH Bank Configuration
 
-<a id="ach-bank-configs--read-2"></a>
+<a id="ach-bank-configs--read"></a>
 Function: `read`
 
 ```xml
@@ -142,7 +142,7 @@ Function: `read`
 <a id="ach-bank-configs--get-ach-bank-configuration-by-id"></a>
 ### Get ACH Bank Configuration by ID
 
-<a id="ach-bank-configs--readbyname-2"></a>
+<a id="ach-bank-configs--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -168,7 +168,7 @@ Function: `readByName`
 <a id="ach-bank-configs--create-ach-bank-configuration-legacy"></a>
 ### Create ACH Bank Configuration (Legacy)
 
-<a id="ach-bank-configs--create_achbankconfiguration-2"></a>
+<a id="ach-bank-configs--create_achbankconfiguration"></a>
 Function: `create_achbankconfiguration`
 
 ```xml
@@ -203,7 +203,7 @@ Function: `create_achbankconfiguration`
 <a id="ach-bank-configs--update-ach-bank-configuration-legacy"></a>
 ### Update ACH Bank Configuration (Legacy)
 
-<a id="ach-bank-configs--update_achbankconfiguration-2"></a>
+<a id="ach-bank-configs--update_achbankconfiguration"></a>
 Function: `update_achbankconfiguration`
 
 ```xml
@@ -237,7 +237,7 @@ Function: `update_achbankconfiguration`
 <a id="ach-bank-configs--delete-ach-bank-configuration-legacy"></a>
 ### Delete ACH Bank Configuration (Legacy)
 
-<a id="ach-bank-configs--delete_achbankconfiguration-2"></a>
+<a id="ach-bank-configs--delete_achbankconfiguration"></a>
 Function: `delete_achbankconfiguration`
 
 ```xml
@@ -275,7 +275,7 @@ When you create a bank feed, the bank transactions become available for matching
 <a id="bank-feeds--get-bank-feed-object-definition"></a>
 ### Get Bank Feed Object Definition
 
-<a id="bank-feeds--lookup-2"></a>
+<a id="bank-feeds--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the bank feed object:
@@ -298,7 +298,7 @@ Function: `lookup`
 <a id="bank-feeds--query-and-list-bank-feeds"></a>
 ### Query and List Bank Feeds
 
-<a id="bank-feeds--query-2"></a>
+<a id="bank-feeds--query"></a>
 Function: `query`
 
 > List the record number and bank account ID for each bank feed for the given date:
@@ -337,7 +337,7 @@ Function: `query`
 <a id="bank-feeds--query-and-list-bank-feeds-legacy"></a>
 ### Query and List Bank Feeds (Legacy)
 
-<a id="bank-feeds--readbyquery-2"></a>
+<a id="bank-feeds--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -364,7 +364,7 @@ Function: `readByQuery`
 <a id="bank-feeds--get-bank-feed"></a>
 ### Get Bank Feed
 
-<a id="bank-feeds--read-2"></a>
+<a id="bank-feeds--read"></a>
 Function: `read`
 
 ```xml
@@ -402,7 +402,7 @@ You create a bank feed using one of the following approaches:
 - Set the feed type to `onl` to fetch transactions from a bank account or credit card account subscribed to Sage Cloud Services. These transactions are available for matching using the API or in the UI.
 - Set the feed type to `xml` and provide XML bank transactions directly in the create call. When BANKACCTRECON MODE is set to automatch, these transactions must be reconciled using the API.
 
-<a id="bank-feeds--create-2"></a>
+<a id="bank-feeds--create"></a>
 Function: `create`
 
 > Create a bank feed by providing bank transactions as XML elements:
@@ -557,7 +557,7 @@ Encompasses bank interest and service charges.
 <a id="bank-interest-charges--get-bank-interest-incomecharge-object-definition"></a>
 #### Get Bank Interest Income/Charge Object Definition
 
-<a id="bank-interest-charges--lookup-2"></a>
+<a id="bank-interest-charges--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the bank interest income/charge object:
@@ -580,7 +580,7 @@ Function: `lookup`
 <a id="bank-interest-charges--query-and-list-bank-interest-incomecharges"></a>
 #### Query and List Bank Interest Income/Charges
 
-<a id="bank-interest-charges--query-2"></a>
+<a id="bank-interest-charges--query"></a>
 Function: `query`
 
 > List the record number and description for each interest or service charge record:
@@ -613,7 +613,7 @@ Function: `query`
 <a id="bank-interest-charges--query-and-list-bank-interest-incomecharges-legacy"></a>
 #### Query and List Bank Interest Income/Charges (Legacy)
 
-<a id="bank-interest-charges--readbyquery-2"></a>
+<a id="bank-interest-charges--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -646,7 +646,7 @@ Function: `readByQuery`
 <a id="bank-interest-charges--get-bank-interest-incomecharge"></a>
 #### Get Bank Interest Income/Charge
 
-<a id="bank-interest-charges--read-2"></a>
+<a id="bank-interest-charges--read"></a>
 Function: `read`
 
 ```xml
@@ -675,7 +675,7 @@ Function: `read`
 <a id="bank-interest-charges--get-bank-interest-income-linecharge-line-object-definition"></a>
 #### Get Bank Interest Income Line/Charge Line Object Definition
 
-<a id="bank-interest-charges--lookup-1-2"></a>
+<a id="bank-interest-charges--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the bank interest income line/charge line object:
@@ -698,7 +698,7 @@ Function: `lookup`
 <a id="bank-interest-charges--query-and-list-bank-interest-income-linescharge-lines"></a>
 #### Query and List Bank Interest Income Lines/Charge Lines
 
-<a id="bank-interest-charges--query-1-2"></a>
+<a id="bank-interest-charges--query-1"></a>
 Function: `query`
 
 > List the record number and description for each interest or service charge line:
@@ -731,7 +731,7 @@ Function: `query`
 <a id="bank-interest-charges--query-and-list-bank-interest-income-linescharge-lines-legacy"></a>
 #### Query and List Bank Interest Income Lines/Charge Lines (Legacy)
 
-<a id="bank-interest-charges--readbyquery-1-2"></a>
+<a id="bank-interest-charges--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -758,7 +758,7 @@ Function: `readByQuery`
 <a id="bank-interest-charges--get-bank-interest-income-linecharge-line"></a>
 #### Get Bank Interest Income Line/Charge Line
 
-<a id="bank-interest-charges--read-1-2"></a>
+<a id="bank-interest-charges--read-1"></a>
 Function: `read`
 
 ```xml
@@ -799,7 +799,7 @@ Charge card accounts are made up of credit and debit payment method accounts.
 <a id="charge-card-accounts--get-charge-card-account-object-definition"></a>
 ### Get Charge Card Account Object Definition
 
-<a id="charge-card-accounts--lookup-2"></a>
+<a id="charge-card-accounts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the charge card account object:
@@ -822,7 +822,7 @@ Function: `lookup`
 <a id="charge-card-accounts--query-and-list-charge-card-accounts"></a>
 ### Query and List Charge Card Accounts
 
-<a id="charge-card-accounts--query-2"></a>
+<a id="charge-card-accounts--query"></a>
 Function: `query`
 
 > List the record number and description for each debit card account:
@@ -861,7 +861,7 @@ Function: `query`
 <a id="charge-card-accounts--query-and-list-charge-card-accounts-legacy"></a>
 ### Query and List Charge Card Accounts (Legacy)
 
-<a id="charge-card-accounts--readbyquery-2"></a>
+<a id="charge-card-accounts--readbyquery"></a>
 Function: `readByQuery`
 
 > List credit payment method charge card accounts:
@@ -890,7 +890,7 @@ Function: `readByQuery`
 <a id="charge-card-accounts--get-charge-card-account"></a>
 ### Get Charge Card Account
 
-<a id="charge-card-accounts--read-2"></a>
+<a id="charge-card-accounts--read"></a>
 Function: `read`
 
 ```xml
@@ -916,7 +916,7 @@ Function: `read`
 <a id="charge-card-accounts--get-charge-card-account-by-id"></a>
 ### Get Charge Card Account by ID
 
-<a id="charge-card-accounts--readbyname-2"></a>
+<a id="charge-card-accounts--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -960,7 +960,7 @@ Transaction record for charges against credit and debit cards.
 <a id="charge-card-transactions--get-charge-card-transaction-object-definition"></a>
 #### Get Charge Card Transaction Object Definition
 
-<a id="charge-card-transactions--lookup-2"></a>
+<a id="charge-card-transactions--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the charge card transaction object:
@@ -983,7 +983,7 @@ Function: `lookup`
 <a id="charge-card-transactions--query-and-list-charge-card-transactions"></a>
 #### Query and List Charge Card Transactions
 
-<a id="charge-card-transactions--query-2"></a>
+<a id="charge-card-transactions--query"></a>
 Function: `query`
 
 > List the record number and description for each charge card transaction:
@@ -1016,7 +1016,7 @@ Function: `query`
 <a id="charge-card-transactions--query-and-list-charge-card-transactions-legacy"></a>
 #### Query and List Charge Card Transactions (Legacy)
 
-<a id="charge-card-transactions--readbyquery-2"></a>
+<a id="charge-card-transactions--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1043,7 +1043,7 @@ Function: `readByQuery`
 <a id="charge-card-transactions--get-charge-card-transaction"></a>
 #### Get Charge Card Transaction
 
-<a id="charge-card-transactions--read-2"></a>
+<a id="charge-card-transactions--read"></a>
 Function: `read`
 
 ```xml
@@ -1078,7 +1078,7 @@ Release history:
 | 2020 Release 2 | Added costtypeid |
 | 2019 Release 4 | Added taskid |
 
-<a id="charge-card-transactions--record_cctransaction-2"></a>
+<a id="charge-card-transactions--record_cctransaction"></a>
 Function: `record_cctransaction`
 
 > Create a charge card transaction:
@@ -1240,7 +1240,7 @@ Release history:
 
 You cannot update a charge card transaction that was created with inclusive tax set to true.
 
-<a id="charge-card-transactions--update_cctransaction-2"></a>
+<a id="charge-card-transactions--update_cctransaction"></a>
 Function: `update_cctransaction`
 
 ```xml
@@ -1363,7 +1363,7 @@ Specifies a tax rate (defined in the system) and a manually calculated tax for t
 <a id="charge-card-transactions--reverse-charge-card-transaction-legacy"></a>
 #### Reverse Charge Card Transaction (Legacy)
 
-<a id="charge-card-transactions--reverse_cctransaction-2"></a>
+<a id="charge-card-transactions--reverse_cctransaction"></a>
 Function: `reverse_cctransaction`
 
 ```xml
@@ -1402,7 +1402,7 @@ Function: `reverse_cctransaction`
 <a id="charge-card-transactions--get-charge-card-transaction-line-object-definition"></a>
 #### Get Charge Card Transaction Line Object Definition
 
-<a id="charge-card-transactions--lookup-1-2"></a>
+<a id="charge-card-transactions--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the charge card transaction line object:
@@ -1425,7 +1425,7 @@ Function: `lookup`
 <a id="charge-card-transactions--query-and-list-charge-card-transaction-lines"></a>
 #### Query and List Charge Card Transaction Lines
 
-<a id="charge-card-transactions--query-1-2"></a>
+<a id="charge-card-transactions--query-1"></a>
 Function: `query`
 
 > List the record number and description for each charge card transaction line:
@@ -1458,7 +1458,7 @@ Function: `query`
 <a id="charge-card-transactions--query-and-list-charge-card-transaction-lines-legacy"></a>
 #### Query and List Charge Card Transaction Lines (Legacy)
 
-<a id="charge-card-transactions--readbyquery-1-2"></a>
+<a id="charge-card-transactions--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1485,7 +1485,7 @@ Function: `readByQuery`
 <a id="charge-card-transactions--get-charge-card-transaction-line"></a>
 #### Get Charge Card Transaction Line
 
-<a id="charge-card-transactions--read-1-2"></a>
+<a id="charge-card-transactions--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1529,7 +1529,7 @@ Transaction record for the payoff of a credit card.
 <a id="charge-payoffs--get-charge-payoff-object-definition"></a>
 #### Get Charge Payoff Object Definition
 
-<a id="charge-payoffs--lookup-2"></a>
+<a id="charge-payoffs--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the charge payoff object:
@@ -1552,7 +1552,7 @@ Function: `lookup`
 <a id="charge-payoffs--query-and-list-charge-payoffs"></a>
 #### Query and List Charge Payoffs
 
-<a id="charge-payoffs--query-2"></a>
+<a id="charge-payoffs--query"></a>
 Function: `query`
 
 > List the record number and total transaction amount for each charge payoff:
@@ -1585,7 +1585,7 @@ Function: `query`
 <a id="charge-payoffs--query-and-list-charge-payoffs-legacy"></a>
 #### Query and List Charge Payoffs (Legacy)
 
-<a id="charge-payoffs--readbyquery-2"></a>
+<a id="charge-payoffs--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1612,7 +1612,7 @@ Function: `readByQuery`
 <a id="charge-payoffs--get-charge-payoff"></a>
 #### Get Charge Payoff
 
-<a id="charge-payoffs--read-2"></a>
+<a id="charge-payoffs--read"></a>
 Function: `read`
 
 ```xml
@@ -1641,7 +1641,7 @@ Function: `read`
 <a id="charge-payoffs--get-charge-payoff-line-object-definition"></a>
 #### Get Charge Payoff Line Object Definition
 
-<a id="charge-payoffs--lookup-1-2"></a>
+<a id="charge-payoffs--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the charge payoff line object:
@@ -1664,7 +1664,7 @@ Function: `lookup`
 <a id="charge-payoffs--query-and-list-charge-payoff-lines"></a>
 #### Query and List Charge Payoff Lines
 
-<a id="charge-payoffs--query-1-2"></a>
+<a id="charge-payoffs--query-1"></a>
 Function: `query`
 
 > List the record number, account number and amount for each charge payoff line:
@@ -1698,7 +1698,7 @@ Function: `query`
 <a id="charge-payoffs--query-and-list-charge-payoff-lines-legacy"></a>
 #### Query and List Charge Payoff Lines (Legacy)
 
-<a id="charge-payoffs--readbyquery-1-2"></a>
+<a id="charge-payoffs--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1725,7 +1725,7 @@ Function: `readByQuery`
 <a id="charge-payoffs--get-charge-payoff-line"></a>
 #### Get Charge Payoff Line
 
-<a id="charge-payoffs--read-1-2"></a>
+<a id="charge-payoffs--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1771,7 +1771,7 @@ You can reconcile checking accounts using online bank feeds or bank feeds that y
 <a id="checking-accounts--get-checking-account-object-definition"></a>
 #### Get Checking Account Object Definition
 
-<a id="checking-accounts--lookup-2"></a>
+<a id="checking-accounts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the checking account object:
@@ -1794,7 +1794,7 @@ Function: `lookup`
 <a id="checking-accounts--query-and-list-checking-accounts"></a>
 #### Query and List Checking Accounts
 
-<a id="checking-accounts--query-2"></a>
+<a id="checking-accounts--query"></a>
 Function: `query`
 
 > List the record number and description for each checking account:
@@ -1827,7 +1827,7 @@ Function: `query`
 <a id="checking-accounts--query-and-list-checking-accounts-legacy"></a>
 #### Query and List Checking Accounts (Legacy)
 
-<a id="checking-accounts--readbyquery-2"></a>
+<a id="checking-accounts--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1854,7 +1854,7 @@ Function: `readByQuery`
 <a id="checking-accounts--get-checking-account"></a>
 #### Get Checking Account
 
-<a id="checking-accounts--read-2"></a>
+<a id="checking-accounts--read"></a>
 Function: `read`
 
 ```xml
@@ -1880,7 +1880,7 @@ Function: `read`
 <a id="checking-accounts--get-checking-account-by-id"></a>
 #### Get Checking Account by ID
 
-<a id="checking-accounts--readbyname-2"></a>
+<a id="checking-accounts--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1909,7 +1909,7 @@ Function: `readByName`
 <a id="checking-accounts--get-checking-account-reconciliation-object-definition"></a>
 #### Get Checking Account Reconciliation Object Definition
 
-<a id="checking-accounts--lookup-1-2"></a>
+<a id="checking-accounts--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the checking account reconciliation object:
@@ -1932,7 +1932,7 @@ Function: `lookup`
 <a id="checking-accounts--query-and-list-checking-account-reconciliations"></a>
 #### Query and List Checking Account Reconciliations
 
-<a id="checking-accounts--query-1-2"></a>
+<a id="checking-accounts--query-1"></a>
 Function: `query`
 
 > To list checking account reconciliations, provide a checking account for the FINANCIALENTITY in the filter:
@@ -1972,7 +1972,7 @@ Function: `query`
 <a id="checking-accounts--query-and-list-checking-account-reconciliations-legacy"></a>
 #### Query and List Checking Account Reconciliations (Legacy)
 
-<a id="checking-accounts--readbyquery-1-2"></a>
+<a id="checking-accounts--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1999,7 +1999,7 @@ Function: `readByQuery`
 <a id="checking-accounts--get-checking-account-reconciliation"></a>
 #### Get Checking Account Reconciliation
 
-<a id="checking-accounts--read-1-2"></a>
+<a id="checking-accounts--read-1"></a>
 Function: `read`
 
 ```xml
@@ -2031,7 +2031,7 @@ You can reconcile the account by having the system attempt to match and clear al
 
 More information about [bank reconciliation](https://www.intacct.com/ia/docs/en_US/help_action/Default.htm#cshid=Bank_rec_overview) is available in the Sage Intacct product help.
 
-<a id="checking-accounts--create-2"></a>
+<a id="checking-accounts--create"></a>
 Function: `create`
 
 > Attempt to match and clear (or reconcile) all the transactions in the given period:
@@ -2074,7 +2074,7 @@ Function: `create`
 
 This legacy function does not support online bank feeds and is not available in the UI. Consider using the new [reconciliation function](#checking-accounts--create-checking-account-reconciliation) instead.
 
-<a id="checking-accounts--reconcile_bank-2"></a>
+<a id="checking-accounts--reconcile_bank"></a>
 Function: `reconcile_bank`
 
 ```xml
@@ -2193,7 +2193,7 @@ Encompasses finance charges, late charges, and other fees for a credit card.
 <a id="credit-card-charges-other-fees--get-credit-card-chargesother-fees-object-definition"></a>
 #### Get Credit Card Charges/Other Fees Object Definition
 
-<a id="credit-card-charges-other-fees--lookup-2"></a>
+<a id="credit-card-charges-other-fees--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the credit card charges/other fees object:
@@ -2216,7 +2216,7 @@ Function: `lookup`
 <a id="credit-card-charges-other-fees--query-and-list-credit-card-chargesother-fees"></a>
 #### Query and List Credit Card Charges/Other Fees
 
-<a id="credit-card-charges-other-fees--query-2"></a>
+<a id="credit-card-charges-other-fees--query"></a>
 Function: `query`
 
 > List the record number and description for each credit card charge / other fee:
@@ -2249,7 +2249,7 @@ Function: `query`
 <a id="credit-card-charges-other-fees--query-and-list-credit-card-chargesother-fees-legacy"></a>
 #### Query and List Credit Card Charges/Other Fees (Legacy)
 
-<a id="credit-card-charges-other-fees--readbyquery-2"></a>
+<a id="credit-card-charges-other-fees--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2276,7 +2276,7 @@ Function: `readByQuery`
 <a id="credit-card-charges-other-fees--get-credit-card-chargeother-fee"></a>
 #### Get Credit Card Charge/Other Fee
 
-<a id="credit-card-charges-other-fees--read-2"></a>
+<a id="credit-card-charges-other-fees--read"></a>
 Function: `read`
 
 ```xml
@@ -2305,7 +2305,7 @@ Function: `read`
 <a id="credit-card-charges-other-fees--get-credit-card-chargesother-fee-line-object-definition"></a>
 #### Get Credit Card Charges/Other Fee Line Object Definition
 
-<a id="credit-card-charges-other-fees--lookup-1-2"></a>
+<a id="credit-card-charges-other-fees--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the credit card charges/other fees line object:
@@ -2328,7 +2328,7 @@ Function: `lookup`
 <a id="credit-card-charges-other-fees--query-and-list-credit-card-chargeother-fee-lines"></a>
 #### Query and List Credit Card Charge/Other Fee Lines
 
-<a id="credit-card-charges-other-fees--query-1-2"></a>
+<a id="credit-card-charges-other-fees--query-1"></a>
 Function: `query`
 
 > List the record number and description for each credit card charge / other fee line:
@@ -2361,7 +2361,7 @@ Function: `query`
 <a id="credit-card-charges-other-fees--query-and-list-credit-card-charge-linesother-fee-lines-legacy"></a>
 #### Query and List Credit Card Charge Lines/Other Fee Lines (Legacy)
 
-<a id="credit-card-charges-other-fees--readbyquery-1-2"></a>
+<a id="credit-card-charges-other-fees--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2388,7 +2388,7 @@ Function: `readByQuery`
 <a id="credit-card-charges-other-fees--get-credit-card-charge-lineother-fee-line"></a>
 #### Get Credit Card Charge Line/Other Fee Line
 
-<a id="credit-card-charges-other-fees--read-1-2"></a>
+<a id="credit-card-charges-other-fees--read-1"></a>
 Function: `read`
 
 ```xml
@@ -2432,7 +2432,7 @@ Transaction record for a deposit.
 <a id="deposits--get-deposit-object-definition"></a>
 #### Get Deposit Object Definition
 
-<a id="deposits--lookup-2"></a>
+<a id="deposits--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the deposit object:
@@ -2455,7 +2455,7 @@ Function: `lookup`
 <a id="deposits--query-and-list-deposits"></a>
 #### Query and List Deposits
 
-<a id="deposits--query-2"></a>
+<a id="deposits--query"></a>
 Function: `query`
 
 > List the record number, financial entity, and total entered for each deposit:
@@ -2489,7 +2489,7 @@ Function: `query`
 <a id="deposits--query-and-list-deposits-legacy"></a>
 #### Query and List Deposits (Legacy)
 
-<a id="deposits--readbyquery-2"></a>
+<a id="deposits--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2516,7 +2516,7 @@ Function: `readByQuery`
 <a id="deposits--get-deposit"></a>
 #### Get Deposit
 
-<a id="deposits--read-2"></a>
+<a id="deposits--read"></a>
 Function: `read`
 
 ```xml
@@ -2542,7 +2542,7 @@ Function: `read`
 <a id="deposits--create-deposit-legacy"></a>
 #### Create Deposit (Legacy)
 
-<a id="deposits--record_deposit-2"></a>
+<a id="deposits--record_deposit"></a>
 Function: `record_deposit`
 
 ```xml
@@ -2604,7 +2604,7 @@ Function: `record_deposit`
 <a id="deposits--get-deposit-line-object-definition"></a>
 #### Get Deposit Line Object Definition
 
-<a id="deposits--lookup-1-2"></a>
+<a id="deposits--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the deposit line object:
@@ -2627,7 +2627,7 @@ Function: `lookup`
 <a id="deposits--query-and-list-deposit-lines"></a>
 #### Query and List Deposit Lines
 
-<a id="deposits--query-1-2"></a>
+<a id="deposits--query-1"></a>
 Function: `query`
 
 > List the record number, account number, and amount for each deposit line:
@@ -2661,7 +2661,7 @@ Function: `query`
 <a id="deposits--query-and-list-deposit-lines-legacy"></a>
 #### Query and List Deposit Lines (Legacy)
 
-<a id="deposits--readbyquery-1-2"></a>
+<a id="deposits--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2688,7 +2688,7 @@ Function: `readByQuery`
 <a id="deposits--get-deposit-line"></a>
 #### Get Deposit Line
 
-<a id="deposits--read-1-2"></a>
+<a id="deposits--read-1"></a>
 Function: `read`
 
 ```xml
@@ -2732,7 +2732,7 @@ Transaction record for the transfer of funds from one cash account to another.
 <a id="fund-transfers--get-funds-transfer-object-definition"></a>
 #### Get Funds Transfer Object Definition
 
-<a id="fund-transfers--lookup-2"></a>
+<a id="fund-transfers--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the funds transfer object:
@@ -2755,7 +2755,7 @@ Function: `lookup`
 <a id="fund-transfers--query-and-list-fund-transfers"></a>
 #### Query and List Fund Transfers
 
-<a id="fund-transfers--query-2"></a>
+<a id="fund-transfers--query"></a>
 Function: `query`
 
 > List the record number and total entered for each fund transfer:
@@ -2788,7 +2788,7 @@ Function: `query`
 <a id="fund-transfers--query-and-list-fund-transfers-legacy"></a>
 #### Query and List Fund Transfers (Legacy)
 
-<a id="fund-transfers--readbyquery-2"></a>
+<a id="fund-transfers--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2815,7 +2815,7 @@ Function: `readByQuery`
 <a id="fund-transfers--get-fund-transfer"></a>
 #### Get Fund Transfer
 
-<a id="fund-transfers--read-2"></a>
+<a id="fund-transfers--read"></a>
 Function: `read`
 
 ```xml
@@ -2844,7 +2844,7 @@ Function: `read`
 <a id="fund-transfers--get-funds-transfer-line-object-definition"></a>
 #### Get Funds Transfer Line Object Definition
 
-<a id="fund-transfers--lookup-1-2"></a>
+<a id="fund-transfers--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the funds transfer line object:
@@ -2867,7 +2867,7 @@ Function: `lookup`
 <a id="fund-transfers--query-and-list-fund-transfer-lines"></a>
 #### Query and List Fund Transfer Lines
 
-<a id="fund-transfers--query-1-2"></a>
+<a id="fund-transfers--query-1"></a>
 Function: `query`
 
 > List the record number, account number, and amount for each fund transfer line :
@@ -2901,7 +2901,7 @@ Function: `query`
 <a id="fund-transfers--query-and-list-fund-transfer-lines-legacy"></a>
 #### Query and List Fund Transfer Lines (Legacy)
 
-<a id="fund-transfers--readbyquery-1-2"></a>
+<a id="fund-transfers--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2928,7 +2928,7 @@ Function: `readByQuery`
 <a id="fund-transfers--get-fund-transfer-line"></a>
 #### Get Fund Transfer Line
 
-<a id="fund-transfers--read-1-2"></a>
+<a id="fund-transfers--read-1"></a>
 Function: `read`
 
 ```xml
@@ -2975,7 +2975,7 @@ Can include cash, a card charge, a cash transfer, or a check payment.
 <a id="other-receipts--get-other-receipts-object-definition"></a>
 #### Get Other Receipts Object Definition
 
-<a id="other-receipts--lookup-2"></a>
+<a id="other-receipts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the other receipts object:
@@ -2998,7 +2998,7 @@ Function: `lookup`
 <a id="other-receipts--query-and-list-other-receipts"></a>
 #### Query and List Other Receipts
 
-<a id="other-receipts--query-2"></a>
+<a id="other-receipts--query"></a>
 Function: `query`
 
 > List the record number, total entered, and description for each other receipt:
@@ -3032,7 +3032,7 @@ Function: `query`
 <a id="other-receipts--query-and-list-other-receipts-legacy"></a>
 #### Query and List Other Receipts (Legacy)
 
-<a id="other-receipts--readbyquery-2"></a>
+<a id="other-receipts--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3059,7 +3059,7 @@ Function: `readByQuery`
 <a id="other-receipts--list-other-receipts-legacy"></a>
 #### List Other Receipts (Legacy)
 
-<a id="other-receipts--get_list-2"></a>
+<a id="other-receipts--get_list"></a>
 Function: `get_list`
 
 ```xml
@@ -3113,7 +3113,7 @@ Function: `get_list`
 <a id="other-receipts--get-other-receipt"></a>
 #### Get Other Receipt
 
-<a id="other-receipts--read-2"></a>
+<a id="other-receipts--read"></a>
 Function: `read`
 
 ```xml
@@ -3139,7 +3139,7 @@ Function: `read`
 <a id="other-receipts--get-other-receipt-legacy"></a>
 #### Get Other Receipt (legacy)
 
-<a id="other-receipts--get-2"></a>
+<a id="other-receipts--get"></a>
 Function: `get`
 
 ```xml
@@ -3167,7 +3167,7 @@ Release history:
 | 2020 Release 2 | Added costtypeid |
 | 2019 Release 4 | Added taskid |
 
-<a id="other-receipts--record_otherreceipt-2"></a>
+<a id="other-receipts--record_otherreceipt"></a>
 Function: `record_otherreceipt`
 
 > Create an other receipt record:
@@ -3358,7 +3358,7 @@ Release history:
 
 You cannot update an other receipt that was created with inclusive tax set to true.
 
-<a id="other-receipts--update_otherreceipt-2"></a>
+<a id="other-receipts--update_otherreceipt"></a>
 Function: `update_otherreceipt`
 
 > Updates a receipt by modifying an existing line and adding a new line:
@@ -3507,7 +3507,7 @@ Specifies a tax rate (defined in the system) and a manually calculated tax for t
 <a id="other-receipts--delete-other-receipt-legacy"></a>
 #### Delete Other Receipt (Legacy)
 
-<a id="other-receipts--delete_otherreceipt-2"></a>
+<a id="other-receipts--delete_otherreceipt"></a>
 Function: `delete_otherreceipt`
 
 ```xml
@@ -3529,7 +3529,7 @@ Function: `delete_otherreceipt`
 <a id="other-receipts--get-other-receipt-line-object-definition"></a>
 #### Get Other Receipt Line Object Definition
 
-<a id="other-receipts--lookup-1-2"></a>
+<a id="other-receipts--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the other receipt line object:
@@ -3552,7 +3552,7 @@ Function: `lookup`
 <a id="other-receipts--query-and-list-other-receipt-lines"></a>
 #### Query and List Other Receipt Lines
 
-<a id="other-receipts--query-1-2"></a>
+<a id="other-receipts--query-1"></a>
 Function: `query`
 
 > List the record number, amount, and description for each other receipt line:
@@ -3586,7 +3586,7 @@ Function: `query`
 <a id="other-receipts--query-and-list-other-receipt-lines-legacy"></a>
 #### Query and List Other Receipt Lines (Legacy)
 
-<a id="other-receipts--readbyquery-1-2"></a>
+<a id="other-receipts--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3613,7 +3613,7 @@ Function: `readByQuery`
 <a id="other-receipts--get-other-receipt-line"></a>
 #### Get Other Receipt Line
 
-<a id="other-receipts--read-1-2"></a>
+<a id="other-receipts--read-1"></a>
 Function: `read`
 
 ```xml
@@ -3654,7 +3654,7 @@ Provides the relevant information for a savings account, such as the account ID,
 <a id="savings-accounts--get-savings-account-object-definition"></a>
 ### Get Savings Account Object Definition
 
-<a id="savings-accounts--lookup-2"></a>
+<a id="savings-accounts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the savings account object:
@@ -3677,7 +3677,7 @@ Function: `lookup`
 <a id="savings-accounts--query-and-list-savings-accounts"></a>
 ### Query and List Savings Accounts
 
-<a id="savings-accounts--query-2"></a>
+<a id="savings-accounts--query"></a>
 Function: `query`
 
 > List the record number and account ID for each savings account:
@@ -3710,7 +3710,7 @@ Function: `query`
 <a id="savings-accounts--query-and-list-savings-accounts-legacy"></a>
 ### Query and List Savings Accounts (Legacy)
 
-<a id="savings-accounts--readbyquery-2"></a>
+<a id="savings-accounts--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3737,7 +3737,7 @@ Function: `readByQuery`
 <a id="savings-accounts--get-savings-account"></a>
 ### Get Savings Account
 
-<a id="savings-accounts--read-2"></a>
+<a id="savings-accounts--read"></a>
 Function: `read`
 
 ```xml
@@ -3763,7 +3763,7 @@ Function: `read`
 <a id="savings-accounts--get-savings-account-by-id"></a>
 ### Get Savings Account by ID
 
-<a id="savings-accounts--readbyname-2"></a>
+<a id="savings-accounts--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3789,7 +3789,7 @@ Function: `readByName`
 <a id="savings-accounts--create-savings-account--legacy"></a>
 ### Create Savings Account (Legacy)
 
-<a id="savings-accounts--create_savingsaccount-2"></a>
+<a id="savings-accounts--create_savingsaccount"></a>
 Function: `create_savingsaccount`
 
 ```xml
@@ -3861,7 +3861,7 @@ Function: `create_savingsaccount`
 <a id="savings-accounts--update-savings-account--legacy"></a>
 ### Update Savings Account (Legacy)
 
-<a id="savings-accounts--update_savingsaccount-2"></a>
+<a id="savings-accounts--update_savingsaccount"></a>
 Function: `update_savingsaccount`
 
 ```xml
@@ -3928,7 +3928,7 @@ Function: `update_savingsaccount`
 <a id="savings-accounts--delete-savings-account-legacy"></a>
 ### Delete Savings Account (Legacy)
 
-<a id="savings-accounts--delete_savingsaccount-2"></a>
+<a id="savings-accounts--delete_savingsaccount"></a>
 Function: `delete_savingsaccount`
 
 ```xml
@@ -3947,7 +3947,7 @@ Function: `delete_savingsaccount`
 <a id="savings-accounts--reconcile-savings-account"></a>
 ### Reconcile Savings Account
 
-<a id="savings-accounts--reconcile_bank-2"></a>
+<a id="savings-accounts--reconcile_bank"></a>
 Function: `reconcile_bank`
 
 ```xml

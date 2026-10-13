@@ -48,7 +48,7 @@ An aisle contains stocking information about items in a warehouse. Warehouses ca
 <a id="aisles--get-aisle-object-definition"></a>
 ### Get Aisle Object Definition
 
-<a id="aisles--lookup-2"></a>
+<a id="aisles--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the aisle object:
@@ -71,7 +71,7 @@ Function: `lookup`
 <a id="aisles--query-and-list-aisles"></a>
 ### Query and List Aisles
 
-<a id="aisles--query-2"></a>
+<a id="aisles--query"></a>
 Function: `query`
 
 > List the record number and aisle ID for each aisle:
@@ -104,7 +104,7 @@ Function: `query`
 <a id="aisles--query-and-list-aisles-legacy"></a>
 ### Query and List Aisles (Legacy)
 
-<a id="aisles--readbyquery-2"></a>
+<a id="aisles--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -131,7 +131,7 @@ Function: `readByQuery`
 <a id="aisles--get-aisle"></a>
 ### Get Aisle
 
-<a id="aisles--read-2"></a>
+<a id="aisles--read"></a>
 Function: `read`
 
 ```xml
@@ -157,7 +157,7 @@ Function: `read`
 <a id="aisles--get-aisle-by-id"></a>
 ### Get Aisle by ID
 
-<a id="aisles--readbyname-2"></a>
+<a id="aisles--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -196,7 +196,7 @@ You can get available quantities for tracked items per serial number, lot number
 <a id="available-inventory--get-available-inventory-object-definition"></a>
 ### Get Available Inventory Object Definition
 
-<a id="available-inventory--lookup-2"></a>
+<a id="available-inventory--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the available inventory object:
@@ -219,7 +219,7 @@ Function: `lookup`
 <a id="available-inventory--query-and-list-available-inventory"></a>
 ### Query and List Available Inventory
 
-<a id="available-inventory--query-2"></a>
+<a id="available-inventory--query"></a>
 Function: `query`
 
 > List information including the lot number, expiration date, and quantity remaining for the vit-multi-033 item:
@@ -262,7 +262,7 @@ Function: `query`
 <a id="available-inventory--query-and-list-available-inventory-legacy"></a>
 ### Query and List Available Inventory (Legacy)
 
-<a id="available-inventory--readbyquery-2"></a>
+<a id="available-inventory--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -289,7 +289,7 @@ Function: `readByQuery`
 <a id="available-inventory--get-available-inventory"></a>
 ### Get Available Inventory
 
-<a id="available-inventory--read-2"></a>
+<a id="available-inventory--read"></a>
 Function: `read`
 
 ```xml
@@ -332,7 +332,7 @@ Typically, each section between pillars in an aisle is considered a bin face.
 <a id="bin-faces--get-bin-face-object-definition"></a>
 ### Get Bin Face Object Definition
 
-<a id="bin-faces--lookup-2"></a>
+<a id="bin-faces--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the bin face object:
@@ -355,7 +355,7 @@ Function: `lookup`
 <a id="bin-faces--query-and-list-bin-faces"></a>
 ### Query and List Bin Faces
 
-<a id="bin-faces--query-2"></a>
+<a id="bin-faces--query"></a>
 Function: `query`
 
 > List the ID and description for each bin face:
@@ -388,7 +388,7 @@ Function: `query`
 <a id="bin-faces--query-and-list-bin-faces-legacy"></a>
 ### Query and List Bin Faces (Legacy)
 
-<a id="bin-faces--readbyquery-2"></a>
+<a id="bin-faces--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -415,7 +415,7 @@ Function: `readByQuery`
 <a id="bin-faces--get-bin-face"></a>
 ### Get Bin Face
 
-<a id="bin-faces--read-2"></a>
+<a id="bin-faces--read"></a>
 Function: `read`
 
 ```xml
@@ -441,7 +441,7 @@ Function: `read`
 <a id="bin-faces--get-bin-face-by-id"></a>
 ### Get Bin Face by ID
 
-<a id="bin-faces--readbyname-2"></a>
+<a id="bin-faces--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -467,7 +467,7 @@ Function: `readByName`
 <a id="bin-faces--create-bin-face"></a>
 ### Create Bin Face
 
-<a id="bin-faces--create-2"></a>
+<a id="bin-faces--create"></a>
 Function: `create`
 
 ```xml
@@ -498,7 +498,7 @@ Function: `create`
 <a id="bin-faces--update-bin-face"></a>
 ### Update Bin Face
 
-<a id="bin-faces--update-2"></a>
+<a id="bin-faces--update"></a>
 Function: `update`
 
 ```xml
@@ -530,7 +530,7 @@ Function: `update`
 <a id="bin-faces--delete-bin-face"></a>
 ### Delete Bin Face
 
-<a id="bin-faces--delete-2"></a>
+<a id="bin-faces--delete"></a>
 Function: `delete`
 
 ```xml
@@ -568,7 +568,7 @@ A bin size in an attribute you can assign to a bin to make it easier to decide w
 <a id="bin-sizes--get-bin-size-object-definition"></a>
 ### Get Bin Size Object Definition
 
-<a id="bin-sizes--lookup-2"></a>
+<a id="bin-sizes--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the bin size object:
@@ -591,7 +591,7 @@ Function: `lookup`
 <a id="bin-sizes--query-and-list-bin-sizes"></a>
 ### Query and List Bin Sizes
 
-<a id="bin-sizes--query-2"></a>
+<a id="bin-sizes--query"></a>
 Function: `query`
 
 > List the ID and description for each bin size:
@@ -624,7 +624,7 @@ Function: `query`
 <a id="bin-sizes--query-and-list-bin-sizes-legacy"></a>
 ### Query and List Bin Sizes (Legacy)
 
-<a id="bin-sizes--readbyquery-2"></a>
+<a id="bin-sizes--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -651,7 +651,7 @@ Function: `readByQuery`
 <a id="bin-sizes--get-bin-size"></a>
 ### Get Bin Size
 
-<a id="bin-sizes--read-2"></a>
+<a id="bin-sizes--read"></a>
 Function: `read`
 
 ```xml
@@ -677,7 +677,7 @@ Function: `read`
 <a id="bin-sizes--get-bin-by-id"></a>
 ### Get Bin by ID
 
-<a id="bin-sizes--readbyname-2"></a>
+<a id="bin-sizes--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -703,7 +703,7 @@ Function: `readByName`
 <a id="bin-sizes--create-bin-size"></a>
 ### Create Bin Size
 
-<a id="bin-sizes--create-2"></a>
+<a id="bin-sizes--create"></a>
 Function: `create`
 
 ```xml
@@ -734,7 +734,7 @@ Function: `create`
 <a id="bin-sizes--update-bin-size"></a>
 ### Update Bin Size
 
-<a id="bin-sizes--update-2"></a>
+<a id="bin-sizes--update"></a>
 Function: `update`
 
 ```xml
@@ -766,7 +766,7 @@ Function: `update`
 <a id="bin-sizes--delete-bin-size"></a>
 ### Delete Bin Size
 
-<a id="bin-sizes--delete-2"></a>
+<a id="bin-sizes--delete"></a>
 Function: `delete`
 
 ```xml
@@ -804,7 +804,7 @@ A bin contains stocking information about items in a warehouse and identifies it
 <a id="bins--get-bin-object-definition"></a>
 ### Get Bin Object Definition
 
-<a id="bins--lookup-2"></a>
+<a id="bins--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the bin object:
@@ -827,7 +827,7 @@ Function: `lookup`
 <a id="bins--query-and-list-bins"></a>
 ### Query and List Bins
 
-<a id="bins--query-2"></a>
+<a id="bins--query"></a>
 Function: `query`
 
 > For each bin in the given warehouse, list the bin ID and description:
@@ -866,7 +866,7 @@ Function: `query`
 <a id="bins--query-and-list-bins-legacy"></a>
 ### Query and List Bins (Legacy)
 
-<a id="bins--readbyquery-2"></a>
+<a id="bins--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -893,7 +893,7 @@ Function: `readByQuery`
 <a id="bins--get-bin"></a>
 ### Get Bin
 
-<a id="bins--read-2"></a>
+<a id="bins--read"></a>
 Function: `read`
 
 ```xml
@@ -919,7 +919,7 @@ Function: `read`
 <a id="bins--get-bin-by-id"></a>
 ### Get Bin by ID
 
-<a id="bins--readbyname-2"></a>
+<a id="bins--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -945,7 +945,7 @@ Function: `readByName`
 <a id="bins--create-bin"></a>
 ### Create Bin
 
-<a id="bins--create-2"></a>
+<a id="bins--create"></a>
 Function: `create`
 
 ```xml
@@ -991,7 +991,7 @@ Function: `create`
 <a id="bins--update-bin"></a>
 ### Update Bin
 
-<a id="bins--update-2"></a>
+<a id="bins--update"></a>
 Function: `update`
 
 > Update the status of the bin with the given ID:
@@ -1046,7 +1046,7 @@ Function: `update`
 <a id="bins--delete-bin"></a>
 ### Delete Bin
 
-<a id="bins--delete-2"></a>
+<a id="bins--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1093,7 +1093,7 @@ You must define the journal to use for prior period COGS adjustments in your Inv
 <a id="cogs-adjustments--get-cost-of-goods-sold-adjustment-object-definition"></a>
 ### Get Cost of Goods Sold Adjustment Object Definition
 
-<a id="cogs-adjustments--lookup-2"></a>
+<a id="cogs-adjustments--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the cost of goods sold adjustment object:
@@ -1116,7 +1116,7 @@ Function: `lookup`
 <a id="cogs-adjustments--query-and-list-cost-of-goods-sold-adjustments"></a>
 ### Query and List Cost of Goods Sold Adjustments
 
-<a id="cogs-adjustments--query-2"></a>
+<a id="cogs-adjustments--query"></a>
 Function: `query`
 
 > List the record number and current cost for each potential adjusting journal entry:
@@ -1155,7 +1155,7 @@ Function: `query`
 <a id="cogs-adjustments--query-and-list-cost-of-goods-sold-adjustments-legacy"></a>
 ### Query and List Cost of Goods Sold Adjustments (Legacy)
 
-<a id="cogs-adjustments--readbyquery-2"></a>
+<a id="cogs-adjustments--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1246,7 +1246,7 @@ Function: `readByQuery`
 <a id="cogs-adjustments--get-cost-of-goods-sold-adjustment"></a>
 ### Get Cost of Goods Sold Adjustment
 
-<a id="cogs-adjustments--read-2"></a>
+<a id="cogs-adjustments--read"></a>
 Function: `read`
 
 ```xml
@@ -1274,7 +1274,7 @@ Function: `read`
 
 Applies the specified adjustments to the configured GL journal for prior period COGS adjustments. The generated GL journal entries cannot be adjusted, but they can be rolled back by deleting the cost of goods sold adjustment.
 
-<a id="cogs-adjustments--create-2"></a>
+<a id="cogs-adjustments--create"></a>
 Function: `create`
 
 ```xml
@@ -1307,7 +1307,7 @@ Function: `create`
 
 When you delete a cost of goods sold adjustment, the adjusting GL journal entry is rolled back and the `COGSCLOSEDJE` entry with the given key becomes available as a potential adjustment again.
 
-<a id="cogs-adjustments--delete-2"></a>
+<a id="cogs-adjustments--delete"></a>
 Function: `delete`
 
 > Deletes the adjustment with the given unique identifier:
@@ -1352,7 +1352,7 @@ The `COUNTSTATE` of an `ICCYCLECOUNT` object shows the state of the inventory co
 <a id="cycle-counts--get-cycle-count-object-definition"></a>
 #### Get Cycle Count Object Definition
 
-<a id="cycle-counts--lookup-2"></a>
+<a id="cycle-counts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the inventory control cycle count object:
@@ -1375,7 +1375,7 @@ Function: `lookup`
 <a id="cycle-counts--query-and-list-cycle-counts"></a>
 #### Query and List Cycle Counts
 
-<a id="cycle-counts--query-2"></a>
+<a id="cycle-counts--query"></a>
 Function: `query`
 
 > Find all cycle counts that have not started and return the record number, cycle count ID, description, and warehouse ID for each:
@@ -1416,7 +1416,7 @@ Function: `query`
 <a id="cycle-counts--query-and-list-cycle-counts-legacy"></a>
 #### Query and List Cycle Counts (Legacy)
 
-<a id="cycle-counts--readbyquery-2"></a>
+<a id="cycle-counts--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1443,7 +1443,7 @@ Function: `readByQuery`
 <a id="cycle-counts--get-a-cycle-count"></a>
 #### Get a Cycle Count
 
-<a id="cycle-counts--read-2"></a>
+<a id="cycle-counts--read"></a>
 Function: `read`
 
 ```xml
@@ -1469,7 +1469,7 @@ Function: `read`
 <a id="cycle-counts--create-a-cycle-count"></a>
 #### Create a Cycle Count
 
-<a id="cycle-counts--create-2"></a>
+<a id="cycle-counts--create"></a>
 Function: `create`
 
 ```xml
@@ -1502,7 +1502,7 @@ Note that the CYCLECOUNTID is auto-generated; you cannot specify it in a `create
 
 You can delete any cycle count that is in progress or hasn’t been started.
 
-<a id="cycle-counts--delete-2"></a>
+<a id="cycle-counts--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1530,7 +1530,7 @@ Every line (item) in a cycle count is represented by an `ICCYCLECOUNTENTRY` obje
 <a id="cycle-counts--get-inventory-cycle-count-entry-object-definition"></a>
 #### Get Inventory Cycle Count Entry Object Definition
 
-<a id="cycle-counts--lookup-1-2"></a>
+<a id="cycle-counts--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the inventory cycle count entry object:
@@ -1553,7 +1553,7 @@ Function: `lookup`
 <a id="cycle-counts--query-and-list-cycle-count-lines"></a>
 #### Query and List Cycle Count Lines
 
-<a id="cycle-counts--query-1-2"></a>
+<a id="cycle-counts--query-1"></a>
 Function: `query`
 
 > List item information for each inventory cycle count line in cycle count 130:
@@ -1594,7 +1594,7 @@ Function: `query`
 <a id="cycle-counts--query-and-list-inventory-cycle-count-lines-legacy"></a>
 #### Query and List Inventory Cycle Count Lines (Legacy)
 
-<a id="cycle-counts--readbyquery-1-2"></a>
+<a id="cycle-counts--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1621,7 +1621,7 @@ Function: `readByQuery`
 <a id="cycle-counts--get-inventory-cycle-count-lines"></a>
 #### Get Inventory Cycle Count Lines
 
-<a id="cycle-counts--read-1-2"></a>
+<a id="cycle-counts--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1647,7 +1647,7 @@ Function: `read`
 <a id="cycle-counts--create-a-cycle-count-line"></a>
 #### Create a Cycle Count Line
 
-<a id="cycle-counts--create-1-2"></a>
+<a id="cycle-counts--create-1"></a>
 Function: `create`
 
 ```xml
@@ -1684,7 +1684,7 @@ Function: `create`
 
 Update cycle count lines to record actual stock counts. You cannot update cycle count lines if the associated cycle count is in the `Not Started` state.
 
-<a id="cycle-counts--update-2"></a>
+<a id="cycle-counts--update"></a>
 Function: `update`
 
 ```xml
@@ -1718,7 +1718,7 @@ Function: `update`
 <a id="cycle-counts--delete-a-cycle-count-line"></a>
 #### Delete a Cycle Count Line
 
-<a id="cycle-counts--delete-1-2"></a>
+<a id="cycle-counts--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -1756,7 +1756,7 @@ An Inventory Control price list contains the names of price lists in Inventory C
 <a id="inventory-control-price-lists--get-inventory-price-list-object-definition"></a>
 ### Get Inventory Price List Object Definition
 
-<a id="inventory-control-price-lists--lookup-2"></a>
+<a id="inventory-control-price-lists--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the inventory price list object:
@@ -1779,7 +1779,7 @@ Function: `lookup`
 <a id="inventory-control-price-lists--query-and-list-inventory-price-lists"></a>
 ### Query and List Inventory Price Lists
 
-<a id="inventory-control-price-lists--query-2"></a>
+<a id="inventory-control-price-lists--query"></a>
 Function: `query`
 
 > List the record number and name for each inventory price list:
@@ -1812,7 +1812,7 @@ Function: `query`
 <a id="inventory-control-price-lists--query-and-list-inventory-control-price-lists-legacy"></a>
 ### Query and List Inventory Control Price Lists (Legacy)
 
-<a id="inventory-control-price-lists--readbyquery-2"></a>
+<a id="inventory-control-price-lists--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1839,7 +1839,7 @@ Function: `readByQuery`
 <a id="inventory-control-price-lists--get-inventory-control-price-list"></a>
 ### Get Inventory Control Price List
 
-<a id="inventory-control-price-lists--read-2"></a>
+<a id="inventory-control-price-lists--read"></a>
 Function: `read`
 
 ```xml
@@ -1865,7 +1865,7 @@ Function: `read`
 <a id="inventory-control-price-lists--get-inventory-control-price-list-by-id"></a>
 ### Get Inventory Control Price List by ID
 
-<a id="inventory-control-price-lists--readbyname-2"></a>
+<a id="inventory-control-price-lists--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1906,7 +1906,7 @@ Inventory total details provide visibility into all the inventory totals your or
 <a id="inventory-total-details--get-inventory-total-detail-object-definition"></a>
 ### Get Inventory Total Detail Object Definition
 
-<a id="inventory-total-details--lookup-2"></a>
+<a id="inventory-total-details--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the inventory total detail object:
@@ -1929,7 +1929,7 @@ Function: `lookup`
 <a id="inventory-total-details--query-and-list-inventory-total-details"></a>
 ### Query and List Inventory Total Details
 
-<a id="inventory-total-details--query-2"></a>
+<a id="inventory-total-details--query"></a>
 Function: `query`
 
 > List the item ID for each inventory total detail for scrap or damaged items:
@@ -1974,7 +1974,7 @@ Function: `query`
 <a id="inventory-total-details--query-and-list-inventory-total-details-legacy"></a>
 ### Query and List Inventory Total Details (Legacy)
 
-<a id="inventory-total-details--readbyquery-2"></a>
+<a id="inventory-total-details--readbyquery"></a>
 Function: `readByQuery`
 
 > List inventory total details:
@@ -2038,7 +2038,7 @@ Function: `readByQuery`
 <a id="inventory-total-details--get-inventory-total-detail"></a>
 ### Get Inventory Total Detail
 
-<a id="inventory-total-details--read-2"></a>
+<a id="inventory-total-details--read"></a>
 Function: `read`
 
 ```xml
@@ -2077,7 +2077,7 @@ A transaction definition is the template for an inventory transaction. It contai
 <a id="inventory-transaction-definitions--get-inventory-transaction-definition-object-definition"></a>
 ### Get Inventory Transaction Definition Object Definition
 
-<a id="inventory-transaction-definitions--lookup-2"></a>
+<a id="inventory-transaction-definitions--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the inventory transaction definition object:
@@ -2100,7 +2100,7 @@ Function: `lookup`
 <a id="inventory-transaction-definitions--query-and-list-inventory-transaction-definitions"></a>
 ### Query and List Inventory Transaction Definitions
 
-<a id="inventory-transaction-definitions--query-2"></a>
+<a id="inventory-transaction-definitions--query"></a>
 Function: `query`
 
 > List the template name and template type for each inventory transaction definition:
@@ -2133,7 +2133,7 @@ Function: `query`
 <a id="inventory-transaction-definitions--query-and-list-inventory-transaction-definitions-legacy"></a>
 ### Query and List Inventory Transaction Definitions (Legacy)
 
-<a id="inventory-transaction-definitions--readbyquery-2"></a>
+<a id="inventory-transaction-definitions--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2158,7 +2158,7 @@ Function: `readByQuery`
 <a id="inventory-transaction-definitions--get-inventory-transaction-definition"></a>
 ### Get Inventory Transaction Definition
 
-<a id="inventory-transaction-definitions--read-2"></a>
+<a id="inventory-transaction-definitions--read"></a>
 Function: `read`
 
 ```xml
@@ -2200,7 +2200,7 @@ An inventory transaction is usually a transfer or an adjustment.
 <a id="inventory-transactions--get-inventory-transaction-object-definition"></a>
 #### Get Inventory Transaction Object Definition
 
-<a id="inventory-transactions--lookup-2"></a>
+<a id="inventory-transactions--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the inventory transaction object:
@@ -2224,7 +2224,7 @@ Function: `lookup`
 <a id="inventory-transactions--query-and-list-inventory-transactions"></a>
 #### Query and List Inventory Transactions
 
-<a id="inventory-transactions--query-2"></a>
+<a id="inventory-transactions--query"></a>
 Function: `query`
 
 > Lists information for each inventory transaction with the given document type:
@@ -2260,7 +2260,7 @@ Function: `query`
 <a id="inventory-transactions--query-and-list-inventory-transactions-legacy"></a>
 #### Query and List Inventory Transactions (Legacy)
 
-<a id="inventory-transactions--readbyquery-2"></a>
+<a id="inventory-transactions--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2289,7 +2289,7 @@ Function: `readByQuery`
 <a id="inventory-transactions--get-an-inventory-transaction"></a>
 #### Get an Inventory Transaction
 
-<a id="inventory-transactions--read-2"></a>
+<a id="inventory-transactions--read"></a>
 Function: `read`
 
 ```xml
@@ -2326,7 +2326,7 @@ Release history:
 | 2020 Release 1 | Added adjdocentrykey |
 | 2019 Release 4 | Added taskid |
 
-<a id="inventory-transactions--create_ictransaction-2"></a>
+<a id="inventory-transactions--create_ictransaction"></a>
 Function: `create_ictransaction`
 
 ```xml
@@ -2482,7 +2482,7 @@ After using `read` to get the line number of the entry you want to modify, add o
 
 > **Warning:** Before doing any large scale update operations, perform a test to make sure you are modifying the correct lines.
 
-<a id="inventory-transactions--update_ictransaction-2"></a>
+<a id="inventory-transactions--update_ictransaction"></a>
 Function: `update_ictransaction`
 
 ```xml
@@ -2620,7 +2620,7 @@ Function: `update_ictransaction`
 <a id="inventory-transactions--delete-an-inventory-transaction"></a>
 #### Delete an Inventory Transaction
 
-<a id="inventory-transactions--delete-2"></a>
+<a id="inventory-transactions--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2643,7 +2643,7 @@ Function: `delete`
 <a id="inventory-transactions--delete-an-inventory-transaction-legacy"></a>
 #### Delete an Inventory Transaction (Legacy)
 
-<a id="inventory-transactions--delete_ictransaction-2"></a>
+<a id="inventory-transactions--delete_ictransaction"></a>
 Function: `delete_ictransaction`
 
 ```xml
@@ -2665,7 +2665,7 @@ Function: `delete_ictransaction`
 <a id="inventory-transactions--get-inventory-transaction-line-object-definition"></a>
 #### Get Inventory Transaction Line Object Definition
 
-<a id="inventory-transactions--lookup-1-2"></a>
+<a id="inventory-transactions--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the inventory transaction line object:
@@ -2689,7 +2689,7 @@ Function: `lookup`
 <a id="inventory-transactions--query-and-list-inventory-transaction-lines"></a>
 #### Query and List Inventory Transaction Lines
 
-<a id="inventory-transactions--query-1-2"></a>
+<a id="inventory-transactions--query-1"></a>
 Function: `query`
 
 > Lists information for each inventory transaction line with the given document type:
@@ -2726,7 +2726,7 @@ Function: `query`
 <a id="inventory-transactions--query-and-list-inventory-transaction-lines-legacy"></a>
 #### Query and List Inventory Transaction Lines (Legacy)
 
-<a id="inventory-transactions--readbyquery-1-2"></a>
+<a id="inventory-transactions--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2766,7 +2766,7 @@ Function: `readByQuery`
 <a id="inventory-transactions--get-an-inventory-transaction-line"></a>
 #### Get an Inventory Transaction Line
 
-<a id="inventory-transactions--read-1-2"></a>
+<a id="inventory-transactions--read-1"></a>
 Function: `read`
 
 ```xml
@@ -2797,7 +2797,7 @@ Function: `read`
 <a id="inventory-transactions--get-inventory-transaction-subtotal-object-definition"></a>
 #### Get Inventory Transaction Subtotal Object Definition
 
-<a id="inventory-transactions--lookup-2-3"></a>
+<a id="inventory-transactions--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the inventory transaction subtotal object:
@@ -2821,7 +2821,7 @@ Function: `lookup`
 <a id="inventory-transactions--query-and-list-inventory-transaction-subtotals"></a>
 #### Query and List Inventory Transaction Subtotals
 
-<a id="inventory-transactions--query-2-3"></a>
+<a id="inventory-transactions--query-2"></a>
 Function: `query`
 
 > List information about each inventory transaction subtotal with the given document type :
@@ -2858,7 +2858,7 @@ Function: `query`
 <a id="inventory-transactions--query-and-list-inventory-transaction-subtotals-legacy"></a>
 #### Query and List Inventory Transaction Subtotals (Legacy)
 
-<a id="inventory-transactions--readbyquery-2-3"></a>
+<a id="inventory-transactions--readbyquery-2"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2887,7 +2887,7 @@ Function: `readByQuery`
 <a id="inventory-transactions--get-an-inventory-transaction-subtotal"></a>
 #### Get an Inventory Transaction Subtotal
 
-<a id="inventory-transactions--read-2-3"></a>
+<a id="inventory-transactions--read-2"></a>
 Function: `read`
 
 ```xml
@@ -2928,7 +2928,7 @@ This entity represents a “bundle” within fulfillment. A fulfillment can inde
 <a id="inventory-work-queue-details--get-inventory-work-queue-details-object-definition"></a>
 ### Get Inventory Work Queue Details Object Definition
 
-<a id="inventory-work-queue-details--lookup-2"></a>
+<a id="inventory-work-queue-details--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the inventory work queue order details object:
@@ -2948,7 +2948,7 @@ Function: `lookup`
 <a id="inventory-work-queue-details--query-and-list-inventory-work-queue-details"></a>
 ### Query and List Inventory Work Queue Details
 
-<a id="inventory-work-queue-details--query-2"></a>
+<a id="inventory-work-queue-details--query"></a>
 Function: `query`
 
 > query
@@ -2986,7 +2986,7 @@ Function: `query`
 <a id="inventory-work-queue-details--query-and-list-inventory-work-queue-details-legacy"></a>
 ### Query and List Inventory Work Queue Details (legacy)
 
-<a id="inventory-work-queue-details--readbyquery-2"></a>
+<a id="inventory-work-queue-details--readbyquery"></a>
 Function: `readByQuery`
 
 > readByQuery
@@ -3015,7 +3015,7 @@ Function: `readByQuery`
 <a id="inventory-work-queue-details--get-an-inventory-work-queue-details"></a>
 ### Get an Inventory Work Queue Details
 
-<a id="inventory-work-queue-details--read-2"></a>
+<a id="inventory-work-queue-details--read"></a>
 Function: `read`
 
 > read
@@ -3043,7 +3043,7 @@ Function: `read`
 <a id="inventory-work-queue-details--update-an-inventory-work-queue-details"></a>
 ### Update an Inventory Work Queue Details
 
-<a id="inventory-work-queue-details--update-2"></a>
+<a id="inventory-work-queue-details--update"></a>
 Function: `update`
 
 > update
@@ -3093,7 +3093,7 @@ This entity represents the fulfillment-enhanced view of a Sales Order. Inventory
 <a id="inventory-work-queue-orders--get-inventory-work-queue-orders-object-definition"></a>
 ### Get Inventory Work Queue Orders Object Definition
 
-<a id="inventory-work-queue-orders--lookup-2"></a>
+<a id="inventory-work-queue-orders--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the inventory work queue orders definition object:
@@ -3113,7 +3113,7 @@ Function: `lookup`
 <a id="inventory-work-queue-orders--query-and-list-inventory-work-queue-orders"></a>
 ### Query and List Inventory Work Queue Orders
 
-<a id="inventory-work-queue-orders--query-2"></a>
+<a id="inventory-work-queue-orders--query"></a>
 Function: `query`
 
 > query
@@ -3151,7 +3151,7 @@ Function: `query`
 <a id="inventory-work-queue-orders--query-and-list-inventory-work-queue-order-legacy"></a>
 ### Query and List Inventory Work Queue Order (legacy)
 
-<a id="inventory-work-queue-orders--readbyquery-2"></a>
+<a id="inventory-work-queue-orders--readbyquery"></a>
 Function: `readByQuery`
 
 > readByQuery
@@ -3180,7 +3180,7 @@ Function: `readByQuery`
 <a id="inventory-work-queue-orders--get-an-inventory-work-queue-order"></a>
 ### Get an Inventory Work Queue Order
 
-<a id="inventory-work-queue-orders--read-2"></a>
+<a id="inventory-work-queue-orders--read"></a>
 Function: `read`
 
 > read
@@ -3208,7 +3208,7 @@ Function: `read`
 <a id="inventory-work-queue-orders--update-an-inventory-work-queue-order"></a>
 ### Update an Inventory Work Queue Order
 
-<a id="inventory-work-queue-orders--update-2"></a>
+<a id="inventory-work-queue-orders--update"></a>
 Function: `update`
 
 > update
@@ -3258,7 +3258,7 @@ When you associate an inventory item with another inventory item (known as an `i
 <a id="item-cross-references--get-item-cross-reference-object-definition"></a>
 ### Get Item Cross Reference Object Definition
 
-<a id="item-cross-references--lookup-2"></a>
+<a id="item-cross-references--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the item cross reference object:
@@ -3281,7 +3281,7 @@ Function: `lookup`
 <a id="item-cross-references--query-and-list-item-cross-references"></a>
 ### Query and List Item Cross References
 
-<a id="item-cross-references--query-2"></a>
+<a id="item-cross-references--query"></a>
 Function: `query`
 
 > List the item ID and reference type for each cross reference:
@@ -3340,7 +3340,7 @@ Function: `query`
 <a id="item-cross-references--query-and-list-item-cross-references-legacy"></a>
 ### Query and List Item Cross References (Legacy)
 
-<a id="item-cross-references--readbyquery-2"></a>
+<a id="item-cross-references--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3367,7 +3367,7 @@ Function: `readByQuery`
 <a id="item-cross-references--get-item-cross-reference"></a>
 ### Get Item Cross Reference
 
-<a id="item-cross-references--read-2"></a>
+<a id="item-cross-references--read"></a>
 Function: `read`
 
 ```xml
@@ -3399,7 +3399,7 @@ Release history:
 |---|---|
 | 2021 Release 2 | Added ALTERNATEITEMID, added Substitute, Upgrade, Downgrade, and Complement values for REFTYPE |
 
-<a id="item-cross-references--create-2"></a>
+<a id="item-cross-references--create"></a>
 Function: `create`
 
 > Create a cross reference to associate inventory item L-12 with the Acme vendor and use their alias name, BL-01, for that item:
@@ -3459,7 +3459,7 @@ Release history:
 |---|---|
 | 2021 Release 2 | Added ALTERNATEITEMID |
 
-<a id="item-cross-references--update-2"></a>
+<a id="item-cross-references--update"></a>
 Function: `update`
 
 > Update the description for the item cross reference:
@@ -3495,7 +3495,7 @@ Function: `update`
 <a id="item-cross-references--delete-item-cross-reference"></a>
 ### Delete Item Cross Reference
 
-<a id="item-cross-references--delete-2"></a>
+<a id="item-cross-references--delete"></a>
 Function: `delete`
 
 ```xml
@@ -3533,7 +3533,7 @@ Item GL groups are used to organize transaction definitions for posting to the g
 <a id="item-gl-groups--get-item-gl-group-object-definition"></a>
 ### Get Item GL Group Object Definition
 
-<a id="item-gl-groups--lookup-2"></a>
+<a id="item-gl-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the item GL group object:
@@ -3556,7 +3556,7 @@ Function: `lookup`
 <a id="item-gl-groups--query-and-list-item-gl-groups"></a>
 ### Query and List Item GL Groups
 
-<a id="item-gl-groups--query-2"></a>
+<a id="item-gl-groups--query"></a>
 Function: `query`
 
 > List the record number and name for each item GL group:
@@ -3589,7 +3589,7 @@ Function: `query`
 <a id="item-gl-groups--query-and-list-item-gl-groups-legacy"></a>
 ### Query and List Item GL Groups (Legacy)
 
-<a id="item-gl-groups--readbyquery-2"></a>
+<a id="item-gl-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3614,7 +3614,7 @@ Function: `readByQuery`
 <a id="item-gl-groups--get-item-gl-group"></a>
 ### Get Item GL Group
 
-<a id="item-gl-groups--read-2"></a>
+<a id="item-gl-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -3638,7 +3638,7 @@ Function: `read`
 <a id="item-gl-groups--get-item-gl-group-by-id"></a>
 ### Get Item GL Group by ID
 
-<a id="item-gl-groups--readbyname-2"></a>
+<a id="item-gl-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3677,7 +3677,7 @@ An item group categorizes item dimension records, mainly for the purpose of stru
 <a id="item-groups--get-item-group-object-definition"></a>
 ### Get Item Group Object Definition
 
-<a id="item-groups--lookup-2"></a>
+<a id="item-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the item group object:
@@ -3700,7 +3700,7 @@ Function: `lookup`
 <a id="item-groups--query-and-list-item-groups"></a>
 ### Query and List Item Groups
 
-<a id="item-groups--query-2"></a>
+<a id="item-groups--query"></a>
 Function: `query`
 
 > List the record number and ID for each item group:
@@ -3733,7 +3733,7 @@ Function: `query`
 <a id="item-groups--query-and-list-item-groups-legacy"></a>
 ### Query and List Item Groups (Legacy)
 
-<a id="item-groups--readbyquery-2"></a>
+<a id="item-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3760,7 +3760,7 @@ Function: `readByQuery`
 <a id="item-groups--get-item-group"></a>
 ### Get Item Group
 
-<a id="item-groups--read-2"></a>
+<a id="item-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -3786,7 +3786,7 @@ Function: `read`
 <a id="item-groups--get-item-group-by-id"></a>
 ### Get Item Group by ID
 
-<a id="item-groups--readbyname-2"></a>
+<a id="item-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3827,7 +3827,7 @@ Item tax groups apply different tax schedules to various items.
 <a id="item-tax-groups--get-item-tax-group-object-definition"></a>
 ### Get Item Tax Group Object Definition
 
-<a id="item-tax-groups--lookup-2"></a>
+<a id="item-tax-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the item tax group object:
@@ -3850,7 +3850,7 @@ Function: `lookup`
 <a id="item-tax-groups--query-and-list-item-tax-groups"></a>
 ### Query and List Item Tax Groups
 
-<a id="item-tax-groups--query-2"></a>
+<a id="item-tax-groups--query"></a>
 Function: `query`
 
 > List the record number and name for each item tax group:
@@ -3883,7 +3883,7 @@ Function: `query`
 <a id="item-tax-groups--query-and-list-item-tax-groups-legacy"></a>
 ### Query and List Item Tax Groups (Legacy)
 
-<a id="item-tax-groups--readbyquery-2"></a>
+<a id="item-tax-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3910,7 +3910,7 @@ Function: `readByQuery`
 <a id="item-tax-groups--get-item-tax-group"></a>
 ### Get Item Tax Group
 
-<a id="item-tax-groups--read-2"></a>
+<a id="item-tax-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -3936,7 +3936,7 @@ Function: `read`
 <a id="item-tax-groups--get-item-tax-group-by-id"></a>
 ### Get Item Tax Group by ID
 
-<a id="item-tax-groups--readbyname-2"></a>
+<a id="item-tax-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3962,7 +3962,7 @@ Function: `readByName`
 <a id="item-tax-groups--create-item-tax-group-legacy"></a>
 ### Create Item Tax Group (Legacy)
 
-<a id="item-tax-groups--create_itemtaxgroup-2"></a>
+<a id="item-tax-groups--create_itemtaxgroup"></a>
 Function: `create_itemtaxgroup`
 
 ```xml
@@ -3983,7 +3983,7 @@ Function: `create_itemtaxgroup`
 <a id="item-tax-groups--delete-item-tax-group-legacy"></a>
 ### Delete Item Tax Group (Legacy)
 
-<a id="item-tax-groups--delete_itemtaxgroup-2"></a>
+<a id="item-tax-groups--delete_itemtaxgroup"></a>
 Function: `delete_itemtaxgroup`
 
 ```xml
@@ -4019,7 +4019,7 @@ Sage Intacct uses the information from these records in the Inventory Reorders r
 <a id="item-warehouse-details--get-item-warehouse-detail-object-definition"></a>
 ### Get Item Warehouse Detail Object Definition
 
-<a id="item-warehouse-details--lookup-2"></a>
+<a id="item-warehouse-details--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the item warehouse detail object:
@@ -4042,7 +4042,7 @@ Function: `lookup`
 <a id="item-warehouse-details--query-and-list-item-warehouse-details"></a>
 ### Query and List Item Warehouse Details
 
-<a id="item-warehouse-details--query-2"></a>
+<a id="item-warehouse-details--query"></a>
 Function: `query`
 
 > List the record number, item ID, and warehouse ID of each warehouse detail :
@@ -4076,7 +4076,7 @@ Function: `query`
 <a id="item-warehouse-details--query-and-list-item-warehouse-details-legacy"></a>
 ### Query and List Item Warehouse Details (Legacy)
 
-<a id="item-warehouse-details--readbyquery-2"></a>
+<a id="item-warehouse-details--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4103,7 +4103,7 @@ Function: `readByQuery`
 <a id="item-warehouse-details--get-item-warehouse-detail"></a>
 ### Get Item Warehouse Detail
 
-<a id="item-warehouse-details--read-2"></a>
+<a id="item-warehouse-details--read"></a>
 Function: `read`
 
 ```xml
@@ -4153,7 +4153,7 @@ The type of an item (`ITEMTYPE`) affects other item parameters. Possible item ty
 <a id="items--get-item-object-definition"></a>
 ### Get Item Object Definition
 
-<a id="items--lookup-2"></a>
+<a id="items--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the item object:
@@ -4176,7 +4176,7 @@ Function: `lookup`
 <a id="items--query-and-list-items"></a>
 ### Query and List Items
 
-<a id="items--query-2"></a>
+<a id="items--query"></a>
 Function: `query`
 
 > List all inventory items:
@@ -4234,7 +4234,7 @@ Function: `query`
 <a id="items--query-and-list-items-legacy"></a>
 ### Query and List Items (Legacy)
 
-<a id="items--readbyquery-2"></a>
+<a id="items--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4274,7 +4274,7 @@ Function: `readByQuery`
 <a id="items--get-an-item"></a>
 ### Get an Item
 
-<a id="items--read-2"></a>
+<a id="items--read"></a>
 Function: `read`
 
 ```xml
@@ -4300,7 +4300,7 @@ Function: `read`
 <a id="items--get-item-by-id"></a>
 ### Get Item by ID
 
-<a id="items--readbyname-2"></a>
+<a id="items--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -4340,7 +4340,7 @@ Release history:
 | 2018 Release 3 | Added ENABLELANDEDCOST and LANDEDCOSTINFO |
 | 2023 Release 4 | Added CONTRACTENABLED |
 
-<a id="items--create-2"></a>
+<a id="items--create"></a>
 Function: `create`
 
 > Create an item:
@@ -4651,7 +4651,7 @@ Release history:
 | 2021 Release 2 | Added weightuom, netweight, lwhuom, length, width, height, thicknessuom, thickness, minimumthickness, maximumthickness, areauom, area, volumeuom, volume, diameteruom, innerdiameter, outerdiameter, durometer, upc12, ean13, safetyitem, restricteditem, compliantitem, condition, engineeringalert, specification1, specification2, specification3, engineeringapproval, qualitycontrolapproval, salesapproval, primarycountryoforigin, brand, subbrand, category, subcategory, catalogref, color, style, size1, size2, giftcard, webenabled, webname, webshortdesc, weblongdesc |
 | 2019 Release 4 | Added autoprintlabel |
 
-<a id="items--create_item-2"></a>
+<a id="items--create_item"></a>
 Function: `create_item`
 
 ```xml
@@ -4770,7 +4770,7 @@ Release history:
 | 2018 Release 3 | Added ENABLELANDEDCOST and LANDEDCOSTINFO |
 | 2023 Release 4 | Added CONTRACTENABLED |
 
-<a id="items--update-2"></a>
+<a id="items--update"></a>
 Function: `update`
 
 ```xml
@@ -4974,7 +4974,7 @@ Release history:
 | 2019 Release 4 | Added autoprintlabel |
 | 2024 Release 2 | Update option for replenishment method-Demand forecast by statistical account, replace with Demand forecast by fluctuating values |
 
-<a id="items--update_item-2"></a>
+<a id="items--update_item"></a>
 Function: `update_item`
 
 ```xml
@@ -5075,7 +5075,7 @@ Function: `update_item`
 <a id="items--delete-an-item"></a>
 ### Delete an Item
 
-<a id="items--delete-2"></a>
+<a id="items--delete"></a>
 Function: `delete`
 
 ```xml
@@ -5098,7 +5098,7 @@ Function: `delete`
 <a id="items--delete-an-item-legacy"></a>
 ### Delete an Item (Legacy)
 
-<a id="items--delete_item-2"></a>
+<a id="items--delete_item"></a>
 Function: `delete_item`
 
 ```xml
@@ -5132,7 +5132,7 @@ Product lines allow you to group related products to make it easier to update pr
 <a id="product-lines--get-product-line-object-definition"></a>
 ### Get Product Line Object Definition
 
-<a id="product-lines--lookup-2"></a>
+<a id="product-lines--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the product line object:
@@ -5155,7 +5155,7 @@ Function: `lookup`
 <a id="product-lines--query-and-list-product-lines"></a>
 ### Query and List Product Lines
 
-<a id="product-lines--query-2"></a>
+<a id="product-lines--query"></a>
 Function: `query`
 
 > List the record number and product line ID for each product line:
@@ -5188,7 +5188,7 @@ Function: `query`
 <a id="product-lines--query-and-list-product-lines-legacy"></a>
 ### Query and List Product Lines (Legacy)
 
-<a id="product-lines--readbyquery-2"></a>
+<a id="product-lines--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5215,7 +5215,7 @@ Function: `readByQuery`
 <a id="product-lines--get-product-line"></a>
 ### Get Product Line
 
-<a id="product-lines--read-2"></a>
+<a id="product-lines--read"></a>
 Function: `read`
 
 ```xml
@@ -5241,7 +5241,7 @@ Function: `read`
 <a id="product-lines--get-product-line-by-id"></a>
 ### Get Product Line by ID
 
-<a id="product-lines--readbyname-2"></a>
+<a id="product-lines--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5284,7 +5284,7 @@ Warehouses can have any combination of aisles, rows and/or bins.
 <a id="rows--get-row-object-definition"></a>
 ### Get Row Object Definition
 
-<a id="rows--lookup-2"></a>
+<a id="rows--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the row object:
@@ -5307,7 +5307,7 @@ Function: `lookup`
 <a id="rows--query-and-list-rows"></a>
 ### Query and List Rows
 
-<a id="rows--query-2"></a>
+<a id="rows--query"></a>
 Function: `query`
 
 > List the record number and row description for each row:
@@ -5340,7 +5340,7 @@ Function: `query`
 <a id="rows--query-and-list-rows-legacy"></a>
 ### Query and List Rows (Legacy)
 
-<a id="rows--readbyquery-2"></a>
+<a id="rows--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5367,7 +5367,7 @@ Function: `readByQuery`
 <a id="rows--get-row"></a>
 ### Get Row
 
-<a id="rows--read-2"></a>
+<a id="rows--read"></a>
 Function: `read`
 
 ```xml
@@ -5393,7 +5393,7 @@ Function: `read`
 <a id="rows--get-row-by-id"></a>
 ### Get Row by ID
 
-<a id="rows--readbyname-2"></a>
+<a id="rows--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5436,7 +5436,7 @@ Stockable kit transactions created through the Intacct API describe orders to bu
 
 A `Build Kits` transaction is the record of an order to create a specified number of pre-defined stockable kits. You can include different stockable kits in the same transaction as separate `stkittransitem` objects. Each `stkittransitem` object lists the stockable kits that were built and the component items that were used to build the stockable kits, for inventory management and tracking purposes.
 
-<a id="stockable-kit-transactions--create_stkittransaction-2"></a>
+<a id="stockable-kit-transactions--create_stkittransaction"></a>
 Function: `create_stkittransaction`
 
 > Request to assemble three cartons of eggs:
@@ -5571,7 +5571,7 @@ You must create an `itemdetail` object for each tracked source and destination. 
 
 A `Disassemble Kits` transaction will reverse a previous build kit transaction. The inventory of built stockable kits will be reduced and the inventory of components will be increased based on the number of items specified in the build kit transaction. You don’t need to specify `stkittransitems` or `itemdetails`, as all of that information will be extracted from the build kit transaction.
 
-<a id="stockable-kit-transactions--create_stkittransaction-1-2"></a>
+<a id="stockable-kit-transactions--create_stkittransaction-1"></a>
 Function: `create_stkittransaction`
 
 > Disassemble the stockable kits created in the previous example:
@@ -5634,7 +5634,7 @@ Units of measure, like count or weight, are provided for items handled under Inv
 <a id="units-of-measure--get-units-of-measure-object-definition"></a>
 #### Get Units of Measure Object Definition
 
-<a id="units-of-measure--lookup-2"></a>
+<a id="units-of-measure--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the units of measure object:
@@ -5657,7 +5657,7 @@ Function: `lookup`
 <a id="units-of-measure--query-and-list-units-of-measure"></a>
 #### Query and List Units of Measure
 
-<a id="units-of-measure--query-2"></a>
+<a id="units-of-measure--query"></a>
 Function: `query`
 
 > List the record number and name for each unit of measure:
@@ -5690,7 +5690,7 @@ Function: `query`
 <a id="units-of-measure--query-and-list-units-of-measure-legacy"></a>
 #### Query and List Units of Measure (Legacy)
 
-<a id="units-of-measure--readbyquery-2"></a>
+<a id="units-of-measure--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5717,7 +5717,7 @@ Function: `readByQuery`
 <a id="units-of-measure--get-unit-of-measure"></a>
 #### Get Unit of Measure
 
-<a id="units-of-measure--read-2"></a>
+<a id="units-of-measure--read"></a>
 Function: `read`
 
 ```xml
@@ -5743,7 +5743,7 @@ Function: `read`
 <a id="units-of-measure--get-unit-of-measure-by-id"></a>
 #### Get Unit of Measure by ID
 
-<a id="units-of-measure--readbyname-2"></a>
+<a id="units-of-measure--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5772,7 +5772,7 @@ Function: `readByName`
 <a id="units-of-measure--get-units-of-measure-related-units-object-definition"></a>
 #### Get Units of Measure Related Units Object Definition
 
-<a id="units-of-measure--lookup-1-2"></a>
+<a id="units-of-measure--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the units of measure related units object:
@@ -5795,7 +5795,7 @@ Function: `lookup`
 <a id="units-of-measure--query-and-list-unit-of-measure-related-units"></a>
 #### Query and List Unit of Measure Related Units
 
-<a id="units-of-measure--query-1-2"></a>
+<a id="units-of-measure--query-1"></a>
 Function: `query`
 
 > List the record number, unit, and unit factor for each related unit:
@@ -5829,7 +5829,7 @@ Function: `query`
 <a id="units-of-measure--query-and-list-unit-of-measure-related-units-legacy"></a>
 #### Query and List Unit of Measure Related Units (Legacy)
 
-<a id="units-of-measure--readbyquery-1-2"></a>
+<a id="units-of-measure--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5856,7 +5856,7 @@ Function: `readByQuery`
 <a id="units-of-measure--get-unit-of-measure-related-unit"></a>
 #### Get Unit of Measure Related Unit
 
-<a id="units-of-measure--read-1-2"></a>
+<a id="units-of-measure--read-1"></a>
 Function: `read`
 
 ```xml
@@ -5897,7 +5897,7 @@ A warehouse group categorizes warehouse dimension records, mainly for the purpos
 <a id="warehouse-groups--get-warehouse-group-object-definition"></a>
 ### Get Warehouse Group Object Definition
 
-<a id="warehouse-groups--lookup-2"></a>
+<a id="warehouse-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the warehouse group object:
@@ -5920,7 +5920,7 @@ Function: `lookup`
 <a id="warehouse-groups--query-and-list-warehouse-groups"></a>
 ### Query and List Warehouse Groups
 
-<a id="warehouse-groups--query-2"></a>
+<a id="warehouse-groups--query"></a>
 Function: `query`
 
 > List the record number and ID for each warehouse group:
@@ -5953,7 +5953,7 @@ Function: `query`
 <a id="warehouse-groups--query-and-list-warehouse-groups-legacy"></a>
 ### Query and List Warehouse Groups (Legacy)
 
-<a id="warehouse-groups--readbyquery-2"></a>
+<a id="warehouse-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5980,7 +5980,7 @@ Function: `readByQuery`
 <a id="warehouse-groups--get-warehouse-group"></a>
 ### Get Warehouse Group
 
-<a id="warehouse-groups--read-2"></a>
+<a id="warehouse-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -6006,7 +6006,7 @@ Function: `read`
 <a id="warehouse-groups--get-warehouse-group-by-id"></a>
 ### Get Warehouse Group by ID
 
-<a id="warehouse-groups--readbyname-2"></a>
+<a id="warehouse-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -6047,7 +6047,7 @@ Warehouse transfers let you move inventory from one warehouse to another, either
 <a id="warehouse-transfers--get-warehouse-transfer-object-definition"></a>
 ### Get Warehouse Transfer Object Definition
 
-<a id="warehouse-transfers--lookup-2"></a>
+<a id="warehouse-transfers--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the warehouse transfer object:
@@ -6070,7 +6070,7 @@ Function: `lookup`
 <a id="warehouse-transfers--get-warehouse-transfer-item-object-definition"></a>
 ### Get Warehouse Transfer Item Object Definition
 
-<a id="warehouse-transfers--lookup-1-2"></a>
+<a id="warehouse-transfers--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the warehouse transfer item object:
@@ -6093,7 +6093,7 @@ Function: `lookup`
 <a id="warehouse-transfers--query-and-list-warehouse-transfers"></a>
 ### Query and List Warehouse Transfers
 
-<a id="warehouse-transfers--query-2"></a>
+<a id="warehouse-transfers--query"></a>
 Function: `query`
 
 > List the record number and description for each warehouse transfer:
@@ -6126,7 +6126,7 @@ Function: `query`
 <a id="warehouse-transfers--query-and-list-warehouse-transfers-legacy"></a>
 ### Query and List Warehouse Transfers (Legacy)
 
-<a id="warehouse-transfers--readbyquery-2"></a>
+<a id="warehouse-transfers--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6153,7 +6153,7 @@ Function: `readByQuery`
 <a id="warehouse-transfers--get-warehouse-transfer"></a>
 ### Get Warehouse Transfer
 
-<a id="warehouse-transfers--read-2"></a>
+<a id="warehouse-transfers--read"></a>
 Function: `read`
 
 ```xml
@@ -6185,7 +6185,7 @@ Release history:
 |---|---|
 | 2021 Release 3 | Added TRANSFERTYPE, OUTDATE, INDATE, ACTION |
 
-<a id="warehouse-transfers--create-2"></a>
+<a id="warehouse-transfers--create"></a>
 Function: `create`
 
 > Immediate transfer of 200 widgets from warehouse WH101 to warehouse WH102:
@@ -6307,7 +6307,7 @@ Release history:
 
 > Update the transfer to move fewer (only 50) widgets, change the description, and show the item as transferred out of the originating warehouse:
 
-<a id="warehouse-transfers--update-2"></a>
+<a id="warehouse-transfers--update"></a>
 Function: `update`
 
 ```xml
@@ -6384,7 +6384,7 @@ Function: `update`
 <a id="warehouse-transfers--delete-warehouse-transfer"></a>
 ### Delete Warehouse Transfer
 
-<a id="warehouse-transfers--delete-2"></a>
+<a id="warehouse-transfers--delete"></a>
 Function: `delete`
 
 ```xml
@@ -6422,7 +6422,7 @@ Warehouse is a dimension that can be defined by the company and set on transacti
 <a id="warehouses--get-warehouse-object-definition"></a>
 ### Get Warehouse Object Definition
 
-<a id="warehouses--lookup-2"></a>
+<a id="warehouses--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the warehouse object:
@@ -6445,7 +6445,7 @@ Function: `lookup`
 <a id="warehouses--query-and-list-warehouses"></a>
 ### Query and List Warehouses
 
-<a id="warehouses--query-2"></a>
+<a id="warehouses--query"></a>
 Function: `query`
 
 > List the record number and location ID for each warehouse:
@@ -6478,7 +6478,7 @@ Function: `query`
 <a id="warehouses--query-and-list-warehouses-legacy"></a>
 ### Query and List Warehouses (Legacy)
 
-<a id="warehouses--readbyquery-2"></a>
+<a id="warehouses--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6511,7 +6511,7 @@ Function: `readByQuery`
 <a id="warehouses--get-warehouse"></a>
 ### Get Warehouse
 
-<a id="warehouses--read-2"></a>
+<a id="warehouses--read"></a>
 Function: `read`
 
 ```xml
@@ -6537,7 +6537,7 @@ Function: `read`
 <a id="warehouses--get-warehouse-by-id"></a>
 ### Get Warehouse by ID
 
-<a id="warehouses--readbyname-2"></a>
+<a id="warehouses--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -6570,7 +6570,7 @@ Release history:
 | 2021 Release 2 | Added ENABLENEGATIVEINV |
 | 2018 Release 4 | Added ENABLE_REPLENISHMENT |
 
-<a id="warehouses--create-2"></a>
+<a id="warehouses--create"></a>
 Function: `create`
 
 ```xml
@@ -6639,7 +6639,7 @@ Release history:
 | 2021 Release 2 | Added ENABLENEGATIVEINV |
 | 2018 Release 4 | Added ENABLE_REPLENISHMENT |
 
-<a id="warehouses--update-2"></a>
+<a id="warehouses--update"></a>
 Function: `update`
 
 ```xml
@@ -6699,7 +6699,7 @@ Function: `update`
 <a id="warehouses--delete-warehouse"></a>
 ### Delete Warehouse
 
-<a id="warehouses--delete-2"></a>
+<a id="warehouses--delete"></a>
 Function: `delete`
 
 ```xml
@@ -6739,7 +6739,7 @@ Typically, zones are used when you store your items in separate areas of the war
 <a id="zones--get-zone-object-definition"></a>
 ### Get Zone Object Definition
 
-<a id="zones--lookup-2"></a>
+<a id="zones--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the zone object:
@@ -6762,7 +6762,7 @@ Function: `lookup`
 <a id="zones--query-and-list-zones"></a>
 ### Query and List Zones
 
-<a id="zones--query-2"></a>
+<a id="zones--query"></a>
 Function: `query`
 
 > List the zone ID and description for each zone:
@@ -6795,7 +6795,7 @@ Function: `query`
 <a id="zones--query-and-list-zones-legacy"></a>
 ### Query and List Zones (Legacy)
 
-<a id="zones--readbyquery-2"></a>
+<a id="zones--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6822,7 +6822,7 @@ Function: `readByQuery`
 <a id="zones--get-zone"></a>
 ### Get Zone
 
-<a id="zones--read-2"></a>
+<a id="zones--read"></a>
 Function: `read`
 
 ```xml
@@ -6848,7 +6848,7 @@ Function: `read`
 <a id="zones--get-zone-by-id"></a>
 ### Get Zone by ID
 
-<a id="zones--readbyname-2"></a>
+<a id="zones--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -6874,7 +6874,7 @@ Function: `readByName`
 <a id="zones--create-zone"></a>
 ### Create Zone
 
-<a id="zones--create-2"></a>
+<a id="zones--create"></a>
 Function: `create`
 
 ```xml
@@ -6905,7 +6905,7 @@ Function: `create`
 <a id="zones--update-zone"></a>
 ### Update Zone
 
-<a id="zones--update-2"></a>
+<a id="zones--update"></a>
 Function: `update`
 
 ```xml
@@ -6937,7 +6937,7 @@ Function: `update`
 <a id="zones--delete-zone"></a>
 ### Delete Zone
 
-<a id="zones--delete-2"></a>
+<a id="zones--delete"></a>
 Function: `delete`
 
 ```xml

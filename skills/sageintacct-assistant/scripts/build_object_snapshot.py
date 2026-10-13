@@ -1,31 +1,32 @@
 #!/usr/bin/env python3
 """Build references/xml-api/snapshot/ from a scrubbed object-definition dump (maintenance only).
 
-    python -I scripts/build_object_snapshot.py --dump <dump folder, or the zip written by dump_object_definitions.py --pack> \
+    python -I scripts/build_object_snapshot.py --dump <dump folder, or the zip written by dump_object_definitions.py --pack> \\
         --out references/xml-api/snapshot --release "2026 Release 3" --verified YYYY-MM-DD [--max-bytes 1000000]
 
-The dump (a folder, or the zip committed under sources/) holds `inspect.xml` (the object list), `lookup/<OBJECT>.xml` (one `<data>` element per object, the
-`lookup` result) and `manifest.json`. The builder reads the documented `lookup` shape
-(`Type/Fields/Field/ID|LABEL|DESCRIPTION|REQUIRED|READONLY|DATATYPE|ISCUSTOM|VALIDVALUES/VALIDVALUE` and
+The dump (a folder, or the zip committed under sources/) holds `inspect.xml` (the object list), `lookup/<OBJECT>.xml`
+(one `<data>` element per object, the `lookup` result) and `manifest.json`. The builder reads the documented `lookup`
+shape (`Type/Fields/Field/ID|LABEL|DESCRIPTION|REQUIRED|READONLY|DATATYPE|ISCUSTOM|VALIDVALUES/VALIDVALUE` and
 `Relationships/Relationship/OBJECTPATH|OBJECTNAME|LABEL|RELATIONSHIPTYPE|RELATEDBY`), tolerating case differences,
-and writes:
+and writes into --out, which must be a folder named `snapshot` (it rewrites these three kinds of file there and
+touches nothing else):
   INDEX.md        provenance, counts, lookup recipes
   objects.md      one row per object: name, label (from inspect), fields, relationships, bundle file and line
   fields-NN.md    bundles of about --max-bytes: per object a `## OBJECT` heading, the field table and the
-                  relationship table
-It refuses to write if any field still carries ISCUSTOM true (the dump must be scrubbed first) and prints the
-counts for references/xml-api/INDEX.md. Written against the documented shape before a real dump existed: check
-the first real output by hand (MAINTENANCE.md).
+                  relationship table; stale bundles from a previous build are removed
+It refuses to write if any field still carries ISCUSTOM true or any relationship targets a non-standard object
+(the dump must be scrubbed first) and prints the counts for references/xml-api/INDEX.md.
 """
 import argparse
 import json
 import os
 import re
-import shutil
 import sys
 import tempfile
 import xml.etree.ElementTree as ET
 import zipfile
+
+STANDARD_NAME = re.compile(r"^[A-Z][A-Z0-9_]*$")
 
 
 def child_text(el, name):
@@ -71,7 +72,8 @@ def parse_lookup(path):
 
 
 def parse_inspect(path):
-    """{name: label} from the inspect result, whatever the exact element shape."""
+    """{name: label} from the inspect result; the first entry per name is the generic one (later entries are per
+    transaction definition in an unpacked dump)."""
     labels = {}
     if not os.path.exists(path):
         return labels
@@ -80,7 +82,7 @@ def parse_inspect(path):
         n = el.attrib.get("typename") or el.attrib.get("Name") or el.attrib.get("name")
         if n:
             n = n.strip()
-            if n not in labels:  # the first entry is the generic one; later entries are per transaction definition
+            if n not in labels:
                 labels[n] = (el.text or "").strip() or el.attrib.get("label", "")
         elif el.tag.lower() in ("type", "object") and (el.text or "").strip() and len(el) == 0:
             labels.setdefault(el.text.strip(), "")
@@ -106,24 +108,16 @@ def render_object(name, label, fields, rels):
     return "\n".join(out)
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--dump", required=True)
-    ap.add_argument("--out", required=True)
-    ap.add_argument("--release", required=True)
-    ap.add_argument("--verified", required=True)
-    ap.add_argument("--max-bytes", type=int, default=1_000_000)
-    args = ap.parse_args()
+def extract_zip(zip_path, folder):
+    with zipfile.ZipFile(zip_path) as z:
+        for info in z.infolist():  # only the expected entries, no paths outside the folder
+            name = info.filename
+            if name in ("inspect.xml", "manifest.json") or (
+                    name.startswith("lookup/") and name.endswith(".xml") and "/" not in name[7:] and ".." not in name):
+                z.extract(info, folder)
 
-    dump, tmp = args.dump, None
-    if dump.lower().endswith(".zip"):
-        tmp = tempfile.mkdtemp(prefix="intacct-dump-")
-        with zipfile.ZipFile(dump) as z:
-            for info in z.infolist():  # only the expected entries, no paths outside the folder
-                name = info.filename
-                if name in ("inspect.xml", "manifest.json") or (name.startswith("lookup/") and name.endswith(".xml") and "/" not in name[7:] and ".." not in name):
-                    z.extract(info, tmp)
-        dump = tmp
+
+def build(args, dump, source_label):
     manifest = {}
     mp = os.path.join(dump, "manifest.json")
     if os.path.exists(mp):
@@ -135,23 +129,22 @@ def main():
     if not names:
         sys.exit("no lookup/*.xml in the dump")
 
-    entries, custom_left, total_fields, total_rels = [], [], 0, 0
+    entries, custom_left, odd_rels, total_fields, total_rels = [], [], [], 0, 0
     for n in names:
         fields, rels = parse_lookup(os.path.join(lookup_dir, n + ".xml"))
         custom_left += [f"{n}.{f['id']}" for f in fields if f["iscustom"].lower() in ("true", "1", "t")]
+        odd_rels += [f"{n} -> {r['object'] or r['path']}" for r in rels if not STANDARD_NAME.match(r["object"] or r["path"])]
         total_fields += len(fields)
         total_rels += len(rels)
         entries.append((n, labels.get(n, ""), fields, rels, render_object(n, labels.get(n, ""), fields, rels)))
     if custom_left:
         sys.exit("not written: custom fields survive the scrub: " + ", ".join(custom_left[:10]) + (" ..." if len(custom_left) > 10 else ""))
+    if odd_rels:
+        sys.exit("not written: relationships to non-standard objects survive the scrub: " + ", ".join(odd_rels[:10]) + (" ..." if len(odd_rels) > 10 else ""))
 
-    prov = (f"<!-- source: lookup and inspect results of a clean Sage Intacct developer company (scrubbed dump in "
-            f"sources/sageintacct-assistant/object-definitions-{re.sub(r'[^A-Za-z0-9]+', '-', args.release).strip('-')}/), "
+    prov = (f"<!-- source: lookup and inspect results of a clean Sage Intacct developer company ({source_label}), "
             f"generated by scripts/build_object_snapshot.py | version: Sage Intacct {args.release}, XML Web Services DTD 3.0 | "
             f"verified: {args.verified} -->")
-    if tmp:
-        shutil.rmtree(tmp, ignore_errors=True)
-    os.makedirs(args.out, exist_ok=True)
     outputs = {}  # file name -> text, written only when everything has been built
 
     # bundles
@@ -193,8 +186,8 @@ def main():
            f"Exact object, field, valid-value and relationship names of a **clean** Sage Intacct developer company on **{args.release}**, "
            f"dumped on {manifest.get('dumped', 'date not recorded')} with `scripts/dump_object_definitions.py` and compiled by "
            "`scripts/build_object_snapshot.py`. Use it for exact names and valid values; use the portal tables in `../objects/` for "
-           "meanings, examples and release history. Custom fields and custom objects of the source company were removed before the "
-           "dump was committed.", "",
+           "meanings, examples and release history. Custom fields, custom objects and relationships to non-standard objects of the "
+           "source company were removed before the dump was committed.", "",
            "| Path | Covers |", "|---|---|",
            f"| `objects.md` | one row per object ({len(entries)}): label, field and relationship counts, bundle file and line |"]
     for i, bundle in enumerate(bundles, 1):
@@ -211,19 +204,43 @@ def main():
             "- One company, one release, standard objects only; custom fields, user-defined dimensions and transaction-definition fields "
             "(`docparid`) are not included.",
             f"- Dump manifest: {len(manifest.get('lookups_failed', {}))} objects failed `lookup` and are absent; "
-            f"{count_of(manifest.get('custom_objects_removed', []))} custom objects and "
-            f"{count_of(manifest.get('custom_fields_removed', {}))} custom fields were removed.",
+            f"{count_of(manifest.get('custom_objects_removed', []))} custom objects, "
+            f"{count_of(manifest.get('custom_fields_removed', {}))} custom fields and "
+            f"{count_of(manifest.get('custom_relationships_removed', {}))} relationships to non-standard objects were removed.",
             "- `inspect` lists `SODOCUMENT`, `PODOCUMENT`, `INVDOCUMENT`, their line objects and the recurring variants once per "
             "transaction definition; only the generic entry is kept here, and `lookup` was called without `docparid`, so the field "
             "lists of those objects are the base fields, without any definition's custom fields."]
     outputs["INDEX.md"] = "\n".join(idx) + "\n"
+
+    os.makedirs(args.out, exist_ok=True)
     for fname, text in outputs.items():
         with open(os.path.join(args.out, fname), "w", encoding="utf-8", newline="\n") as f:
             f.write(text)
-    for old in os.listdir(args.out):
-        if old.endswith(".md") and old not in outputs:
+    for old in os.listdir(args.out):  # only stale bundles of a previous build; nothing else in the folder is touched
+        if re.fullmatch(r"fields-\d+\.md", old) and old not in outputs:
             os.remove(os.path.join(args.out, old))
     print(f"objects={len(entries)} fields={total_fields} relationships={total_rels} bundles={len(bundles)} -> {args.out}")
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--dump", required=True, help="dump folder, or the .zip under sources/")
+    ap.add_argument("--out", required=True, help="the snapshot folder (its name must be 'snapshot')")
+    ap.add_argument("--release", required=True)
+    ap.add_argument("--verified", required=True)
+    ap.add_argument("--max-bytes", type=int, default=1_000_000)
+    args = ap.parse_args()
+
+    if os.path.basename(os.path.normpath(args.out)) != "snapshot":
+        sys.exit(f"--out must be a folder named 'snapshot' (got {args.out!r}): the builder rewrites fields-NN.md, objects.md and INDEX.md there")
+    base = os.path.basename(os.path.normpath(args.dump))
+    if args.dump.lower().endswith(".zip"):
+        source_label = f"scrubbed dump sources/sageintacct-assistant/{base}"
+        with tempfile.TemporaryDirectory(prefix="intacct-dump-") as tmp:  # removed on every exit path
+            extract_zip(args.dump, tmp)
+            build(args, tmp, source_label)
+    else:
+        build(args, args.dump, f"dump folder {base}; the committed copy is the zip under sources/sageintacct-assistant/")
 
 
 if __name__ == "__main__":

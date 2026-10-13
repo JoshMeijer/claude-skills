@@ -43,7 +43,7 @@ In 2018 Release 2, the improved version of Global Consolidations was introduced 
 <a id="global-consolidation-books--get-global-consolidation-book-object-definition"></a>
 ### Get Global Consolidation Book Object Definition
 
-<a id="global-consolidation-books--lookup-2"></a>
+<a id="global-consolidation-books--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the global consolidation book object:
@@ -66,7 +66,7 @@ Function: `lookup`
 <a id="global-consolidation-books--query-and-list-global-consolidation-books"></a>
 ### Query and List Global Consolidation Books
 
-<a id="global-consolidation-books--query-2"></a>
+<a id="global-consolidation-books--query"></a>
 Function: `query`
 
 > List the record number and book ID for each global consolidation book:
@@ -99,7 +99,7 @@ Function: `query`
 <a id="global-consolidation-books--query-and-list-global-consolidation-books-legacy"></a>
 ### Query and List Global Consolidation Books (Legacy)
 
-<a id="global-consolidation-books--readbyquery-2"></a>
+<a id="global-consolidation-books--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -135,7 +135,7 @@ Function: `readByQuery`
 
 Returns the details of a single global consolidation object that is specified by a `RECORDNO`.
 
-<a id="global-consolidation-books--read-2"></a>
+<a id="global-consolidation-books--read"></a>
 Function: `read`
 
 ```xml
@@ -163,7 +163,7 @@ Function: `read`
 
 Returns the details of a single global consolidation object that is specified by its `BOOKID`.
 
-<a id="global-consolidation-books--readbyname-2"></a>
+<a id="global-consolidation-books--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -196,7 +196,7 @@ Release history:
 | 2019 Release 3 | Added DIMENSIONS |
 | 2019 Release 3 | Added HISTORICALRATEDATETYPE |
 
-<a id="global-consolidation-books--create-2"></a>
+<a id="global-consolidation-books--create"></a>
 Function: `create`
 
 ```xml
@@ -266,7 +266,7 @@ Release history:
 
 Note that after *running* a consolidation, the ability to change book setup is largely limited to adding new data, such as a completely new account. You can also modify which dimensions are included.
 
-<a id="global-consolidation-books--update-2"></a>
+<a id="global-consolidation-books--update"></a>
 Function: `update`
 
 ```xml
@@ -315,7 +315,7 @@ Function: `update`
 <a id="global-consolidation-books--delete-global-consolidation-book"></a>
 ### Delete Global Consolidation Book
 
-<a id="global-consolidation-books--delete-2"></a>
+<a id="global-consolidation-books--delete"></a>
 Function: `delete`
 
 ```xml
@@ -355,7 +355,7 @@ Specifies the elimination account where consolidation journal entries are posted
 <a id="global-consolidation-elimination-accts--get-global-consolidation-elimination-account-object-definition"></a>
 ### Get Global Consolidation Elimination Account Object Definition
 
-<a id="global-consolidation-elimination-accts--lookup-2"></a>
+<a id="global-consolidation-elimination-accts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Global Consolidation elimination account object:
@@ -378,7 +378,7 @@ Function: `lookup`
 <a id="global-consolidation-elimination-accts--query-and-list-global-consolidation-elimination-accounts"></a>
 ### Query and List Global Consolidation Elimination Accounts
 
-<a id="global-consolidation-elimination-accts--query-2"></a>
+<a id="global-consolidation-elimination-accts--query"></a>
 Function: `query`
 
 > List the record number and account key for each Global Consolidation elimination account:
@@ -411,7 +411,7 @@ Function: `query`
 <a id="global-consolidation-elimination-accts--query-and-list-global-consolidation-elimination-accounts-legacy"></a>
 ### Query and List Global Consolidation Elimination Accounts (Legacy)
 
-<a id="global-consolidation-elimination-accts--readbyquery-2"></a>
+<a id="global-consolidation-elimination-accts--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -438,7 +438,7 @@ Function: `readByQuery`
 <a id="global-consolidation-elimination-accts--get-global-consolidation-elimination-account"></a>
 ### Get Global Consolidation Elimination Account
 
-<a id="global-consolidation-elimination-accts--read-2"></a>
+<a id="global-consolidation-elimination-accts--read"></a>
 Function: `read`
 
 ```xml
@@ -464,7 +464,7 @@ Function: `read`
 <a id="global-consolidation-elimination-accts--create-global-consolidation-elimination-account"></a>
 ### Create Global Consolidation Elimination Account
 
-<a id="global-consolidation-elimination-accts--create-2"></a>
+<a id="global-consolidation-elimination-accts--create"></a>
 Function: `create`
 
 ```xml
@@ -495,7 +495,7 @@ Function: `create`
 <a id="global-consolidation-elimination-accts--delete-global-consolidation-elimination-account"></a>
 ### Delete Global Consolidation Elimination Account
 
-<a id="global-consolidation-elimination-accts--delete-2"></a>
+<a id="global-consolidation-elimination-accts--delete"></a>
 Function: `delete`
 
 ```xml
@@ -535,7 +535,7 @@ Specifies the entities to be consolidated in the book (in addition to those sele
 <a id="global-consolidation-entities--get-global-consolidation-entity-object-definition"></a>
 ### Get Global Consolidation Entity Object Definition
 
-<a id="global-consolidation-entities--lookup-2"></a>
+<a id="global-consolidation-entities--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Global Consolidation entity object:
@@ -558,7 +558,7 @@ Function: `lookup`
 <a id="global-consolidation-entities--query-and-list-global-consolidation-entities"></a>
 ### Query and List Global Consolidation Entities
 
-<a id="global-consolidation-entities--query-2"></a>
+<a id="global-consolidation-entities--query"></a>
 Function: `query`
 
 > List the record number and book ID for each Global Consolidation entity:
@@ -591,7 +591,7 @@ Function: `query`
 <a id="global-consolidation-entities--query-and-list-global-consolidation-entities-legacy"></a>
 ### Query and List Global Consolidation Entities (Legacy)
 
-<a id="global-consolidation-entities--readbyquery-2"></a>
+<a id="global-consolidation-entities--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -618,7 +618,7 @@ Function: `readByQuery`
 <a id="global-consolidation-entities--get-global-consolidation-entity"></a>
 ### Get Global Consolidation Entity
 
-<a id="global-consolidation-entities--read-2"></a>
+<a id="global-consolidation-entities--read"></a>
 Function: `read`
 
 ```xml
@@ -644,7 +644,7 @@ Function: `read`
 <a id="global-consolidation-entities--create-global-consolidation-entity"></a>
 ### Create Global Consolidation Entity
 
-<a id="global-consolidation-entities--create-2"></a>
+<a id="global-consolidation-entities--create"></a>
 Function: `create`
 
 ```xml
@@ -675,7 +675,7 @@ Function: `create`
 <a id="global-consolidation-entities--delete-global-consolidation-entity"></a>
 ### Delete Global Consolidation Entity
 
-<a id="global-consolidation-entities--delete-2"></a>
+<a id="global-consolidation-entities--delete"></a>
 Function: `delete`
 
 ```xml
@@ -715,7 +715,7 @@ You can then add journals for GAAP, tax, and user-defined books. Note that once 
 <a id="global-consolidation-journals--get-global-consolidation-journal-object-definition"></a>
 ### Get Global Consolidation Journal Object Definition
 
-<a id="global-consolidation-journals--lookup-2"></a>
+<a id="global-consolidation-journals--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Global Consolidation journal object:
@@ -738,7 +738,7 @@ Function: `lookup`
 <a id="global-consolidation-journals--query-and-list-global-consolidation-journals"></a>
 ### Query and List Global Consolidation Journals
 
-<a id="global-consolidation-journals--query-2"></a>
+<a id="global-consolidation-journals--query"></a>
 Function: `query`
 
 > List the record number and book ID for each Global Consolidation journal :
@@ -771,7 +771,7 @@ Function: `query`
 <a id="global-consolidation-journals--query-and-list-global-consolidation-journals-legacy"></a>
 ### Query and List Global Consolidation Journals (Legacy)
 
-<a id="global-consolidation-journals--readbyquery-2"></a>
+<a id="global-consolidation-journals--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -804,7 +804,7 @@ Function: `readByQuery`
 <a id="global-consolidation-journals--get-global-consolidation-journal"></a>
 ### Get Global Consolidation Journal
 
-<a id="global-consolidation-journals--read-2"></a>
+<a id="global-consolidation-journals--read"></a>
 Function: `read`
 
 ```xml
@@ -830,7 +830,7 @@ Function: `read`
 <a id="global-consolidation-journals--create-global-consolidation-journal"></a>
 ### Create Global Consolidation Journal
 
-<a id="global-consolidation-journals--create-2"></a>
+<a id="global-consolidation-journals--create"></a>
 Function: `create`
 
 ```xml
@@ -866,7 +866,7 @@ Function: `create`
 <a id="global-consolidation-journals--update-global-consolidation-journal"></a>
 ### Update Global Consolidation Journal
 
-<a id="global-consolidation-journals--update-2"></a>
+<a id="global-consolidation-journals--update"></a>
 Function: `update`
 
 ```xml
@@ -897,7 +897,7 @@ Function: `update`
 <a id="global-consolidation-journals--delete-global-consolidation-journal"></a>
 ### Delete Global Consolidation Journal
 
-<a id="global-consolidation-journals--delete-2"></a>
+<a id="global-consolidation-journals--delete"></a>
 Function: `delete`
 
 ```xml
@@ -935,7 +935,7 @@ You can override the exchange rate translation method for any GL account used in
 <a id="global-consolidation-override-accts--get-global-consolidation-override-account-object-definition"></a>
 ### Get Global Consolidation Override Account Object Definition
 
-<a id="global-consolidation-override-accts--lookup-2"></a>
+<a id="global-consolidation-override-accts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Global Consolidation override account object:
@@ -958,7 +958,7 @@ Function: `lookup`
 <a id="global-consolidation-override-accts--query-and-list-global-consolidation-override-accounts"></a>
 ### Query and List Global Consolidation Override Accounts
 
-<a id="global-consolidation-override-accts--query-2"></a>
+<a id="global-consolidation-override-accts--query"></a>
 Function: `query`
 
 > List the record number and book ID for each Global Consolidation override account:
@@ -991,7 +991,7 @@ Function: `query`
 <a id="global-consolidation-override-accts--query-and-list-global-consolidation-override-accounts-legacy"></a>
 ### Query and List Global Consolidation Override Accounts (Legacy)
 
-<a id="global-consolidation-override-accts--readbyquery-2"></a>
+<a id="global-consolidation-override-accts--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1018,7 +1018,7 @@ Function: `readByQuery`
 <a id="global-consolidation-override-accts--get-global-consolidation-override-account"></a>
 ### Get Global Consolidation Override Account
 
-<a id="global-consolidation-override-accts--read-2"></a>
+<a id="global-consolidation-override-accts--read"></a>
 Function: `read`
 
 ```xml
@@ -1044,7 +1044,7 @@ Function: `read`
 <a id="global-consolidation-override-accts--create-global-consolidation-override-account"></a>
 ### Create Global Consolidation Override Account
 
-<a id="global-consolidation-override-accts--create-2"></a>
+<a id="global-consolidation-override-accts--create"></a>
 Function: `create`
 
 ```xml
@@ -1080,7 +1080,7 @@ Function: `create`
 <a id="global-consolidation-override-accts--update-global-consolidation-override-account"></a>
 ### Update Global Consolidation Override Account
 
-<a id="global-consolidation-override-accts--update-2"></a>
+<a id="global-consolidation-override-accts--update"></a>
 Function: `update`
 
 ```xml
@@ -1119,7 +1119,7 @@ Function: `update`
 <a id="global-consolidation-override-accts--delete-global-consolidation-account-override"></a>
 ### Delete Global Consolidation Account Override
 
-<a id="global-consolidation-override-accts--delete-2"></a>
+<a id="global-consolidation-override-accts--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1163,7 +1163,7 @@ Usage information for [running consolidations](https://www.intacct.com/ia/docs/e
 <a id="global-consolidations--run-global-consolidation"></a>
 ### Run Global Consolidation
 
-<a id="global-consolidations--consolidate-2"></a>
+<a id="global-consolidations--consolidate"></a>
 Function: `consolidate`
 
 ```xml
@@ -1215,7 +1215,7 @@ Function: `consolidate`
 <a id="global-consolidations--run-global-consolidation-legacy"></a>
 ### Run Global Consolidation (Legacy)
 
-<a id="global-consolidations--create_consolidation-2"></a>
+<a id="global-consolidations--create_consolidation"></a>
 Function: `create_consolidation`
 
 ```xml
@@ -1286,7 +1286,7 @@ Usage information for [running a consolidation](https://www.intacct.com/ia/docs/
 <a id="ownership-structure-consolidations--run-ownership-structure-consolidation"></a>
 ### Run Ownership Structure Consolidation
 
-<a id="ownership-structure-consolidations--consolidatebytier-2"></a>
+<a id="ownership-structure-consolidations--consolidatebytier"></a>
 Function: `consolidatebytier`
 
 > Run a consolidation:
@@ -1341,7 +1341,7 @@ The `GCOWNERSHIPSTRUCTURE` object defines the name of the structure, its account
 <a id="ownership-structures--get-ownership-structure-object-definition"></a>
 #### Get Ownership Structure Object Definition
 
-<a id="ownership-structures--lookup-2"></a>
+<a id="ownership-structures--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Ownership Structure object:
@@ -1364,7 +1364,7 @@ Function: `lookup`
 <a id="ownership-structures--query-and-list-ownership-structures"></a>
 #### Query and List Ownership Structures
 
-<a id="ownership-structures--query-2"></a>
+<a id="ownership-structures--query"></a>
 Function: `query`
 
 > List the record number, structure name, description, and source book ID for each ownership structure:
@@ -1401,7 +1401,7 @@ Function: `query`
 
 Returns the details of a single ownership structure that is specified by a `RECORDNO`.
 
-<a id="ownership-structures--read-2"></a>
+<a id="ownership-structures--read"></a>
 Function: `read`
 
 ```xml
@@ -1428,7 +1428,7 @@ Function: `read`
 
 Returns the details of a single ownership structure that is specified by its structure name.
 
-<a id="ownership-structures--readbyname-2"></a>
+<a id="ownership-structures--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1453,7 +1453,7 @@ Function: `readByName`
 <a id="ownership-structures--create-ownership-structure"></a>
 #### Create Ownership Structure
 
-<a id="ownership-structures--create-2"></a>
+<a id="ownership-structures--create"></a>
 Function: `create`
 
 ```xml
@@ -1490,7 +1490,7 @@ Function: `create`
 <a id="ownership-structures--update-ownership-structure"></a>
 #### Update Ownership Structure
 
-<a id="ownership-structures--update-2"></a>
+<a id="ownership-structures--update"></a>
 Function: `update`
 
 ```xml
@@ -1525,7 +1525,7 @@ Function: `update`
 <a id="ownership-structures--delete-ownership-structure"></a>
 #### Delete Ownership Structure
 
-<a id="ownership-structures--delete-2"></a>
+<a id="ownership-structures--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1550,7 +1550,7 @@ Function: `delete`
 
 The `GCOWNERSHIPSTRUCTUREDETAIL` object sets the start period of the consolidation and contains an array of owned [`GCOWNERSHIPENTITY`](#ownership-structures--create-GCOWNERSHIPSTRUCTUREDETAIL.GCOWNERSHIPENTITY) objects that define the parent entities and associated books of the structure.
 
-<a id="ownership-structures--get-ownership-structure-detail-object-definition-2"></a>
+<a id="ownership-structures--get-ownership-structure-detail-object-definition"></a>
 Function: `Get Ownership Structure Detail Object Definition`
 
 <a id="ownership-structures--lookup-1"></a>
@@ -1576,7 +1576,7 @@ Function: `Get Ownership Structure Detail Object Definition`
 <a id="ownership-structures--query-and-list-ownership-structure-details"></a>
 #### Query and List Ownership Structure Details
 
-<a id="ownership-structures--query-1-2"></a>
+<a id="ownership-structures--query-1"></a>
 Function: `query`
 
 > List the record number, structure name, from period, status, and state for each ownership structure detail:
@@ -1635,7 +1635,7 @@ Function: `query`
 
 Returns all information about a single ownership structure detail object that is specified by `RECORDNO`.
 
-<a id="ownership-structures--read-1-2"></a>
+<a id="ownership-structures--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1660,7 +1660,7 @@ Function: `read`
 <a id="ownership-structures--create-ownership-structure-detail"></a>
 #### Create Ownership Structure Detail
 
-<a id="ownership-structures--create-1-2"></a>
+<a id="ownership-structures--create-1"></a>
 Function: `create`
 
 ```xml
@@ -1770,7 +1770,7 @@ NOTE: Child objects (`GCOWNERSHIPENTITY` and `GCOWNERSHIPCHILDENTITY`) can only 
 
 You cannot update a `GCOWNERSHIPSTRUCTUREDETAIL` object that has STATE==`activated`. Note that after *running* a consolidation, the ability to change book setup is largely limited to adding new data, such as a completely new account. You can also modify which dimensions are included.
 
-<a id="ownership-structures--update-1-2"></a>
+<a id="ownership-structures--update-1"></a>
 Function: `update`
 
 ```xml
@@ -1814,7 +1814,7 @@ Deleting the parent object will also deletes the child objects under it.
 - Individual delete calls on child objects are supported.
 - Deleting the parent object deletes the associated book.
 
-<a id="ownership-structures--delete-1-2"></a>
+<a id="ownership-structures--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -1839,10 +1839,10 @@ Function: `delete`
 
 A `GCOWNERSHIPENTITY` object is owned by a `GCOWNERSHIPSTRUCTUREDETAIL` object and defines the parent entities and associated books of an ownership structure. Each `GCOWNERSHIPENTITY` object contains an array of owned `GCOWNERSHIPCHILDENTITY` objects that define child entities and ownership percentages.
 
-<a id="ownership-structures--get-ownership-entity-object-definition-2"></a>
+<a id="ownership-structures--get-ownership-entity-object-definition"></a>
 Function: `Get Ownership Entity Object Definition`
 
-<a id="ownership-structures--lookup-2-2"></a>
+<a id="ownership-structures--lookup-2"></a>
 **`lookup`**
 
 > List all the fields and relationships for the Ownership Entity object:
@@ -1865,7 +1865,7 @@ Function: `Get Ownership Entity Object Definition`
 <a id="ownership-structures--query-and-list-ownership-entities"></a>
 #### Query and List Ownership Entities
 
-<a id="ownership-structures--query-2-3"></a>
+<a id="ownership-structures--query-2"></a>
 Function: `query`
 
 > List the record number and name for each ownership structure:
@@ -1900,7 +1900,7 @@ Function: `query`
 
 Returns all information about a single ownership entity object that is specified by `RECORDNO`.
 
-<a id="ownership-structures--read-2-3"></a>
+<a id="ownership-structures--read-2"></a>
 Function: `read`
 
 ```xml
@@ -1939,7 +1939,7 @@ Ownership entity objects can only be updated by [updating the ownership detail o
 
 Deleting an ownership entity object will also delete all ownership entity child objects beneath it and the associated book. It will also delete the associated book.
 
-<a id="ownership-structures--delete-2-3"></a>
+<a id="ownership-structures--delete-2"></a>
 Function: `delete`
 
 ```xml
@@ -1962,7 +1962,7 @@ Function: `delete`
 
 A `GCOWNERSHIPCHILDENTITY` object is owned by a `GCOWNERSHIPENTITY` object and defines a single child entity and its ownership percentage.
 
-<a id="ownership-structures--get-ownership-child-entity-object-definition-2"></a>
+<a id="ownership-structures--get-ownership-child-entity-object-definition"></a>
 Function: `Get Ownership Child Entity Object Definition`
 
 <a id="ownership-structures--lookup-3"></a>
@@ -1988,7 +1988,7 @@ Function: `Get Ownership Child Entity Object Definition`
 <a id="ownership-structures--query-and-list-ownership-child-entities"></a>
 #### Query and List Ownership Child Entities
 
-<a id="ownership-structures--query-3-2"></a>
+<a id="ownership-structures--query-3"></a>
 Function: `query`
 
 > List the record number, structure name, description, and source book ID for each ownership child entity:
@@ -2026,7 +2026,7 @@ Function: `query`
 
 Returns all information about a single ownership child entity object that is specified by `RECORDNO`.
 
-<a id="ownership-structures--read-3-2"></a>
+<a id="ownership-structures--read-3"></a>
 Function: `read`
 
 ```xml

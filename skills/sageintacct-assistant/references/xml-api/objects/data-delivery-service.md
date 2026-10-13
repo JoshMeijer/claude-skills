@@ -23,7 +23,7 @@ Data Delivery Service (DDS) enables you to export your data from Sage Intacct to
 <a id="dds-jobs--get-dds-job-object-definition"></a>
 ### Get DDS Job Object Definition
 
-<a id="dds-jobs--lookup-2"></a>
+<a id="dds-jobs--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the DDS job object:
@@ -46,7 +46,7 @@ Function: `lookup`
 <a id="dds-jobs--query-and-list-dds-jobs"></a>
 ### Query and List DDS Jobs
 
-<a id="dds-jobs--query-2"></a>
+<a id="dds-jobs--query"></a>
 Function: `query`
 
 > List the record number and object for each DDS job:
@@ -79,7 +79,7 @@ Function: `query`
 <a id="dds-jobs--query-and-list-dds-jobs-legacy"></a>
 ### Query and List DDS Jobs (Legacy)
 
-<a id="dds-jobs--readbyquery-2"></a>
+<a id="dds-jobs--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -106,7 +106,7 @@ Function: `readByQuery`
 <a id="dds-jobs--get-dds-job"></a>
 ### Get DDS Job
 
-<a id="dds-jobs--read-2"></a>
+<a id="dds-jobs--read"></a>
 Function: `read`
 
 ```xml
@@ -156,7 +156,7 @@ When you run a set of synchronous jobs, the system checks whether there are jobs
 
 You cannot run synchronous jobs for GLACCOUNTBALANCE or GLRESOLVE.
 
-<a id="dds-jobs--runddsjob-2"></a>
+<a id="dds-jobs--runddsjob"></a>
 Function: `runDdsJob`
 
 > Create a job to get all vendors:
@@ -341,7 +341,7 @@ DDS objects are selected as part of setting up an automated DDS run or processin
 
 Lists all objects, both standard and custom, available for use in a DDS job.
 
-<a id="dds-objects--getddsobjects-2"></a>
+<a id="dds-objects--getddsobjects"></a>
 Function: `getDdsObjects`
 
 ```xml
@@ -360,7 +360,7 @@ No parameters
 
 The Data Definition Language (DDL) returned is currently compatible with PostgreSQL databases.
 
-<a id="dds-objects--getddsddl-2"></a>
+<a id="dds-objects--getddsddl"></a>
 Function: `getDdsDdl`
 
 ```xml

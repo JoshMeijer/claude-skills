@@ -41,7 +41,7 @@ An accumulation type is typically specified at the level of the standard cost ty
 <a id="accumulation-types--get-accumulation-type-object-definition"></a>
 ### Get Accumulation Type Object Definition
 
-<a id="accumulation-types--lookup-2"></a>
+<a id="accumulation-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the accumulation type object:
@@ -64,7 +64,7 @@ Function: `lookup`
 <a id="accumulation-types--query-and-list-accumulation-types"></a>
 ### Query and List Accumulation Types
 
-<a id="accumulation-types--query-2"></a>
+<a id="accumulation-types--query"></a>
 Function: `query`
 
 > List the record number and name for each accumulation type:
@@ -97,7 +97,7 @@ Function: `query`
 <a id="accumulation-types--query-and-list-accumulation-types-legacy"></a>
 ### Query and List Accumulation Types (Legacy)
 
-<a id="accumulation-types--readbyquery-2"></a>
+<a id="accumulation-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -124,7 +124,7 @@ Function: `readByQuery`
 <a id="accumulation-types--get-accumulation-type"></a>
 ### Get Accumulation Type
 
-<a id="accumulation-types--read-2"></a>
+<a id="accumulation-types--read"></a>
 Function: `read`
 
 ```xml
@@ -150,7 +150,7 @@ Function: `read`
 <a id="accumulation-types--get-accumulation-type-by-id"></a>
 ### Get Accumulation Type by ID
 
-<a id="accumulation-types--readbyname-2"></a>
+<a id="accumulation-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -182,7 +182,7 @@ Release history:
 |---|---|
 | 2021 Release 3 | Added COSTCATEGORY |
 
-<a id="accumulation-types--create-2"></a>
+<a id="accumulation-types--create"></a>
 Function: `create`
 
 ```xml
@@ -227,7 +227,7 @@ Release history:
 |---|---|
 | 2021 Release 3 | Added COSTCATEGORY |
 
-<a id="accumulation-types--update-2"></a>
+<a id="accumulation-types--update"></a>
 Function: `update`
 
 ```xml
@@ -268,7 +268,7 @@ Function: `update`
 <a id="accumulation-types--delete-accumulation-type"></a>
 ### Delete Accumulation Type
 
-<a id="accumulation-types--delete-2"></a>
+<a id="accumulation-types--delete"></a>
 Function: `delete`
 
 ```xml
@@ -313,7 +313,7 @@ You must [configure retainage](https://www.intacct.com/ia/docs/en_US/help_action
 <a id="ap-retainage-releases--get-ap-retainage-release-object-definition"></a>
 #### Get AP Retainage Release Object Definition
 
-<a id="ap-retainage-releases--lookup-2"></a>
+<a id="ap-retainage-releases--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AP retainage release object:
@@ -336,7 +336,7 @@ Function: `lookup`
 <a id="ap-retainage-releases--query-and-list-ap-retainage-releases"></a>
 #### Query and List AP Retainage Releases
 
-<a id="ap-retainage-releases--query-2"></a>
+<a id="ap-retainage-releases--query"></a>
 Function: `query`
 
 > List the record number, description, and release date for each retainage release where the release date is between the given dates:
@@ -377,7 +377,7 @@ Function: `query`
 <a id="ap-retainage-releases--query-and-list-ap-bill-lines-with-retainages"></a>
 #### Query and List AP Bill Lines with Retainages
 
-<a id="ap-retainage-releases--query-1-2"></a>
+<a id="ap-retainage-releases--query-1"></a>
 Function: `query`
 
 > For each AP bill line for the given vendor, provide its record number, the record number of the owning bill, and the amount released and retained for that line.
@@ -448,7 +448,7 @@ Function: `query`
 <a id="ap-retainage-releases--query-and-list-ap-retainage-releases-legacy"></a>
 #### Query and List AP Retainage Releases (Legacy)
 
-<a id="ap-retainage-releases--readbyquery-2"></a>
+<a id="ap-retainage-releases--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -475,7 +475,7 @@ Function: `readByQuery`
 <a id="ap-retainage-releases--get-ap-retainage-release"></a>
 #### Get AP Retainage Release
 
-<a id="ap-retainage-releases--read-2"></a>
+<a id="ap-retainage-releases--read"></a>
 Function: `read`
 
 ```xml
@@ -501,7 +501,7 @@ Function: `read`
 <a id="ap-retainage-releases--create-ap-retainage-release"></a>
 #### Create AP Retainage Release
 
-<a id="ap-retainage-releases--create-2"></a>
+<a id="ap-retainage-releases--create"></a>
 Function: `create`
 
 > Create an AP retainage release for two bill line items:
@@ -554,7 +554,7 @@ Function: `create`
 
 When updating an AP retainage release to modify the entries, be aware that it is a complete replacement of the existing set. So, to add an entry, supply all the original ones and the new one. To delete an entry, supply only the ones you want to keep.
 
-<a id="ap-retainage-releases--update-2"></a>
+<a id="ap-retainage-releases--update"></a>
 Function: `update`
 
 ```xml
@@ -609,7 +609,7 @@ Function: `update`
 
 You can delete an AP retainage release that is in `Draft` state.
 
-<a id="ap-retainage-releases--delete-2"></a>
+<a id="ap-retainage-releases--delete"></a>
 Function: `delete`
 
 ```xml
@@ -635,7 +635,7 @@ Function: `delete`
 <a id="ap-retainage-releases--get-ap-retainage-release-entry-object-definition"></a>
 #### Get AP Retainage Release Entry Object Definition
 
-<a id="ap-retainage-releases--lookup-1-2"></a>
+<a id="ap-retainage-releases--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AP retainage release entry object:
@@ -658,7 +658,7 @@ Function: `lookup`
 <a id="ap-retainage-releases--query-and-list-ap-retainage-release-entries"></a>
 #### Query and List AP Retainage Release Entries
 
-<a id="ap-retainage-releases--query-2-3"></a>
+<a id="ap-retainage-releases--query-2"></a>
 Function: `query`
 
 > List the record number and transaction amount released for each AP retainage release entry for the bill with record number 15:
@@ -698,7 +698,7 @@ Function: `query`
 <a id="ap-retainage-releases--query-and-list-ap-retainage-release-entries-legacy"></a>
 #### Query and List AP Retainage Release Entries (Legacy)
 
-<a id="ap-retainage-releases--readbyquery-1-2"></a>
+<a id="ap-retainage-releases--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -725,7 +725,7 @@ Function: `readByQuery`
 <a id="ap-retainage-releases--get-ap-retainage-release-entry"></a>
 #### Get AP Retainage Release Entry
 
-<a id="ap-retainage-releases--read-1-2"></a>
+<a id="ap-retainage-releases--read-1"></a>
 Function: `read`
 
 ```xml
@@ -773,7 +773,7 @@ You must [configure retainage](https://www.intacct.com/ia/docs/en_US/help_action
 <a id="ar-retainage-releases--get-ar-retainage-release-object-definition"></a>
 #### Get AR Retainage Release Object Definition
 
-<a id="ar-retainage-releases--lookup-2"></a>
+<a id="ar-retainage-releases--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AR retainage release object:
@@ -796,7 +796,7 @@ Function: `lookup`
 <a id="ar-retainage-releases--query-and-list-ar-retainage-releases"></a>
 #### Query and List AR Retainage Releases
 
-<a id="ar-retainage-releases--query-2"></a>
+<a id="ar-retainage-releases--query"></a>
 Function: `query`
 
 > List the record number, description, and release date for each retainage release where the release date is between the given dates:
@@ -837,7 +837,7 @@ Function: `query`
 <a id="ar-retainage-releases--query-and-list-ar-invoice-lines-with-retainages"></a>
 #### Query and List AR Invoice Lines with Retainages
 
-<a id="ar-retainage-releases--query-1-2"></a>
+<a id="ar-retainage-releases--query-1"></a>
 Function: `query`
 
 > For each AR invoice line for the given customer, provide its record number, the record number of the owning invoice, and the amount released and retained for that line.
@@ -903,7 +903,7 @@ Function: `query`
 <a id="ar-retainage-releases--query-and-list-ar-retainage-release-entries-legacy"></a>
 #### Query and List AR Retainage Release Entries (Legacy)
 
-<a id="ar-retainage-releases--readbyquery-2"></a>
+<a id="ar-retainage-releases--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -930,7 +930,7 @@ Function: `readByQuery`
 <a id="ar-retainage-releases--get-ar-retainage-release"></a>
 #### Get AR Retainage Release
 
-<a id="ar-retainage-releases--read-2"></a>
+<a id="ar-retainage-releases--read"></a>
 Function: `read`
 
 ```xml
@@ -956,7 +956,7 @@ Function: `read`
 <a id="ar-retainage-releases--create-ar-retainage-release"></a>
 #### Create AR Retainage Release
 
-<a id="ar-retainage-releases--create-2"></a>
+<a id="ar-retainage-releases--create"></a>
 Function: `create`
 
 > Create an AR retainage release for two invoice line items:
@@ -1009,7 +1009,7 @@ Function: `create`
 
 When updating an AR retainage release to modify the entries, be aware that it is a complete replacement of the existing set. So, to add an entry, supply all the original ones and the new one. To delete an entry, supply only the ones you want to keep.
 
-<a id="ar-retainage-releases--update-2"></a>
+<a id="ar-retainage-releases--update"></a>
 Function: `update`
 
 ```xml
@@ -1064,7 +1064,7 @@ Function: `update`
 
 You can delete an AR retainage release that is in `Draft` state.
 
-<a id="ar-retainage-releases--delete-2"></a>
+<a id="ar-retainage-releases--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1090,7 +1090,7 @@ Function: `delete`
 <a id="ar-retainage-releases--get-ar-retainage-release-entry-object-definition"></a>
 #### Get AR Retainage Release Entry Object Definition
 
-<a id="ar-retainage-releases--lookup-1-2"></a>
+<a id="ar-retainage-releases--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AR retainage release entry object:
@@ -1113,7 +1113,7 @@ Function: `lookup`
 <a id="ar-retainage-releases--query-and-list-ar-retainage-release-entries"></a>
 #### Query and List AR Retainage Release Entries
 
-<a id="ar-retainage-releases--query-2-3"></a>
+<a id="ar-retainage-releases--query-2"></a>
 Function: `query`
 
 > List the record number and transaction amount released for each AR retainage release entry for the invoice with record number 19:
@@ -1153,7 +1153,7 @@ Function: `query`
 <a id="ar-retainage-releases--get-ar-retainage-release-entry"></a>
 #### Get AR Retainage Release Entry
 
-<a id="ar-retainage-releases--read-1-2"></a>
+<a id="ar-retainage-releases--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1196,7 +1196,7 @@ As an example, you might map a status named `Not Issued` to the workflow type of
 <a id="change-request-status--get-change-request-status-object-definition"></a>
 ### Get Change Request Status Object Definition
 
-<a id="change-request-status--lookup-2"></a>
+<a id="change-request-status--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the change request status object:
@@ -1219,7 +1219,7 @@ Function: `lookup`
 <a id="change-request-status--query-and-list-change-request-statuses"></a>
 ### Query and List Change Request Statuses
 
-<a id="change-request-status--query-2"></a>
+<a id="change-request-status--query"></a>
 Function: `query`
 
 > List information for all change request statuses:
@@ -1253,7 +1253,7 @@ Function: `query`
 <a id="change-request-status--query-and-list-change-request-statuses-legacy"></a>
 ### Query and List Change Request Statuses (Legacy)
 
-<a id="change-request-status--readbyquery-2"></a>
+<a id="change-request-status--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1280,7 +1280,7 @@ Function: `readByQuery`
 <a id="change-request-status--get-change-request-status"></a>
 ### Get Change Request Status
 
-<a id="change-request-status--read-2"></a>
+<a id="change-request-status--read"></a>
 Function: `read`
 
 ```xml
@@ -1306,7 +1306,7 @@ Function: `read`
 <a id="change-request-status--get-change-request-status-by-id"></a>
 ### Get Change Request Status by ID
 
-<a id="change-request-status--readbyname-2"></a>
+<a id="change-request-status--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1332,7 +1332,7 @@ Function: `readByName`
 <a id="change-request-status--create-change-request-status"></a>
 ### Create Change Request Status
 
-<a id="change-request-status--create-2"></a>
+<a id="change-request-status--create"></a>
 Function: `create`
 
 > Creates a change request status named `Approved Changes` mapped to the workflow type of `approved changes`:
@@ -1374,7 +1374,7 @@ Function: `create`
 <a id="change-request-status--update-change-request-status"></a>
 ### Update Change Request Status
 
-<a id="change-request-status--update-2"></a>
+<a id="change-request-status--update"></a>
 Function: `update`
 
 You can update a change request status that you identify either by record number or by name. You cannot change the name of an existing change request status.
@@ -1422,7 +1422,7 @@ You can update a change request status that you identify either by record number
 
 You can delete a change request status only if it is not in use by a change request.
 
-<a id="change-request-status--delete-2"></a>
+<a id="change-request-status--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1460,7 +1460,7 @@ Construction companies can create their own change request types for reporting p
 <a id="change-request-types--get-change-request-type-object-definition"></a>
 ### Get Change Request Type Object Definition
 
-<a id="change-request-types--lookup-2"></a>
+<a id="change-request-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the change request type object:
@@ -1483,7 +1483,7 @@ Function: `lookup`
 <a id="change-request-types--query-and-list-change-request-types"></a>
 ### Query and List Change Request Types
 
-<a id="change-request-types--query-2"></a>
+<a id="change-request-types--query"></a>
 Function: `query`
 
 > List information for change request types that are active:
@@ -1523,7 +1523,7 @@ Function: `query`
 <a id="change-request-types--query-and-list-change-request-types-legacy"></a>
 ### Query and List Change Request Types (Legacy)
 
-<a id="change-request-types--readbyquery-2"></a>
+<a id="change-request-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1550,7 +1550,7 @@ Function: `readByQuery`
 <a id="change-request-types--get-change-request-type"></a>
 ### Get Change Request Type
 
-<a id="change-request-types--read-2"></a>
+<a id="change-request-types--read"></a>
 Function: `read`
 
 ```xml
@@ -1576,7 +1576,7 @@ Function: `read`
 <a id="change-request-types--get-change-request-type-by-id"></a>
 ### Get Change Request Type by ID
 
-<a id="change-request-types--readbyname-2"></a>
+<a id="change-request-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1602,7 +1602,7 @@ Function: `readByName`
 <a id="change-request-types--create-change-request-type"></a>
 ### Create Change Request Type
 
-<a id="change-request-types--create-2"></a>
+<a id="change-request-types--create"></a>
 Function: `create`
 
 > Creates an active change request type named `Internal`:
@@ -1642,7 +1642,7 @@ Function: `create`
 <a id="change-request-types--update-change-request-type"></a>
 ### Update Change Request Type
 
-<a id="change-request-types--update-2"></a>
+<a id="change-request-types--update"></a>
 Function: `update`
 
 You can update the status of a change request type.
@@ -1688,7 +1688,7 @@ You can update the status of a change request type.
 
 You can delete a change request type only if it is not in use by a change request.
 
-<a id="change-request-types--delete-2"></a>
+<a id="change-request-types--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1737,7 +1737,7 @@ You can use a [project change order](https://developer.intacct.com/api/construct
 <a id="change-requests--get-change-request-object-definition"></a>
 #### Get Change Request Object Definition
 
-<a id="change-requests--lookup-2"></a>
+<a id="change-requests--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the change request object:
@@ -1760,7 +1760,7 @@ Function: `lookup`
 <a id="change-requests--query-and-list-change-requests"></a>
 #### Query and List Change Requests
 
-<a id="change-requests--query-2"></a>
+<a id="change-requests--query"></a>
 Function: `query`
 
 > List information for change requests where the total price is greater than 500.00:
@@ -1822,7 +1822,7 @@ Function: `query`
 <a id="change-requests--query-and-list-change-requests-legacy"></a>
 #### Query and List Change Requests (Legacy)
 
-<a id="change-requests--readbyquery-2"></a>
+<a id="change-requests--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1849,7 +1849,7 @@ Function: `readByQuery`
 <a id="change-requests--get-change-request"></a>
 #### Get Change Request
 
-<a id="change-requests--read-2"></a>
+<a id="change-requests--read"></a>
 Function: `read`
 
 ```xml
@@ -1875,7 +1875,7 @@ Function: `read`
 <a id="change-requests--get-change-request-by-id"></a>
 #### Get Change Request by ID
 
-<a id="change-requests--readbyname-2"></a>
+<a id="change-requests--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1907,7 +1907,7 @@ Release history:
 |---|---|
 | 2021 Release 3 | Added PROJECTCHANGEORDERID |
 
-<a id="change-requests--create-2"></a>
+<a id="change-requests--create"></a>
 Function: `create`
 
 > Creates a change request with two entries—the first passes the cost to the customer, the second does not (no value for `PRICE`):
@@ -2061,7 +2061,7 @@ You can update a change request even if it has already posted.
 
 When you update a posted change request, the system re-posts its entries, which can result in the addition, modification, or deletion of entries in the linked primary project estimate. If that project estimate previously posted to the GL, the system re-posts it using the updated entries.
 
-<a id="change-requests--update-2"></a>
+<a id="change-requests--update"></a>
 Function: `update`
 
 > Updates a change request to specify a change request status:
@@ -2216,7 +2216,7 @@ You can delete a change request even if it has already posted.
 
 When you delete a change request that already posted, any linked project estimate entries are also deleted, and project estimates are updated accordingly. If the primary project estimate previously posted to the GL, the system re-posts it using the remaining estimate entries.
 
-<a id="change-requests--delete-2"></a>
+<a id="change-requests--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2242,7 +2242,7 @@ Function: `delete`
 <a id="change-requests--get-change-request-entry-object-definition"></a>
 #### Get Change Request Entry Object Definition
 
-<a id="change-requests--lookup-1-2"></a>
+<a id="change-requests--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the change request entry object:
@@ -2265,7 +2265,7 @@ Function: `lookup`
 <a id="change-requests--query-and-list-change-request-entries"></a>
 #### Query and List Change Request Entries
 
-<a id="change-requests--query-1-2"></a>
+<a id="change-requests--query-1"></a>
 Function: `query`
 
 > Lists information about change request entries for the given project:
@@ -2306,7 +2306,7 @@ Function: `query`
 <a id="change-requests--query-and-list-change-request-entries-legacy"></a>
 #### Query and List Change Request Entries (Legacy)
 
-<a id="change-requests--readbyquery-1-2"></a>
+<a id="change-requests--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2333,7 +2333,7 @@ Function: `readByQuery`
 <a id="change-requests--get-change-request-entry"></a>
 #### Get Change Request Entry
 
-<a id="change-requests--read-1-2"></a>
+<a id="change-requests--read-1"></a>
 Function: `read`
 
 ```xml
@@ -2359,7 +2359,7 @@ Function: `read`
 <a id="change-requests--delete-change-request-entry"></a>
 #### Delete Change Request Entry
 
-<a id="change-requests--delete-1-2"></a>
+<a id="change-requests--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -2403,7 +2403,7 @@ Each cost type is associated with a task, which in turn is associated with a pro
 <a id="cost-types--get-cost-type-object-definition"></a>
 ### Get Cost Type Object Definition
 
-<a id="cost-types--lookup-2"></a>
+<a id="cost-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the cost type object:
@@ -2426,7 +2426,7 @@ Function: `lookup`
 <a id="cost-types--query-and-list-cost-types"></a>
 ### Query and List Cost Types
 
-<a id="cost-types--query-2"></a>
+<a id="cost-types--query"></a>
 Function: `query`
 
 > List the cost type ID and record number for cost types for the given project/task:
@@ -2473,7 +2473,7 @@ Function: `query`
 
 List all cost types:
 
-<a id="cost-types--readbyquery-2"></a>
+<a id="cost-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2511,7 +2511,7 @@ Function: `readByQuery`
 <a id="cost-types--get-cost-type"></a>
 ### Get Cost Type
 
-<a id="cost-types--read-2"></a>
+<a id="cost-types--read"></a>
 Function: `read`
 
 ```xml
@@ -2548,7 +2548,7 @@ Custom field values from the standard cost type can also be used by the cost typ
 
 Parent-child relationships defined by standard cost types are preserved when cost types are created.
 
-<a id="cost-types--create-2"></a>
+<a id="cost-types--create"></a>
 Function: `create`
 
 ```xml
@@ -2596,7 +2596,7 @@ Function: `create`
 <a id="cost-types--update-cost-type"></a>
 ### Update Cost Type
 
-<a id="cost-types--update-2"></a>
+<a id="cost-types--update"></a>
 Function: `update`
 
 ```xml
@@ -2649,7 +2649,7 @@ Function: `update`
 <a id="cost-types--delete-cost-type"></a>
 ### Delete Cost Type
 
-<a id="cost-types--delete-2"></a>
+<a id="cost-types--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2689,7 +2689,7 @@ For example, you may want to bill a customer at one rate for the time that an em
 <a id="employee-position--get-employee-position-object-definition"></a>
 ### Get Employee Position Object Definition
 
-<a id="employee-position--lookup-2"></a>
+<a id="employee-position--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the employee position object:
@@ -2712,7 +2712,7 @@ Function: `lookup`
 <a id="employee-position--query-and-list-employee-positions"></a>
 ### Query and List Employee Positions
 
-<a id="employee-position--query-2"></a>
+<a id="employee-position--query"></a>
 Function: `query`
 
 > List the record number and name for each employee position:
@@ -2745,7 +2745,7 @@ Function: `query`
 <a id="employee-position--query-and-list-employee-positions-legacy"></a>
 ### Query and List Employee Positions (Legacy)
 
-<a id="employee-position--readbyquery-2"></a>
+<a id="employee-position--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2770,7 +2770,7 @@ Function: `readByQuery`
 <a id="employee-position--get-an-employee-position"></a>
 ### Get an Employee Position
 
-<a id="employee-position--read-2"></a>
+<a id="employee-position--read"></a>
 Function: `read`
 
 ```xml
@@ -2796,7 +2796,7 @@ Function: `read`
 <a id="employee-position--get-an-employee-position-by-id"></a>
 ### Get an Employee Position by ID
 
-<a id="employee-position--readbyname-2"></a>
+<a id="employee-position--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2822,7 +2822,7 @@ Function: `readByName`
 <a id="employee-position--create-an-employee-position"></a>
 ### Create an Employee Position
 
-<a id="employee-position--create-2"></a>
+<a id="employee-position--create"></a>
 Function: `create`
 
 ```xml
@@ -2857,7 +2857,7 @@ Function: `create`
 <a id="employee-position--update-a-employee-position"></a>
 ### Update a Employee Position
 
-<a id="employee-position--update-2"></a>
+<a id="employee-position--update"></a>
 Function: `update`
 
 > Updates the name of an employee position:
@@ -2894,7 +2894,7 @@ Function: `update`
 <a id="employee-position--delete-employee-position"></a>
 ### Delete Employee Position
 
-<a id="employee-position--delete-2"></a>
+<a id="employee-position--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2935,7 +2935,7 @@ You can define labor class, shift, and union objects that can be applied to time
 <a id="labor-class-shift-union--get-labor-class-object-definition"></a>
 #### Get labor Class Object Definition
 
-<a id="labor-class-shift-union--lookup-2"></a>
+<a id="labor-class-shift-union--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the labor class object:
@@ -2958,7 +2958,7 @@ Function: `lookup`
 <a id="labor-class-shift-union--query-and-list-labor-classes"></a>
 #### Query and List Labor Classes
 
-<a id="labor-class-shift-union--query-2"></a>
+<a id="labor-class-shift-union--query"></a>
 Function: `query`
 
 > List the record number, labor class ID, and name for each labor class:
@@ -2992,7 +2992,7 @@ Function: `query`
 <a id="labor-class-shift-union--query-and-list-labor-classes-legacy"></a>
 #### Query and List Labor Classes (Legacy)
 
-<a id="labor-class-shift-union--readbyquery-2"></a>
+<a id="labor-class-shift-union--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3018,7 +3018,7 @@ Function: `readByQuery`
 <a id="labor-class-shift-union--get-a-labor-class"></a>
 #### Get a Labor Class
 
-<a id="labor-class-shift-union--read-2"></a>
+<a id="labor-class-shift-union--read"></a>
 Function: `read`
 
 ```xml
@@ -3044,7 +3044,7 @@ Function: `read`
 <a id="labor-class-shift-union--get-a-labor-class-by-id"></a>
 #### Get a Labor Class by ID
 
-<a id="labor-class-shift-union--readbyname-2"></a>
+<a id="labor-class-shift-union--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3070,7 +3070,7 @@ Function: `readByName`
 <a id="labor-class-shift-union--create-labor-class"></a>
 #### Create Labor Class
 
-<a id="labor-class-shift-union--create-2"></a>
+<a id="labor-class-shift-union--create"></a>
 Function: `create`
 
 ```xml
@@ -3105,7 +3105,7 @@ Function: `create`
 <a id="labor-class-shift-union--update-a-labor-class"></a>
 #### Update a Labor Class
 
-<a id="labor-class-shift-union--update-2"></a>
+<a id="labor-class-shift-union--update"></a>
 Function: `update`
 
 ```xml
@@ -3140,7 +3140,7 @@ Function: `update`
 <a id="labor-class-shift-union--delete-labor-class"></a>
 #### Delete Labor Class
 
-<a id="labor-class-shift-union--delete-2"></a>
+<a id="labor-class-shift-union--delete"></a>
 Function: `delete`
 
 ```xml
@@ -3166,7 +3166,7 @@ Function: `delete`
 <a id="labor-class-shift-union--get-labor-shift-object-definition"></a>
 #### Get labor Shift Object Definition
 
-<a id="labor-class-shift-union--lookup-1-2"></a>
+<a id="labor-class-shift-union--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the labor shift object:
@@ -3189,7 +3189,7 @@ Function: `lookup`
 <a id="labor-class-shift-union--query-and-list-labor-shifts"></a>
 #### Query and List Labor Shifts
 
-<a id="labor-class-shift-union--query-1-2"></a>
+<a id="labor-class-shift-union--query-1"></a>
 Function: `query`
 
 > List the record number, name, and labor shift ID for each labor shift:
@@ -3223,7 +3223,7 @@ Function: `query`
 <a id="labor-class-shift-union--query-and-list-labor-shifts-legacy"></a>
 #### Query and List Labor Shifts (Legacy)
 
-<a id="labor-class-shift-union--readbyquery-1-2"></a>
+<a id="labor-class-shift-union--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3249,7 +3249,7 @@ Function: `readByQuery`
 <a id="labor-class-shift-union--get-a-labor-shift"></a>
 #### Get a Labor Shift
 
-<a id="labor-class-shift-union--read-1-2"></a>
+<a id="labor-class-shift-union--read-1"></a>
 Function: `read`
 
 ```xml
@@ -3275,7 +3275,7 @@ Function: `read`
 <a id="labor-class-shift-union--get-a-labor-shift-by-id"></a>
 #### Get a Labor Shift by ID
 
-<a id="labor-class-shift-union--readbyname-1-2"></a>
+<a id="labor-class-shift-union--readbyname-1"></a>
 Function: `readByName`
 
 ```xml
@@ -3301,7 +3301,7 @@ Function: `readByName`
 <a id="labor-class-shift-union--create-labor-shift"></a>
 #### Create Labor Shift
 
-<a id="labor-class-shift-union--create-1-2"></a>
+<a id="labor-class-shift-union--create-1"></a>
 Function: `create`
 
 ```xml
@@ -3336,7 +3336,7 @@ Function: `create`
 <a id="labor-class-shift-union--update-a-labor-shift"></a>
 #### Update a Labor Shift
 
-<a id="labor-class-shift-union--update-1-2"></a>
+<a id="labor-class-shift-union--update-1"></a>
 Function: `update`
 
 ```xml
@@ -3371,7 +3371,7 @@ Function: `update`
 <a id="labor-class-shift-union--delete-labor-shift"></a>
 #### Delete Labor Shift
 
-<a id="labor-class-shift-union--delete-1-2"></a>
+<a id="labor-class-shift-union--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -3397,7 +3397,7 @@ Function: `delete`
 <a id="labor-class-shift-union--get-labor-union-object-definition"></a>
 #### Get labor Union Object Definition
 
-<a id="labor-class-shift-union--lookup-2-3"></a>
+<a id="labor-class-shift-union--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the labor union object:
@@ -3420,7 +3420,7 @@ Function: `lookup`
 <a id="labor-class-shift-union--query-and-list-labor-unions"></a>
 #### Query and List Labor Unions
 
-<a id="labor-class-shift-union--query-2-3"></a>
+<a id="labor-class-shift-union--query-2"></a>
 Function: `query`
 
 > List the record number, name, and labor union ID for each labor union:
@@ -3454,7 +3454,7 @@ Function: `query`
 <a id="labor-class-shift-union--query-and-list-labor-unions-legacy"></a>
 #### Query and List Labor Unions (Legacy)
 
-<a id="labor-class-shift-union--readbyquery-2-3"></a>
+<a id="labor-class-shift-union--readbyquery-2"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3480,7 +3480,7 @@ Function: `readByQuery`
 <a id="labor-class-shift-union--get-a-labor-union"></a>
 #### Get a Labor Union
 
-<a id="labor-class-shift-union--read-2-3"></a>
+<a id="labor-class-shift-union--read-2"></a>
 Function: `read`
 
 ```xml
@@ -3506,7 +3506,7 @@ Function: `read`
 <a id="labor-class-shift-union--get-a-labor-union-by-id"></a>
 #### Get a Labor Union by ID
 
-<a id="labor-class-shift-union--readbyname-2-3"></a>
+<a id="labor-class-shift-union--readbyname-2"></a>
 Function: `readByName`
 
 ```xml
@@ -3532,7 +3532,7 @@ Function: `readByName`
 <a id="labor-class-shift-union--create-labor-union"></a>
 #### Create Labor Union
 
-<a id="labor-class-shift-union--create-2-3"></a>
+<a id="labor-class-shift-union--create-2"></a>
 Function: `create`
 
 ```xml
@@ -3567,7 +3567,7 @@ Function: `create`
 <a id="labor-class-shift-union--update-a-labor-union"></a>
 #### Update a Labor Union
 
-<a id="labor-class-shift-union--update-2-3"></a>
+<a id="labor-class-shift-union--update-2"></a>
 Function: `update`
 
 ```xml
@@ -3602,7 +3602,7 @@ Function: `update`
 <a id="labor-class-shift-union--delete-labor-union"></a>
 #### Delete Labor Union
 
-<a id="labor-class-shift-union--delete-2-3"></a>
+<a id="labor-class-shift-union--delete-2"></a>
 Function: `delete`
 
 ```xml
@@ -3647,7 +3647,7 @@ A `PAYROLLREPORTCHECK` object represents a direct-deposit employee paycheck and 
 <a id="payroll-reporting--get-payroll-report-check-object-definition"></a>
 #### Get Payroll Report Check Object Definition
 
-<a id="payroll-reporting--lookup-2"></a>
+<a id="payroll-reporting--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Payroll Report Check object:
@@ -3670,7 +3670,7 @@ Function: `lookup`
 <a id="payroll-reporting--query-and-list-payroll-report-checks"></a>
 #### Query and List Payroll Report Checks
 
-<a id="payroll-reporting--query-2"></a>
+<a id="payroll-reporting--query"></a>
 Function: `query`
 
 > List the recordno, check ID, and employee name of all payroll report checks:
@@ -3734,7 +3734,7 @@ Function: `query`
 <a id="payroll-reporting--get-a-payroll-report-check"></a>
 #### Get a Payroll Report Check
 
-<a id="payroll-reporting--read-2"></a>
+<a id="payroll-reporting--read"></a>
 Function: `read`
 
 ```xml
@@ -3762,7 +3762,7 @@ Function: `read`
 
 A payroll report check object must have a unique combination of `CHECKID`, `CHECKTYPE`, and `EMPLOYEEID`.
 
-<a id="payroll-reporting--create-2"></a>
+<a id="payroll-reporting--create"></a>
 Function: `create`
 
 ```xml
@@ -3838,7 +3838,7 @@ Function: `create`
 <a id="payroll-reporting--update-a-payroll-report-check"></a>
 #### Update a Payroll Report Check
 
-<a id="payroll-reporting--update-2"></a>
+<a id="payroll-reporting--update"></a>
 Function: `update`
 
 ```xml
@@ -3909,7 +3909,7 @@ Function: `update`
 <a id="payroll-reporting--delete-a-payroll-report-check"></a>
 #### Delete a Payroll Report Check
 
-<a id="payroll-reporting--delete-2"></a>
+<a id="payroll-reporting--delete"></a>
 Function: `delete`
 
 ```xml
@@ -3937,7 +3937,7 @@ A `PAYROLLREPORTEMPLOYEE` object represents employee setup information for use w
 <a id="payroll-reporting--get-payroll-report-employee-object-definition"></a>
 #### Get Payroll Report Employee Object Definition
 
-<a id="payroll-reporting--lookup-1-2"></a>
+<a id="payroll-reporting--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Payroll Report Employee object:
@@ -3960,7 +3960,7 @@ Function: `lookup`
 <a id="payroll-reporting--query-and-list-payroll-report-employees"></a>
 #### Query and List Payroll Report Employees
 
-<a id="payroll-reporting--query-1-2"></a>
+<a id="payroll-reporting--query-1"></a>
 Function: `query`
 
 > List the recordno, employee ID, and start date of all active full-time employees :
@@ -4006,7 +4006,7 @@ Function: `query`
 <a id="payroll-reporting--get-a-payroll-report-employee"></a>
 #### Get a Payroll Report Employee
 
-<a id="payroll-reporting--read-1-2"></a>
+<a id="payroll-reporting--read-1"></a>
 Function: `read`
 
 ```xml
@@ -4034,7 +4034,7 @@ Function: `read`
 
 A payroll report employee object must have a unique `EMPLOYEEID`.
 
-<a id="payroll-reporting--create-1-2"></a>
+<a id="payroll-reporting--create-1"></a>
 Function: `create`
 
 ```xml
@@ -4108,7 +4108,7 @@ Function: `create`
 <a id="payroll-reporting--update-a-payroll-report-employee"></a>
 #### Update a Payroll Report Employee
 
-<a id="payroll-reporting--update-1-2"></a>
+<a id="payroll-reporting--update-1"></a>
 Function: `update`
 
 ```xml
@@ -4183,7 +4183,7 @@ Function: `update`
 <a id="payroll-reporting--delete-a-payroll-report-employee"></a>
 #### Delete a Payroll Report Employee
 
-<a id="payroll-reporting--delete-1-2"></a>
+<a id="payroll-reporting--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -4211,7 +4211,7 @@ A `PAYROLLREPORTTRADE` object represents the employment trade details for indivi
 <a id="payroll-reporting--get-payroll-report-trade-object-definition"></a>
 #### Get Payroll Report Trade Object Definition
 
-<a id="payroll-reporting--lookup-2-3"></a>
+<a id="payroll-reporting--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Payroll Report Trade object:
@@ -4234,7 +4234,7 @@ Function: `lookup`
 <a id="payroll-reporting--query-and-list-payroll-report-trades"></a>
 #### Query and List Payroll Report Trades
 
-<a id="payroll-reporting--query-2-3"></a>
+<a id="payroll-reporting--query-2"></a>
 Function: `query`
 
 > List the recordno, trade ID, and work classification of all active trades:
@@ -4276,7 +4276,7 @@ Function: `query`
 <a id="payroll-reporting--get-a-payroll-report-trade"></a>
 #### Get a Payroll Report Trade
 
-<a id="payroll-reporting--read-2-3"></a>
+<a id="payroll-reporting--read-2"></a>
 Function: `read`
 
 ```xml
@@ -4304,7 +4304,7 @@ Function: `read`
 
 A payroll report trade object must have a unique `TRADEID`.
 
-<a id="payroll-reporting--create-2-3"></a>
+<a id="payroll-reporting--create-2"></a>
 Function: `create`
 
 ```xml
@@ -4365,7 +4365,7 @@ Function: `create`
 <a id="payroll-reporting--update-a-payroll-report-trade"></a>
 #### Update a Payroll Report Trade
 
-<a id="payroll-reporting--update-2-3"></a>
+<a id="payroll-reporting--update-2"></a>
 Function: `update`
 
 ```xml
@@ -4418,7 +4418,7 @@ Function: `update`
 <a id="payroll-reporting--delete-a-payroll-report-trade"></a>
 #### Delete a Payroll Report Trade
 
-<a id="payroll-reporting--delete-2-3"></a>
+<a id="payroll-reporting--delete-2"></a>
 Function: `delete`
 
 ```xml
@@ -4446,7 +4446,7 @@ A `PAYROLLREPORTPTOACCRUALSCHEDULE` object represents the PTO accrual schedule f
 <a id="payroll-reporting--get-payroll-report-pto-accrual-schedule-definition"></a>
 #### Get Payroll Report PTO Accrual Schedule Definition
 
-<a id="payroll-reporting--lookup-3-2"></a>
+<a id="payroll-reporting--lookup-3"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Payroll Report PTO Accrual schedule object:
@@ -4469,7 +4469,7 @@ Function: `lookup`
 <a id="payroll-reporting--query-and-list-payroll-report-pto-accrual-schedule"></a>
 #### Query and List Payroll Report PTO Accrual Schedule
 
-<a id="payroll-reporting--query-3-2"></a>
+<a id="payroll-reporting--query-3"></a>
 Function: `query`
 
 > List the recordno, PTO accrual schedule ID, and effective date of all active PTO accrual schedules:
@@ -4511,7 +4511,7 @@ Function: `query`
 <a id="payroll-reporting--get-a-payroll-report-pto-accrual-schedule"></a>
 #### Get a Payroll Report PTO Accrual Schedule
 
-<a id="payroll-reporting--read-3-2"></a>
+<a id="payroll-reporting--read-3"></a>
 Function: `read`
 
 ```xml
@@ -4539,7 +4539,7 @@ Function: `read`
 
 A payroll report PTO accrual schedule object must have a unique `PTOACCRUALSCHEDULEID`.
 
-<a id="payroll-reporting--create-3-2"></a>
+<a id="payroll-reporting--create-3"></a>
 Function: `create`
 
 ```xml
@@ -4610,7 +4610,7 @@ Function: `create`
 <a id="payroll-reporting--update-a-payroll-report-pto-accrual-schedule"></a>
 #### Update a Payroll Report PTO Accrual Schedule
 
-<a id="payroll-reporting--update-3-2"></a>
+<a id="payroll-reporting--update-3"></a>
 Function: `update`
 
 ```xml
@@ -4671,7 +4671,7 @@ Function: `update`
 <a id="payroll-reporting--delete-a-payroll-report-pto-accrual-schedule"></a>
 #### Delete a Payroll Report PTO Accrual Schedule
 
-<a id="payroll-reporting--delete-3-2"></a>
+<a id="payroll-reporting--delete-3"></a>
 Function: `delete`
 
 ```xml
@@ -4699,7 +4699,7 @@ A `PAYROLLREPORTTIMECARD` represents an employee timecard for a single day and i
 <a id="payroll-reporting--get-payroll-report-timecard-object-definition"></a>
 #### Get Payroll Report Timecard Object Definition
 
-<a id="payroll-reporting--lookup-4-2"></a>
+<a id="payroll-reporting--lookup-4"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Payroll Report Timecard object:
@@ -4722,7 +4722,7 @@ Function: `lookup`
 <a id="payroll-reporting--query-and-list-payroll-report-timecards"></a>
 #### Query and List Payroll Report Timecards
 
-<a id="payroll-reporting--query-4-2"></a>
+<a id="payroll-reporting--query-4"></a>
 Function: `query`
 
 > List all timecards associated with a specific payroll report check ID:
@@ -4763,7 +4763,7 @@ Function: `query`
 <a id="payroll-reporting--get-a-payroll-report-timecard"></a>
 #### Get a Payroll Report Timecard
 
-<a id="payroll-reporting--read-4-2"></a>
+<a id="payroll-reporting--read-4"></a>
 Function: `read`
 
 ```xml
@@ -4789,7 +4789,7 @@ Function: `read`
 <a id="payroll-reporting--create-a-payroll-report-timecard"></a>
 #### Create a Payroll Report Timecard
 
-<a id="payroll-reporting--create-4-2"></a>
+<a id="payroll-reporting--create-4"></a>
 Function: `create`
 
 ```xml
@@ -4840,7 +4840,7 @@ Function: `create`
 <a id="payroll-reporting--update-a-payroll-report-timecard"></a>
 #### Update a Payroll Report Timecard
 
-<a id="payroll-reporting--update-4-2"></a>
+<a id="payroll-reporting--update-4"></a>
 Function: `update`
 
 ```xml
@@ -4882,7 +4882,7 @@ Function: `update`
 <a id="payroll-reporting--delete-a-payroll-report-timecard"></a>
 #### Delete a Payroll Report Timecard
 
-<a id="payroll-reporting--delete-4-2"></a>
+<a id="payroll-reporting--delete-4"></a>
 Function: `delete`
 
 ```xml
@@ -4910,7 +4910,7 @@ A `PAYROLLREPORTGROSSPAY` object represents the gross pay of a specific type ear
 <a id="payroll-reporting--get-payroll-report-gross-pay-object-definition"></a>
 #### Get Payroll Report Gross Pay Object Definition
 
-<a id="payroll-reporting--lookup-5-2"></a>
+<a id="payroll-reporting--lookup-5"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Payroll Report Gross Pay object:
@@ -4933,7 +4933,7 @@ Function: `lookup`
 <a id="payroll-reporting--query-and-list-payroll-report-gross-pay-objects"></a>
 #### Query and List Payroll Report Gross Pay Objects
 
-<a id="payroll-reporting--query-5-2"></a>
+<a id="payroll-reporting--query-5"></a>
 Function: `query`
 
 > List all Payroll Report Gross Pay objects for a specified employee:
@@ -4975,7 +4975,7 @@ Function: `query`
 <a id="payroll-reporting--get-a-payroll-report-gross-pay-object"></a>
 #### Get a Payroll Report Gross Pay Object
 
-<a id="payroll-reporting--read-5-2"></a>
+<a id="payroll-reporting--read-5"></a>
 Function: `read`
 
 ```xml
@@ -5001,7 +5001,7 @@ Function: `read`
 <a id="payroll-reporting--create-a-payroll-report-gross-pay-object"></a>
 #### Create a Payroll Report Gross Pay Object
 
-<a id="payroll-reporting--create-5-2"></a>
+<a id="payroll-reporting--create-5"></a>
 Function: `create`
 
 ```xml
@@ -5043,7 +5043,7 @@ Function: `create`
 <a id="payroll-reporting--update-a-payroll-report-gross-pay-object"></a>
 #### Update a Payroll Report Gross Pay Object
 
-<a id="payroll-reporting--update-5-2"></a>
+<a id="payroll-reporting--update-5"></a>
 Function: `update`
 
 > Change the hours recorded in a gross pay object:
@@ -5084,7 +5084,7 @@ Function: `update`
 <a id="payroll-reporting--delete-a-payroll-report-gross-pay-object"></a>
 #### Delete a Payroll Report Gross Pay Object
 
-<a id="payroll-reporting--delete-5-2"></a>
+<a id="payroll-reporting--delete-5"></a>
 Function: `delete`
 
 ```xml
@@ -5112,7 +5112,7 @@ Use `PAYROLLREPORTTAXSETUP` objects to define standard tax definitions that you 
 <a id="payroll-reporting--get-payroll-report-tax-setup-object-definition"></a>
 #### Get Payroll Report Tax Setup Object Definition
 
-<a id="payroll-reporting--lookup-6-2"></a>
+<a id="payroll-reporting--lookup-6"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Payroll Report Tax Setup object:
@@ -5135,7 +5135,7 @@ Function: `lookup`
 <a id="payroll-reporting--query-and-list-payroll-report-tax-setups"></a>
 #### Query and List Payroll Report Tax Setups
 
-<a id="payroll-reporting--query-6-2"></a>
+<a id="payroll-reporting--query-6"></a>
 Function: `query`
 
 > List all Tax Setup objects for the Federal reporting level:
@@ -5177,7 +5177,7 @@ Function: `query`
 
 Returns detailed information for one or more `PAYROLLREPORTTAXSETUP` objects specified by `RECORDNO`.
 
-<a id="payroll-reporting--read-6-2"></a>
+<a id="payroll-reporting--read-6"></a>
 Function: `read`
 
 ```xml
@@ -5203,7 +5203,7 @@ Function: `read`
 <a id="payroll-reporting--create-a-payroll-report-tax-setup"></a>
 #### Create a Payroll Report Tax Setup
 
-<a id="payroll-reporting--create-6-2"></a>
+<a id="payroll-reporting--create-6"></a>
 Function: `create`
 
 ```xml
@@ -5242,7 +5242,7 @@ Function: `create`
 <a id="payroll-reporting--update-a-payroll-report-tax-setup"></a>
 #### Update a Payroll Report Tax Setup
 
-<a id="payroll-reporting--update-6-2"></a>
+<a id="payroll-reporting--update-6"></a>
 Function: `update`
 
 > Change tax category ID:
@@ -5280,7 +5280,7 @@ Function: `update`
 <a id="payroll-reporting--delete-a-payroll-report-tax-setup"></a>
 #### Delete a Payroll Report Tax Setup
 
-<a id="payroll-reporting--delete-6-2"></a>
+<a id="payroll-reporting--delete-6"></a>
 Function: `delete`
 
 ```xml
@@ -5308,7 +5308,7 @@ A `PAYROLLREPORTTAX` object represents the taxed earnings by an employee and the
 <a id="payroll-reporting--get-payroll-report-tax-object-definition"></a>
 #### Get Payroll Report Tax Object Definition
 
-<a id="payroll-reporting--lookup-7-2"></a>
+<a id="payroll-reporting--lookup-7"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Payroll Report Tax object:
@@ -5331,7 +5331,7 @@ Function: `lookup`
 <a id="payroll-reporting--query-and-list-payroll-report-tax-objects"></a>
 #### Query and List Payroll Report Tax Objects
 
-<a id="payroll-reporting--query-7-2"></a>
+<a id="payroll-reporting--query-7"></a>
 Function: `query`
 
 > List all Medicare tax objects:
@@ -5390,7 +5390,7 @@ Function: `query`
 <a id="payroll-reporting--get-a-payroll-report-tax-object"></a>
 #### Get a Payroll Report Tax Object
 
-<a id="payroll-reporting--read-7-2"></a>
+<a id="payroll-reporting--read-7"></a>
 Function: `read`
 
 ```xml
@@ -5416,7 +5416,7 @@ Function: `read`
 <a id="payroll-reporting--create-a-payroll-report-tax-object"></a>
 #### Create a Payroll Report Tax Object
 
-<a id="payroll-reporting--create-7-2"></a>
+<a id="payroll-reporting--create-7"></a>
 Function: `create`
 
 ```xml
@@ -5468,7 +5468,7 @@ Function: `create`
 <a id="payroll-reporting--update-a-payroll-report-tax-object"></a>
 #### Update a Payroll Report Tax Object
 
-<a id="payroll-reporting--update-7-2"></a>
+<a id="payroll-reporting--update-7"></a>
 Function: `update`
 
 > Update tax amounts paid:
@@ -5519,7 +5519,7 @@ Function: `update`
 <a id="payroll-reporting--delete-a-payroll-report-tax-object"></a>
 #### Delete a Payroll Report Tax Object
 
-<a id="payroll-reporting--delete-7-2"></a>
+<a id="payroll-reporting--delete-7"></a>
 Function: `delete`
 
 ```xml
@@ -5547,7 +5547,7 @@ A `PAYROLLREPORTPAYMODIFIER` object represents modifications to an employee’s 
 <a id="payroll-reporting--get-payroll-report-pay-modifier-object-definition"></a>
 #### Get Payroll Report Pay Modifier Object Definition
 
-<a id="payroll-reporting--lookup-8-2"></a>
+<a id="payroll-reporting--lookup-8"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Payroll Report Pay Modifier object:
@@ -5570,7 +5570,7 @@ Function: `lookup`
 <a id="payroll-reporting--query-and-list-payroll-report-pay-modifiers"></a>
 #### Query and List Payroll Report Pay Modifiers
 
-<a id="payroll-reporting--query-8-2"></a>
+<a id="payroll-reporting--query-8"></a>
 Function: `query`
 
 > List a few fields from all pay modifier objects:
@@ -5633,7 +5633,7 @@ Function: `query`
 <a id="payroll-reporting--get-a-payroll-report-pay-modifier"></a>
 #### Get a Payroll Report Pay Modifier
 
-<a id="payroll-reporting--read-8-2"></a>
+<a id="payroll-reporting--read-8"></a>
 Function: `read`
 
 ```xml
@@ -5659,7 +5659,7 @@ Function: `read`
 <a id="payroll-reporting--create-a-payroll-report-pay-modifier"></a>
 #### Create a Payroll Report Pay Modifier
 
-<a id="payroll-reporting--create-8-2"></a>
+<a id="payroll-reporting--create-8"></a>
 Function: `create`
 
 ```xml
@@ -5714,7 +5714,7 @@ Function: `create`
 <a id="payroll-reporting--update-a-payroll-report-pay-modifier"></a>
 #### Update a Payroll Report Pay Modifier
 
-<a id="payroll-reporting--update-8-2"></a>
+<a id="payroll-reporting--update-8"></a>
 Function: `update`
 
 > Set new contribution amounts:
@@ -5766,7 +5766,7 @@ Function: `update`
 <a id="payroll-reporting--delete-a-payroll-report-pay-modifier"></a>
 #### Delete a Payroll Report Pay Modifier
 
-<a id="payroll-reporting--delete-8-2"></a>
+<a id="payroll-reporting--delete-8"></a>
 Function: `delete`
 
 ```xml
@@ -5794,7 +5794,7 @@ A `PAYROLLREPORTPTOACTIVITY` object records time off taken by an employee during
 <a id="payroll-reporting--get-payroll-report-pto-activity-object-definition"></a>
 #### Get Payroll Report PTO Activity Object Definition
 
-<a id="payroll-reporting--lookup-9-2"></a>
+<a id="payroll-reporting--lookup-9"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Payroll Report PTO Activity object:
@@ -5817,7 +5817,7 @@ Function: `lookup`
 <a id="payroll-reporting--query-and-list-payroll-report-pto-activity-objects"></a>
 #### Query and List Payroll Report PTO Activity objects
 
-<a id="payroll-reporting--query-9-2"></a>
+<a id="payroll-reporting--query-9"></a>
 Function: `query`
 
 > List all COVID sick days reported on 2023 timecards:
@@ -5863,7 +5863,7 @@ Function: `query`
 <a id="payroll-reporting--get-a-payroll-report-pto-activity-object"></a>
 #### Get a Payroll Report PTO Activity Object
 
-<a id="payroll-reporting--read-9-2"></a>
+<a id="payroll-reporting--read-9"></a>
 Function: `read`
 
 ```xml
@@ -5889,7 +5889,7 @@ Function: `read`
 <a id="payroll-reporting--create-a-payroll-report-pto-activity-object"></a>
 #### Create a Payroll Report PTO Activity Object
 
-<a id="payroll-reporting--create-9-2"></a>
+<a id="payroll-reporting--create-9"></a>
 Function: `create`
 
 ```xml
@@ -5934,7 +5934,7 @@ Function: `create`
 <a id="payroll-reporting--update-a-payroll-report-pto-activity-object"></a>
 #### Update a Payroll Report PTO Activity Object
 
-<a id="payroll-reporting--update-9-2"></a>
+<a id="payroll-reporting--update-9"></a>
 Function: `update`
 
 > Change the number of PTO hours recorded:
@@ -5975,7 +5975,7 @@ Function: `update`
 <a id="payroll-reporting--delete-a-payroll-report-pto-activity"></a>
 #### Delete a Payroll Report PTO Activity
 
-<a id="payroll-reporting--delete-9-2"></a>
+<a id="payroll-reporting--delete-9"></a>
 Function: `delete`
 
 ```xml
@@ -6017,7 +6017,7 @@ When you get a project change order, the sum of the total cost for all the linke
 <a id="project-change-orders--get-project-change-order-object-definition"></a>
 ### Get Project Change Order Object Definition
 
-<a id="project-change-orders--lookup-2"></a>
+<a id="project-change-orders--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project change order object:
@@ -6040,7 +6040,7 @@ Function: `lookup`
 <a id="project-change-orders--query-and-list-project-change-orders"></a>
 ### Query and List Project Change Orders
 
-<a id="project-change-orders--query-2"></a>
+<a id="project-change-orders--query"></a>
 Function: `query`
 
 > List information for project change orders where the total cost is greater than 1000:
@@ -6100,7 +6100,7 @@ Function: `query`
 <a id="project-change-orders--query-and-list-project-change-orders-legacy"></a>
 ### Query and List Project Change Orders (Legacy)
 
-<a id="project-change-orders--readbyquery-2"></a>
+<a id="project-change-orders--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6127,7 +6127,7 @@ Function: `readByQuery`
 <a id="project-change-orders--get-project-change-order"></a>
 ### Get Project Change Order
 
-<a id="project-change-orders--read-2"></a>
+<a id="project-change-orders--read"></a>
 Function: `read`
 
 ```xml
@@ -6153,7 +6153,7 @@ Function: `read`
 <a id="project-change-orders--get-project-change-order-by-id"></a>
 ### Get Project Change Order by ID
 
-<a id="project-change-orders--readbyname-2"></a>
+<a id="project-change-orders--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -6187,7 +6187,7 @@ Release history:
 | 2022 Release 2 | Added PROJECTCONTRACTID and PROJECTCONTRACTLINEID |
 | 2023 Release 1 | Removed the restriction that only draft project change orders are allowed |
 
-<a id="project-change-orders--create-2"></a>
+<a id="project-change-orders--create"></a>
 Function: `create`
 
 > Creates a project change order:
@@ -6291,7 +6291,7 @@ Release history:
 | 2022 Release 2 | Added PROJECTCONTRACTID and PROJECTCONTRACTLINEID |
 | 2023 Release 1 | Removed the restriction that only draft project change orders are allowed |
 
-<a id="project-change-orders--update-2"></a>
+<a id="project-change-orders--update"></a>
 Function: `update`
 
 > Sets the change request status of a project change order to `Approved Changes`:
@@ -6386,7 +6386,7 @@ Function: `update`
 <a id="project-change-orders--delete-project-change-order"></a>
 ### Delete Project Change Order
 
-<a id="project-change-orders--delete-2"></a>
+<a id="project-change-orders--delete"></a>
 Function: `delete`
 
 ```xml
@@ -6426,7 +6426,7 @@ You specify a project contract type when creating [project contracts](https://de
 <a id="project-contract-types--get-project-contract-type-object-definition"></a>
 ### Get Project Contract Type Object Definition
 
-<a id="project-contract-types--lookup-2"></a>
+<a id="project-contract-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project contract type object:
@@ -6449,7 +6449,7 @@ Function: `lookup`
 <a id="project-contract-types--query-and-list-project-contract-types"></a>
 ### Query and List Project Contract Types
 
-<a id="project-contract-types--query-2"></a>
+<a id="project-contract-types--query"></a>
 Function: `query`
 
 > List the record number, ID, and name for each active project contract type:
@@ -6489,7 +6489,7 @@ Function: `query`
 <a id="project-contract-types--get-project-contract-type"></a>
 ### Get Project Contract Type
 
-<a id="project-contract-types--read-2"></a>
+<a id="project-contract-types--read"></a>
 Function: `read`
 
 ```xml
@@ -6515,7 +6515,7 @@ Function: `read`
 <a id="project-contract-types--get-project-contract-type-by-id"></a>
 ### Get Project Contract Type by ID
 
-<a id="project-contract-types--readbyname-2"></a>
+<a id="project-contract-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -6541,7 +6541,7 @@ Function: `readByName`
 <a id="project-contract-types--create-project-contract-type"></a>
 ### Create Project Contract Type
 
-<a id="project-contract-types--create-2"></a>
+<a id="project-contract-types--create"></a>
 Function: `create`
 
 ```xml
@@ -6576,7 +6576,7 @@ Function: `create`
 
 You can use the `RECORDNO` or the `PROJECTCONTRACTTYPEID` to specify the project contract type to update. The only fields that can be changed are `PROJECTCONTRACTTYPENAME`, `STATUS` and any custom fields.
 
-<a id="project-contract-types--update-2"></a>
+<a id="project-contract-types--update"></a>
 Function: `update`
 
 ```xml
@@ -6610,7 +6610,7 @@ Function: `update`
 <a id="project-contract-types--delete-delete-project-contract-type"></a>
 ### Delete Delete Project Contract Type
 
-<a id="project-contract-types--delete-2"></a>
+<a id="project-contract-types--delete"></a>
 Function: `delete`
 
 ```xml
@@ -6671,7 +6671,7 @@ A project contract object contains the header information about a project contra
 <a id="project-contracts--get-project-contract-object-definition"></a>
 #### Get Project Contract Object Definition
 
-<a id="project-contracts--lookup-2"></a>
+<a id="project-contracts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project contract object:
@@ -6694,7 +6694,7 @@ Function: `lookup`
 <a id="project-contracts--query-and-list-project-contracts"></a>
 #### Query and List Project Contracts
 
-<a id="project-contracts--query-2"></a>
+<a id="project-contracts--query"></a>
 Function: `query`
 
 > List the record number and original price for each project contract:
@@ -6727,7 +6727,7 @@ Function: `query`
 <a id="project-contracts--get-a-project-contract"></a>
 #### Get a Project Contract
 
-<a id="project-contracts--read-2"></a>
+<a id="project-contracts--read"></a>
 Function: `read`
 
 > Return all fields of a specified project contract
@@ -6755,7 +6755,7 @@ Function: `read`
 <a id="project-contracts--get-project-contract-by-id"></a>
 #### Get Project Contract by ID
 
-<a id="project-contracts--readbyname-2"></a>
+<a id="project-contracts--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -6790,7 +6790,7 @@ Release history:
 
 The project and customer are required fields and must exist in Intacct before you can create a project contract.
 
-<a id="project-contracts--create-2"></a>
+<a id="project-contracts--create"></a>
 Function: `create`
 
 ```xml
@@ -6900,7 +6900,7 @@ The PROJECTID of a project contract can only be updated if one of these conditio
 </update>
 ```
 
-<a id="project-contracts--update-2"></a>
+<a id="project-contracts--update"></a>
 Function: `update`
 
 <a id="project-contracts--parameters-5"></a>
@@ -6979,7 +6979,7 @@ A project contract can only be deleted if none of the project contract lines tha
 
 All project contract lines that belong to a project contract will be deleted with the project contract.
 
-<a id="project-contracts--delete-2"></a>
+<a id="project-contracts--delete"></a>
 Function: `delete`
 
 ```xml
@@ -7021,7 +7021,7 @@ You can set each project contract line to a billing type, which affects how bill
 <a id="project-contracts--get-project-contract-line-object-definition"></a>
 #### Get Project Contract Line Object Definition
 
-<a id="project-contracts--lookup-1-2"></a>
+<a id="project-contracts--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project contract line object:
@@ -7044,7 +7044,7 @@ Function: `lookup`
 <a id="project-contracts--query-and-list-project-contract-lines"></a>
 #### Query and List Project Contract Lines
 
-<a id="project-contracts--query-1-2"></a>
+<a id="project-contracts--query-1"></a>
 Function: `query`
 
 > For a specified project contract, list the record number and total revised price of each project contract line:
@@ -7083,7 +7083,7 @@ Function: `query`
 <a id="project-contracts--get-a-project-contract-line"></a>
 #### Get a Project Contract Line
 
-<a id="project-contracts--read-1-2"></a>
+<a id="project-contracts--read-1"></a>
 Function: `read`
 
 > Return all fields of a specified project contract line
@@ -7117,7 +7117,7 @@ Release history:
 |---|---|
 | 2023 Release 2 | Added GLEXCLUDE, SUMMARIZEBILL |
 
-<a id="project-contracts--create-1-2"></a>
+<a id="project-contracts--create-1"></a>
 Function: `create`
 
 > Create a simple project contract line:
@@ -7257,7 +7257,7 @@ Release history:
 |---|---|
 | 2023 Release 2 | Added GLEXCLUDE, SUMMARIZEBILL |
 
-<a id="project-contracts--update-1-2"></a>
+<a id="project-contracts--update-1"></a>
 Function: `update`
 
 The PROJECTID of a project contract line can only be updated if one of these conditions is true:
@@ -7389,7 +7389,7 @@ A project contract line can only be deleted if it has never been invoiced.
 
 All project contract line entries that belong to a project contract line will be deleted with the project contract line.
 
-<a id="project-contracts--delete-1-2"></a>
+<a id="project-contracts--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -7442,7 +7442,7 @@ Project contract line entries can only be created and updated through the owning
 <a id="project-contracts--get-project-contract-line-entry-object-definition"></a>
 #### Get Project Contract Line Entry Object Definition
 
-<a id="project-contracts--lookup-2-3"></a>
+<a id="project-contracts--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project contract line entry object:
@@ -7465,7 +7465,7 @@ Function: `lookup`
 <a id="project-contracts--query-and-list-project-contract-line-entries"></a>
 #### Query and List Project Contract Line Entries
 
-<a id="project-contracts--query-2-3"></a>
+<a id="project-contracts--query-2"></a>
 Function: `query`
 
 > List the record number and vendor for each project contract line entry:
@@ -7498,7 +7498,7 @@ Function: `query`
 <a id="project-contracts--get-a-project-contract-line-entry"></a>
 #### Get a Project Contract Line Entry
 
-<a id="project-contracts--read-2-3"></a>
+<a id="project-contracts--read-2"></a>
 Function: `read`
 
 > Return all fields of a specified project contract line entry
@@ -7526,7 +7526,7 @@ Function: `read`
 <a id="project-contracts--delete-project-contract-line-entry"></a>
 #### Delete Project Contract Line Entry
 
-<a id="project-contracts--delete-2-3"></a>
+<a id="project-contracts--delete-2"></a>
 Function: `delete`
 
 ```xml
@@ -7564,7 +7564,7 @@ You specify a project estimate type when creating [project estimates](https://de
 <a id="project-estimate-types--get-project-estimate-type-object-definition"></a>
 ### Get Project Estimate Type Object Definition
 
-<a id="project-estimate-types--lookup-2"></a>
+<a id="project-estimate-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project estimate type object:
@@ -7587,7 +7587,7 @@ Function: `lookup`
 <a id="project-estimate-types--query-and-list-project-estimate-types"></a>
 ### Query and List Project Estimate Types
 
-<a id="project-estimate-types--query-2"></a>
+<a id="project-estimate-types--query"></a>
 Function: `query`
 
 > List the name, record number, and selected workflow types for each project estimate type:
@@ -7621,7 +7621,7 @@ Function: `query`
 <a id="project-estimate-types--query-and-list-project-estimate-types-legacy"></a>
 ### Query and List Project Estimate Types (Legacy)
 
-<a id="project-estimate-types--readbyquery-2"></a>
+<a id="project-estimate-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -7648,7 +7648,7 @@ Function: `readByQuery`
 <a id="project-estimate-types--get-project-estimate-type"></a>
 ### Get Project Estimate Type
 
-<a id="project-estimate-types--read-2"></a>
+<a id="project-estimate-types--read"></a>
 Function: `read`
 
 ```xml
@@ -7674,7 +7674,7 @@ Function: `read`
 <a id="project-estimate-types--get-project-estimate-type-by-id"></a>
 ### Get Project Estimate Type by ID
 
-<a id="project-estimate-types--readbyname-2"></a>
+<a id="project-estimate-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -7706,7 +7706,7 @@ Release history:
 |---|---|
 | 2021 Release 3 | Added ESTIMATECATEGORY |
 
-<a id="project-estimate-types--create-2"></a>
+<a id="project-estimate-types--create"></a>
 Function: `create`
 
 ```xml
@@ -7746,7 +7746,7 @@ Release history:
 |---|---|
 | 2021 Release 3 | Added ESTIMATECATEGORY |
 
-<a id="project-estimate-types--update-2"></a>
+<a id="project-estimate-types--update"></a>
 Function: `update`
 
 ```xml
@@ -7781,7 +7781,7 @@ Function: `update`
 <a id="project-estimate-types--delete-project-estimate-type"></a>
 ### Delete Project Estimate Type
 
-<a id="project-estimate-types--delete-2"></a>
+<a id="project-estimate-types--delete"></a>
 Function: `delete`
 
 ```xml
@@ -7835,7 +7835,7 @@ You can create individual entries at the same time you create the project estima
 <a id="project-estimates--get-project-estimate-object-definition"></a>
 #### Get Project Estimate Object Definition
 
-<a id="project-estimates--lookup-2"></a>
+<a id="project-estimates--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project estimate object:
@@ -7858,7 +7858,7 @@ Function: `lookup`
 <a id="project-estimates--query-and-list-project-estimates"></a>
 #### Query and List Project Estimates
 
-<a id="project-estimates--query-2"></a>
+<a id="project-estimates--query"></a>
 Function: `query`
 
 > List the record number and project estimate ID for each project estimate:
@@ -7891,7 +7891,7 @@ Function: `query`
 <a id="project-estimates--query-and-list-project-estimates-legacy"></a>
 #### Query and List Project Estimates (Legacy)
 
-<a id="project-estimates--readbyquery-2"></a>
+<a id="project-estimates--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -7918,7 +7918,7 @@ Function: `readByQuery`
 <a id="project-estimates--get-project-estimate"></a>
 #### Get Project Estimate
 
-<a id="project-estimates--read-2"></a>
+<a id="project-estimates--read"></a>
 Function: `read`
 
 ```xml
@@ -7944,7 +7944,7 @@ Function: `read`
 <a id="project-estimates--get-project-estimate-by-id"></a>
 #### Get Project Estimate by ID
 
-<a id="project-estimates--readbyname-2"></a>
+<a id="project-estimates--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -7977,7 +7977,7 @@ Release history:
 | 2021 Release 1 | Added PRODUCTIONUNITS |
 | 2020 Release 4 | Added ESTIMATEDATE, EFFECTIVEDATE, added new values for POSTTO |
 
-<a id="project-estimates--create-2"></a>
+<a id="project-estimates--create"></a>
 Function: `create`
 
 ```xml
@@ -8075,7 +8075,7 @@ You can only modify or add entries during an update, you cannot delete entries. 
 
 **Note:** You can also [update an estimate entry directly](#project-estimates--update-project-estimate-entry) or [create new entries](#project-estimates--create-project-estimate-entry) independently.
 
-<a id="project-estimates--update-2"></a>
+<a id="project-estimates--update"></a>
 Function: `update`
 
 > Updates the header of the project estimate created above, adding a description:
@@ -8172,7 +8172,7 @@ If you provide a value for production units, you can omit amount, quantity, and 
 
 You cannot delete a primary or finalized project estimate, nor can you delete one with [change request](https://developer.intacct.com/api/construction/change-requests/) entries linked to it.
 
-<a id="project-estimates--delete-2"></a>
+<a id="project-estimates--delete"></a>
 Function: `delete`
 
 ```xml
@@ -8198,7 +8198,7 @@ Function: `delete`
 <a id="project-estimates--get-project-estimate-entry-object-definition"></a>
 #### Get Project Estimate Entry Object Definition
 
-<a id="project-estimates--lookup-1-2"></a>
+<a id="project-estimates--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project estimate entry object:
@@ -8221,7 +8221,7 @@ Function: `lookup`
 <a id="project-estimates--query-and-list-project-estimate-entries"></a>
 #### Query and List Project Estimate Entries
 
-<a id="project-estimates--query-1-2"></a>
+<a id="project-estimates--query-1"></a>
 Function: `query`
 
 > List the record number and project estimate ID for each project estimate entry:
@@ -8254,7 +8254,7 @@ Function: `query`
 <a id="project-estimates--query-and-list-project-estimate-entries-legacy"></a>
 #### Query and List Project Estimate Entries (Legacy)
 
-<a id="project-estimates--readbyquery-1-2"></a>
+<a id="project-estimates--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -8281,7 +8281,7 @@ Function: `readByQuery`
 <a id="project-estimates--get-project-estimate-entry"></a>
 #### Get Project Estimate Entry
 
-<a id="project-estimates--read-1-2"></a>
+<a id="project-estimates--read-1"></a>
 Function: `read`
 
 ```xml
@@ -8314,7 +8314,7 @@ Release history:
 | 2021 Release 1 | Added PRODUCTIONUNITS |
 | 2020 Release 4 | Added EFFECTIVEDATE |
 
-<a id="project-estimates--create-1-2"></a>
+<a id="project-estimates--create-1"></a>
 Function: `create`
 
 ```xml
@@ -8386,7 +8386,7 @@ Release history:
 
 You cannot update a project estimate entry if there is a [change request](https://developer.intacct.com/api/construction/change-requests/) entry that is linked to it.
 
-<a id="project-estimates--update-1-2"></a>
+<a id="project-estimates--update-1"></a>
 Function: `update`
 
 ```xml
@@ -8449,7 +8449,7 @@ If you provide a value for production units, you can omit amount, quantity, and 
 
 You cannot delete a project estimate entry if there is a [change request](https://developer.intacct.com/api/construction/change-requests/) entry that is linked to it.
 
-<a id="project-estimates--delete-1-2"></a>
+<a id="project-estimates--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -8524,7 +8524,7 @@ In the event that a project contract line entry matches more than one rate table
 <a id="rate-tables--get-rate-table-object-definition"></a>
 #### Get Rate Table Object Definition
 
-<a id="rate-tables--lookup-2"></a>
+<a id="rate-tables--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the rate table object:
@@ -8547,7 +8547,7 @@ Function: `lookup`
 <a id="rate-tables--query-and-list-rate-tables"></a>
 #### Query and List Rate Tables
 
-<a id="rate-tables--query-2"></a>
+<a id="rate-tables--query"></a>
 Function: `query`
 
 > List the record number and original price for each rate table:
@@ -8587,7 +8587,7 @@ Function: `query`
 <a id="rate-tables--get-a-rate-table"></a>
 #### Get a Rate Table
 
-<a id="rate-tables--read-2"></a>
+<a id="rate-tables--read"></a>
 Function: `read`
 
 > Return all fields of a specified rate table
@@ -8615,7 +8615,7 @@ Function: `read`
 <a id="rate-tables--get-rate-table-by-id"></a>
 #### Get Rate Table by ID
 
-<a id="rate-tables--readbyname-2"></a>
+<a id="rate-tables--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -8646,7 +8646,7 @@ You can create rate tables at the top-level entity of a multi-entity company or 
 - Rate Tables that are created and modified at the top-level entity have read-only access at lower level entities.
 - Rate Tables created at lower-level entities can only be accessed by the entity that created it.
 
-<a id="rate-tables--create-2"></a>
+<a id="rate-tables--create"></a>
 Function: `create`
 
 > Create a basic rate table header:
@@ -8732,7 +8732,7 @@ Function: `create`
 <a id="rate-tables--update-a-rate-table"></a>
 #### Update a Rate Table
 
-<a id="rate-tables--update-2"></a>
+<a id="rate-tables--update"></a>
 Function: `update`
 
 For each `RATETABLE<xx>ENTRIES` array, you can replace all entries, delete all entries, or leave them unchanged:
@@ -8801,7 +8801,7 @@ A rate table can only be deleted if all rate table lines that belong to the cont
 
 All rate table lines that belong to a rate table will be deleted with the rate table.
 
-<a id="rate-tables--delete-2"></a>
+<a id="rate-tables--delete"></a>
 Function: `delete`
 
 ```xml
@@ -8857,7 +8857,7 @@ Rate table timesheet entry objects define the rules that are applied to timeshee
 <a id="rate-tables--get-rate-table-timesheet-entry-object-definition"></a>
 #### Get Rate Table Timesheet Entry Object Definition
 
-<a id="rate-tables--lookup-1-2"></a>
+<a id="rate-tables--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the rate table timesheet entry object:
@@ -8880,7 +8880,7 @@ Function: `lookup`
 <a id="rate-tables--query-and-list-rate-table-timesheet-entries"></a>
 #### Query and List Rate Table Timesheet Entries
 
-<a id="rate-tables--query-1-2"></a>
+<a id="rate-tables--query-1"></a>
 Function: `query`
 
 > For a specified rate table, list the employee position ID and labor rate in each rate table timesheet entry object:
@@ -8919,7 +8919,7 @@ Function: `query`
 <a id="rate-tables--get-a-rate-table-timesheet-entry"></a>
 #### Get a Rate Table Timesheet Entry
 
-<a id="rate-tables--read-1-2"></a>
+<a id="rate-tables--read-1"></a>
 Function: `read`
 
 > Return all fields of a specified rate table timesheet entry
@@ -8975,7 +8975,7 @@ Rate table purchase order entry objects define the rules that are applied to pur
 <a id="rate-tables--get-rate-table-purchase-order-entry-object-definition"></a>
 #### Get Rate Table Purchase Order Entry Object Definition
 
-<a id="rate-tables--lookup-2-3"></a>
+<a id="rate-tables--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the rate table purchase order entry object:
@@ -8998,7 +8998,7 @@ Function: `lookup`
 <a id="rate-tables--query-and-list-rate-table-purchase-order-entries"></a>
 #### Query and List Rate Table Purchase Order Entries
 
-<a id="rate-tables--query-2-3"></a>
+<a id="rate-tables--query-2"></a>
 Function: `query`
 
 > List the record number and original price for each rate table purchase order entry:
@@ -9037,7 +9037,7 @@ Function: `query`
 <a id="rate-tables--get-a-rate-table-purchase-order-entry"></a>
 #### Get a Rate Table Purchase Order Entry
 
-<a id="rate-tables--read-2-3"></a>
+<a id="rate-tables--read-2"></a>
 Function: `read`
 
 > Return all fields of a specified rate table purchase order entry
@@ -9092,7 +9092,7 @@ Rate table credit card entry objects define the rules that are applied to credit
 <a id="rate-tables--get-rate-table-credit-card-entry-object-definition"></a>
 #### Get Rate Table Credit Card Entry Object Definition
 
-<a id="rate-tables--lookup-3-2"></a>
+<a id="rate-tables--lookup-3"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the rate table credit card entry object:
@@ -9115,7 +9115,7 @@ Function: `lookup`
 <a id="rate-tables--query-and-list-rate-table-credit-card-entries"></a>
 #### Query and List Rate Table Credit Card Entries
 
-<a id="rate-tables--query-3-2"></a>
+<a id="rate-tables--query-3"></a>
 Function: `query`
 
 > List the record number and original price for each rate table credit card entry:
@@ -9154,7 +9154,7 @@ Function: `query`
 <a id="rate-tables--get-a-rate-table-credit-card-entry"></a>
 #### Get a Rate Table Credit Card Entry
 
-<a id="rate-tables--read-3-2"></a>
+<a id="rate-tables--read-3"></a>
 Function: `read`
 
 > Return all fields of a specified rate table credit card entry
@@ -9209,7 +9209,7 @@ Rate table employee expense entry objects define the rules that are applied to e
 <a id="rate-tables--get-rate-table-employee-expense-entry-object-definition"></a>
 #### Get Rate Table Employee Expense Entry Object Definition
 
-<a id="rate-tables--lookup-4-2"></a>
+<a id="rate-tables--lookup-4"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the rate table employee expense entry object:
@@ -9232,7 +9232,7 @@ Function: `lookup`
 <a id="rate-tables--query-and-list-rate-table-employee-expense-entries"></a>
 #### Query and List Rate Table Employee Expense Entries
 
-<a id="rate-tables--query-4-2"></a>
+<a id="rate-tables--query-4"></a>
 Function: `query`
 
 > List the record number and original price for each rate table employee expense entry:
@@ -9271,7 +9271,7 @@ Function: `query`
 <a id="rate-tables--get-a-rate-table-employee-expense-entry"></a>
 #### Get a Rate Table Employee Expense Entry
 
-<a id="rate-tables--read-4-2"></a>
+<a id="rate-tables--read-4"></a>
 Function: `read`
 
 > Return all fields of a specified rate table employee expense entry
@@ -9326,7 +9326,7 @@ Rate table accounts payable entry objects define the rules that are applied to a
 <a id="rate-tables--get-rate-table-accounts-payable-entry-object-definition"></a>
 #### Get Rate Table Accounts Payable Entry Object Definition
 
-<a id="rate-tables--lookup-5-2"></a>
+<a id="rate-tables--lookup-5"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the rate table accounts payable entry object:
@@ -9349,7 +9349,7 @@ Function: `lookup`
 <a id="rate-tables--query-and-list-rate-table-accounts-payable-entries"></a>
 #### Query and List Rate Table Accounts Payable Entries
 
-<a id="rate-tables--query-5-2"></a>
+<a id="rate-tables--query-5"></a>
 Function: `query`
 
 > List the record number and original price for each rate table accounts payable entry:
@@ -9388,7 +9388,7 @@ Function: `query`
 <a id="rate-tables--get-a-rate-table-accounts-payable-entry"></a>
 #### Get a Rate Table Accounts Payable Entry
 
-<a id="rate-tables--read-5-2"></a>
+<a id="rate-tables--read-5"></a>
 Function: `read`
 
 > Return all fields of a specified rate table accounts payable entry
@@ -9443,7 +9443,7 @@ Rate table general ledger entry objects define the rules that are applied to gen
 <a id="rate-tables--get-rate-table-general-ledger-entry-object-definition"></a>
 #### Get Rate Table General Ledger Entry Object Definition
 
-<a id="rate-tables--lookup-6-2"></a>
+<a id="rate-tables--lookup-6"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the rate table general ledger entry object:
@@ -9466,7 +9466,7 @@ Function: `lookup`
 <a id="rate-tables--query-and-list-rate-table-general-ledger-entries"></a>
 #### Query and List Rate Table General Ledger Entries
 
-<a id="rate-tables--query-6-2"></a>
+<a id="rate-tables--query-6"></a>
 Function: `query`
 
 > List the record number and original price for each rate table general ledger entry:
@@ -9505,7 +9505,7 @@ Function: `query`
 <a id="rate-tables--get-a-rate-table-general-ledger-entry"></a>
 #### Get a Rate Table General Ledger Entry
 
-<a id="rate-tables--read-6-2"></a>
+<a id="rate-tables--read-6"></a>
 Function: `read`
 
 > Return all fields of a specified rate table general ledger entry
@@ -9550,7 +9550,7 @@ You set up a catalog of standard cost types, such as labor, materials, and subco
 <a id="standard-cost-types--get-standard-cost-type-object-definition"></a>
 ### Get Standard Cost Type Object Definition
 
-<a id="standard-cost-types--lookup-2"></a>
+<a id="standard-cost-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the standard cost type object:
@@ -9573,7 +9573,7 @@ Function: `lookup`
 <a id="standard-cost-types--query-and-list-standard-cost-types"></a>
 ### Query and List Standard Cost Types
 
-<a id="standard-cost-types--query-2"></a>
+<a id="standard-cost-types--query"></a>
 Function: `query`
 
 > List the record number and standard cost type ID for each cost type (with no filtering):
@@ -9606,7 +9606,7 @@ Function: `query`
 <a id="standard-cost-types--query-and-list-standard-cost-types-legacy"></a>
 ### Query and List Standard Cost Types (Legacy)
 
-<a id="standard-cost-types--readbyquery-2"></a>
+<a id="standard-cost-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -9633,7 +9633,7 @@ Function: `readByQuery`
 <a id="standard-cost-types--get-standard-cost-type"></a>
 ### Get Standard Cost Type
 
-<a id="standard-cost-types--read-2"></a>
+<a id="standard-cost-types--read"></a>
 Function: `read`
 
 ```xml
@@ -9659,7 +9659,7 @@ Function: `read`
 <a id="standard-cost-types--get-standard-cost-type-by-id"></a>
 ### Get Standard Cost Type by ID
 
-<a id="standard-cost-types--readbyname-2"></a>
+<a id="standard-cost-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -9685,7 +9685,7 @@ Function: `readByName`
 <a id="standard-cost-types--create-standard-cost-type"></a>
 ### Create Standard Cost Type
 
-<a id="standard-cost-types--create-2"></a>
+<a id="standard-cost-types--create"></a>
 Function: `create`
 
 ```xml
@@ -9733,7 +9733,7 @@ Function: `create`
 <a id="standard-cost-types--update-standard-cost-type"></a>
 ### Update Standard Cost Type
 
-<a id="standard-cost-types--update-2"></a>
+<a id="standard-cost-types--update"></a>
 Function: `update`
 
 ```xml
@@ -9780,7 +9780,7 @@ Function: `update`
 <a id="standard-cost-types--delete-standard-cost-type"></a>
 ### Delete Standard Cost Type
 
-<a id="standard-cost-types--delete-2"></a>
+<a id="standard-cost-types--delete"></a>
 Function: `delete`
 
 ```xml
@@ -9822,7 +9822,7 @@ Standard tasks are independent of projects. Your standard task can link to multi
 <a id="standard-tasks--get-standard-task-object-definition"></a>
 ### Get Standard Task Object Definition
 
-<a id="standard-tasks--lookup-2"></a>
+<a id="standard-tasks--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the standard task object:
@@ -9845,7 +9845,7 @@ Function: `lookup`
 <a id="standard-tasks--query-and-list-standard-tasks"></a>
 ### Query and List Standard Tasks
 
-<a id="standard-tasks--query-2"></a>
+<a id="standard-tasks--query"></a>
 Function: `query`
 
 > List the record number and name for each standard task:
@@ -9878,7 +9878,7 @@ Function: `query`
 <a id="standard-tasks--query-and-list-standard-tasks-legacy"></a>
 ### Query and List Standard Tasks (Legacy)
 
-<a id="standard-tasks--readbyquery-2"></a>
+<a id="standard-tasks--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -9905,7 +9905,7 @@ Function: `readByQuery`
 <a id="standard-tasks--get-standard-task"></a>
 ### Get Standard Task
 
-<a id="standard-tasks--read-2"></a>
+<a id="standard-tasks--read"></a>
 Function: `read`
 
 ```xml
@@ -9931,7 +9931,7 @@ Function: `read`
 <a id="standard-tasks--get-standard-task-by-id"></a>
 ### Get Standard Task by ID
 
-<a id="standard-tasks--readbyname-2"></a>
+<a id="standard-tasks--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -9957,7 +9957,7 @@ Function: `readByName`
 <a id="standard-tasks--create-standard-task"></a>
 ### Create Standard Task
 
-<a id="standard-tasks--create-2"></a>
+<a id="standard-tasks--create"></a>
 Function: `create`
 
 ```xml
@@ -10029,7 +10029,7 @@ Function: `create`
 
 When updating a standard task to modify the associated cost types, be aware that it is a complete replacement of the existing set. So, to add a cost type, supply all the original ones and the new one. To delete a cost type, supply only the ones you want to keep. To remove all cost types, provide an empty set.
 
-<a id="standard-tasks--update-2"></a>
+<a id="standard-tasks--update"></a>
 Function: `update`
 
 ```xml
@@ -10088,7 +10088,7 @@ Function: `update`
 <a id="standard-tasks--delete-standard-task"></a>
 ### Delete Standard Task
 
-<a id="standard-tasks--delete-2"></a>
+<a id="standard-tasks--delete"></a>
 Function: `delete`
 
 ```xml

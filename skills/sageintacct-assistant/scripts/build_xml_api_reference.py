@@ -174,10 +174,12 @@ class Renderer:
         txt = collapse(self.inline(node))
         hid = node.attrs.get("id")
         lvl = min(level + self.shift, 6)
+        start = len(self.out)
         if hid:
             self.emit(f'<a id="{self.prefix}{hid}"></a>')
         self.emit("#" * lvl + " " + txt)
         self.emit()
+        self._last_heading_lines = len(self.out) - start  # so a caller can retract exactly what was emitted
         return txt, hid
 
     def table(self, node):
@@ -290,8 +292,13 @@ class Renderer:
                     return
                 self._fn_done = True
                 fn = collapse(node.text())
-                self.out.pop(); self.out.pop(); self.out.pop()  # drop anchor, heading, blank
-                self.emit(f'<a id="{self.prefix}{hid}"></a>' if hid else "")
+                for _ in range(self._last_heading_lines):  # retract the heading just emitted (anchor if any, text, blank)
+                    line = self.out.pop()
+                    m = re.fullmatch(r'<a id="([^"]+)"></a>', line)
+                    if m:
+                        self._anchors.discard(m.group(1))  # so the re-emitted anchor keeps its unsuffixed id
+                if hid:
+                    self.emit(f'<a id="{self.prefix}{hid}"></a>')
                 self.emit(f"Function: `{fn}`")
                 self.emit()
                 obj = self._h2[0] if (self._h3 is not None and self._h2 is not None) else ""

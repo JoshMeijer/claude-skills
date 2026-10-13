@@ -108,13 +108,16 @@ developer or implementation company**, never a customer's.
    ```
 
    `--dry-run` prints the first request with placeholders. The output holds `inspect.xml` (the object list, custom
-   objects removed), `lookup/<OBJECT>.xml` (one `<data>` per object, `ISCUSTOM` fields removed), `dropped.txt`
-   (everything removed, for review) and `manifest.json` (release, date, counts, failures, gateway host). The
-   `<control>` block of each response (sender ID), company ID and user ID are never written.
+   objects removed), `lookup/<OBJECT>.xml` (one `<data>` per object, `ISCUSTOM` fields and relationships to
+   non-standard objects removed), `dropped.txt` (everything removed, for review) and `manifest.json` (release, date,
+   counts, failures, gateway host). The `<control>` block of each response (sender ID), company ID and user ID are
+   never written. Python 3.10 or later; stdlib only.
 2. **Review `dropped.txt` and grep the output** for the company name, user names and any identifier of the
    company before it leaves the machine. Objects whose name is not upper-case letters, digits and underscores are
    treated as Platform Services custom objects and dropped; if a standard object was dropped by that rule, add it
-   back by name with `--objects`. `inspect` lists `SODOCUMENT`, `PODOCUMENT`, `INVDOCUMENT`, their line objects and
+   back with `--objects NAME` into the **same** `--out`: the run looks up only that object, restores its entry in
+   `inspect.xml` and merges the manifest (counts updated, the name moved from `custom_objects_removed` to
+   `readded_objects`) instead of replacing it. `inspect` lists `SODOCUMENT`, `PODOCUMENT`, `INVDOCUMENT`, their line objects and
    the recurring variants once per transaction definition, labelled with the definition's name: the pack step keeps
    only the first (generic) entry, so definition names never enter the repository.
 3. **Pack and commit the scrubbed dump**:
@@ -124,10 +127,15 @@ developer or implementation company**, never a customer's.
        --zip sources/sageintacct-assistant/object-definitions-<release>.zip
    ```
 
-   The zip holds the collapsed `inspect.xml`, `lookup/*.xml` and `manifest.json` (never `dropped.txt`); add a row
-   with its SHA-256 to the README there, so anyone can regenerate the snapshot (`.gitignore` ignores `*.zip` except
-   under `sources/`).
-4. **Build the snapshot** (the builder reads the zip directly; every file under `snapshot/` is rewritten):
+   The zip holds the collapsed `inspect.xml`, the re-scrubbed `lookup/*.xml` and a counts-only `manifest.json`
+   (never `dropped.txt`, never the names of removed custom fields or objects). The pack refuses a payload that
+   contains a response envelope or credential element, or the sender, company or user ID the dump was made with,
+   so `INTACCT_SENDER_ID`, `INTACCT_COMPANY_ID` and `INTACCT_USER_ID` must be set in the shell that packs (the
+   values never enter the zip; `--allow-missing-identifiers` skips that check knowingly). Add a row with the zip's
+   SHA-256 to the README there, so anyone can regenerate the snapshot (`.gitignore` ignores `*.zip` except under
+   `sources/`).
+4. **Build the snapshot** (the builder reads the zip directly; `--out` must be the folder named `snapshot`, where
+   it rewrites `fields-NN.md`, `objects.md` and `INDEX.md` and touches nothing else):
 
    ```bash
    python -I skills/sageintacct-assistant/scripts/build_object_snapshot.py \
@@ -138,7 +146,7 @@ developer or implementation company**, never a customer's.
    It writes `snapshot/INDEX.md`, `objects.md` (one row per object with its field and relationship counts and the
    bundle file, start line and length) and `fields-NN.md` bundles of about 1 MB (per object: the field table with
    ID, label, type, required, read-only, valid values, description; the relationships table), and refuses to write
-   if a custom field survived the scrub. The 2026 Release 3 run gave 632 objects, 21,342 fields, 2,039
+   if a custom field or a relationship to a non-standard object survived the scrub. The 2026 Release 3 run gave 632 objects, 21,342 fields, 2,039
    relationships in 3 bundles.
 5. **Update the counts** in `references/xml-api/INDEX.md`, `references/INDEX.md`, `SKILL.md` (description, § 2,
    § 4 gotchas), the README and the marketplace description; diff the new `snapshot/objects.md` against the previous

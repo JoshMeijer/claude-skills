@@ -53,7 +53,7 @@ Your asynchronous response can include the first batch of results along with the
 
 > Return an interactive custom report definition in a company:
 
-<a id="custom-reports--readreport-2"></a>
+<a id="custom-reports--readreport"></a>
 Function: `readReport`
 
 ```xml
@@ -149,7 +149,7 @@ Function: `readReport`
 
 > Return an original custom report definition in a company:
 
-<a id="custom-reports--readreport-1-2"></a>
+<a id="custom-reports--readreport-1"></a>
 Function: `readReport`
 
 ```xml
@@ -221,7 +221,7 @@ Function: `readReport`
 <a id="custom-reports--run-an-interactive-custom-report"></a>
 ### Run an Interactive Custom Report
 
-<a id="custom-reports--readreport-2-3"></a>
+<a id="custom-reports--readreport-2"></a>
 Function: `readReport`
 
 > Run an interactive custom report created with vendor payments on a given day:
@@ -284,7 +284,7 @@ Release history:
 
 This function is intended to allow developers to design a dataset and **not** to perform grouping and summary operations. If you need to group or summarize your data, you will need to do that in your own code on the data returned from the report. In short, only run `readReport` on tabular reports where grouping is not set.
 
-<a id="custom-reports--readreport-original-2"></a>
+<a id="custom-reports--readreport-original"></a>
 Function: `readReport`
 
 > Run an original custom report with Date Range Arguments:
@@ -376,7 +376,7 @@ You use the reportId in a `readReport` response to retrieve the status of a repo
 </readMore>
 ```
 
-<a id="custom-reports--readmore-2"></a>
+<a id="custom-reports--readmore"></a>
 Function: `readMore`
 
 <a id="custom-reports--parameters-8"></a>
@@ -416,7 +416,7 @@ An event could be something as simple as an email to the sales manager when a sa
 <a id="smart-events--list-smart-event-log-records-legacy"></a>
 ### List Smart Event Log Records (Legacy)
 
-<a id="smart-events--get_list-2"></a>
+<a id="smart-events--get_list"></a>
 Function: `get_list`
 
 > List all Order Entry transaction event logs on April 3, 2013:

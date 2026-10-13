@@ -39,7 +39,7 @@ This functionality must be enabled by configuring AR in the Sage Intacct UI.
 <a id="ar-account-labels--get-ar-account-label-object-definition"></a>
 ### Get AR Account Label Object Definition
 
-<a id="ar-account-labels--lookup-2"></a>
+<a id="ar-account-labels--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AR account label object:
@@ -62,7 +62,7 @@ Function: `lookup`
 <a id="ar-account-labels--query-and-list-ar-account-labels"></a>
 ### Query and List AR Account Labels
 
-<a id="ar-account-labels--query-2"></a>
+<a id="ar-account-labels--query"></a>
 Function: `query`
 
 > List each active account label:
@@ -100,7 +100,7 @@ Function: `query`
 <a id="ar-account-labels--query-and-list-ar-account-labels-legacy"></a>
 ### Query and List AR Account Labels (Legacy)
 
-<a id="ar-account-labels--readbyquery-2"></a>
+<a id="ar-account-labels--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -127,7 +127,7 @@ Function: `readByQuery`
 <a id="ar-account-labels--get-ar-account-label"></a>
 ### Get AR Account Label
 
-<a id="ar-account-labels--read-2"></a>
+<a id="ar-account-labels--read"></a>
 Function: `read`
 
 ```xml
@@ -153,7 +153,7 @@ Function: `read`
 <a id="ar-account-labels--get-ar-account-label-by-id"></a>
 ### Get AR Account Label by ID
 
-<a id="ar-account-labels--readbyname-2"></a>
+<a id="ar-account-labels--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -179,7 +179,7 @@ Function: `readByName`
 <a id="ar-account-labels--create-ar-account-label"></a>
 ### Create AR Account Label
 
-<a id="ar-account-labels--create-2"></a>
+<a id="ar-account-labels--create"></a>
 Function: `create`
 
 ```xml
@@ -216,7 +216,7 @@ Function: `create`
 <a id="ar-account-labels--create-ar-account-label-legacy"></a>
 ### Create AR Account Label (Legacy)
 
-<a id="ar-account-labels--create_araccountlabel-2"></a>
+<a id="ar-account-labels--create_araccountlabel"></a>
 Function: `create_araccountlabel`
 
 ```xml
@@ -246,7 +246,7 @@ Function: `create_araccountlabel`
 <a id="ar-account-labels--update-ar-account-label"></a>
 ### Update AR Account Label
 
-<a id="ar-account-labels--update-2"></a>
+<a id="ar-account-labels--update"></a>
 Function: `update`
 
 ```xml
@@ -283,7 +283,7 @@ Function: `update`
 <a id="ar-account-labels--update-ar-account-label-legacy"></a>
 ### Update AR Account Label (Legacy)
 
-<a id="ar-account-labels--update_araccountlabel-2"></a>
+<a id="ar-account-labels--update_araccountlabel"></a>
 Function: `update_araccountlabel`
 
 ```xml
@@ -309,7 +309,7 @@ Function: `update_araccountlabel`
 <a id="ar-account-labels--delete-ar-account-label"></a>
 ### Delete AR Account Label
 
-<a id="ar-account-labels--delete-2"></a>
+<a id="ar-account-labels--delete"></a>
 Function: `delete`
 
 ```xml
@@ -332,7 +332,7 @@ Function: `delete`
 <a id="ar-account-labels--delete-ar-account-label-legacy"></a>
 ### Delete AR Account Label (Legacy)
 
-<a id="ar-account-labels--delete_araccountlabel-2"></a>
+<a id="ar-account-labels--delete_araccountlabel"></a>
 Function: `delete_araccountlabel`
 
 ```xml
@@ -369,7 +369,7 @@ An AR adjustment is a transaction that applies a credit or debit in order to mod
 <a id="ar-adjustments--get-ar-adjustment-object-definition"></a>
 #### Get AR Adjustment Object Definition
 
-<a id="ar-adjustments--lookup-2"></a>
+<a id="ar-adjustments--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AR adjustment object:
@@ -392,7 +392,7 @@ Function: `lookup`
 <a id="ar-adjustments--query-and-list-ar-adjustments"></a>
 #### Query and List AR Adjustments
 
-<a id="ar-adjustments--query-2"></a>
+<a id="ar-adjustments--query"></a>
 Function: `query`
 
 > List the record number and customer name for each AR adjustment where the customer name is `Acme Supply`:
@@ -431,7 +431,7 @@ Function: `query`
 <a id="ar-adjustments--query-and-list-ar-adjustments-legacy"></a>
 #### Query and List AR Adjustments (Legacy)
 
-<a id="ar-adjustments--readbyquery-2"></a>
+<a id="ar-adjustments--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -458,7 +458,7 @@ Function: `readByQuery`
 <a id="ar-adjustments--get-ar-adjustment"></a>
 #### Get AR Adjustment
 
-<a id="ar-adjustments--read-2"></a>
+<a id="ar-adjustments--read"></a>
 Function: `read`
 
 ```xml
@@ -494,7 +494,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="ar-adjustments--create_aradjustment-2"></a>
+<a id="ar-adjustments--create_aradjustment"></a>
 Function: `create_aradjustment`
 
 > Create an AR adjustment:
@@ -668,7 +668,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="ar-adjustments--update_aradjustment-2"></a>
+<a id="ar-adjustments--update_aradjustment"></a>
 Function: `update_aradjustment`
 
 ```xml
@@ -828,7 +828,7 @@ Specifies a tax rate (defined in the system) and a manually calculated tax for t
 <a id="ar-adjustments--delete-ar-adjustment"></a>
 #### Delete AR Adjustment
 
-<a id="ar-adjustments--delete-2"></a>
+<a id="ar-adjustments--delete"></a>
 Function: `delete`
 
 ```xml
@@ -851,7 +851,7 @@ Function: `delete`
 <a id="ar-adjustments--delete-ar-adjustment-legacy"></a>
 #### Delete AR Adjustment (Legacy)
 
-<a id="ar-adjustments--delete_aradjustment-2"></a>
+<a id="ar-adjustments--delete_aradjustment"></a>
 Function: `delete_aradjustment`
 
 ```xml
@@ -873,7 +873,7 @@ Function: `delete_aradjustment`
 <a id="ar-adjustments--get-ar-adjustment-line-object-definition"></a>
 #### Get AR Adjustment Line Object Definition
 
-<a id="ar-adjustments--lookup-1-2"></a>
+<a id="ar-adjustments--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AR adjustment line object:
@@ -896,7 +896,7 @@ Function: `lookup`
 <a id="ar-adjustments--query-and-list-ar-adjustment-lines"></a>
 #### Query and List AR Adjustment Lines
 
-<a id="ar-adjustments--query-1-2"></a>
+<a id="ar-adjustments--query-1"></a>
 Function: `query`
 
 > List the record number and amount for each AR adjustment line:
@@ -929,7 +929,7 @@ Function: `query`
 <a id="ar-adjustments--query-and-list-ar-adjustment-lines-legacy"></a>
 #### Query and List AR Adjustment Lines (Legacy)
 
-<a id="ar-adjustments--readbyquery-1-2"></a>
+<a id="ar-adjustments--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -956,7 +956,7 @@ Function: `readByQuery`
 <a id="ar-adjustments--get-ar-adjustment-line"></a>
 #### Get AR Adjustment Line
 
-<a id="ar-adjustments--read-1-2"></a>
+<a id="ar-adjustments--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1002,7 +1002,7 @@ Use [`ARPYMT`](https://developer.intacct.com/api/accounts-receivable/ar-payments
 <a id="ar-advances--get-ar-advance-object-definition"></a>
 ### Get AR Advance Object Definition
 
-<a id="ar-advances--lookup-2"></a>
+<a id="ar-advances--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AR advance object:
@@ -1025,7 +1025,7 @@ Function: `lookup`
 <a id="ar-advances--query-and-list-ar-advances"></a>
 ### Query and List AR Advances
 
-<a id="ar-advances--query-2"></a>
+<a id="ar-advances--query"></a>
 Function: `query`
 
 > List each advance for a specified customer:
@@ -1063,7 +1063,7 @@ Function: `query`
 <a id="ar-advances--query-and-list-ar-advances-legacy"></a>
 ### Query and List AR Advances (Legacy)
 
-<a id="ar-advances--readbyquery-2"></a>
+<a id="ar-advances--readbyquery"></a>
 Function: `readByQuery`
 
 > List each advance for a specified customer:
@@ -1095,7 +1095,7 @@ Function: `readByQuery`
 <a id="ar-advances--get-ar-advance"></a>
 ### Get AR Advance
 
-<a id="ar-advances--read-2"></a>
+<a id="ar-advances--read"></a>
 Function: `read`
 
 ```xml
@@ -1127,7 +1127,7 @@ Release history:
 |---|---|
 | 2023 Release 3 | Added PRBATCHKEY |
 
-<a id="ar-advances--create-2"></a>
+<a id="ar-advances--create"></a>
 Function: `create`
 
 > Create a cash advance payment:
@@ -1246,7 +1246,7 @@ You can also modify, add, or delete lines as part of your update:
 - To delete a line, supply only the lines that you want to keep.
 - To modify a line, supply all the original lines and change the field values you want.
 
-<a id="ar-advances--update-2"></a>
+<a id="ar-advances--update"></a>
 Function: `update`
 
 > Update header information only:
@@ -1364,7 +1364,7 @@ Detailed AR aging information can be obtained by creating a [custom report](http
 <a id="ar-aging--list-accounts-receivable-aging-legacy"></a>
 ### List Accounts Receivable Aging (Legacy)
 
-<a id="ar-aging--get_araging-2"></a>
+<a id="ar-aging--get_araging"></a>
 Function: `get_araging`
 
 > Get an aging report for several aging periods:
@@ -1444,7 +1444,7 @@ Note: The legacy `ARPAYMENT` object is still available for backwards compatibili
 <a id="ar-payments--get-ar-payment-object-definition"></a>
 ### Get AR Payment Object Definition
 
-<a id="ar-payments--lookup-2"></a>
+<a id="ar-payments--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AR payment object:
@@ -1467,7 +1467,7 @@ Function: `lookup`
 <a id="ar-payments--query-and-list-ar-payments"></a>
 ### Query and List AR Payments
 
-<a id="ar-payments--query-2"></a>
+<a id="ar-payments--query"></a>
 Function: `query`
 
 > List the record number for each AR payment that doesn’t have a description:
@@ -1506,7 +1506,7 @@ Function: `query`
 
 Lists AR payments including posted payments, advance payments, and overpayments.
 
-<a id="ar-payments--readbyquery-2"></a>
+<a id="ar-payments--readbyquery"></a>
 Function: `readByQuery`
 
 > List AR payments:
@@ -1552,7 +1552,7 @@ Function: `readByQuery`
 <a id="ar-payments--get-ar-payment"></a>
 ### Get AR Payment
 
-<a id="ar-payments--read-2"></a>
+<a id="ar-payments--read"></a>
 Function: `read`
 
 ```xml
@@ -1587,7 +1587,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="ar-payments--create-2"></a>
+<a id="ar-payments--create"></a>
 Function: `create`
 
 > Create a payment against the invoice header:
@@ -1957,7 +1957,7 @@ You can update a draft payment to change the header information, add payment det
 - To add new payment details, include all original details in the update request plus the details that you want to add.
 - To delete payment details, include only those details that you want to keep in the update request. Payment details that are omitted are deleted.
 
-<a id="ar-payments--update-2"></a>
+<a id="ar-payments--update"></a>
 Function: `update`
 
 > Update a draft payment to submit the payment:
@@ -2114,7 +2114,7 @@ Note: It is recommended that you use `ARADVANCE` to create advances instead of t
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="ar-payments--create_arpayment-2"></a>
+<a id="ar-payments--create_arpayment"></a>
 Function: `create_arpayment`
 
 > Create a multi currency AR payment and apply it to an invoice:
@@ -2228,7 +2228,7 @@ You can apply overpayments, advances, credit memos, or negative invoices using `
 - To apply a credit memo, use the `RECORDNO` from the `ARADJUSTMENT` object.
 - ​To apply a negative invoice or invoice with an inline credit, use the `RECORDNO` from the `ARINVOICE` object.
 
-<a id="ar-payments--apply_arpayment-2"></a>
+<a id="ar-payments--apply_arpayment"></a>
 Function: `apply_arpayment`
 
 ```xml
@@ -2280,7 +2280,7 @@ You can apply the payments to an invoice or a debit memo. To do so, set the `inv
 <a id="ar-payments--reverse-ar-payment-legacy"></a>
 ### Reverse AR Payment (Legacy)
 
-<a id="ar-payments--reverse_arpayment-2"></a>
+<a id="ar-payments--reverse_arpayment"></a>
 Function: `reverse_arpayment`
 
 ```xml
@@ -2320,7 +2320,7 @@ List AR payments including posted payments and advanced.
 
 **Note:** This function is provided for backwards compatibility only. Use `readByQuery` on the `ARPYMT` object moving forward.
 
-<a id="ar-payments--readbyquery-1-2"></a>
+<a id="ar-payments--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2355,7 +2355,7 @@ Function: `readByQuery`
 
 **Note:** This function is provided for backwards compatibility only. Use `read` on the `ARPYMT` object moving forward.
 
-<a id="ar-payments--read-1-2"></a>
+<a id="ar-payments--read-1"></a>
 Function: `read`
 
 ```xml
@@ -2397,7 +2397,7 @@ Summaries are collections of the same type of transactions, grouped together for
 <a id="ar-summaries--get-invoice-summaries-object-definition"></a>
 #### Get Invoice Summaries Object Definition
 
-<a id="ar-summaries--lookup-2"></a>
+<a id="ar-summaries--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AR invoice summary object:
@@ -2420,7 +2420,7 @@ Function: `lookup`
 <a id="ar-summaries--query-and-list-invoice-summaries"></a>
 #### Query and List Invoice Summaries
 
-<a id="ar-summaries--query-2"></a>
+<a id="ar-summaries--query"></a>
 Function: `query`
 
 > List the record number, title, and status for each active and open invoice summary:
@@ -2466,7 +2466,7 @@ Function: `query`
 <a id="ar-summaries--query-and-list-invoice-summaries-legacy"></a>
 #### Query and List Invoice Summaries (Legacy)
 
-<a id="ar-summaries--readbyquery-2"></a>
+<a id="ar-summaries--readbyquery"></a>
 Function: `readByQuery`
 
 > List active and open invoice summaries:
@@ -2495,7 +2495,7 @@ Function: `readByQuery`
 <a id="ar-summaries--list-invoice-summaries-legacy"></a>
 #### List Invoice Summaries (Legacy)
 
-<a id="ar-summaries--get_list-2"></a>
+<a id="ar-summaries--get_list"></a>
 Function: `get_list`
 
 ```xml
@@ -2549,7 +2549,7 @@ Function: `get_list`
 <a id="ar-summaries--get-invoice-summary"></a>
 #### Get Invoice Summary
 
-<a id="ar-summaries--read-2"></a>
+<a id="ar-summaries--read"></a>
 Function: `read`
 
 ```xml
@@ -2575,7 +2575,7 @@ Function: `read`
 <a id="ar-summaries--create-invoice-summary-legacy"></a>
 #### Create Invoice Summary (Legacy)
 
-<a id="ar-summaries--create_invoicebatch-2"></a>
+<a id="ar-summaries--create_invoicebatch"></a>
 Function: `create_invoicebatch`
 
 ```xml
@@ -2613,7 +2613,7 @@ Function: `create_invoicebatch`
 <a id="ar-summaries--list-ar-adjustment-summaries-legacy"></a>
 #### List AR Adjustment Summaries (Legacy)
 
-<a id="ar-summaries--get_list-1-2"></a>
+<a id="ar-summaries--get_list-1"></a>
 Function: `get_list`
 
 ```xml
@@ -2667,7 +2667,7 @@ Function: `get_list`
 <a id="ar-summaries--create-ar-adjustment-summary-legacy"></a>
 #### Create AR Adjustment Summary (Legacy)
 
-<a id="ar-summaries--create_aradjustmentbatch-2"></a>
+<a id="ar-summaries--create_aradjustmentbatch"></a>
 Function: `create_aradjustmentbatch`
 
 ```xml
@@ -2702,7 +2702,7 @@ Function: `create_aradjustmentbatch`
 <a id="ar-summaries--create-ar-payment-summary-legacy"></a>
 #### Create AR Payment Summary (Legacy)
 
-<a id="ar-summaries--create_arpaymentbatch-2"></a>
+<a id="ar-summaries--create_arpaymentbatch"></a>
 Function: `create_arpaymentbatch`
 
 ```xml
@@ -2757,7 +2757,7 @@ AR terms can be associated with AR transactions or with specific customers.
 <a id="ar-terms--get-ar-term-object-definition"></a>
 ### Get AR Term Object Definition
 
-<a id="ar-terms--lookup-2"></a>
+<a id="ar-terms--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the AR term object:
@@ -2780,7 +2780,7 @@ Function: `lookup`
 <a id="ar-terms--query-and-list-ar-terms"></a>
 ### Query and List AR Terms
 
-<a id="ar-terms--query-2"></a>
+<a id="ar-terms--query"></a>
 Function: `query`
 
 > List information about each AR term:
@@ -2815,7 +2815,7 @@ Function: `query`
 <a id="ar-terms--query-and-list-ar-terms-legacy"></a>
 ### Query and List AR Terms (Legacy)
 
-<a id="ar-terms--readbyquery-2"></a>
+<a id="ar-terms--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2842,7 +2842,7 @@ Function: `readByQuery`
 <a id="ar-terms--get-ar-term"></a>
 ### Get AR Term
 
-<a id="ar-terms--read-2"></a>
+<a id="ar-terms--read"></a>
 Function: `read`
 
 ```xml
@@ -2868,7 +2868,7 @@ Function: `read`
 <a id="ar-terms--get-ar-term-by-id"></a>
 ### Get AR Term by ID
 
-<a id="ar-terms--readbyname-2"></a>
+<a id="ar-terms--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2894,7 +2894,7 @@ Function: `readByName`
 <a id="ar-terms--create-ar-term-legacy"></a>
 ### Create AR Term (Legacy)
 
-<a id="ar-terms--create_arterm-2"></a>
+<a id="ar-terms--create_arterm"></a>
 Function: `create_arterm`
 
 ```xml
@@ -2966,7 +2966,7 @@ Function: `create_arterm`
 <a id="ar-terms--update-ar-term-legacy"></a>
 ### Update AR Term (Legacy)
 
-<a id="ar-terms--update_arterm-2"></a>
+<a id="ar-terms--update_arterm"></a>
 Function: `update_arterm`
 
 ```xml
@@ -3019,7 +3019,7 @@ Function: `update_arterm`
 <a id="ar-terms--delete-ar-term-legacy"></a>
 ### Delete AR Term (Legacy)
 
-<a id="ar-terms--delete_arterm-2"></a>
+<a id="ar-terms--delete_arterm"></a>
 Function: `delete_arterm`
 
 ```xml
@@ -3055,7 +3055,7 @@ Customer bank accounts are used in AR Payment Services.
 <a id="customer-bank-accounts--create-customer-bank-account-legacy"></a>
 ### Create Customer Bank Account (Legacy)
 
-<a id="customer-bank-accounts--create_customerbankaccount-2"></a>
+<a id="customer-bank-accounts--create_customerbankaccount"></a>
 Function: `create_customerbankaccount`
 
 ```xml
@@ -3103,7 +3103,7 @@ Function: `create_customerbankaccount`
 <a id="customer-bank-accounts--update-customer-bank-account-legacy"></a>
 ### Update Customer Bank Account (Legacy)
 
-<a id="customer-bank-accounts--update_customerbankaccount-2"></a>
+<a id="customer-bank-accounts--update_customerbankaccount"></a>
 Function: `update_customerbankaccount`
 
 ```xml
@@ -3143,7 +3143,7 @@ Function: `update_customerbankaccount`
 <a id="customer-bank-accounts--delete-customer-bank-account-legacy"></a>
 ### Delete Customer Bank Account (Legacy)
 
-<a id="customer-bank-accounts--delete_customerbankaccount-2"></a>
+<a id="customer-bank-accounts--delete_customerbankaccount"></a>
 Function: `delete_customerbankaccount`
 
 ```xml
@@ -3183,7 +3183,7 @@ The `get_list` function for customer charge cards is scheduled for deprecation. 
 
 > **Important:** It is recommended that you check your integrations now and remove this function to avoid future problems.
 
-<a id="customer-charge-cards--get_list-2"></a>
+<a id="customer-charge-cards--get_list"></a>
 Function: `get_list`
 
 > Retrieve all details of the first 10 customer charge cards (based on `recordno`):
@@ -3287,7 +3287,7 @@ Function: `get_list`
 <a id="customer-charge-cards--create-customer-charge-card-legacy"></a>
 ### Create Customer Charge Card (Legacy)
 
-<a id="customer-charge-cards--create_customerchargecard-2"></a>
+<a id="customer-charge-cards--create_customerchargecard"></a>
 Function: `create_customerchargecard`
 
 ```xml
@@ -3342,7 +3342,7 @@ Function: `create_customerchargecard`
 <a id="customer-charge-cards--update-customer-charge-card-legacy"></a>
 ### Update Customer Charge Card (Legacy)
 
-<a id="customer-charge-cards--update_customerchargecard-2"></a>
+<a id="customer-charge-cards--update_customerchargecard"></a>
 Function: `update_customerchargecard`
 
 ```xml
@@ -3384,7 +3384,7 @@ Function: `update_customerchargecard`
 <a id="customer-charge-cards--delete-customer-charge-card-legacy"></a>
 ### Delete Customer Charge Card (Legacy)
 
-<a id="customer-charge-cards--delete_customerchargecard-2"></a>
+<a id="customer-charge-cards--delete_customerchargecard"></a>
 Function: `delete_customerchargecard`
 
 ```xml
@@ -3416,7 +3416,7 @@ A customer group categorizes customer dimension records, mainly for the purpose 
 <a id="customer-groups--get-customer-group-object-definition"></a>
 ### Get Customer Group Object Definition
 
-<a id="customer-groups--lookup-2"></a>
+<a id="customer-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the x object:
@@ -3439,7 +3439,7 @@ Function: `lookup`
 <a id="customer-groups--query-and-list-customer-groups"></a>
 ### Query and List Customer Groups
 
-<a id="customer-groups--query-2"></a>
+<a id="customer-groups--query"></a>
 Function: `query`
 
 > List information about each customer group:
@@ -3490,7 +3490,7 @@ Function: `query`
 <a id="customer-groups--query-and-list-customer-groups-legacy"></a>
 ### Query and List Customer Groups (Legacy)
 
-<a id="customer-groups--readbyquery-2"></a>
+<a id="customer-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3517,7 +3517,7 @@ Function: `readByQuery`
 <a id="customer-groups--get-customer-group"></a>
 ### Get Customer Group
 
-<a id="customer-groups--read-2"></a>
+<a id="customer-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -3543,7 +3543,7 @@ Function: `read`
 <a id="customer-groups--get-customer-group-by-id"></a>
 ### Get Customer Group by ID
 
-<a id="customer-groups--readbyname-2"></a>
+<a id="customer-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3586,7 +3586,7 @@ Customer types are mainly used for reporting under AR and Order Entry.
 <a id="customer-types--get-customer-type-object-definition"></a>
 ### Get Customer Type Object Definition
 
-<a id="customer-types--lookup-2"></a>
+<a id="customer-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the customer type object:
@@ -3609,7 +3609,7 @@ Function: `lookup`
 <a id="customer-types--query-and-list-customer-types"></a>
 ### Query and List Customer Types
 
-<a id="customer-types--query-2"></a>
+<a id="customer-types--query"></a>
 Function: `query`
 
 > List information about each customer type:
@@ -3642,7 +3642,7 @@ Function: `query`
 <a id="customer-types--query-and-list-customer-types-legacy"></a>
 ### Query and List Customer Types (Legacy)
 
-<a id="customer-types--readbyquery-2"></a>
+<a id="customer-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3669,7 +3669,7 @@ Function: `readByQuery`
 <a id="customer-types--get-customer-type"></a>
 ### Get Customer Type
 
-<a id="customer-types--read-2"></a>
+<a id="customer-types--read"></a>
 Function: `read`
 
 ```xml
@@ -3695,7 +3695,7 @@ Function: `read`
 <a id="customer-types--get-customer-type-by-id"></a>
 ### Get Customer Type by ID
 
-<a id="customer-types--readbyname-2"></a>
+<a id="customer-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3743,7 +3743,7 @@ You can associate existing custom email templates with customers to tailor commu
 <a id="customers--get-customer-object-definition"></a>
 #### Get Customer Object Definition
 
-<a id="customers--lookup-2"></a>
+<a id="customers--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the customer object:
@@ -3766,7 +3766,7 @@ Function: `lookup`
 <a id="customers--query-and-list-customers"></a>
 #### Query and List Customers
 
-<a id="customers--query-2"></a>
+<a id="customers--query"></a>
 Function: `query`
 
 > List the record number, shipto contact name, and total amount due for all customers with total due > 100:
@@ -3808,7 +3808,7 @@ Function: `query`
 <a id="customers--query-and-list-customers-legacy"></a>
 #### Query and List Customers (Legacy)
 
-<a id="customers--readbyquery-2"></a>
+<a id="customers--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3835,7 +3835,7 @@ Function: `readByQuery`
 <a id="customers--get-customer"></a>
 #### Get Customer
 
-<a id="customers--read-2"></a>
+<a id="customers--read"></a>
 Function: `read`
 
 ```xml
@@ -3861,7 +3861,7 @@ Function: `read`
 <a id="customers--get-customer-by-id"></a>
 #### Get Customer by ID
 
-<a id="customers--readbyname-2"></a>
+<a id="customers--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3899,7 +3899,7 @@ Release history:
 | 2018 Release 1 | Added ADVBILLBY and ADVBILLBYTYPE |
 |  | Updated note about RETAINAGEPERCENTAGE |
 
-<a id="customers--create-2"></a>
+<a id="customers--create"></a>
 Function: `create`
 
 > Creates a customer and specifies a display contact and a contact list (provided via customer contacts):
@@ -4167,7 +4167,7 @@ Release history:
 | 2020 Release 2 | Added retainagepercentage |
 |  | Updated note about RETAINAGEPERCENTAGE |
 
-<a id="customers--create_customer-2"></a>
+<a id="customers--create_customer"></a>
 Function: `create_customer`
 
 ```xml
@@ -4339,7 +4339,7 @@ Release history:
 | 2018 Release 1 | Added ADVBILLBY and ADVBILLBYTYPE |
 |  | Updated note about RETAINAGEPERCENTAGE |
 
-<a id="customers--update-2"></a>
+<a id="customers--update"></a>
 Function: `update`
 
 > Add a comment to a customer:
@@ -4610,7 +4610,7 @@ Release history:
 | 2020 Release 2 | Added retainagepercentage |
 |  | Updated note about RETAINAGEPERCENTAGE |
 
-<a id="customers--update_customer-2"></a>
+<a id="customers--update_customer"></a>
 Function: `update_customer`
 
 ```xml
@@ -4755,7 +4755,7 @@ Function: `update_customer`
 <a id="customers--delete-customer"></a>
 #### Delete Customer
 
-<a id="customers--delete-2"></a>
+<a id="customers--delete"></a>
 Function: `delete`
 
 ```xml
@@ -4778,7 +4778,7 @@ Function: `delete`
 <a id="customers--delete-customer-legacy"></a>
 #### Delete Customer (Legacy)
 
-<a id="customers--delete_customer-2"></a>
+<a id="customers--delete_customer"></a>
 Function: `delete_customer`
 
 ```xml
@@ -4800,7 +4800,7 @@ Function: `delete_customer`
 <a id="customers--get-customer-email-template-object-definition"></a>
 #### Get Customer Email Template Object Definition
 
-<a id="customers--lookup-1-2"></a>
+<a id="customers--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the customer email template object:
@@ -4823,7 +4823,7 @@ Function: `lookup`
 <a id="customers--query-and-list-customer-email-templates"></a>
 #### Query and List Customer Email Templates
 
-<a id="customers--query-1-2"></a>
+<a id="customers--query-1"></a>
 Function: `query`
 
 > List the template name and customer ID for each customer email template:
@@ -4856,7 +4856,7 @@ Function: `query`
 <a id="customers--query-and-list-customer-email-templates-legacy"></a>
 #### Query and List Customer Email Templates (Legacy)
 
-<a id="customers--readbyquery-1-2"></a>
+<a id="customers--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4883,7 +4883,7 @@ Function: `readByQuery`
 <a id="customers--get-customer-email-template"></a>
 #### Get Customer Email Template
 
-<a id="customers--read-1-2"></a>
+<a id="customers--read-1"></a>
 Function: `read`
 
 ```xml
@@ -4909,7 +4909,7 @@ Function: `read`
 <a id="customers--get-customer-email-template-by-id"></a>
 #### Get Customer Email Template by ID
 
-<a id="customers--readbyname-1-2"></a>
+<a id="customers--readbyname-1"></a>
 Function: `readByName`
 
 ```xml
@@ -4936,7 +4936,7 @@ Function: `readByName`
 <a id="customers--get-customer-visibility-object-definition"></a>
 #### Get Customer Visibility Object Definition
 
-<a id="customers--lookup-2-3"></a>
+<a id="customers--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the customer visibility object:
@@ -4957,7 +4957,7 @@ Function: `lookup`
 <a id="customers--get-customer-visibility"></a>
 #### Get Customer Visibility
 
-<a id="customers--read-2-3"></a>
+<a id="customers--read-2"></a>
 Function: `read`
 
 ```xml
@@ -5008,7 +5008,7 @@ Printing of dunning notices is done through the Intacct application.
 <a id="dunning--get-dunning-definition-object-definition"></a>
 ### Get Dunning Definition Object Definition
 
-<a id="dunning--lookup-2"></a>
+<a id="dunning--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the dunning object:
@@ -5031,7 +5031,7 @@ Function: `lookup`
 <a id="dunning--get-a-dunning-definition"></a>
 ### Get a Dunning Definition
 
-<a id="dunning--read-2"></a>
+<a id="dunning--read"></a>
 Function: `read`
 
 ```xml
@@ -5056,7 +5056,7 @@ Function: `read`
 <a id="dunning--create-dunning-definition"></a>
 ### Create Dunning Definition
 
-<a id="dunning--create-2"></a>
+<a id="dunning--create"></a>
 Function: `create`
 
 > Create a dunning definition:
@@ -5105,7 +5105,7 @@ To find what email or print templates are available to assign to a particular du
 <a id="dunning--update-dunning-definition"></a>
 ### Update Dunning Definition
 
-<a id="dunning--update-2"></a>
+<a id="dunning--update"></a>
 Function: `update`
 
 ```xml
@@ -5152,7 +5152,7 @@ To find what email or print templates are available to assign to a particular du
 <a id="dunning--delete-dunning-definition"></a>
 ### Delete Dunning Definition
 
-<a id="dunning--delete-2"></a>
+<a id="dunning--delete"></a>
 Function: `delete`
 
 ```xml
@@ -5194,7 +5194,7 @@ Certain types of transaction definitions in Order Entry (e.g. Sales Invoice, Con
 <a id="invoices--get-invoice-object-definition"></a>
 ### Get Invoice Object Definition
 
-<a id="invoices--lookup-2"></a>
+<a id="invoices--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the invoice object:
@@ -5217,7 +5217,7 @@ Function: `lookup`
 <a id="invoices--query-and-list-invoices"></a>
 ### Query and List Invoices
 
-<a id="invoices--query-2"></a>
+<a id="invoices--query"></a>
 Function: `query`
 
 > List the record number and customer name for each invoice where the customer name starts with the letter `B`:
@@ -5256,7 +5256,7 @@ Function: `query`
 <a id="invoices--query-and-list-invoices-legacy"></a>
 ### Query and List Invoices (Legacy)
 
-<a id="invoices--readbyquery-2"></a>
+<a id="invoices--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5289,7 +5289,7 @@ Function: `readByQuery`
 <a id="invoices--get-invoice"></a>
 ### Get Invoice
 
-<a id="invoices--read-2"></a>
+<a id="invoices--read"></a>
 Function: `read`
 
 ```xml
@@ -5315,7 +5315,7 @@ Function: `read`
 <a id="invoices--get-invoice-as-pdf-data"></a>
 ### Get Invoice as PDF Data
 
-<a id="invoices--retrievepdf-2"></a>
+<a id="invoices--retrievepdf"></a>
 Function: `retrievepdf`
 
 > Provides base64-encoded data for a PDF version of the specified invoice:
@@ -5389,7 +5389,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="invoices--create_invoice-2"></a>
+<a id="invoices--create_invoice"></a>
 Function: `create_invoice`
 
 > Create an invoice:
@@ -5648,7 +5648,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="invoices--update_invoice-2"></a>
+<a id="invoices--update_invoice"></a>
 Function: `update_invoice`
 
 ```xml
@@ -5799,7 +5799,7 @@ Specifies a tax rate (defined in the system) for the invoice line.
 <a id="invoices--reverse-invoice-legacy"></a>
 ### Reverse Invoice (Legacy)
 
-<a id="invoices--reverse_invoice-2"></a>
+<a id="invoices--reverse_invoice"></a>
 Function: `reverse_invoice`
 
 ```xml
@@ -5834,7 +5834,7 @@ Function: `reverse_invoice`
 <a id="invoices--delete-invoice"></a>
 ### Delete Invoice
 
-<a id="invoices--delete-2"></a>
+<a id="invoices--delete"></a>
 Function: `delete`
 
 ```xml
@@ -5857,7 +5857,7 @@ Function: `delete`
 <a id="invoices--delete-invoice-legacy"></a>
 ### Delete Invoice (Legacy)
 
-<a id="invoices--delete_invoice-2"></a>
+<a id="invoices--delete_invoice"></a>
 Function: `delete_invoice`
 
 ```xml
@@ -5896,7 +5896,7 @@ It is commonly used for regularly-recurring, fixed-amount invoices.
 <a id="recurring-invoices--get-recurring-invoice-object-definition"></a>
 #### Get Recurring Invoice Object Definition
 
-<a id="recurring-invoices--lookup-2"></a>
+<a id="recurring-invoices--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the recurring invoice object:
@@ -5919,7 +5919,7 @@ Function: `lookup`
 <a id="recurring-invoices--query-and-list-recurring-invoices"></a>
 #### Query and List Recurring Invoices
 
-<a id="recurring-invoices--query-2"></a>
+<a id="recurring-invoices--query"></a>
 Function: `query`
 
 > List the record number and customer name for each recurring invoice where the customer name starts with the letter `B`:
@@ -5958,7 +5958,7 @@ Function: `query`
 <a id="recurring-invoices--query-and-list-recurring-invoices-legacy"></a>
 #### Query and List Recurring Invoices (Legacy)
 
-<a id="recurring-invoices--readbyquery-2"></a>
+<a id="recurring-invoices--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5985,7 +5985,7 @@ Function: `readByQuery`
 <a id="recurring-invoices--get-recurring-invoice"></a>
 #### Get Recurring Invoice
 
-<a id="recurring-invoices--read-2"></a>
+<a id="recurring-invoices--read"></a>
 Function: `read`
 
 ```xml
@@ -6022,7 +6022,7 @@ Release history:
 
 > **Note:** Currency (amount) values with more than 2 decimal places will be rounded to 2 decimal places to prevent data issues. Best practice is for your application to round long decimal numbers to 2 decimal places before sending them to Intacct.
 
-<a id="recurring-invoices--create_recurringinvoice-2"></a>
+<a id="recurring-invoices--create_recurringinvoice"></a>
 Function: `create_recurringinvoice`
 
 > Create a recurring invoice:
@@ -6215,7 +6215,7 @@ Specifies a tax rate (defined in the system) for the recurring invoice line.
 <a id="recurring-invoices--delete-recurring-invoice-legacy"></a>
 #### Delete Recurring Invoice (Legacy)
 
-<a id="recurring-invoices--delete_recurringinvoice-2"></a>
+<a id="recurring-invoices--delete_recurringinvoice"></a>
 Function: `delete_recurringinvoice`
 
 ```xml
@@ -6237,7 +6237,7 @@ Function: `delete_recurringinvoice`
 <a id="recurring-invoices--get-recurring-invoice-line-object-definition"></a>
 #### Get Recurring Invoice Line Object Definition
 
-<a id="recurring-invoices--lookup-1-2"></a>
+<a id="recurring-invoices--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the recurring invoice line object:
@@ -6260,7 +6260,7 @@ Function: `lookup`
 <a id="recurring-invoices--query-and-list-recurring-invoice-lines"></a>
 #### Query and List Recurring Invoice Lines
 
-<a id="recurring-invoices--query-1-2"></a>
+<a id="recurring-invoices--query-1"></a>
 Function: `query`
 
 > List the record number and line number for each recurring invoice line:
@@ -6293,7 +6293,7 @@ Function: `query`
 <a id="recurring-invoices--query-and-list-recurring-invoice-lines-legacy"></a>
 #### Query and List Recurring Invoice Lines (Legacy)
 
-<a id="recurring-invoices--readbyquery-1-2"></a>
+<a id="recurring-invoices--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6320,7 +6320,7 @@ Function: `readByQuery`
 <a id="recurring-invoices--get-recurring-invoice-line"></a>
 #### Get Recurring Invoice Line
 
-<a id="recurring-invoices--read-1-2"></a>
+<a id="recurring-invoices--read-1"></a>
 Function: `read`
 
 ```xml
@@ -6364,7 +6364,7 @@ They can be useful for filtering and categorizing data, assuming your company ha
 <a id="territories--list-territories-legacy"></a>
 ### List Territories (Legacy)
 
-<a id="territories--get_list-2"></a>
+<a id="territories--get_list"></a>
 Function: `get_list`
 
 ```xml
@@ -6418,7 +6418,7 @@ Function: `get_list`
 <a id="territories--get-territory-by-id-legacy"></a>
 ### Get Territory by ID (Legacy)
 
-<a id="territories--get-2"></a>
+<a id="territories--get"></a>
 Function: `get`
 
 ```xml
@@ -6440,7 +6440,7 @@ Function: `get`
 <a id="territories--create-territory-legacy"></a>
 ### Create Territory (Legacy)
 
-<a id="territories--create_territory-2"></a>
+<a id="territories--create_territory"></a>
 Function: `create_territory`
 
 ```xml
@@ -6477,7 +6477,7 @@ Function: `create_territory`
 <a id="territories--update-territory-legacy"></a>
 ### Update Territory (Legacy)
 
-<a id="territories--update_territory-2"></a>
+<a id="territories--update_territory"></a>
 Function: `update_territory`
 
 ```xml
@@ -6510,7 +6510,7 @@ Function: `update_territory`
 <a id="territories--delete-territory-legacy"></a>
 ### Delete Territory (Legacy)
 
-<a id="territories--delete_territory-2"></a>
+<a id="territories--delete_territory"></a>
 Function: `delete_territory`
 
 ```xml

@@ -41,7 +41,7 @@ Billing price lists are used to create pricing strategies for items whose prices
 <a id="billing-price-lists--get-billing-price-list-object-definition"></a>
 #### Get Billing Price List Object Definition
 
-<a id="billing-price-lists--lookup-2"></a>
+<a id="billing-price-lists--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the billing price list object:
@@ -64,7 +64,7 @@ Function: `lookup`
 <a id="billing-price-lists--query-and-list-billing-price-lists"></a>
 #### Query and List Billing Price Lists
 
-<a id="billing-price-lists--query-2"></a>
+<a id="billing-price-lists--query"></a>
 Function: `query`
 
 > List the record number and description for each billing price list:
@@ -97,7 +97,7 @@ Function: `query`
 <a id="billing-price-lists--query-and-list-billing-price-lists-legacy"></a>
 #### Query and List Billing Price Lists (Legacy)
 
-<a id="billing-price-lists--readbyquery-2"></a>
+<a id="billing-price-lists--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -130,7 +130,7 @@ Function: `readByQuery`
 <a id="billing-price-lists--get-billing-price-list"></a>
 #### Get Billing Price List
 
-<a id="billing-price-lists--read-2"></a>
+<a id="billing-price-lists--read"></a>
 Function: `read`
 
 ```xml
@@ -156,7 +156,7 @@ Function: `read`
 <a id="billing-price-lists--get-billing-price-list-by-id"></a>
 #### Get Billing Price List by ID
 
-<a id="billing-price-lists--readbyname-2"></a>
+<a id="billing-price-lists--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -182,7 +182,7 @@ Function: `readByName`
 <a id="billing-price-lists--create-billing-price-list"></a>
 #### Create Billing Price List
 
-<a id="billing-price-lists--create-2"></a>
+<a id="billing-price-lists--create"></a>
 Function: `create`
 
 ```xml
@@ -213,7 +213,7 @@ Function: `create`
 <a id="billing-price-lists--update-billing-price-list"></a>
 #### Update Billing Price List
 
-<a id="billing-price-lists--update-2"></a>
+<a id="billing-price-lists--update"></a>
 Function: `update`
 
 ```xml
@@ -246,7 +246,7 @@ Function: `update`
 <a id="billing-price-lists--delete-billing-price-list"></a>
 #### Delete Billing Price List
 
-<a id="billing-price-lists--delete-2"></a>
+<a id="billing-price-lists--delete"></a>
 Function: `delete`
 
 ```xml
@@ -272,7 +272,7 @@ Function: `delete`
 <a id="billing-price-lists--get-billing-price-list-entry-object-definition"></a>
 #### Get Billing Price List Entry Object Definition
 
-<a id="billing-price-lists--lookup-1-2"></a>
+<a id="billing-price-lists--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the billing price list entry object:
@@ -295,7 +295,7 @@ Function: `lookup`
 <a id="billing-price-lists--query-and-list-billing-price-list-entries"></a>
 #### Query and List Billing Price List Entries
 
-<a id="billing-price-lists--query-1-2"></a>
+<a id="billing-price-lists--query-1"></a>
 Function: `query`
 
 > List the record number and status for each billing price list entry:
@@ -328,7 +328,7 @@ Function: `query`
 <a id="billing-price-lists--query-and-list-billing-price-list-entries-legacy"></a>
 #### Query and List Billing Price List Entries (Legacy)
 
-<a id="billing-price-lists--readbyquery-1-2"></a>
+<a id="billing-price-lists--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -366,7 +366,7 @@ Function: `readByQuery`
 <a id="billing-price-lists--get-billing-price-list-entry"></a>
 #### Get Billing Price List Entry
 
-<a id="billing-price-lists--read-1-2"></a>
+<a id="billing-price-lists--read-1"></a>
 Function: `read`
 
 ```xml
@@ -392,7 +392,7 @@ Function: `read`
 <a id="billing-price-lists--create-billing-price-list-entry"></a>
 #### Create Billing Price List Entry
 
-<a id="billing-price-lists--create-1-2"></a>
+<a id="billing-price-lists--create-1"></a>
 Function: `create`
 
 > Create a range price type:
@@ -492,7 +492,7 @@ Function: `create`
 <a id="billing-price-lists--delete-billing-price-list-entry"></a>
 #### Delete Billing Price List Entry
 
-<a id="billing-price-lists--delete-1-2"></a>
+<a id="billing-price-lists--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -518,7 +518,7 @@ Function: `delete`
 <a id="billing-price-lists--get-billing-price-list-entry-detail-object-definition"></a>
 #### Get Billing Price List Entry Detail Object Definition
 
-<a id="billing-price-lists--lookup-2-3"></a>
+<a id="billing-price-lists--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the billing price list entry detail object:
@@ -541,7 +541,7 @@ Function: `lookup`
 <a id="billing-price-lists--query-and-list-billing-price-list-entry-details"></a>
 #### Query and List Billing Price List Entry Details
 
-<a id="billing-price-lists--query-2-3"></a>
+<a id="billing-price-lists--query-2"></a>
 Function: `query`
 
 > List the record number, start date, and memo for each billing price list entry detail:
@@ -575,7 +575,7 @@ Function: `query`
 <a id="billing-price-lists--query-and-list-billing-price-list-entry-details-legacy"></a>
 #### Query and List Billing Price List Entry Details (Legacy)
 
-<a id="billing-price-lists--readbyquery-2-3"></a>
+<a id="billing-price-lists--readbyquery-2"></a>
 Function: `readByQuery`
 
 ```xml
@@ -602,7 +602,7 @@ Function: `readByQuery`
 <a id="billing-price-lists--get-billing-price-list-entry-detail"></a>
 #### Get Billing Price List Entry Detail
 
-<a id="billing-price-lists--read-2-3"></a>
+<a id="billing-price-lists--read-2"></a>
 Function: `read`
 
 ```xml
@@ -631,7 +631,7 @@ Function: `read`
 <a id="billing-price-lists--get-billing-price-list-entry-detail-tier-object-definition"></a>
 #### Get Billing Price List Entry Detail Tier Object Definition
 
-<a id="billing-price-lists--lookup-3-2"></a>
+<a id="billing-price-lists--lookup-3"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the billing price list entry detail tier object:
@@ -654,7 +654,7 @@ Function: `lookup`
 <a id="billing-price-lists--query-and-list-billing-price-list-entry-detail-tiers"></a>
 #### Query and List Billing Price List Entry Detail Tiers
 
-<a id="billing-price-lists--query-3-2"></a>
+<a id="billing-price-lists--query-3"></a>
 Function: `query`
 
 > List the record number and tier rate for each billing price list entry detail tier:
@@ -687,7 +687,7 @@ Function: `query`
 <a id="billing-price-lists--query-and-list-billing-price-list-entry-detail-tiers-legacy"></a>
 #### Query and List Billing Price List Entry Detail Tiers (Legacy)
 
-<a id="billing-price-lists--readbyquery-3-2"></a>
+<a id="billing-price-lists--readbyquery-3"></a>
 Function: `readByQuery`
 
 ```xml
@@ -714,7 +714,7 @@ Function: `readByQuery`
 <a id="billing-price-lists--get-billing-price-list-entry-detail-tier"></a>
 #### Get Billing Price List Entry Detail Tier
 
-<a id="billing-price-lists--read-3-2"></a>
+<a id="billing-price-lists--read-3"></a>
 Function: `read`
 
 ```xml
@@ -758,7 +758,7 @@ A billing template defines the schedule to invoice the flat/fixed amount for a c
 <a id="billing-templates--get-billing-template-object-definition"></a>
 #### Get Billing Template Object Definition
 
-<a id="billing-templates--lookup-2"></a>
+<a id="billing-templates--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the billing template object:
@@ -781,7 +781,7 @@ Function: `lookup`
 <a id="billing-templates--query-and-list-billing-templates"></a>
 #### Query and List Billing Templates
 
-<a id="billing-templates--query-2"></a>
+<a id="billing-templates--query"></a>
 Function: `query`
 
 > List the record number and description for each billing template:
@@ -814,7 +814,7 @@ Function: `query`
 <a id="billing-templates--query-and-list-billing-templates-legacy"></a>
 #### Query and List Billing Templates (Legacy)
 
-<a id="billing-templates--readbyquery-2"></a>
+<a id="billing-templates--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -847,7 +847,7 @@ Function: `readByQuery`
 <a id="billing-templates--get-billing-template"></a>
 #### Get Billing Template
 
-<a id="billing-templates--read-2"></a>
+<a id="billing-templates--read"></a>
 Function: `read`
 
 ```xml
@@ -873,7 +873,7 @@ Function: `read`
 <a id="billing-templates--get-billing-template-by-id"></a>
 #### Get Billing Template by ID
 
-<a id="billing-templates--readbyname-2"></a>
+<a id="billing-templates--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -905,7 +905,7 @@ Release history:
 |---|---|
 | 2019 Release 1 | Added METHOD and SOURCE |
 
-<a id="billing-templates--create-2"></a>
+<a id="billing-templates--create"></a>
 Function: `create`
 
 > Creates a billing template with predefined percentages:
@@ -988,7 +988,7 @@ Release history:
 
 When updating template details, you are providing a complete new set of entries (existing entries are deleted).
 
-<a id="billing-templates--update-2"></a>
+<a id="billing-templates--update"></a>
 Function: `update`
 
 ```xml
@@ -1031,7 +1031,7 @@ Function: `update`
 <a id="billing-templates--delete-billing-template"></a>
 #### Delete Billing Template
 
-<a id="billing-templates--delete-2"></a>
+<a id="billing-templates--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1057,7 +1057,7 @@ Function: `delete`
 <a id="billing-templates--get-billing-template-detail-object-definition"></a>
 #### Get Billing Template Detail Object Definition
 
-<a id="billing-templates--lookup-1-2"></a>
+<a id="billing-templates--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the billing template detail object:
@@ -1080,7 +1080,7 @@ Function: `lookup`
 <a id="billing-templates--query-and-list-billing-template-details"></a>
 #### Query and List Billing Template Details
 
-<a id="billing-templates--query-1-2"></a>
+<a id="billing-templates--query-1"></a>
 Function: `query`
 
 > List the record number and percent billed for each billing template detail:
@@ -1113,7 +1113,7 @@ Function: `query`
 <a id="billing-templates--query-and-list-billing-template-details-legacy"></a>
 #### Query and List Billing Template Details (Legacy)
 
-<a id="billing-templates--readbyquery-1-2"></a>
+<a id="billing-templates--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1140,7 +1140,7 @@ Function: `readByQuery`
 <a id="billing-templates--get-billing-template-detail"></a>
 #### Get Billing Template Detail
 
-<a id="billing-templates--read-1-2"></a>
+<a id="billing-templates--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1189,7 +1189,7 @@ The system generates a billing schedule based on one of the following:
 <a id="contract-billing-schedules--get-contract-billing-schedule-object-definition"></a>
 #### Get Contract Billing Schedule Object Definition
 
-<a id="contract-billing-schedules--lookup-2"></a>
+<a id="contract-billing-schedules--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract billing schedule object:
@@ -1212,7 +1212,7 @@ Function: `lookup`
 <a id="contract-billing-schedules--query-and-list-contract-billing-schedules"></a>
 #### Query and List Contract Billing Schedules
 
-<a id="contract-billing-schedules--query-2"></a>
+<a id="contract-billing-schedules--query"></a>
 Function: `query`
 
 > List the record number and state for each contract billing schedule:
@@ -1245,7 +1245,7 @@ Function: `query`
 <a id="contract-billing-schedules--query-and-list-contract-billing-schedules-legacy"></a>
 #### Query and List Contract Billing Schedules (Legacy)
 
-<a id="contract-billing-schedules--readbyquery-2"></a>
+<a id="contract-billing-schedules--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1279,7 +1279,7 @@ Function: `readByQuery`
 <a id="contract-billing-schedules--get-contract-billing-schedule"></a>
 #### Get Contract Billing Schedule
 
-<a id="contract-billing-schedules--read-2"></a>
+<a id="contract-billing-schedules--read"></a>
 Function: `read`
 
 ```xml
@@ -1308,7 +1308,7 @@ Function: `read`
 <a id="contract-billing-schedules--get-contract-billing-schedule-entry-object-definition"></a>
 #### Get Contract Billing Schedule Entry Object Definition
 
-<a id="contract-billing-schedules--lookup-1-2"></a>
+<a id="contract-billing-schedules--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract billing schedule entry object:
@@ -1331,7 +1331,7 @@ Function: `lookup`
 <a id="contract-billing-schedules--query-and-list-contract-billing-schedule-entries"></a>
 #### Query and List Contract Billing Schedule Entries
 
-<a id="contract-billing-schedules--query-1-2"></a>
+<a id="contract-billing-schedules--query-1"></a>
 Function: `query`
 
 > List the record number and amount for each contract billing schedule entry:
@@ -1364,7 +1364,7 @@ Function: `query`
 <a id="contract-billing-schedules--query-and-list-contract-billing-schedule-entries-legacy"></a>
 #### Query and List Contract Billing Schedule Entries (Legacy)
 
-<a id="contract-billing-schedules--readbyquery-1-2"></a>
+<a id="contract-billing-schedules--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1398,7 +1398,7 @@ Function: `readByQuery`
 <a id="contract-billing-schedules--get-contract-billing-schedule-entry"></a>
 #### Get Contract Billing Schedule Entry
 
-<a id="contract-billing-schedules--read-1-2"></a>
+<a id="contract-billing-schedules--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1424,7 +1424,7 @@ Function: `read`
 <a id="contract-billing-schedules--update-contract-billing-schedule-entry"></a>
 #### Update Contract Billing Schedule Entry
 
-<a id="contract-billing-schedules--update-2"></a>
+<a id="contract-billing-schedules--update"></a>
 Function: `update`
 
 NOTE: Contract billing schedule entries are updated as a set.
@@ -1512,7 +1512,7 @@ For an expense schedule, you typically execute two posts: one to the ASC 605 set
 <a id="contract-expense-schedules--get-contract-expense-schedule-object-definition"></a>
 #### Get Contract Expense Schedule Object Definition
 
-<a id="contract-expense-schedules--lookup-2"></a>
+<a id="contract-expense-schedules--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract expense schedule object:
@@ -1535,7 +1535,7 @@ Function: `lookup`
 <a id="contract-expense-schedules--query-and-list-contract-expense-schedules"></a>
 #### Query and List Contract Expense Schedules
 
-<a id="contract-expense-schedules--query-2"></a>
+<a id="contract-expense-schedules--query"></a>
 Function: `query`
 
 > List the record number and state for each contract expense schedule:
@@ -1568,7 +1568,7 @@ Function: `query`
 <a id="contract-expense-schedules--query-and-list-contract-expense-schedules-legacy"></a>
 #### Query and List Contract Expense Schedules (Legacy)
 
-<a id="contract-expense-schedules--readbyquery-2"></a>
+<a id="contract-expense-schedules--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1603,7 +1603,7 @@ Function: `readByQuery`
 <a id="contract-expense-schedules--get-contract-expense-schedule"></a>
 #### Get Contract Expense Schedule
 
-<a id="contract-expense-schedules--read-2"></a>
+<a id="contract-expense-schedules--read"></a>
 Function: `read`
 
 ```xml
@@ -1637,7 +1637,7 @@ Release history:
 
 You can automatically reallocate daily rate or straight line expense schedules based on different start and/or end dates.
 
-<a id="contract-expense-schedules--reallocate-2"></a>
+<a id="contract-expense-schedules--reallocate"></a>
 Function: `reallocate`
 
 ```xml
@@ -1679,7 +1679,7 @@ Release history:
 
 You can post all contract expense schedule entries for a given customer (across contracts) or for a given contract.
 
-<a id="contract-expense-schedules--post-2"></a>
+<a id="contract-expense-schedules--post"></a>
 Function: `post`
 
 ```xml
@@ -1719,7 +1719,7 @@ Function: `post`
 
 Posts a single contract expense schedule entry.
 
-<a id="contract-expense-schedules--post-1-2"></a>
+<a id="contract-expense-schedules--post-1"></a>
 Function: `post`
 
 ```xml
@@ -1748,7 +1748,7 @@ Function: `post`
 <a id="contract-expense-schedules--unpost-contract-expense-schedule-entry"></a>
 #### Unpost Contract Expense Schedule Entry
 
-<a id="contract-expense-schedules--unpost-2"></a>
+<a id="contract-expense-schedules--unpost"></a>
 Function: `unpost`
 
 ```xml
@@ -1780,7 +1780,7 @@ Function: `unpost`
 <a id="contract-expense-schedules--get-contract-expense-2-schedule-object-definition"></a>
 #### Get Contract Expense 2 Schedule Object Definition
 
-<a id="contract-expense-schedules--lookup-1-2"></a>
+<a id="contract-expense-schedules--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract expense schedule 2 object:
@@ -1803,7 +1803,7 @@ Function: `lookup`
 <a id="contract-expense-schedules--query-and-list-contract-expense-2-schedules"></a>
 #### Query and List Contract Expense 2 Schedules
 
-<a id="contract-expense-schedules--query-1-2"></a>
+<a id="contract-expense-schedules--query-1"></a>
 Function: `query`
 
 > List the record number and state for each contract expense 2 schedule:
@@ -1836,7 +1836,7 @@ Function: `query`
 <a id="contract-expense-schedules--query-and-list-contract-expense-2-schedules-legacy"></a>
 #### Query and List Contract Expense 2 Schedules (Legacy)
 
-<a id="contract-expense-schedules--readbyquery-1-2"></a>
+<a id="contract-expense-schedules--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1871,7 +1871,7 @@ Function: `readByQuery`
 <a id="contract-expense-schedules--get-contract-expense-2-schedule"></a>
 #### Get Contract Expense 2 Schedule
 
-<a id="contract-expense-schedules--read-1-2"></a>
+<a id="contract-expense-schedules--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1905,7 +1905,7 @@ Release history:
 
 Posts all contract expense 2 schedule entries for a given customer (across contracts) or for a given contract.
 
-<a id="contract-expense-schedules--post-2-3"></a>
+<a id="contract-expense-schedules--post-2"></a>
 Function: `post`
 
 ```xml
@@ -1948,7 +1948,7 @@ Release history:
 
 You can automatically reallocate daily rate or straight line expense schedules based on different start and/or end dates.
 
-<a id="contract-expense-schedules--reallocate-1-2"></a>
+<a id="contract-expense-schedules--reallocate-1"></a>
 Function: `reallocate`
 
 ```xml
@@ -1995,7 +1995,7 @@ An expense template defines the schedule to recognize an expense amount for a co
 <a id="contract-expense-templates--get-expense-template-object-definition"></a>
 ### Get Expense Template Object Definition
 
-<a id="contract-expense-templates--lookup-2"></a>
+<a id="contract-expense-templates--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the expense template object:
@@ -2018,7 +2018,7 @@ Function: `lookup`
 <a id="contract-expense-templates--query-and-list-expense-templates"></a>
 ### Query and List Expense Templates
 
-<a id="contract-expense-templates--query-2"></a>
+<a id="contract-expense-templates--query"></a>
 Function: `query`
 
 > List the record number and amortization method for each expense template:
@@ -2051,7 +2051,7 @@ Function: `query`
 <a id="contract-expense-templates--query-and-list-expense-templates-legacy"></a>
 ### Query and List Expense Templates (Legacy)
 
-<a id="contract-expense-templates--readbyquery-2"></a>
+<a id="contract-expense-templates--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2086,7 +2086,7 @@ Function: `readByQuery`
 <a id="contract-expense-templates--get-expense-template"></a>
 ### Get Expense Template
 
-<a id="contract-expense-templates--read-2"></a>
+<a id="contract-expense-templates--read"></a>
 Function: `read`
 
 ```xml
@@ -2112,7 +2112,7 @@ Function: `read`
 <a id="contract-expense-templates--get-expense-template-by-id"></a>
 ### Get Expense Template by ID
 
-<a id="contract-expense-templates--readbyname-2"></a>
+<a id="contract-expense-templates--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2138,7 +2138,7 @@ Function: `readByName`
 <a id="contract-expense-templates--create-expense-template"></a>
 ### Create Expense Template
 
-<a id="contract-expense-templates--create-2"></a>
+<a id="contract-expense-templates--create"></a>
 Function: `create`
 
 ```xml
@@ -2212,7 +2212,7 @@ Function: `create`
 <a id="contract-expense-templates--update-expense-template"></a>
 ### Update Expense Template
 
-<a id="contract-expense-templates--update-2"></a>
+<a id="contract-expense-templates--update"></a>
 Function: `update`
 
 ```xml
@@ -2257,7 +2257,7 @@ When updating template details, you are providing a complete new set of entries 
 <a id="contract-expense-templates--delete-expense-template"></a>
 ### Delete Expense Template
 
-<a id="contract-expense-templates--delete-2"></a>
+<a id="contract-expense-templates--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2295,7 +2295,7 @@ A contract expense is the cost incurred to obtain or fulfill a contract with a c
 <a id="contract-expenses--get-contract-expense-object-definition"></a>
 ### Get Contract Expense Object Definition
 
-<a id="contract-expenses--lookup-2"></a>
+<a id="contract-expenses--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract expense object:
@@ -2318,7 +2318,7 @@ Function: `lookup`
 <a id="contract-expenses--query-and-list-contract-expenses"></a>
 ### Query and List Contract Expenses
 
-<a id="contract-expenses--query-2"></a>
+<a id="contract-expenses--query"></a>
 Function: `query`
 
 > List the record number and associated contract ID for each contract expense:
@@ -2351,7 +2351,7 @@ Function: `query`
 <a id="contract-expenses--query-and-list-contract-expenses-legacy"></a>
 ### Query and List Contract Expenses (Legacy)
 
-<a id="contract-expenses--readbyquery-2"></a>
+<a id="contract-expenses--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2385,7 +2385,7 @@ Function: `readByQuery`
 <a id="contract-expenses--get-contract-expense"></a>
 ### Get Contract Expense
 
-<a id="contract-expenses--read-2"></a>
+<a id="contract-expenses--read"></a>
 Function: `read`
 
 ```xml
@@ -2411,7 +2411,7 @@ Function: `read`
 <a id="contract-expenses--create-contract-expense"></a>
 ### Create Contract Expense
 
-<a id="contract-expenses--create-2"></a>
+<a id="contract-expenses--create"></a>
 Function: `create`
 
 ```xml
@@ -2462,7 +2462,7 @@ Function: `create`
 <a id="contract-expenses--update-contract-expense"></a>
 ### Update Contract Expense
 
-<a id="contract-expenses--update-2"></a>
+<a id="contract-expenses--update"></a>
 Function: `update`
 
 ```xml
@@ -2511,7 +2511,7 @@ Function: `update`
 
 When you use this function, the state of the contract expense remains in progress, but any [expense schedules](https://developer.intacct.com/api/contracts-rev-mgmt/contract-expense-schedules/) are put on hold.
 
-<a id="contract-expenses--hold-2"></a>
+<a id="contract-expenses--hold"></a>
 Function: `hold`
 
 ```xml
@@ -2542,7 +2542,7 @@ Function: `hold`
 <a id="contract-expenses--resume-contract-expense"></a>
 ### Resume Contract Expense
 
-<a id="contract-expenses--resume-2"></a>
+<a id="contract-expenses--resume"></a>
 Function: `resume`
 
 ```xml
@@ -2573,7 +2573,7 @@ Function: `resume`
 <a id="contract-expenses--delete-contract-expense"></a>
 ### Delete Contract Expense
 
-<a id="contract-expenses--delete-2"></a>
+<a id="contract-expenses--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2611,7 +2611,7 @@ A contract group is a dimension group.
 <a id="contract-groups--get-contract-group-object-definition"></a>
 ### Get Contract Group Object Definition
 
-<a id="contract-groups--lookup-2"></a>
+<a id="contract-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract group object:
@@ -2634,7 +2634,7 @@ Function: `lookup`
 <a id="contract-groups--query-and-list-contract-groups"></a>
 ### Query and List Contract Groups
 
-<a id="contract-groups--query-2"></a>
+<a id="contract-groups--query"></a>
 Function: `query`
 
 > List the record number and group type for each contract group:
@@ -2667,7 +2667,7 @@ Function: `query`
 <a id="contract-groups--query-and-list-contract-groups-legacy"></a>
 ### Query and List Contract Groups (Legacy)
 
-<a id="contract-groups--readbyquery-2"></a>
+<a id="contract-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2694,7 +2694,7 @@ Function: `readByQuery`
 <a id="contract-groups--get-contract-group"></a>
 ### Get Contract Group
 
-<a id="contract-groups--read-2"></a>
+<a id="contract-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -2720,7 +2720,7 @@ Function: `read`
 <a id="contract-groups--get-contract-group-by-id"></a>
 ### Get Contract Group by ID
 
-<a id="contract-groups--readbyname-2"></a>
+<a id="contract-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2765,7 +2765,7 @@ You can set a schedule on contract invoice policies to automatically generate in
 <a id="contract-invoice-policies--get-contract-invoice-policy-object-definition"></a>
 ### Get Contract Invoice Policy Object Definition
 
-<a id="contract-invoice-policies--lookup-2"></a>
+<a id="contract-invoice-policies--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract invoice policy object:
@@ -2789,7 +2789,7 @@ Function: `lookup`
 <a id="contract-invoice-policies--query-and-list-contract-invoice-policies"></a>
 ### Query and List Contract Invoice Policies
 
-<a id="contract-invoice-policies--query-2"></a>
+<a id="contract-invoice-policies--query"></a>
 Function: `query`
 
 > List the record number and dynamic ‘as of date’ for each contract invoice policies:
@@ -2848,7 +2848,7 @@ Function: `query`
 <a id="contract-invoice-policies--get-contract-invoice-policy"></a>
 ### Get Contract Invoice Policy
 
-<a id="contract-invoice-policies--read-2"></a>
+<a id="contract-invoice-policies--read"></a>
 Function: `read`
 
 ```xml
@@ -2882,7 +2882,7 @@ Release history:
 | 2020 Release 4 | Added CUSTOMER as a value for INVOICEBY |
 | 2019 Release 4 | Added INVOICEBY |
 
-<a id="contract-invoice-policies--create-2"></a>
+<a id="contract-invoice-policies--create"></a>
 Function: `create`
 
 > Creates an invoice policy for the given contract:
@@ -3010,7 +3010,7 @@ Release history:
 | 2020 Release 4 | Added CUSTOMER as a value for INVOICEBY |
 | 2019 Release 4 | Added INVOICEBY |
 
-<a id="contract-invoice-policies--update-2"></a>
+<a id="contract-invoice-policies--update"></a>
 Function: `update`
 
 ```xml
@@ -3113,7 +3113,7 @@ Use filters to define the work and costs to be included in invoices. For example
 <a id="contract-invoice-policies--delete-contract-invoice-policy"></a>
 ### Delete Contract Invoice Policy
 
-<a id="contract-invoice-policies--delete-2"></a>
+<a id="contract-invoice-policies--delete"></a>
 Function: `delete`
 
 ```xml
@@ -3165,7 +3165,7 @@ You can use filters to preview a set of potential invoices, then execute an invo
 <a id="contract-invoices--get-contract-invoice-preview-object-definition"></a>
 #### Get Contract Invoice Preview Object Definition
 
-<a id="contract-invoices--lookup-2"></a>
+<a id="contract-invoices--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract invoice preview object:
@@ -3189,7 +3189,7 @@ Function: `lookup`
 <a id="contract-invoices--query-and-list-contract-invoice-previews"></a>
 #### Query and List Contract Invoice Previews
 
-<a id="contract-invoices--query-2"></a>
+<a id="contract-invoices--query"></a>
 Function: `query`
 
 > List the record number and start date for each contract invoice preview:
@@ -3223,7 +3223,7 @@ Function: `query`
 <a id="contract-invoices--query-and-list-contract-invoice-previews-legacy"></a>
 #### Query and List Contract Invoice Previews (Legacy)
 
-<a id="contract-invoices--readbyquery-2"></a>
+<a id="contract-invoices--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3251,7 +3251,7 @@ Function: `readByQuery`
 <a id="contract-invoices--get-contract-invoice-preview"></a>
 #### Get Contract Invoice Preview
 
-<a id="contract-invoices--read-2"></a>
+<a id="contract-invoices--read"></a>
 Function: `read`
 
 ```xml
@@ -3288,7 +3288,7 @@ Release history:
 | 2019 Release 4 | Added INVOICEBY |
 | 2024 Release 4 | Added SERVICEPERIODSTARTDATE, SERVICEPERIODENDDATE, SERVICEPERIODOVERRIDEOPTION |
 
-<a id="contract-invoices--create-2"></a>
+<a id="contract-invoices--create"></a>
 Function: `create`
 
 ```xml
@@ -3352,7 +3352,7 @@ Function: `create`
 <a id="contract-invoices--get-contract-invoice-preview-line-object-definition"></a>
 #### Get Contract Invoice Preview Line Object Definition
 
-<a id="contract-invoices--lookup-1-2"></a>
+<a id="contract-invoices--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract invoice preview line object:
@@ -3375,7 +3375,7 @@ Function: `lookup`
 <a id="contract-invoices--query-and-list-contract-invoice-preview-lines"></a>
 #### Query and List Contract Invoice Preview Lines
 
-<a id="contract-invoices--query-1-2"></a>
+<a id="contract-invoices--query-1"></a>
 Function: `query`
 
 > List the record number and type for each contract invoice preview line for the contract with the given ID:
@@ -3424,7 +3424,7 @@ Function: `query`
 </readByQuery>
 ```
 
-<a id="contract-invoices--readbyquery-1-2"></a>
+<a id="contract-invoices--readbyquery-1"></a>
 Function: `ReadByQuery`
 
 | Name | Required | Type | Description |
@@ -3439,7 +3439,7 @@ Function: `ReadByQuery`
 <a id="contract-invoices--get-contract-invoice-preview-line"></a>
 #### Get Contract Invoice Preview Line
 
-<a id="contract-invoices--read-1-2"></a>
+<a id="contract-invoices--read-1"></a>
 Function: `read`
 
 ```xml
@@ -3468,7 +3468,7 @@ Function: `read`
 <a id="contract-invoices--get-contract-invoice-run-definition"></a>
 #### Get Contract Invoice Run Definition
 
-<a id="contract-invoices--lookup-2-3"></a>
+<a id="contract-invoices--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract invoice run object:
@@ -3491,7 +3491,7 @@ Function: `lookup`
 <a id="contract-invoices--query-and-list-contract-invoice-runs"></a>
 #### Query and List Contract Invoice Runs
 
-<a id="contract-invoices--query-2-3"></a>
+<a id="contract-invoices--query-2"></a>
 Function: `query`
 
 > List the record number of the invoice run and the record number of the associated invoice preview:
@@ -3524,7 +3524,7 @@ Function: `query`
 <a id="contract-invoices--query-and-list-contract-invoice-runs-legacy"></a>
 #### Query and List Contract Invoice Runs (Legacy)
 
-<a id="contract-invoices--readbyquery-2-3"></a>
+<a id="contract-invoices--readbyquery-2"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3557,7 +3557,7 @@ Function: `readByQuery`
 <a id="contract-invoices--get-contract-invoice-run"></a>
 #### Get Contract Invoice Run
 
-<a id="contract-invoices--read-2-3"></a>
+<a id="contract-invoices--read-2"></a>
 Function: `read`
 
 ```xml
@@ -3583,7 +3583,7 @@ Function: `read`
 <a id="contract-invoices--create-contract-invoice-run"></a>
 #### Create Contract Invoice Run
 
-<a id="contract-invoices--create-1-2"></a>
+<a id="contract-invoices--create-1"></a>
 Function: `create`
 
 ```xml
@@ -3631,7 +3631,7 @@ A contract line is a product or service associated with the contract.
 <a id="contract-lines--get-contract-line-object-definition"></a>
 #### Get Contract Line Object Definition
 
-<a id="contract-lines--lookup-2"></a>
+<a id="contract-lines--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract line object:
@@ -3654,7 +3654,7 @@ Function: `lookup`
 <a id="contract-lines--query-and-list-contract-lines"></a>
 #### Query and List Contract Lines
 
-<a id="contract-lines--query-2"></a>
+<a id="contract-lines--query"></a>
 Function: `query`
 
 > List the record number, line number, and associated contract ID for each contract line:
@@ -3707,7 +3707,7 @@ Function: `query`
 <a id="contract-lines--query-and-list-contract-lines-legacy"></a>
 #### Query and List Contract Lines (Legacy)
 
-<a id="contract-lines--readbyquery-2"></a>
+<a id="contract-lines--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3743,7 +3743,7 @@ Function: `readByQuery`
 <a id="contract-lines--get-contract-line"></a>
 #### Get Contract Line
 
-<a id="contract-lines--read-2"></a>
+<a id="contract-lines--read"></a>
 Function: `read`
 
 ```xml
@@ -3784,7 +3784,7 @@ Release history:
 | 2018 Release 3 | Added RENEWALBILLINGTEMPLATENAME |
 | 2018 Release 2 | Added GLPOSTINGDATE |
 
-<a id="contract-lines--create-2"></a>
+<a id="contract-lines--create"></a>
 Function: `create`
 
 ```xml
@@ -3925,7 +3925,7 @@ Release history:
 | 2018 Release 3 | Added RENEWALBILLINGTEMPLATENAME |
 | 2018 Release 2 | Added GLPOSTINGDATE |
 
-<a id="contract-lines--update-2"></a>
+<a id="contract-lines--update"></a>
 Function: `update`
 
 ```xml
@@ -4004,7 +4004,7 @@ You can post a contract line that is in `Draft` state so that it is fully valida
 
 If your draft contract line is missing required parameter values, check the error messages from the `post` response and use the [update](#contract-lines--update-contract-line) function to correct any issues before trying to post again.
 
-<a id="contract-lines--post-2"></a>
+<a id="contract-lines--post"></a>
 Function: `post`
 
 ```xml
@@ -4039,7 +4039,7 @@ Function: `post`
 
 This function is applicable when using event-driven revenue recognition. It changes the Delivery status of the given contract line to Delivered.
 
-<a id="contract-lines--deliver-2"></a>
+<a id="contract-lines--deliver"></a>
 Function: `deliver`
 
 ```xml
@@ -4072,7 +4072,7 @@ Function: `deliver`
 
 When you use this function, the state of the contract line remains in progress, but the [billing](https://developer.intacct.com/api/contracts-rev-mgmt/contract-billing-schedules/) and [revenue](https://developer.intacct.com/api/contracts-rev-mgmt/contract-revenue-schedules/) schedules and/or [expense schedules](https://developer.intacct.com/api/contracts-rev-mgmt/contract-expense-schedules/) can be put on hold.
 
-<a id="contract-lines--hold-2"></a>
+<a id="contract-lines--hold"></a>
 Function: `hold`
 
 ```xml
@@ -4110,7 +4110,7 @@ Function: `hold`
 <a id="contract-lines--resume-contract-line"></a>
 #### Resume Contract Line
 
-<a id="contract-lines--resume-2"></a>
+<a id="contract-lines--resume"></a>
 Function: `resume`
 
 ```xml
@@ -4149,7 +4149,7 @@ Function: `resume`
 <a id="contract-lines--delete-contract-line"></a>
 #### Delete Contract Line
 
-<a id="contract-lines--delete-2"></a>
+<a id="contract-lines--delete"></a>
 Function: `delete`
 
 ```xml
@@ -4175,7 +4175,7 @@ Function: `delete`
 <a id="contract-lines--get-contract-line-expense-object-definition"></a>
 #### Get Contract Line Expense Object Definition
 
-<a id="contract-lines--lookup-1-2"></a>
+<a id="contract-lines--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract line expense object:
@@ -4198,7 +4198,7 @@ Function: `lookup`
 <a id="contract-lines--query-and-list-contract-line-expenses"></a>
 #### Query and List Contract Line Expenses
 
-<a id="contract-lines--query-1-2"></a>
+<a id="contract-lines--query-1"></a>
 Function: `query`
 
 > List the record number, associated contract ID, and type for each contract line expense:
@@ -4238,7 +4238,7 @@ Function: `query`
 <a id="contract-lines--query-and-list-contract-line-expenses-legacy"></a>
 #### Query and List Contract Line Expenses (Legacy)
 
-<a id="contract-lines--readbyquery-1-2"></a>
+<a id="contract-lines--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4272,7 +4272,7 @@ Function: `readByQuery`
 <a id="contract-lines--get-contract-line-expense"></a>
 #### Get Contract Line Expense
 
-<a id="contract-lines--read-1-2"></a>
+<a id="contract-lines--read-1"></a>
 Function: `read`
 
 ```xml
@@ -4304,7 +4304,7 @@ Release history:
 |---|---|
 | 2020 Release 1 | Added STATE |
 
-<a id="contract-lines--create-1-2"></a>
+<a id="contract-lines--create-1"></a>
 Function: `create`
 
 ```xml
@@ -4356,7 +4356,7 @@ Function: `create`
 <a id="contract-lines--update-contract-line-expense"></a>
 #### Update Contract Line Expense
 
-<a id="contract-lines--update-1-2"></a>
+<a id="contract-lines--update-1"></a>
 Function: `update`
 
 ```xml
@@ -4407,7 +4407,7 @@ You can post a contract line expense that is in `Draft` state so that it is full
 
 If your draft contract line expense is missing required parameter values, check the error messages from the `post` response and use the [update](#contract-lines--update-contract-line-expense) function to correct any issues before trying to post again.
 
-<a id="contract-lines--post-1-2"></a>
+<a id="contract-lines--post-1"></a>
 Function: `post`
 
 ```xml
@@ -4440,7 +4440,7 @@ Function: `post`
 <a id="contract-lines--delete-contract-line-expense"></a>
 #### Delete Contract Line Expense
 
-<a id="contract-lines--delete-1-2"></a>
+<a id="contract-lines--delete-1"></a>
 Function: `delete`
 
 ```xml
@@ -4485,7 +4485,7 @@ For a revenue schedule, you typically execute two posts: one to the ASC 605 set 
 <a id="contract-revenue-schedules--get-contract-revenue-schedule-object-definition"></a>
 #### Get Contract Revenue Schedule Object Definition
 
-<a id="contract-revenue-schedules--lookup-2"></a>
+<a id="contract-revenue-schedules--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract revenue schedule object:
@@ -4508,7 +4508,7 @@ Function: `lookup`
 <a id="contract-revenue-schedules--query-and-list-contract-revenue-schedules"></a>
 #### Query and List Contract Revenue Schedules
 
-<a id="contract-revenue-schedules--query-2"></a>
+<a id="contract-revenue-schedules--query"></a>
 Function: `query`
 
 > List the record number, contract ID, and delivery date for each contract revenue schedule:
@@ -4542,7 +4542,7 @@ Function: `query`
 <a id="contract-revenue-schedules--query-and-list-contract-revenue-schedules-legacy"></a>
 #### Query and List Contract Revenue Schedules (Legacy)
 
-<a id="contract-revenue-schedules--readbyquery-2"></a>
+<a id="contract-revenue-schedules--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4577,7 +4577,7 @@ Function: `readByQuery`
 <a id="contract-revenue-schedules--get-contract-revenue-schedule"></a>
 #### Get Contract Revenue Schedule
 
-<a id="contract-revenue-schedules--read-2"></a>
+<a id="contract-revenue-schedules--read"></a>
 Function: `read`
 
 ```xml
@@ -4611,7 +4611,7 @@ Release history:
 
 You can post all contract revenue schedule entries for a given customer (across contracts) or for a given contract.
 
-<a id="contract-revenue-schedules--post-2"></a>
+<a id="contract-revenue-schedules--post"></a>
 Function: `post`
 
 ```xml
@@ -4654,7 +4654,7 @@ Release history:
 
 You can automatically reallocate daily rate or straight line revenue schedules based on different start and/or end dates.
 
-<a id="contract-revenue-schedules--reallocate-2"></a>
+<a id="contract-revenue-schedules--reallocate"></a>
 Function: `reallocate`
 
 ```xml
@@ -4693,7 +4693,7 @@ Function: `reallocate`
 
 Posts a single contract revenue schedule entry.
 
-<a id="contract-revenue-schedules--post-1-2"></a>
+<a id="contract-revenue-schedules--post-1"></a>
 Function: `post`
 
 ```xml
@@ -4722,7 +4722,7 @@ Function: `post`
 <a id="contract-revenue-schedules--unpost-contract-revenue-schedule-entry"></a>
 #### Unpost Contract Revenue Schedule Entry
 
-<a id="contract-revenue-schedules--unpost-2"></a>
+<a id="contract-revenue-schedules--unpost"></a>
 Function: `unpost`
 
 ```xml
@@ -4756,7 +4756,7 @@ Function: `unpost`
 <a id="contract-revenue-schedules--get-contract-revenue-2-schedule-object-definition"></a>
 #### Get Contract Revenue 2 Schedule Object Definition
 
-<a id="contract-revenue-schedules--lookup-1-2"></a>
+<a id="contract-revenue-schedules--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract revenue 2 schedule object:
@@ -4779,7 +4779,7 @@ Function: `lookup`
 <a id="contract-revenue-schedules--query-and-list-contract-revenue-2-schedules"></a>
 #### Query and List Contract Revenue 2 Schedules
 
-<a id="contract-revenue-schedules--query-1-2"></a>
+<a id="contract-revenue-schedules--query-1"></a>
 Function: `query`
 
 > List the record number, contract ID, and delivery date for each contract revenue 2 schedule:
@@ -4813,7 +4813,7 @@ Function: `query`
 <a id="contract-revenue-schedules--query-and-list-contract-revenue-2-schedules-legacy"></a>
 #### Query and List Contract Revenue 2 Schedules (Legacy)
 
-<a id="contract-revenue-schedules--readbyquery-1-2"></a>
+<a id="contract-revenue-schedules--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -4848,7 +4848,7 @@ Function: `readByQuery`
 <a id="contract-revenue-schedules--get-contract-revenue-2-schedule"></a>
 #### Get Contract Revenue 2 Schedule
 
-<a id="contract-revenue-schedules--read-1-2"></a>
+<a id="contract-revenue-schedules--read-1"></a>
 Function: `read`
 
 ```xml
@@ -4882,7 +4882,7 @@ Release history:
 
 You can post all contract revenue 2 schedule entries for a given customer (across contracts) or for a given contract.
 
-<a id="contract-revenue-schedules--post-2-3"></a>
+<a id="contract-revenue-schedules--post-2"></a>
 Function: `post`
 
 ```xml
@@ -4925,7 +4925,7 @@ Release history:
 
 You can automatically reallocate daily rate or straight line revenue schedules based on different start and/or end dates.
 
-<a id="contract-revenue-schedules--reallocate-1-2"></a>
+<a id="contract-revenue-schedules--reallocate-1"></a>
 Function: `reallocate`
 
 ```xml
@@ -4972,7 +4972,7 @@ A revenue template defines the revenue recognition schedule for the flat/fixed a
 <a id="contract-revenue-templates--get-revenue-template-object-definition"></a>
 ### Get Revenue Template Object Definition
 
-<a id="contract-revenue-templates--lookup-2"></a>
+<a id="contract-revenue-templates--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the revenue template object:
@@ -4995,7 +4995,7 @@ Function: `lookup`
 <a id="contract-revenue-templates--query-and-list-revenue-templates"></a>
 ### Query and List Revenue Templates
 
-<a id="contract-revenue-templates--query-2"></a>
+<a id="contract-revenue-templates--query"></a>
 Function: `query`
 
 > List the record number and recognition method for each revenue template:
@@ -5028,7 +5028,7 @@ Function: `query`
 <a id="contract-revenue-templates--query-and-list-revenue-templates-legacy"></a>
 ### Query and List Revenue Templates (Legacy)
 
-<a id="contract-revenue-templates--readbyquery-2"></a>
+<a id="contract-revenue-templates--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5065,7 +5065,7 @@ Function: `readByQuery`
 <a id="contract-revenue-templates--get-revenue-template"></a>
 ### Get Revenue Template
 
-<a id="contract-revenue-templates--read-2"></a>
+<a id="contract-revenue-templates--read"></a>
 Function: `read`
 
 ```xml
@@ -5091,7 +5091,7 @@ Function: `read`
 <a id="contract-revenue-templates--get-revenue-template-by-id"></a>
 ### Get Revenue Template by ID
 
-<a id="contract-revenue-templates--readbyname-2"></a>
+<a id="contract-revenue-templates--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5117,7 +5117,7 @@ Function: `readByName`
 <a id="contract-revenue-templates--create-revenue-template"></a>
 ### Create Revenue Template
 
-<a id="contract-revenue-templates--create-2"></a>
+<a id="contract-revenue-templates--create"></a>
 Function: `create`
 
 ```xml
@@ -5226,7 +5226,7 @@ Function: `create`
 <a id="contract-revenue-templates--update-revenue-template"></a>
 ### Update Revenue Template
 
-<a id="contract-revenue-templates--update-2"></a>
+<a id="contract-revenue-templates--update"></a>
 Function: `update`
 
 ```xml
@@ -5275,7 +5275,7 @@ When updating template details, you are providing a complete new set of entries 
 <a id="contract-revenue-templates--delete-revenue-template"></a>
 ### Delete Revenue Template
 
-<a id="contract-revenue-templates--delete-2"></a>
+<a id="contract-revenue-templates--delete"></a>
 Function: `delete`
 
 ```xml
@@ -5315,7 +5315,7 @@ After creating a contract type, you can create or update a contract with that ty
 <a id="contract-types--get-contract-type-object-definition"></a>
 ### Get Contract Type Object Definition
 
-<a id="contract-types--lookup-2"></a>
+<a id="contract-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract type object:
@@ -5338,7 +5338,7 @@ Function: `lookup`
 <a id="contract-types--query-and-list-contract-types"></a>
 ### Query and List Contract Types
 
-<a id="contract-types--query-2"></a>
+<a id="contract-types--query"></a>
 Function: `query`
 
 > List the record number and name for each contract type:
@@ -5371,7 +5371,7 @@ Function: `query`
 <a id="contract-types--query-and-list-contract-types-legacy"></a>
 ### Query and List Contract Types (Legacy)
 
-<a id="contract-types--readbyquery-2"></a>
+<a id="contract-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5404,7 +5404,7 @@ Function: `readByQuery`
 <a id="contract-types--get-contract-type"></a>
 ### Get Contract Type
 
-<a id="contract-types--read-2"></a>
+<a id="contract-types--read"></a>
 Function: `read`
 
 ```xml
@@ -5430,7 +5430,7 @@ Function: `read`
 <a id="contract-types--get-contract-type-by-id"></a>
 ### Get Contract Type by ID
 
-<a id="contract-types--readbyname-2"></a>
+<a id="contract-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5456,7 +5456,7 @@ Function: `readByName`
 <a id="contract-types--create-contract-type"></a>
 ### Create Contract Type
 
-<a id="contract-types--create-2"></a>
+<a id="contract-types--create"></a>
 Function: `create`
 
 ```xml
@@ -5499,7 +5499,7 @@ Function: `create`
 <a id="contract-types--update-contract-type"></a>
 ### Update Contract Type
 
-<a id="contract-types--update-2"></a>
+<a id="contract-types--update"></a>
 Function: `update`
 
 ```xml
@@ -5539,7 +5539,7 @@ Function: `update`
 <a id="contract-types--delete-contract-type"></a>
 ### Delete Contract Type
 
-<a id="contract-types--delete-2"></a>
+<a id="contract-types--delete"></a>
 Function: `delete`
 
 ```xml
@@ -5577,7 +5577,7 @@ Contract is a dimension that can be defined by the company and set on transactio
 <a id="contracts--get-contract-object-definition"></a>
 ### Get Contract Object Definition
 
-<a id="contracts--lookup-2"></a>
+<a id="contracts--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the contract object:
@@ -5600,7 +5600,7 @@ Function: `lookup`
 <a id="contracts--query-and-list-contracts"></a>
 ### Query and List Contracts
 
-<a id="contracts--query-2"></a>
+<a id="contracts--query"></a>
 Function: `query`
 
 > List the record number and description for each contract:
@@ -5652,7 +5652,7 @@ Function: `query`
 <a id="contracts--query-and-list-contracts-legacy"></a>
 ### Query and List Contracts (Legacy)
 
-<a id="contracts--readbyquery-2"></a>
+<a id="contracts--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -5687,7 +5687,7 @@ Function: `readByQuery`
 <a id="contracts--get-a-contract"></a>
 ### Get a Contract
 
-<a id="contracts--read-2"></a>
+<a id="contracts--read"></a>
 Function: `read`
 
 ```xml
@@ -5713,7 +5713,7 @@ Function: `read`
 <a id="contracts--get-a-contract-by-id"></a>
 ### Get a Contract by ID
 
-<a id="contracts--readbyname-2"></a>
+<a id="contracts--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -5751,7 +5751,7 @@ Release history:
 | 2018 Release 2 | Added RENEWALADVBILLBY and RENEWALADVBILLBYTYPE |
 | 2018 Release 1 | Added ADVBILLBY and ADVBILLBYTYPE |
 
-<a id="contracts--create-2"></a>
+<a id="contracts--create"></a>
 Function: `create`
 
 ```xml
@@ -5833,7 +5833,7 @@ Release history:
 | 2018 Release 2 | Added RENEWALADVBILLBY and RENEWALADVBILLBYTYPE |
 | 2018 Release 1 | Added ADVBILLBY and ADVBILLBYTYPE |
 
-<a id="contracts--update-2"></a>
+<a id="contracts--update"></a>
 Function: `update`
 
 ```xml
@@ -5903,7 +5903,7 @@ You can post a contract that is in `Draft` state so that it is fully validated a
 
 If your draft contract is missing required parameter values, check the error messages from the `post` response and use the [update](#contracts--update-contract) function to correct any issues before trying to post again.
 
-<a id="contracts--post-2"></a>
+<a id="contracts--post"></a>
 Function: `post`
 
 ```xml
@@ -5938,7 +5938,7 @@ Function: `post`
 
 Forces the renewal of a contract that failed to renew at the scheduled time. This can be useful if you uploaded multiple contracts as part of an integration and want to avoid manually renewing them in the Sage Intacct UI. (A contract must have )
 
-<a id="contracts--renew-2"></a>
+<a id="contracts--renew"></a>
 Function: `renew`
 
 ```xml
@@ -5969,7 +5969,7 @@ Function: `renew`
 
 You can clear MEA allocations to reset the applicable revenue schedules to the amounts that existed prior to the allocations. Clearing MEA allocations unposts previously posted revenue, so the applicable reporting periods must be open.
 
-<a id="contracts--clearallmea-2"></a>
+<a id="contracts--clearallmea"></a>
 Function: `clearallmea`
 
 ```xml
@@ -6000,7 +6000,7 @@ Function: `clearallmea`
 
 You can clear individual MEA allocations one at a time, starting with the current one and working back in time.
 
-<a id="contracts--clearlastactivemea-2"></a>
+<a id="contracts--clearlastactivemea"></a>
 Function: `clearlastactivemea`
 
 ```xml
@@ -6029,7 +6029,7 @@ Function: `clearlastactivemea`
 <a id="contracts--delete-contract"></a>
 ### Delete Contract
 
-<a id="contracts--delete-2"></a>
+<a id="contracts--delete"></a>
 Function: `delete`
 
 ```xml
@@ -6073,7 +6073,7 @@ For information about how to clear MEA allocations from contracts, see [clearall
 <a id="mea-allocations--get-mea-allocation-object-definition"></a>
 ### Get MEA Allocation Object Definition
 
-<a id="mea-allocations--lookup-2"></a>
+<a id="mea-allocations--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the MEA allocation object:
@@ -6096,7 +6096,7 @@ Function: `lookup`
 <a id="mea-allocations--query-and-list-mea-allocations"></a>
 ### Query and List MEA Allocations
 
-<a id="mea-allocations--query-2"></a>
+<a id="mea-allocations--query"></a>
 Function: `query`
 
 > List the record number, contract ID, and type for each MEA allocation:
@@ -6130,7 +6130,7 @@ Function: `query`
 <a id="mea-allocations--query-and-list-mea-allocations-legacy"></a>
 ### Query and List MEA Allocations (Legacy)
 
-<a id="mea-allocations--readbyquery-2"></a>
+<a id="mea-allocations--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6161,7 +6161,7 @@ Function: `readByQuery`
 <a id="mea-allocations--get-mea-allocation"></a>
 ### Get MEA Allocation
 
-<a id="mea-allocations--read-2"></a>
+<a id="mea-allocations--read"></a>
 Function: `read`
 
 ```xml
@@ -6187,7 +6187,7 @@ Function: `read`
 <a id="mea-allocations--create-mea-allocation"></a>
 ### Create MEA Allocation
 
-<a id="mea-allocations--create-2"></a>
+<a id="mea-allocations--create"></a>
 Function: `create`
 
 ```xml
@@ -6269,7 +6269,7 @@ Usage information for [MEA price lists](https://www.intacct.com/ia/docs/en_US/he
 <a id="mea-price-lists--get-mea-price-list-object-definition"></a>
 #### Get MEA Price List Object Definition
 
-<a id="mea-price-lists--lookup-2"></a>
+<a id="mea-price-lists--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the MEA price list object:
@@ -6292,7 +6292,7 @@ Function: `lookup`
 <a id="mea-price-lists--query-and-list-mea-price-lists"></a>
 #### Query and List MEA Price Lists
 
-<a id="mea-price-lists--query-2"></a>
+<a id="mea-price-lists--query"></a>
 Function: `query`
 
 > List the record number, name, and default setting for each MEA price list:
@@ -6326,7 +6326,7 @@ Function: `query`
 <a id="mea-price-lists--query-and-list-mea-price-lists-legacy"></a>
 #### Query and List MEA Price Lists (Legacy)
 
-<a id="mea-price-lists--readbyquery-2"></a>
+<a id="mea-price-lists--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6359,7 +6359,7 @@ Function: `readByQuery`
 <a id="mea-price-lists--get-mea-price-list"></a>
 #### Get MEA Price List
 
-<a id="mea-price-lists--read-2"></a>
+<a id="mea-price-lists--read"></a>
 Function: `read`
 
 ```xml
@@ -6385,7 +6385,7 @@ Function: `read`
 <a id="mea-price-lists--get-mea-price-list-by-id"></a>
 #### Get MEA Price List by ID
 
-<a id="mea-price-lists--readbyname-2"></a>
+<a id="mea-price-lists--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -6414,7 +6414,7 @@ Function: `readByName`
 <a id="mea-price-lists--get-mea-price-list-entry-object-definition"></a>
 #### Get MEA Price List Entry Object Definition
 
-<a id="mea-price-lists--lookup-1-2"></a>
+<a id="mea-price-lists--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the MEA price list entry object:
@@ -6437,7 +6437,7 @@ Function: `lookup`
 <a id="mea-price-lists--query-and-list-mea-price-list-entries"></a>
 #### Query and List MEA Price List Entries
 
-<a id="mea-price-lists--query-1-2"></a>
+<a id="mea-price-lists--query-1"></a>
 Function: `query`
 
 > List the record number and item ID for each price list entry:
@@ -6470,7 +6470,7 @@ Function: `query`
 <a id="mea-price-lists--query-and-list-mea-price-list-entries-legacy"></a>
 #### Query and List MEA Price List Entries (Legacy)
 
-<a id="mea-price-lists--readbyquery-1-2"></a>
+<a id="mea-price-lists--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6497,7 +6497,7 @@ Function: `readByQuery`
 <a id="mea-price-lists--get-mea-price-list-entry"></a>
 #### Get MEA Price List Entry
 
-<a id="mea-price-lists--read-1-2"></a>
+<a id="mea-price-lists--read-1"></a>
 Function: `read`
 
 ```xml
@@ -6526,7 +6526,7 @@ Function: `read`
 <a id="mea-price-lists--get-mea-price-list-entry-line-object-definition"></a>
 #### Get MEA Price List Entry Line Object Definition
 
-<a id="mea-price-lists--lookup-2-3"></a>
+<a id="mea-price-lists--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the MEA price list entry line object:
@@ -6549,7 +6549,7 @@ Function: `lookup`
 <a id="mea-price-lists--query-and-list-mea-price-list-entry-lines"></a>
 #### Query and List MEA Price List Entry Lines
 
-<a id="mea-price-lists--query-2-3"></a>
+<a id="mea-price-lists--query-2"></a>
 Function: `query`
 
 > Lists lines for the price list entry whose record number is 12:
@@ -6588,7 +6588,7 @@ Function: `query`
 <a id="mea-price-lists--query-and-list-mea-price-list-entry-lines-legacy"></a>
 #### Query and List MEA Price List Entry Lines (Legacy)
 
-<a id="mea-price-lists--readbyquery-2-3"></a>
+<a id="mea-price-lists--readbyquery-2"></a>
 Function: `readByQuery`
 
 > Lists lines for the price list entry whose record number is 12:
@@ -6623,7 +6623,7 @@ Function: `readByQuery`
 <a id="mea-price-lists--get-mea-price-list-entry-line"></a>
 #### Get MEA Price List Entry Line
 
-<a id="mea-price-lists--read-2-3"></a>
+<a id="mea-price-lists--read-2"></a>
 Function: `read`
 
 ```xml
@@ -6664,7 +6664,7 @@ A usage record contains the quantity of a contract line item that a customer use
 <a id="usage-data--get-usage-data-object-definition"></a>
 ### Get Usage Data Object Definition
 
-<a id="usage-data--lookup-2"></a>
+<a id="usage-data--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the usage data object:
@@ -6687,7 +6687,7 @@ Function: `lookup`
 <a id="usage-data--query-and-list-usage-data"></a>
 ### Query and List Usage Data
 
-<a id="usage-data--query-2"></a>
+<a id="usage-data--query"></a>
 Function: `query`
 
 > List the record number, usage type, usage date, and quantity used for contract lines:
@@ -6747,7 +6747,7 @@ Release history:
 | Release | Changes |
 |---|---|
 
-<a id="usage-data--readbyquery-2"></a>
+<a id="usage-data--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -6780,7 +6780,7 @@ Function: `readByQuery`
 <a id="usage-data--get-usage-data"></a>
 ### Get Usage Data
 
-<a id="usage-data--read-2"></a>
+<a id="usage-data--read"></a>
 Function: `read`
 
 ```xml
@@ -6806,7 +6806,7 @@ Function: `read`
 <a id="usage-data--create-usage-data"></a>
 ### Create Usage Data
 
-<a id="usage-data--create-2"></a>
+<a id="usage-data--create"></a>
 Function: `create`
 
 ```xml
@@ -6844,7 +6844,7 @@ Function: `create`
 <a id="usage-data--update-usage-data"></a>
 ### Update Usage Data
 
-<a id="usage-data--update-2"></a>
+<a id="usage-data--update"></a>
 Function: `update`
 
 ```xml
@@ -6879,7 +6879,7 @@ Function: `update`
 <a id="usage-data--delete-usage-data"></a>
 ### Delete Usage Data
 
-<a id="usage-data--delete-2"></a>
+<a id="usage-data--delete"></a>
 Function: `delete`
 
 ```xml

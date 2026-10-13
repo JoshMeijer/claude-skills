@@ -28,7 +28,7 @@ A Purchasing price list contains the names of price lists in Purchasing.
 <a id="price-lists--get-purchasing-price-list-object-definition"></a>
 ### Get Purchasing Price List Object Definition
 
-<a id="price-lists--lookup-2"></a>
+<a id="price-lists--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the purchasing price list object:
@@ -51,7 +51,7 @@ Function: `lookup`
 <a id="price-lists--query-and-list-purchasing-price-lists"></a>
 ### Query and List Purchasing Price Lists
 
-<a id="price-lists--query-2"></a>
+<a id="price-lists--query"></a>
 Function: `query`
 
 > List the record number and name for each purchasing price list:
@@ -84,7 +84,7 @@ Function: `query`
 <a id="price-lists--query-and-list-purchasing-price-lists-legacy"></a>
 ### Query and List Purchasing Price Lists (Legacy)
 
-<a id="price-lists--readbyquery-2"></a>
+<a id="price-lists--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -111,7 +111,7 @@ Function: `readByQuery`
 <a id="price-lists--get-purchasing-price-list"></a>
 ### Get Purchasing Price List
 
-<a id="price-lists--read-2"></a>
+<a id="price-lists--read"></a>
 Function: `read`
 
 ```xml
@@ -137,7 +137,7 @@ Function: `read`
 <a id="price-lists--get-purchasing-price-list-by-id"></a>
 ### Get Purchasing Price List by ID
 
-<a id="price-lists--readbyname-2"></a>
+<a id="price-lists--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -163,7 +163,7 @@ Function: `readByName`
 <a id="price-lists--create-purchasing-price-list-legacy"></a>
 ### Create Purchasing Price List (Legacy)
 
-<a id="price-lists--create_popricelist-2"></a>
+<a id="price-lists--create_popricelist"></a>
 Function: `create_popricelist`
 
 ```xml
@@ -203,7 +203,7 @@ Function: `create_popricelist`
 <a id="price-lists--update-purchasing-price-list-legacy"></a>
 ### Update Purchasing Price List (Legacy)
 
-<a id="price-lists--update_popricelist-2"></a>
+<a id="price-lists--update_popricelist"></a>
 Function: `update_popricelist`
 
 ```xml
@@ -243,7 +243,7 @@ Function: `update_popricelist`
 <a id="price-lists--delete-purchasing-price-list-legacy"></a>
 ### Delete Purchasing Price List (Legacy)
 
-<a id="price-lists--delete_popricelist-2"></a>
+<a id="price-lists--delete_popricelist"></a>
 Function: `delete_popricelist`
 
 ```xml
@@ -281,7 +281,7 @@ This page provides some examples that create and update Purchasing transaction d
 <a id="purchasing-transaction-definitions--get-purchasing-transaction-definition-object-definition"></a>
 ### Get Purchasing Transaction Definition Object Definition
 
-<a id="purchasing-transaction-definitions--lookup-2"></a>
+<a id="purchasing-transaction-definitions--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Purchasing transaction definition object:
@@ -304,7 +304,7 @@ Function: `lookup`
 <a id="purchasing-transaction-definitions--query-and-list-purchasing-transaction-definitions"></a>
 ### Query and List Purchasing Transaction Definitions
 
-<a id="purchasing-transaction-definitions--query-2"></a>
+<a id="purchasing-transaction-definitions--query"></a>
 Function: `query`
 
 > List the template name and template type for each transaction definition:
@@ -337,7 +337,7 @@ Function: `query`
 <a id="purchasing-transaction-definitions--query-and-list-purchasing-transaction-definitions-legacy"></a>
 ### Query and List Purchasing Transaction Definitions (Legacy)
 
-<a id="purchasing-transaction-definitions--readbyquery-2"></a>
+<a id="purchasing-transaction-definitions--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -375,7 +375,7 @@ Function: `readByQuery`
 <a id="purchasing-transaction-definitions--get-purchasing-transaction-definition"></a>
 ### Get Purchasing Transaction Definition
 
-<a id="purchasing-transaction-definitions--read-2"></a>
+<a id="purchasing-transaction-definitions--read"></a>
 Function: `read`
 
 ```xml
@@ -413,7 +413,7 @@ Release history:
 | 2020 Release 1 | Added ALLOW_ALLOCATIONS |
 | 2024 Release 4 | Update note about ENABLE_RETAINAGE |
 
-<a id="purchasing-transaction-definitions--create-2"></a>
+<a id="purchasing-transaction-definitions--create"></a>
 Function: `create`
 
 > Creates a transaction definition for vendor bills for office supplies:
@@ -795,7 +795,7 @@ Release history:
 
 If your transaction definition has entity properties, you need to include the entity ID (via `ENTITY_NAME` in the`ENTITY_PROPS`) for each such entity for **every** update call regardless of other parameters you are providing. See [Entity Settings](https://developer.intacct.com/api/purchasing/purchasing-transaction-definitions/#entity-settings-1) below for more information.
 
-<a id="purchasing-transaction-definitions--update-2"></a>
+<a id="purchasing-transaction-definitions--update"></a>
 Function: `update`
 
 > Updates the description of a transaction definition:
@@ -1043,7 +1043,7 @@ If your transaction definition has entity properties, you need to include the en
 <a id="purchasing-transaction-definitions--delete-purchasing-transaction-definition"></a>
 ### Delete Purchasing Transaction Definition
 
-<a id="purchasing-transaction-definitions--delete-2"></a>
+<a id="purchasing-transaction-definitions--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1083,7 +1083,7 @@ You can only use these functions at the top level of a multi entity company that
 <a id="purchasing-transaction-subtotal-templates--get-transaction-subtotal-template-object-definition"></a>
 ### Get Transaction Subtotal Template Object Definition
 
-<a id="purchasing-transaction-subtotal-templates--lookup-2"></a>
+<a id="purchasing-transaction-subtotal-templates--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the transaction subtotal template object:
@@ -1106,7 +1106,7 @@ Function: `lookup`
 <a id="purchasing-transaction-subtotal-templates--purchasing-transaction-subtotal-templates"></a>
 ### Purchasing Transaction Subtotal Templates
 
-<a id="purchasing-transaction-subtotal-templates--query-2"></a>
+<a id="purchasing-transaction-subtotal-templates--query"></a>
 Function: `query`
 
 > List the template name for each transaction subtotal template:
@@ -1138,7 +1138,7 @@ Function: `query`
 <a id="purchasing-transaction-subtotal-templates--query-and-list-purchasing-transaction-subtotal-templates-legacy"></a>
 ### Query and List Purchasing Transaction Subtotal Templates (Legacy)
 
-<a id="purchasing-transaction-subtotal-templates--readbyquery-2"></a>
+<a id="purchasing-transaction-subtotal-templates--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1165,7 +1165,7 @@ Function: `readByQuery`
 <a id="purchasing-transaction-subtotal-templates--get-purchasing-transaction-subtotal-template"></a>
 ### Get Purchasing Transaction Subtotal Template
 
-<a id="purchasing-transaction-subtotal-templates--read-2"></a>
+<a id="purchasing-transaction-subtotal-templates--read"></a>
 Function: `read`
 
 ```xml
@@ -1191,7 +1191,7 @@ Function: `read`
 <a id="purchasing-transaction-subtotal-templates--get-purchasing-transaction-subtotal-template-by-id"></a>
 ### Get Purchasing Transaction Subtotal Template by ID
 
-<a id="purchasing-transaction-subtotal-templates--readbyname-2"></a>
+<a id="purchasing-transaction-subtotal-templates--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1248,7 +1248,7 @@ Many purchasing documents are created by converting from other “source” docu
 <a id="purchasing-transactions--get-purchasing-transaction-object-definition"></a>
 #### Get Purchasing Transaction Object Definition
 
-<a id="purchasing-transactions--lookup-2"></a>
+<a id="purchasing-transactions--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the purchasing transaction object:
@@ -1272,7 +1272,7 @@ Function: `lookup`
 <a id="purchasing-transactions--query-and-list-purchasing-transactions"></a>
 #### Query and List Purchasing Transactions
 
-<a id="purchasing-transactions--query-2"></a>
+<a id="purchasing-transactions--query"></a>
 Function: `query`
 
 > List the record number, document number, and document type for each purchasing transaction:
@@ -1307,7 +1307,7 @@ Function: `query`
 <a id="purchasing-transactions--query-and-list-purchasing-transactions-legacy"></a>
 #### Query and List Purchasing Transactions (Legacy)
 
-<a id="purchasing-transactions--readbyquery-2"></a>
+<a id="purchasing-transactions--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1344,7 +1344,7 @@ Function: `readByQuery`
 <a id="purchasing-transactions--get-purchasing-transaction"></a>
 #### Get Purchasing Transaction
 
-<a id="purchasing-transactions--read-2"></a>
+<a id="purchasing-transactions--read"></a>
 Function: `read`
 
 ```xml
@@ -1391,7 +1391,7 @@ Release history:
 | 2018 Release 2 | Added deliverto, linelevelsimpletaxtype |
 | 2024 Release 4 | Updated note about retainagepercentage and trx amountretained |
 
-<a id="purchasing-transactions--create_potransaction-2"></a>
+<a id="purchasing-transactions--create_potransaction"></a>
 Function: `create_potransaction`
 
 > Creates a Purchasing transaction with a single line:
@@ -1747,7 +1747,7 @@ After using `read` to get the line number of the entry you want to modify, add o
 
 > **Warning:** Before doing any large scale update operations, perform a test to make sure you are modifying the correct lines.
 
-<a id="purchasing-transactions--update_potransaction-2"></a>
+<a id="purchasing-transactions--update_potransaction"></a>
 Function: `update_potransaction`
 
 > Update the transaction to add a memo:
@@ -2048,7 +2048,7 @@ Function: `update_potransaction`
 
 This function is used to partially update a purchasing transaction, usually adjusting its GL posting date.
 
-<a id="purchasing-transactions--partialupdate_potransaction-2"></a>
+<a id="purchasing-transactions--partialupdate_potransaction"></a>
 Function: `partialupdate_potransaction`
 
 ```xml
@@ -2084,7 +2084,7 @@ Function: `partialupdate_potransaction`
 
 Lists purchasing transactions that you are authorized to approve or decline.
 
-<a id="purchasing-transactions--gettransactionstoapprove-2"></a>
+<a id="purchasing-transactions--gettransactionstoapprove"></a>
 Function: `getTransactionsToApprove`
 
 ```xml
@@ -2105,7 +2105,7 @@ Function: `getTransactionsToApprove`
 <a id="purchasing-transactions--approve-purchasing-transactions"></a>
 #### Approve Purchasing Transactions
 
-<a id="purchasing-transactions--approve-2"></a>
+<a id="purchasing-transactions--approve"></a>
 Function: `approve`
 
 ```xml
@@ -2136,7 +2136,7 @@ Function: `approve`
 <a id="purchasing-transactions--decline-purchasing-transactions"></a>
 #### Decline Purchasing Transactions
 
-<a id="purchasing-transactions--decline-2"></a>
+<a id="purchasing-transactions--decline"></a>
 Function: `decline`
 
 ```xml
@@ -2169,7 +2169,7 @@ Function: `decline`
 
 Provides the approval history for a purchasing transaction.
 
-<a id="purchasing-transactions--getapprovalhistory-2"></a>
+<a id="purchasing-transactions--getapprovalhistory"></a>
 Function: `getApprovalHistory`
 
 ```xml
@@ -2192,7 +2192,7 @@ Function: `getApprovalHistory`
 <a id="purchasing-transactions--delete-purchasing-transaction"></a>
 #### Delete Purchasing Transaction
 
-<a id="purchasing-transactions--delete-2"></a>
+<a id="purchasing-transactions--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2215,7 +2215,7 @@ Function: `delete`
 <a id="purchasing-transactions--delete-purchasing-transaction-legacy"></a>
 #### Delete Purchasing Transaction (Legacy)
 
-<a id="purchasing-transactions--delete_potransaction-2"></a>
+<a id="purchasing-transactions--delete_potransaction"></a>
 Function: `delete_potransaction`
 
 ```xml
@@ -2237,7 +2237,7 @@ Function: `delete_potransaction`
 <a id="purchasing-transactions--get-purchasing-transaction-line-object-definition"></a>
 #### Get Purchasing Transaction Line Object Definition
 
-<a id="purchasing-transactions--lookup-1-2"></a>
+<a id="purchasing-transactions--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the purchasing transaction line object:
@@ -2261,7 +2261,7 @@ Function: `lookup`
 <a id="purchasing-transactions--query-and-list-purchasing-transaction-lines"></a>
 #### Query and List Purchasing Transaction Lines
 
-<a id="purchasing-transactions--query-1-2"></a>
+<a id="purchasing-transactions--query-1"></a>
 Function: `query`
 
 > List the record number, document header number, and item ID for each purchasing transaction line:
@@ -2296,7 +2296,7 @@ Function: `query`
 <a id="purchasing-transactions--query-and-list-purchasing-transaction-lines-legacy"></a>
 #### Query and List Purchasing Transaction Lines (Legacy)
 
-<a id="purchasing-transactions--readbyquery-1-2"></a>
+<a id="purchasing-transactions--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2325,7 +2325,7 @@ Function: `readByQuery`
 <a id="purchasing-transactions--get-purchasing-transaction-line"></a>
 #### Get Purchasing Transaction Line
 
-<a id="purchasing-transactions--read-1-2"></a>
+<a id="purchasing-transactions--read-1"></a>
 Function: `read`
 
 ```xml
@@ -2356,7 +2356,7 @@ Function: `read`
 <a id="purchasing-transactions--get-purchasing-transaction-subtotal-object-definition"></a>
 #### Get Purchasing Transaction Subtotal Object Definition
 
-<a id="purchasing-transactions--lookup-2-3"></a>
+<a id="purchasing-transactions--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Purchasing transaction subtotal object:
@@ -2380,7 +2380,7 @@ Function: `lookup`
 <a id="purchasing-transactions--query-and-list-purchasing-transaction-subtotals"></a>
 #### Query and List Purchasing Transaction Subtotals
 
-<a id="purchasing-transactions--query-2-3"></a>
+<a id="purchasing-transactions--query-2"></a>
 Function: `query`
 
 > List the record number, description, and total for each Purchasing transaction subtotal:
@@ -2415,7 +2415,7 @@ Function: `query`
 <a id="purchasing-transactions--query-and-list-purchasing-transaction-subtotals-legacy"></a>
 #### Query and List Purchasing Transaction Subtotals (Legacy)
 
-<a id="purchasing-transactions--readbyquery-2-3"></a>
+<a id="purchasing-transactions--readbyquery-2"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2444,7 +2444,7 @@ Function: `readByQuery`
 <a id="purchasing-transactions--get-purchasing-transaction-subtotal"></a>
 #### Get Purchasing Transaction Subtotal
 
-<a id="purchasing-transactions--read-2-3"></a>
+<a id="purchasing-transactions--read-2"></a>
 Function: `read`
 
 ```xml
@@ -2491,7 +2491,7 @@ NOTE: To enable the Vendor Compliance subscription, first enable Accounts Payabl
 <a id="vendor-compliance-definitions--get-the-vendor-compliance-object-definition"></a>
 ### Get the Vendor Compliance Object Definition
 
-<a id="vendor-compliance-definitions--lookup-2"></a>
+<a id="vendor-compliance-definitions--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the vendor compliance definition object:
@@ -2514,7 +2514,7 @@ Function: `lookup`
 <a id="vendor-compliance-definitions--query-and-list-vendor-compliance-definitions"></a>
 ### Query and List Vendor Compliance Definitions
 
-<a id="vendor-compliance-definitions--query-2"></a>
+<a id="vendor-compliance-definitions--query"></a>
 Function: `query`
 
 > List the specified fields for each vendor compliance definition where the status is active:
@@ -2565,7 +2565,7 @@ Function: `query`
 <a id="vendor-compliance-definitions--query-and-list-vendor-compliance-definitions-legacy"></a>
 ### Query and List Vendor Compliance Definitions (Legacy)
 
-<a id="vendor-compliance-definitions--readbyquery-2"></a>
+<a id="vendor-compliance-definitions--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2591,7 +2591,7 @@ Function: `readByQuery`
 <a id="vendor-compliance-definitions--get-vendor-compliance-definitions"></a>
 ### Get Vendor Compliance Definitions
 
-<a id="vendor-compliance-definitions--read-2"></a>
+<a id="vendor-compliance-definitions--read"></a>
 Function: `read`
 
 > Get all vendor compliance definition fields for the specified keys:
@@ -2619,7 +2619,7 @@ Function: `read`
 <a id="vendor-compliance-definitions--get-vendor-compliance-definitions-by-id"></a>
 ### Get Vendor Compliance Definitions by ID
 
-<a id="vendor-compliance-definitions--readbyname-2"></a>
+<a id="vendor-compliance-definitions--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2645,7 +2645,7 @@ Function: `readByName`
 <a id="vendor-compliance-definitions--create-a-vendor-compliance-definition"></a>
 ### Create a Vendor Compliance Definition
 
-<a id="vendor-compliance-definitions--create-2"></a>
+<a id="vendor-compliance-definitions--create"></a>
 Function: `create`
 
 NOTE: Compliance definitions for lien waivers uses the primary document feature to generate compliance records. Set [PRIMARYDOC](https://developer.intacct.com/api/purchasing/purchasing-transaction-definitions/) to true to use primary documents in Construction.
@@ -2726,7 +2726,7 @@ NOTE: Compliance definitions for lien waivers uses the primary document feature 
 <a id="vendor-compliance-definitions--update-a-vendor-compliance-definition"></a>
 ### Update a Vendor Compliance Definition
 
-<a id="vendor-compliance-definitions--update-2"></a>
+<a id="vendor-compliance-definitions--update"></a>
 Function: `update`
 
 NOTE: Lien waivers uses the primary document feature to generate compliance records. Set [PRIMARYDOC](https://developer.intacct.com/api/purchasing/purchasing-transaction-definitions/) to true to use primary documents in Construction.
@@ -2787,7 +2787,7 @@ NOTE: Lien waivers uses the primary document feature to generate compliance reco
 <a id="vendor-compliance-definitions--delete-a-vendor-compliance-definition"></a>
 ### Delete a Vendor Compliance Definition
 
-<a id="vendor-compliance-definitions--delete-2"></a>
+<a id="vendor-compliance-definitions--delete"></a>
 Function: `delete`
 
 > Delete a vendor compliance definition. Note that you can only delete definitions not in use by vendor compliance records or types.
@@ -2852,7 +2852,7 @@ where:
 <a id="vendor-compliance-records--get-vendor-compliance-record-object-definition"></a>
 ### Get Vendor Compliance Record Object Definition
 
-<a id="vendor-compliance-records--lookup-2"></a>
+<a id="vendor-compliance-records--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the vendor compliance record object:
@@ -2875,7 +2875,7 @@ Function: `lookup`
 <a id="vendor-compliance-records--query-and-list-vendor-compliance-records"></a>
 ### Query and List Vendor Compliance Records
 
-<a id="vendor-compliance-records--query-2"></a>
+<a id="vendor-compliance-records--query"></a>
 Function: `query`
 
 > List the specified fields for each vendor compliance record that has a specified `COMPLIANCERECORDID`.
@@ -2922,7 +2922,7 @@ Function: `query`
 <a id="vendor-compliance-records--get-vendor-compliance-records"></a>
 ### Get Vendor Compliance Records
 
-<a id="vendor-compliance-records--read-2"></a>
+<a id="vendor-compliance-records--read"></a>
 Function: `read`
 
 > Get all vendor compliance record fields for the specified keys:
@@ -2950,7 +2950,7 @@ Function: `read`
 <a id="vendor-compliance-records--get-vendor-compliance-records-by-id"></a>
 ### Get Vendor Compliance Records by ID
 
-<a id="vendor-compliance-records--readbyname-2"></a>
+<a id="vendor-compliance-records--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2976,7 +2976,7 @@ Function: `readByName`
 <a id="vendor-compliance-records--create-vendor-compliance-records"></a>
 ### Create Vendor Compliance Records
 
-<a id="vendor-compliance-records--create-2"></a>
+<a id="vendor-compliance-records--create"></a>
 Function: `create`
 
 > Create a vendor compliance record using the required values:
@@ -3033,7 +3033,7 @@ Function: `create`
 <a id="vendor-compliance-records--update-vendor-compliance-record"></a>
 ### Update Vendor Compliance Record
 
-<a id="vendor-compliance-records--update-2"></a>
+<a id="vendor-compliance-records--update"></a>
 Function: `update`
 
 > Update a vendor compliance record’s description using `recordno`:
@@ -3090,7 +3090,7 @@ Function: `update`
 <a id="vendor-compliance-records--delete-vendor-compliance-records"></a>
 ### Delete Vendor Compliance Records
 
-<a id="vendor-compliance-records--delete-2"></a>
+<a id="vendor-compliance-records--delete"></a>
 Function: `delete`
 
 ```xml
@@ -3132,7 +3132,7 @@ NOTE: To enable the Vendor Compliance subscription, first enable Accounts Payabl
 <a id="vendor-compliance-types--get-vendor-compliance-type-object-definition"></a>
 ### Get Vendor Compliance Type Object Definition
 
-<a id="vendor-compliance-types--lookup-2"></a>
+<a id="vendor-compliance-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the vendor compliance type object:
@@ -3155,7 +3155,7 @@ Function: `lookup`
 <a id="vendor-compliance-types--query-and-list-vendor-compliance-types"></a>
 ### Query and List Vendor Compliance Types
 
-<a id="vendor-compliance-types--query-2"></a>
+<a id="vendor-compliance-types--query"></a>
 Function: `query`
 
 > List the specified fields for each vendor compliance type where the status is active:
@@ -3198,7 +3198,7 @@ Function: `query`
 <a id="vendor-compliance-types--query-and-list-vendor-compliance-types-legacy"></a>
 ### Query and List Vendor Compliance Types (Legacy)
 
-<a id="vendor-compliance-types--readbyquery-2"></a>
+<a id="vendor-compliance-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3224,7 +3224,7 @@ Function: `readByQuery`
 <a id="vendor-compliance-types--get-vendor-compliance-types"></a>
 ### Get Vendor Compliance Types
 
-<a id="vendor-compliance-types--read-2"></a>
+<a id="vendor-compliance-types--read"></a>
 Function: `read`
 
 > Get all vendor compliance type fields for the specified keys:
@@ -3252,7 +3252,7 @@ Function: `read`
 <a id="vendor-compliance-types--get-vendor-compliance-types-by-id"></a>
 ### Get Vendor Compliance Types by ID
 
-<a id="vendor-compliance-types--readbyname-2"></a>
+<a id="vendor-compliance-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3278,7 +3278,7 @@ Function: `readByName`
 <a id="vendor-compliance-types--create-a-vendor-compliance-type"></a>
 ### Create a Vendor Compliance Type
 
-<a id="vendor-compliance-types--create-2"></a>
+<a id="vendor-compliance-types--create"></a>
 Function: `create`
 
 > Create a vendor compliance type record using the required values:
@@ -3317,7 +3317,7 @@ Function: `create`
 <a id="vendor-compliance-types--update-a-vendor-compliance-type"></a>
 ### Update a Vendor Compliance Type
 
-<a id="vendor-compliance-types--update-2"></a>
+<a id="vendor-compliance-types--update"></a>
 Function: `update`
 
 > Updates a vendor compliance type’s description:
@@ -3351,7 +3351,7 @@ Function: `update`
 <a id="vendor-compliance-types--delete-a-vendor-compliance-type"></a>
 ### Delete a Vendor Compliance Type
 
-<a id="vendor-compliance-types--delete-2"></a>
+<a id="vendor-compliance-types--delete"></a>
 Function: `delete`
 
 > Delete a vendor compliance type. Note that you can only delete types not in use by vendor compliance records or definitions.

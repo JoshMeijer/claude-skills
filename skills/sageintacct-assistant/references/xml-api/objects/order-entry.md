@@ -27,7 +27,7 @@ An Order Entry transaction definition is the template for an Order Entry transac
 <a id="order-entry-transaction-definitions--get-order-entry-transaction-definition-object-definition"></a>
 ### Get Order Entry Transaction Definition Object Definition
 
-<a id="order-entry-transaction-definitions--lookup-2"></a>
+<a id="order-entry-transaction-definitions--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Order Entry transaction definition object:
@@ -50,7 +50,7 @@ Function: `lookup`
 <a id="order-entry-transaction-definitions--query-and-list-order-entry-transaction-definitions"></a>
 ### Query and List Order Entry Transaction Definitions
 
-<a id="order-entry-transaction-definitions--query-2"></a>
+<a id="order-entry-transaction-definitions--query"></a>
 Function: `query`
 
 > List the record number, template name, and template type for each transaction definition:
@@ -84,7 +84,7 @@ Function: `query`
 <a id="order-entry-transaction-definitions--query-and-list-order-entry-transaction-definitions-legacy"></a>
 ### Query and List Order Entry Transaction Definitions (Legacy)
 
-<a id="order-entry-transaction-definitions--readbyquery-2"></a>
+<a id="order-entry-transaction-definitions--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -111,7 +111,7 @@ Function: `readByQuery`
 <a id="order-entry-transaction-definitions--get-order-entry-transaction-definition"></a>
 ### Get Order Entry Transaction Definition
 
-<a id="order-entry-transaction-definitions--read-2"></a>
+<a id="order-entry-transaction-definitions--read"></a>
 Function: `read`
 
 ```xml
@@ -154,7 +154,7 @@ You can only use these functions at the top level of a multi entity company that
 <a id="order-entry-transaction-subtotal-templates--get-order-entry-transaction-subtotal-template-object-definition"></a>
 ### Get Order Entry Transaction Subtotal Template Object Definition
 
-<a id="order-entry-transaction-subtotal-templates--lookup-2"></a>
+<a id="order-entry-transaction-subtotal-templates--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Order Entry transaction subtotal template object:
@@ -177,7 +177,7 @@ Function: `lookup`
 <a id="order-entry-transaction-subtotal-templates--query-and-list-order-entry-transaction-subtotal-templates"></a>
 ### Query and List Order Entry Transaction Subtotal Templates
 
-<a id="order-entry-transaction-subtotal-templates--query-2"></a>
+<a id="order-entry-transaction-subtotal-templates--query"></a>
 Function: `query`
 
 > List the record number, name, and module for each Order Entry subtotal template:
@@ -211,7 +211,7 @@ Function: `query`
 <a id="order-entry-transaction-subtotal-templates--query-and-list-order-entry-transaction-subtotal-templates-legacy"></a>
 ### Query and List Order Entry Transaction Subtotal Templates (Legacy)
 
-<a id="order-entry-transaction-subtotal-templates--readbyquery-2"></a>
+<a id="order-entry-transaction-subtotal-templates--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -238,7 +238,7 @@ Function: `readByQuery`
 <a id="order-entry-transaction-subtotal-templates--get-order-entry-transaction-subtotal-template"></a>
 ### Get Order Entry Transaction Subtotal Template
 
-<a id="order-entry-transaction-subtotal-templates--read-2"></a>
+<a id="order-entry-transaction-subtotal-templates--read"></a>
 Function: `read`
 
 ```xml
@@ -264,7 +264,7 @@ Function: `read`
 <a id="order-entry-transaction-subtotal-templates--get-order-entry-transaction-subtotal-template-by-id"></a>
 ### Get Order Entry Transaction Subtotal Template by ID
 
-<a id="order-entry-transaction-subtotal-templates--readbyname-2"></a>
+<a id="order-entry-transaction-subtotal-templates--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -310,7 +310,7 @@ Certain types of transaction definitions in Order Entry (e.g. Sales Invoice, Con
 <a id="order-entry-transactions--get-order-entry-transaction-object-definition"></a>
 #### Get Order Entry Transaction Object Definition
 
-<a id="order-entry-transactions--lookup-2"></a>
+<a id="order-entry-transactions--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Order Entry transaction object:
@@ -334,7 +334,7 @@ Function: `lookup`
 <a id="order-entry-transactions--query-and-list-order-entry-transactions"></a>
 #### Query and List Order Entry Transactions
 
-<a id="order-entry-transactions--query-2"></a>
+<a id="order-entry-transactions--query"></a>
 Function: `query`
 
 > List the record number, document ID, and record number of the associated AR invoice for each Order Entry transaction:
@@ -369,7 +369,7 @@ Function: `query`
 <a id="order-entry-transactions--query-and-list-order-entry-transactions-legacy"></a>
 #### Query and List Order Entry Transactions (Legacy)
 
-<a id="order-entry-transactions--readbyquery-2"></a>
+<a id="order-entry-transactions--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -405,7 +405,7 @@ Function: `readByQuery`
 <a id="order-entry-transactions--get-order-entry-transaction"></a>
 #### Get Order Entry Transaction
 
-<a id="order-entry-transactions--read-2"></a>
+<a id="order-entry-transactions--read"></a>
 Function: `read`
 
 ```xml
@@ -433,7 +433,7 @@ Function: `read`
 <a id="order-entry-transactions--get-order-entry-transaction-pdf-data"></a>
 #### Get Order Entry Transaction PDF Data
 
-<a id="order-entry-transactions--retrievepdf-2"></a>
+<a id="order-entry-transactions--retrievepdf"></a>
 Function: `retrievepdf`
 
 > Provides base64-encoded data for a PDF version of the specified transaction:
@@ -494,7 +494,7 @@ Release history:
 | 2018 Release 2 | Added linelevelsimpletaxtype |
 | 2024 Release 4 | Added or updated notes about subscription requirements for retcompletedamt, retstoredmaterials, previousretainagebalance, retainagepercentage, trx_amountretained, and isretainagerelease |
 
-<a id="order-entry-transactions--create_sotransaction-2"></a>
+<a id="order-entry-transactions--create_sotransaction"></a>
 Function: `create_sotransaction`
 
 > Creates an Order Entry transaction with a single line:
@@ -963,7 +963,7 @@ After using `read` to get the line number of the entry you want to modify, add o
 
 > **Warning:** Before doing any large scale update operations, perform a test to make sure you are modifying the correct lines.
 
-<a id="order-entry-transactions--update_sotransaction-2"></a>
+<a id="order-entry-transactions--update_sotransaction"></a>
 Function: `update_sotransaction`
 
 > Updates an existing line on the transaction:
@@ -1355,7 +1355,7 @@ New lines are added to the bottom of the list; you cannot insert a line between 
 <a id="order-entry-transactions--delete-order-entry-transaction-legacy"></a>
 #### Delete Order Entry Transaction (Legacy)
 
-<a id="order-entry-transactions--delete_sotransaction-2"></a>
+<a id="order-entry-transactions--delete_sotransaction"></a>
 Function: `delete_sotransaction`
 
 ```xml
@@ -1377,7 +1377,7 @@ Function: `delete_sotransaction`
 <a id="order-entry-transactions--get-order-entry-transaction-line-object-definition"></a>
 #### Get Order Entry Transaction Line Object Definition
 
-<a id="order-entry-transactions--lookup-1-2"></a>
+<a id="order-entry-transactions--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Order Entry transaction line object:
@@ -1401,7 +1401,7 @@ Function: `lookup`
 <a id="order-entry-transactions--query-and-list-order-entry-transaction-lines"></a>
 #### Query and List Order Entry Transaction Lines
 
-<a id="order-entry-transactions--query-1-2"></a>
+<a id="order-entry-transactions--query-1"></a>
 Function: `query`
 
 > List the record number of the transaction header plus information about each transaction line:
@@ -1437,7 +1437,7 @@ Function: `query`
 <a id="order-entry-transactions--query-and-list-order-entry-transaction-lines-legacy"></a>
 #### Query and List Order Entry Transaction Lines (Legacy)
 
-<a id="order-entry-transactions--readbyquery-1-2"></a>
+<a id="order-entry-transactions--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1466,7 +1466,7 @@ Function: `readByQuery`
 <a id="order-entry-transactions--get-order-entry-transaction-line"></a>
 #### Get Order Entry Transaction Line
 
-<a id="order-entry-transactions--read-1-2"></a>
+<a id="order-entry-transactions--read-1"></a>
 Function: `read`
 
 ```xml
@@ -1497,7 +1497,7 @@ Function: `read`
 <a id="order-entry-transactions--get-order-entry-transaction-subtotals-object-definition"></a>
 #### Get Order Entry Transaction Subtotals Object Definition
 
-<a id="order-entry-transactions--lookup-2-3"></a>
+<a id="order-entry-transactions--lookup-2"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Order Entry transaction subtotals object:
@@ -1521,7 +1521,7 @@ Function: `lookup`
 <a id="order-entry-transactions--query-and-list-order-entry-transaction-subtotals"></a>
 #### Query and List Order Entry Transaction Subtotals
 
-<a id="order-entry-transactions--query-2-3"></a>
+<a id="order-entry-transactions--query-2"></a>
 Function: `query`
 
 > List the record number, document ID, and record number of the associated AR invoice for each Order Entry transaction:
@@ -1555,7 +1555,7 @@ Function: `query`
 <a id="order-entry-transactions--query-and-list-order-entry-transaction-subtotals-legacy"></a>
 #### Query and List Order Entry Transaction Subtotals (Legacy)
 
-<a id="order-entry-transactions--readbyquery-2-3"></a>
+<a id="order-entry-transactions--readbyquery-2"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1584,7 +1584,7 @@ Function: `readByQuery`
 <a id="order-entry-transactions--get-order-entry-transaction-subtotal"></a>
 #### Get Order Entry Transaction Subtotal
 
-<a id="order-entry-transactions--read-2-3"></a>
+<a id="order-entry-transactions--read-2"></a>
 Function: `read`
 
 ```xml
@@ -1627,7 +1627,7 @@ An Order Entry price list contains the names of price lists in Order Entry.
 <a id="price-lists--get-order-entry-price-list-object-definition"></a>
 ### Get Order Entry Price List Object Definition
 
-<a id="price-lists--lookup-2"></a>
+<a id="price-lists--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the Order Entry price list object:
@@ -1650,7 +1650,7 @@ Function: `lookup`
 <a id="price-lists--query-and-list-order-entry-price-lists"></a>
 ### Query and List Order Entry Price Lists
 
-<a id="price-lists--query-2"></a>
+<a id="price-lists--query"></a>
 Function: `query`
 
 > List the record number and name for each Order Entry price list:
@@ -1683,7 +1683,7 @@ Function: `query`
 <a id="price-lists--query-and-list-order-entry-price-lists-legacy"></a>
 ### Query and List Order Entry Price Lists (Legacy)
 
-<a id="price-lists--readbyquery-2"></a>
+<a id="price-lists--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1710,7 +1710,7 @@ Function: `readByQuery`
 <a id="price-lists--get-order-entry-price-list"></a>
 ### Get Order Entry Price List
 
-<a id="price-lists--read-2"></a>
+<a id="price-lists--read"></a>
 Function: `read`
 
 ```xml
@@ -1736,7 +1736,7 @@ Function: `read`
 <a id="price-lists--get-order-entry-price-list-by-id"></a>
 ### Get Order Entry Price List by ID
 
-<a id="price-lists--readbyname-2"></a>
+<a id="price-lists--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1762,7 +1762,7 @@ Function: `readByName`
 <a id="price-lists--create-order-entry-price-list-legacy"></a>
 ### Create Order Entry Price List (Legacy)
 
-<a id="price-lists--create_sopricelist-2"></a>
+<a id="price-lists--create_sopricelist"></a>
 Function: `create_sopricelist`
 
 ```xml
@@ -1802,7 +1802,7 @@ Function: `create_sopricelist`
 <a id="price-lists--update-order-entry-price-list-legacy"></a>
 ### Update Order Entry Price List (Legacy)
 
-<a id="price-lists--update_sopricelist-2"></a>
+<a id="price-lists--update_sopricelist"></a>
 Function: `update_sopricelist`
 
 ```xml
@@ -1842,7 +1842,7 @@ Function: `update_sopricelist`
 <a id="price-lists--delete-order-entry-price-list-legacy"></a>
 ### Delete Order Entry Price List (Legacy)
 
-<a id="price-lists--delete_sopricelist-2"></a>
+<a id="price-lists--delete_sopricelist"></a>
 Function: `delete_sopricelist`
 
 ```xml
@@ -1876,7 +1876,7 @@ Recurring transactions work the same as standard transactions, except that the t
 <a id="recurring-order-entry-transactions--get-recurring-order-entry-transaction-object-definition"></a>
 ### Get Recurring Order Entry Transaction Object Definition
 
-<a id="recurring-order-entry-transactions--lookup-2"></a>
+<a id="recurring-order-entry-transactions--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the recurring Order Entry transaction object:
@@ -1899,7 +1899,7 @@ Function: `lookup`
 <a id="recurring-order-entry-transactions--query-and-list-recurring-order-entry-transactions"></a>
 ### Query and List Recurring Order Entry Transactions
 
-<a id="recurring-order-entry-transactions--query-2"></a>
+<a id="recurring-order-entry-transactions--query"></a>
 Function: `query`
 
 > List the record number and total for each recurring Order Entry transaction:
@@ -1932,7 +1932,7 @@ Function: `query`
 <a id="recurring-order-entry-transactions--query-and-list-recurring-order-entry-transactions-legacy"></a>
 ### Query and List Recurring Order Entry Transactions (Legacy)
 
-<a id="recurring-order-entry-transactions--readbyquery-2"></a>
+<a id="recurring-order-entry-transactions--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1959,7 +1959,7 @@ Function: `readByQuery`
 <a id="recurring-order-entry-transactions--get-recurring-order-entry-transaction"></a>
 ### Get Recurring Order Entry Transaction
 
-<a id="recurring-order-entry-transactions--read-2"></a>
+<a id="recurring-order-entry-transactions--read"></a>
 Function: `read`
 
 ```xml
@@ -1995,7 +1995,7 @@ Release history:
 | 2020 Release 2 | Added costtypeid |
 | 2019 Release 4 | Added taskid |
 
-<a id="recurring-order-entry-transactions--create_recursotransaction-2"></a>
+<a id="recurring-order-entry-transactions--create_recursotransaction"></a>
 Function: `create_recursotransaction`
 
 ```xml
@@ -2185,7 +2185,7 @@ Function: `create_recursotransaction`
 <a id="recurring-order-entry-transactions--delete-recurring-order-entry-transaction-legacy"></a>
 ### Delete Recurring Order Entry Transaction (Legacy)
 
-<a id="recurring-order-entry-transactions--delete_recursotransaction-2"></a>
+<a id="recurring-order-entry-transactions--delete_recursotransaction"></a>
 Function: `delete_recursotransaction`
 
 ```xml
@@ -2224,7 +2224,7 @@ The system generates revenue recognition schedules for applicable posted sales t
 <a id="revenue-recognition-schedules--get-revenue-recognition-schedule-object-definition"></a>
 #### Get Revenue Recognition Schedule Object Definition
 
-<a id="revenue-recognition-schedules--lookup-2"></a>
+<a id="revenue-recognition-schedules--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the revenue recognition schedule object:
@@ -2247,7 +2247,7 @@ Function: `lookup`
 <a id="revenue-recognition-schedules--query-and-list-revenue-recognition-schedules"></a>
 #### Query and List Revenue Recognition Schedules
 
-<a id="revenue-recognition-schedules--readbyquery-2"></a>
+<a id="revenue-recognition-schedules--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2283,7 +2283,7 @@ Function: `readByQuery`
 <a id="revenue-recognition-schedules--get-revenue-recognition-schedule"></a>
 #### Get Revenue Recognition Schedule
 
-<a id="revenue-recognition-schedules--read-2"></a>
+<a id="revenue-recognition-schedules--read"></a>
 Function: `read`
 
 ```xml
@@ -2309,7 +2309,7 @@ Function: `read`
 <a id="revenue-recognition-schedules--hold-revenue-recognition-schedule-legacy"></a>
 #### Hold Revenue Recognition Schedule (Legacy)
 
-<a id="revenue-recognition-schedules--hold_revrecschedule-2"></a>
+<a id="revenue-recognition-schedules--hold_revrecschedule"></a>
 Function: `hold_revrecschedule`
 
 ```xml
@@ -2334,7 +2334,7 @@ Function: `hold_revrecschedule`
 <a id="revenue-recognition-schedules--resume-revenue-recognition-schedule-legacy"></a>
 #### Resume Revenue Recognition Schedule (Legacy)
 
-<a id="revenue-recognition-schedules--resume_revrecschedule-2"></a>
+<a id="revenue-recognition-schedules--resume_revrecschedule"></a>
 Function: `resume_revrecschedule`
 
 ```xml
@@ -2359,7 +2359,7 @@ Function: `resume_revrecschedule`
 <a id="revenue-recognition-schedules--terminate-revenue-recognition-schedule-legacy"></a>
 #### Terminate Revenue Recognition Schedule (Legacy)
 
-<a id="revenue-recognition-schedules--terminate_revrecschedule-2"></a>
+<a id="revenue-recognition-schedules--terminate_revrecschedule"></a>
 Function: `terminate_revrecschedule`
 
 ```xml
@@ -2384,7 +2384,7 @@ Function: `terminate_revrecschedule`
 <a id="revenue-recognition-schedules--update-revenue-recognition-schedule-legacy"></a>
 #### Update Revenue Recognition Schedule (Legacy)
 
-<a id="revenue-recognition-schedules--update_revrecschedule-2"></a>
+<a id="revenue-recognition-schedules--update_revrecschedule"></a>
 Function: `update_revrecschedule`
 
 ```xml
@@ -2445,7 +2445,7 @@ Release history:
 |---|---|
 | 2018 Release 2 | Added unpostall |
 
-<a id="revenue-recognition-schedules--reallocate_revrecschedule-2"></a>
+<a id="revenue-recognition-schedules--reallocate_revrecschedule"></a>
 Function: `reallocate_revrecschedule`
 
 ```xml
@@ -2490,7 +2490,7 @@ Function: `reallocate_revrecschedule`
 <a id="revenue-recognition-schedules--get-revenue-recognition-schedule-entry-object-definition"></a>
 #### Get Revenue Recognition Schedule Entry Object Definition
 
-<a id="revenue-recognition-schedules--lookup-1-2"></a>
+<a id="revenue-recognition-schedules--lookup-1"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the revenue recognition schedule entry object:
@@ -2513,7 +2513,7 @@ Function: `lookup`
 <a id="revenue-recognition-schedules--query-and-list-revenue-recognition-schedule-entries"></a>
 #### Query and List Revenue Recognition Schedule Entries
 
-<a id="revenue-recognition-schedules--readbyquery-1-2"></a>
+<a id="revenue-recognition-schedules--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2557,7 +2557,7 @@ Function: `readByQuery`
 <a id="revenue-recognition-schedules--get-revenue-recognition-schedule-entry"></a>
 #### Get Revenue Recognition Schedule Entry
 
-<a id="revenue-recognition-schedules--read-1-2"></a>
+<a id="revenue-recognition-schedules--read-1"></a>
 Function: `read`
 
 ```xml
@@ -2583,7 +2583,7 @@ Function: `read`
 <a id="revenue-recognition-schedules--post-revenue-recognition-schedule-entries-legacy"></a>
 #### Post Revenue Recognition Schedule Entries (Legacy)
 
-<a id="revenue-recognition-schedules--post_revrecscheduleentry-2"></a>
+<a id="revenue-recognition-schedules--post_revrecscheduleentry"></a>
 Function: `post_revrecscheduleentry`
 
 ```xml
@@ -2606,7 +2606,7 @@ Function: `post_revrecscheduleentry`
 <a id="revenue-recognition-schedules--unpost-revenue-recognition-schedule-entries-legacy"></a>
 #### Unpost Revenue Recognition Schedule Entries (Legacy)
 
-<a id="revenue-recognition-schedules--unpost_revrecscheduleentry-2"></a>
+<a id="revenue-recognition-schedules--unpost_revrecscheduleentry"></a>
 Function: `unpost_revrecscheduleentry`
 
 ```xml

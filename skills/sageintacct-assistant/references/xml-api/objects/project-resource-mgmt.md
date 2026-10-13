@@ -35,7 +35,7 @@ Earning types help configure the system to post project labor costs to one or mo
 <a id="earning-types--get-earning-type-object-definition"></a>
 ### Get Earning Type Object Definition
 
-<a id="earning-types--lookup-2"></a>
+<a id="earning-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the earning type object:
@@ -58,7 +58,7 @@ Function: `lookup`
 <a id="earning-types--query-and-list-earning-type"></a>
 ### Query and List Earning Type
 
-<a id="earning-types--query-2"></a>
+<a id="earning-types--query"></a>
 Function: `query`
 
 > List the record number, name, and method for each earning type:
@@ -92,7 +92,7 @@ Function: `query`
 <a id="earning-types--query-and-list-earning-types-legacy"></a>
 ### Query and List Earning Types (Legacy)
 
-<a id="earning-types--readbyquery-2"></a>
+<a id="earning-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -119,7 +119,7 @@ Function: `readByQuery`
 <a id="earning-types--get-earning-type"></a>
 ### Get Earning Type
 
-<a id="earning-types--read-2"></a>
+<a id="earning-types--read"></a>
 Function: `read`
 
 ```xml
@@ -145,7 +145,7 @@ Function: `read`
 <a id="earning-types--get-earning-type-by-id"></a>
 ### Get Earning Type by ID
 
-<a id="earning-types--readbyname-2"></a>
+<a id="earning-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -171,7 +171,7 @@ Function: `readByName`
 <a id="earning-types--create-earning-type-legacy"></a>
 ### Create Earning Type (Legacy)
 
-<a id="earning-types--create_earningtype-2"></a>
+<a id="earning-types--create_earningtype"></a>
 Function: `create_earningtype`
 
 ```xml
@@ -208,7 +208,7 @@ Function: `create_earningtype`
 <a id="earning-types--update-earning-type-legacy"></a>
 ### Update Earning Type (Legacy)
 
-<a id="earning-types--update_earningtype-2"></a>
+<a id="earning-types--update_earningtype"></a>
 Function: `update_earningtype`
 
 ```xml
@@ -244,7 +244,7 @@ Function: `update_earningtype`
 <a id="earning-types--delete-earning-type-legacy"></a>
 ### Delete Earning Type (Legacy)
 
-<a id="earning-types--delete_earningtype-2"></a>
+<a id="earning-types--delete_earningtype"></a>
 Function: `delete_earningtype`
 
 ```xml
@@ -278,7 +278,7 @@ Positions and skills let companies track, categorize, and search for resources a
 <a id="positions-skills--get-positions-and-skills-object-definition"></a>
 ### Get Positions and Skills Object Definition
 
-<a id="positions-skills--lookup-2"></a>
+<a id="positions-skills--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the positions and skills object:
@@ -301,7 +301,7 @@ Function: `lookup`
 <a id="positions-skills--query-and-list-positions-and-skills"></a>
 ### Query and List Positions and Skills
 
-<a id="positions-skills--query-2"></a>
+<a id="positions-skills--query"></a>
 Function: `query`
 
 > List the record number, name, and description for each position and skill record:
@@ -335,7 +335,7 @@ Function: `query`
 <a id="positions-skills--query-and-list-positions-and-skills-legacy"></a>
 ### Query and List Positions and Skills (Legacy)
 
-<a id="positions-skills--readbyquery-2"></a>
+<a id="positions-skills--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -360,7 +360,7 @@ Function: `readByQuery`
 <a id="positions-skills--get-position-and-skill"></a>
 ### Get Position and Skill
 
-<a id="positions-skills--read-2"></a>
+<a id="positions-skills--read"></a>
 Function: `read`
 
 ```xml
@@ -384,7 +384,7 @@ Function: `read`
 <a id="positions-skills--get-position-and-skill-by-id"></a>
 ### Get Position and Skill by ID
 
-<a id="positions-skills--readbyname-2"></a>
+<a id="positions-skills--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -425,7 +425,7 @@ A project group is a dimension group.
 <a id="project-groups--get-project-group-object-definition"></a>
 ### Get Project Group Object Definition
 
-<a id="project-groups--lookup-2"></a>
+<a id="project-groups--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project group object:
@@ -448,7 +448,7 @@ Function: `lookup`
 <a id="project-groups--query-and-list-project-group"></a>
 ### Query and List Project Group
 
-<a id="project-groups--query-2"></a>
+<a id="project-groups--query"></a>
 Function: `query`
 
 > List the record number and ID for each project group:
@@ -481,7 +481,7 @@ Function: `query`
 <a id="project-groups--query-and-list-project-groups-legacy"></a>
 ### Query and List Project Groups (Legacy)
 
-<a id="project-groups--readbyquery-2"></a>
+<a id="project-groups--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -508,7 +508,7 @@ Function: `readByQuery`
 <a id="project-groups--get-project-group"></a>
 ### Get Project Group
 
-<a id="project-groups--read-2"></a>
+<a id="project-groups--read"></a>
 Function: `read`
 
 ```xml
@@ -534,7 +534,7 @@ Function: `read`
 <a id="project-groups--get-project-group-by-id"></a>
 ### Get Project Group by ID
 
-<a id="project-groups--readbyname-2"></a>
+<a id="project-groups--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -577,7 +577,7 @@ Depending on how the project is set up, these percentages can affect associated 
 <a id="project-observed-pct-completed--get-observed-percent-completed-entry-object-definition"></a>
 ### Get Observed Percent Completed Entry Object Definition
 
-<a id="project-observed-pct-completed--lookup-2"></a>
+<a id="project-observed-pct-completed--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the observed percent completed entry object:
@@ -600,7 +600,7 @@ Function: `lookup`
 <a id="project-observed-pct-completed--query-and-list-observed-percent-completed-entries"></a>
 ### Query and List Observed Percent Completed Entries
 
-<a id="project-observed-pct-completed--query-2"></a>
+<a id="project-observed-pct-completed--query"></a>
 Function: `query`
 
 > List the record number and type of each observed percent completed entry:
@@ -633,7 +633,7 @@ Function: `query`
 <a id="project-observed-pct-completed--query-and-list-observed-percent-completed-entries-legacy"></a>
 ### Query and List Observed Percent Completed Entries (Legacy)
 
-<a id="project-observed-pct-completed--readbyquery-2"></a>
+<a id="project-observed-pct-completed--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -666,7 +666,7 @@ Function: `readByQuery`
 <a id="project-observed-pct-completed--get-observed-percent-completed-entry"></a>
 ### Get Observed Percent Completed Entry
 
-<a id="project-observed-pct-completed--read-2"></a>
+<a id="project-observed-pct-completed--read"></a>
 Function: `read`
 
 ```xml
@@ -694,7 +694,7 @@ Function: `read`
 
 Be aware that after creating an observed percent completed entry for a project, you need to update the project to trigger updates for any associated revenue recognition schedules. (The update on the project need not actually change any data.)
 
-<a id="project-observed-pct-completed--create-2"></a>
+<a id="project-observed-pct-completed--create"></a>
 Function: `create`
 
 ```xml
@@ -733,7 +733,7 @@ Function: `create`
 
 Be aware that after updating an observed percent completed entry, you need to call update on the project to trigger updates for any associated revenue recognition schedules. (The project update need not actually change any data.)
 
-<a id="project-observed-pct-completed--update-2"></a>
+<a id="project-observed-pct-completed--update"></a>
 Function: `update`
 
 ```xml
@@ -766,7 +766,7 @@ Function: `update`
 <a id="project-observed-pct-completed--delete-observed-percent-completed-entry"></a>
 ### Delete Observed Percent Completed Entry
 
-<a id="project-observed-pct-completed--delete-2"></a>
+<a id="project-observed-pct-completed--delete"></a>
 Function: `delete`
 
 ```xml
@@ -804,7 +804,7 @@ Any employee who works on a project is considered a resource.
 <a id="project-resources--get-project-resource-object-definition"></a>
 ### Get Project Resource Object Definition
 
-<a id="project-resources--lookup-2"></a>
+<a id="project-resources--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project resource object:
@@ -827,7 +827,7 @@ Function: `lookup`
 <a id="project-resources--query-and-list-project-resources"></a>
 ### Query and List Project Resources
 
-<a id="project-resources--query-2"></a>
+<a id="project-resources--query"></a>
 Function: `query`
 
 > List the project ID and employee ID for each project resource:
@@ -860,7 +860,7 @@ Function: `query`
 <a id="project-resources--query-and-list-project-resources-legacy"></a>
 ### Query and List Project Resources (Legacy)
 
-<a id="project-resources--readbyquery-2"></a>
+<a id="project-resources--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -887,7 +887,7 @@ Function: `readByQuery`
 <a id="project-resources--get-project-resource"></a>
 ### Get Project Resource
 
-<a id="project-resources--read-2"></a>
+<a id="project-resources--read"></a>
 Function: `read`
 
 ```xml
@@ -928,7 +928,7 @@ A project status can prevent certain transactions from occurring, or can be used
 <a id="project-statuses--get-project-status-object-definition"></a>
 ### Get Project Status Object Definition
 
-<a id="project-statuses--lookup-2"></a>
+<a id="project-statuses--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project status object:
@@ -951,7 +951,7 @@ Function: `lookup`
 <a id="project-statuses--query-and-list-project-status"></a>
 ### Query and List Project Status
 
-<a id="project-statuses--query-2"></a>
+<a id="project-statuses--query"></a>
 Function: `query`
 
 > List the name and description for each project status:
@@ -984,7 +984,7 @@ Function: `query`
 <a id="project-statuses--query-and-list-project-statuses-legacy"></a>
 ### Query and List Project Statuses (Legacy)
 
-<a id="project-statuses--readbyquery-2"></a>
+<a id="project-statuses--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1011,7 +1011,7 @@ Function: `readByQuery`
 <a id="project-statuses--get-project-status"></a>
 ### Get Project Status
 
-<a id="project-statuses--read-2"></a>
+<a id="project-statuses--read"></a>
 Function: `read`
 
 ```xml
@@ -1037,7 +1037,7 @@ Function: `read`
 <a id="project-statuses--get-project-status-by-id"></a>
 ### Get Project Status by ID
 
-<a id="project-statuses--readbyname-2"></a>
+<a id="project-statuses--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1078,7 +1078,7 @@ Project types enable you to group projects into categories like Consulting, Inte
 <a id="project-types--get-project-type-object-definition"></a>
 ### Get Project Type Object Definition
 
-<a id="project-types--lookup-2"></a>
+<a id="project-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project type object:
@@ -1101,7 +1101,7 @@ Function: `lookup`
 <a id="project-types--query-and-list-project-types"></a>
 ### Query and List Project Types
 
-<a id="project-types--query-2"></a>
+<a id="project-types--query"></a>
 Function: `query`
 
 > List the name and status of each project type:
@@ -1134,7 +1134,7 @@ Function: `query`
 <a id="project-types--query-and-list-project-types-legacy"></a>
 ### Query and List Project Types (Legacy)
 
-<a id="project-types--readbyquery-2"></a>
+<a id="project-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1161,7 +1161,7 @@ Function: `readByQuery`
 <a id="project-types--get-project-type"></a>
 ### Get Project Type
 
-<a id="project-types--read-2"></a>
+<a id="project-types--read"></a>
 Function: `read`
 
 ```xml
@@ -1187,7 +1187,7 @@ Function: `read`
 <a id="project-types--get-project-type-by-id"></a>
 ### Get Project Type by ID
 
-<a id="project-types--readbyname-2"></a>
+<a id="project-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1228,7 +1228,7 @@ Projects enable services companies to automate many of the functions of project 
 <a id="projects--get-project-object-definition"></a>
 ### Get Project Object Definition
 
-<a id="projects--lookup-2"></a>
+<a id="projects--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the project object:
@@ -1251,7 +1251,7 @@ Function: `lookup`
 <a id="projects--query-and-list-projects"></a>
 ### Query and List Projects
 
-<a id="projects--query-2"></a>
+<a id="projects--query"></a>
 Function: `query`
 
 > List the product ID and currency for each project:
@@ -1284,7 +1284,7 @@ Function: `query`
 <a id="projects--query-and-list-projects-legacy"></a>
 ### Query and List Projects (Legacy)
 
-<a id="projects--readbyquery-2"></a>
+<a id="projects--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1311,7 +1311,7 @@ Function: `readByQuery`
 <a id="projects--get-project"></a>
 ### Get Project
 
-<a id="projects--read-2"></a>
+<a id="projects--read"></a>
 Function: `read`
 
 ```xml
@@ -1337,7 +1337,7 @@ Function: `read`
 <a id="projects--get-project-by-id"></a>
 ### Get Project by ID
 
-<a id="projects--readbyname-2"></a>
+<a id="projects--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -1370,7 +1370,7 @@ Release history:
 | 2022 Release 1 | Added CFDA, FUNDEDNAME, AGENCY, PAYER, FUNDINGOTHERID, ASSISTANCETYPE, REVRESTRICTION, RESTRICTIONEXPIRY, RESTRICTIONEXPIRATIONDATE, TIMESATISFACTIONSCHEDULED |
 | 2024 Release 4 | Added SCOPE, INCLUSIONS, EXCLUSIONS, TERMS, SCHEDULEDSTARTDATE, SCHEDULEDCOMPLETIONDATE, REVISEDCOMPLETIONDATE, SUBSTANTIALCOMPLETIONDATE, ACTUALCOMPLETIONDATE, NOTICETOPROCEED, RESPONSEDUE, EXECUTEDON, SCHEDULEDIMPACT |
 
-<a id="projects--create-2"></a>
+<a id="projects--create"></a>
 Function: `create`
 
 ```xml
@@ -1504,7 +1504,7 @@ Release history:
 
 You can update an existing project as described here. If you want to provide observed-percent-completed information for a project, see [Project Observed Percent Completed](https://developer.intacct.com/api/project-resource-mgmt/project-observed-pct-completed/).
 
-<a id="projects--update-2"></a>
+<a id="projects--update"></a>
 Function: `update`
 
 ```xml
@@ -1646,7 +1646,7 @@ Function: `update`
 <a id="projects--delete-project"></a>
 ### Delete Project
 
-<a id="projects--delete-2"></a>
+<a id="projects--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1686,7 +1686,7 @@ Depending on how the parent project is set up, these percentages can affect asso
 <a id="task-observed-pct-completed--get-observed-percent-completed-entry-object-definition"></a>
 ### Get Observed Percent Completed Entry Object Definition
 
-<a id="task-observed-pct-completed--lookup-2"></a>
+<a id="task-observed-pct-completed--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the observed percent completed entry object:
@@ -1709,7 +1709,7 @@ Function: `lookup`
 <a id="task-observed-pct-completed--query-and-list-observed-percent-completed-entries"></a>
 ### Query and List Observed Percent Completed Entries
 
-<a id="task-observed-pct-completed--query-2"></a>
+<a id="task-observed-pct-completed--query"></a>
 Function: `query`
 
 > List the type, record number, and percent for each entry:
@@ -1749,7 +1749,7 @@ Function: `query`
 <a id="task-observed-pct-completed--query-and-list-observed-percent-completed-entries-legacy"></a>
 ### Query and List Observed Percent Completed Entries (Legacy)
 
-<a id="task-observed-pct-completed--readbyquery-2"></a>
+<a id="task-observed-pct-completed--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -1782,7 +1782,7 @@ Function: `readByQuery`
 <a id="task-observed-pct-completed--get-observed-percent-completed-entry"></a>
 ### Get Observed Percent Completed Entry
 
-<a id="task-observed-pct-completed--read-2"></a>
+<a id="task-observed-pct-completed--read"></a>
 Function: `read`
 
 ```xml
@@ -1816,7 +1816,7 @@ Release history:
 
 Be aware that after creating an observed percent completed entry for a task, you need to update the parent project to trigger updates for any associated revenue recognition schedules. (The update on the project need not actually change any data.)
 
-<a id="task-observed-pct-completed--create-2"></a>
+<a id="task-observed-pct-completed--create"></a>
 Function: `create`
 
 ```xml
@@ -1863,7 +1863,7 @@ Release history:
 
 Be aware that after updating an observed percent completed entry, you need to call update on the parent project to trigger updates for any associated revenue recognition schedules. (The project update need not actually change any data.)
 
-<a id="task-observed-pct-completed--update-2"></a>
+<a id="task-observed-pct-completed--update"></a>
 Function: `update`
 
 ```xml
@@ -1896,7 +1896,7 @@ Function: `update`
 <a id="task-observed-pct-completed--delete-observed-percent-completed-entry"></a>
 ### Delete Observed Percent Completed Entry
 
-<a id="task-observed-pct-completed--delete-2"></a>
+<a id="task-observed-pct-completed--delete"></a>
 Function: `delete`
 
 ```xml
@@ -1934,7 +1934,7 @@ Any employee who works on a project task is considered a task resource.
 <a id="task-resources--get-task-resources-object-definition"></a>
 ### Get Task Resources Object Definition
 
-<a id="task-resources--lookup-2"></a>
+<a id="task-resources--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the task resource object:
@@ -1957,7 +1957,7 @@ Function: `lookup`
 <a id="task-resources--query-and-list-task-resources"></a>
 ### Query and List Task Resources
 
-<a id="task-resources--query-2"></a>
+<a id="task-resources--query"></a>
 Function: `query`
 
 > List the record number and task ID for each task resource:
@@ -1990,7 +1990,7 @@ Function: `query`
 <a id="task-resources--query-and-list-task-resources-legacy"></a>
 ### Query and List Task Resources (Legacy)
 
-<a id="task-resources--readbyquery-2"></a>
+<a id="task-resources--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2017,7 +2017,7 @@ Function: `readByQuery`
 <a id="task-resources--get-task-resources"></a>
 ### Get Task Resources
 
-<a id="task-resources--read-2"></a>
+<a id="task-resources--read"></a>
 Function: `read`
 
 ```xml
@@ -2058,7 +2058,7 @@ A task is a unit of work to be performed for a project.
 <a id="tasks--get-task-object-definition"></a>
 ### Get Task Object Definition
 
-<a id="tasks--lookup-2"></a>
+<a id="tasks--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the task object:
@@ -2081,7 +2081,7 @@ Function: `lookup`
 <a id="tasks--query-and-list-tasks"></a>
 ### Query and List Tasks
 
-<a id="tasks--query-2"></a>
+<a id="tasks--query"></a>
 Function: `query`
 
 > List the task IDs of tasks for the given project:
@@ -2120,7 +2120,7 @@ Function: `query`
 <a id="tasks--query-and-list-tasks-legacy"></a>
 ### Query and List Tasks (Legacy)
 
-<a id="tasks--readbyquery-2"></a>
+<a id="tasks--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2153,7 +2153,7 @@ Function: `readByQuery`
 <a id="tasks--get-task"></a>
 ### Get Task
 
-<a id="tasks--read-2"></a>
+<a id="tasks--read"></a>
 Function: `read`
 
 ```xml
@@ -2186,7 +2186,7 @@ Release history:
 | 2020 Release 1 | Added STANDARDTASKID |
 | 2019 Release 1 | Added TASKID |
 
-<a id="tasks--create-2"></a>
+<a id="tasks--create"></a>
 Function: `create`
 
 ```xml
@@ -2238,7 +2238,7 @@ Function: `create`
 <a id="tasks--create-task-legacy"></a>
 ### Create Task (Legacy)
 
-<a id="tasks--create_task-2"></a>
+<a id="tasks--create_task"></a>
 Function: `create_task`
 
 ```xml
@@ -2306,7 +2306,7 @@ Function: `create_task`
 
 You can update an existing task as described here. If you want to provide observed-percent-completed information for a task, see [Task Observed Percent Completed](https://developer.intacct.com/api/project-resource-mgmt/task-observed-pct-completed/).
 
-<a id="tasks--update-2"></a>
+<a id="tasks--update"></a>
 Function: `update`
 
 ```xml
@@ -2353,7 +2353,7 @@ Function: `update`
 <a id="tasks--update-task-legacy"></a>
 ### Update Task (Legacy)
 
-<a id="tasks--update_task-2"></a>
+<a id="tasks--update_task"></a>
 Function: `update_task`
 
 ```xml
@@ -2418,7 +2418,7 @@ Function: `update_task`
 <a id="tasks--delete-task"></a>
 ### Delete Task
 
-<a id="tasks--delete-2"></a>
+<a id="tasks--delete"></a>
 Function: `delete`
 
 ```xml
@@ -2441,7 +2441,7 @@ Function: `delete`
 <a id="tasks--delete-task-legacy"></a>
 ### Delete Task (Legacy)
 
-<a id="tasks--delete_task-2"></a>
+<a id="tasks--delete_task"></a>
 Function: `delete_task`
 
 ```xml
@@ -2475,7 +2475,7 @@ Time types are exactly what they sound like – different categories of time, su
 <a id="time-types--get-time-type-object-definition"></a>
 ### Get Time Type Object Definition
 
-<a id="time-types--lookup-2"></a>
+<a id="time-types--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the time type object:
@@ -2498,7 +2498,7 @@ Function: `lookup`
 <a id="time-types--query-and-list-time-types"></a>
 ### Query and List Time Types
 
-<a id="time-types--query-2"></a>
+<a id="time-types--query"></a>
 Function: `query`
 
 > List the record number and account number for each time type:
@@ -2531,7 +2531,7 @@ Function: `query`
 <a id="time-types--query-and-list-time-types-legacy"></a>
 ### Query and List Time Types (Legacy)
 
-<a id="time-types--readbyquery-2"></a>
+<a id="time-types--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2558,7 +2558,7 @@ Function: `readByQuery`
 <a id="time-types--get-time-type"></a>
 ### Get Time Type
 
-<a id="time-types--read-2"></a>
+<a id="time-types--read"></a>
 Function: `read`
 
 ```xml
@@ -2584,7 +2584,7 @@ Function: `read`
 <a id="time-types--get-time-type-by-id"></a>
 ### Get Time Type by ID
 
-<a id="time-types--readbyname-2"></a>
+<a id="time-types--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -2610,7 +2610,7 @@ Function: `readByName`
 <a id="time-types--create-time-type-legacy"></a>
 ### Create Time Type (Legacy)
 
-<a id="time-types--create_timetype-2"></a>
+<a id="time-types--create_timetype"></a>
 Function: `create_timetype`
 
 ```xml
@@ -2643,7 +2643,7 @@ Function: `create_timetype`
 <a id="time-types--update-time-type-legacy"></a>
 ### Update Time Type (Legacy)
 
-<a id="time-types--update_timetype-2"></a>
+<a id="time-types--update_timetype"></a>
 Function: `update_timetype`
 
 ```xml
@@ -2676,7 +2676,7 @@ Function: `update_timetype`
 <a id="time-types--delete-time-type-legacy"></a>
 ### Delete Time Type (Legacy)
 
-<a id="time-types--delete_timetype-2"></a>
+<a id="time-types--delete_timetype"></a>
 Function: `delete_timetype`
 
 ```xml
@@ -2726,7 +2726,7 @@ For details, see the information about [Web Services only](https://www.intacct.c
 <a id="timesheets--get-timesheet-object-definition"></a>
 #### Get Timesheet Object Definition
 
-<a id="timesheets--lookup-2"></a>
+<a id="timesheets--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the timesheet object:
@@ -2749,7 +2749,7 @@ Function: `lookup`
 <a id="timesheets--query-and-list-timesheets"></a>
 #### Query and List Timesheets
 
-<a id="timesheets--query-2"></a>
+<a id="timesheets--query"></a>
 Function: `query`
 
 > List the record number and employee ID for each timesheet for the given employee ID:
@@ -2806,7 +2806,7 @@ Function: `query`
 <a id="timesheets--query-and-list-timesheets-legacy"></a>
 #### Query and List Timesheets (Legacy)
 
-<a id="timesheets--readbyquery-2"></a>
+<a id="timesheets--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -2839,7 +2839,7 @@ Function: `readByQuery`
 <a id="timesheets--get-timesheet"></a>
 #### Get Timesheet
 
-<a id="timesheets--read-2"></a>
+<a id="timesheets--read"></a>
 Function: `read`
 
 ```xml
@@ -2873,7 +2873,7 @@ Release history:
 | 2020 Release 2 | Added COSTTYPEID |
 | 2019 Release 1 | Added TASKID |
 
-<a id="timesheets--create-2"></a>
+<a id="timesheets--create"></a>
 Function: `create`
 
 ```xml
@@ -2977,7 +2977,7 @@ Release history:
 | 2020 Release 2 | Added costtypeid |
 | 2019 Release 4 | Added taskid |
 
-<a id="timesheets--create_timesheet-2"></a>
+<a id="timesheets--create_timesheet"></a>
 Function: `create_timesheet`
 
 ```xml
@@ -3097,7 +3097,7 @@ Release history:
 
 > **Warning:** Updating a timesheet is effectively a complete replace of the existing timesheet and all of its entries. Use with caution.
 
-<a id="timesheets--update-2"></a>
+<a id="timesheets--update"></a>
 Function: `update`
 
 ```xml
@@ -3205,7 +3205,7 @@ Release history:
 
 > **Warning:** Updating a timesheet is effectively a complete replace of the existing timesheet and all of its entries. Use with caution.
 
-<a id="timesheets--update_timesheet-2"></a>
+<a id="timesheets--update_timesheet"></a>
 Function: `update_timesheet`
 
 ```xml
@@ -3313,7 +3313,7 @@ Function: `update_timesheet`
 <a id="timesheets--delete-timesheet"></a>
 #### Delete Timesheet
 
-<a id="timesheets--delete-2"></a>
+<a id="timesheets--delete"></a>
 Function: `delete`
 
 ```xml
@@ -3336,7 +3336,7 @@ Function: `delete`
 <a id="timesheets--delete-timesheet-legacy"></a>
 #### Delete Timesheet (Legacy)
 
-<a id="timesheets--delete_timesheet-2"></a>
+<a id="timesheets--delete_timesheet"></a>
 Function: `delete_timesheet`
 
 ```xml
@@ -3358,7 +3358,7 @@ Function: `delete_timesheet`
 <a id="timesheets--query-and-list-timesheet-entries"></a>
 #### Query and List Timesheet Entries
 
-<a id="timesheets--query-1-2"></a>
+<a id="timesheets--query-1"></a>
 Function: `query`
 
 > List the record number and state for each timesheet entry:
@@ -3409,7 +3409,7 @@ Function: `query`
 <a id="timesheets--query-and-list-timesheet-entries-legacy"></a>
 #### Query and List Timesheet Entries (Legacy)
 
-<a id="timesheets--readbyquery-1-2"></a>
+<a id="timesheets--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3436,7 +3436,7 @@ Function: `readByQuery`
 <a id="timesheets--get-a-timesheet-entry"></a>
 #### Get a Timesheet Entry
 
-<a id="timesheets--read-1-2"></a>
+<a id="timesheets--read-1"></a>
 Function: `read`
 
 ```xml
@@ -3467,7 +3467,7 @@ Function: `read`
 
 When a timesheet entry is submitted, a corresponding timesheet approval history object is created. This object tracks the state of the timesheet entry.
 
-<a id="timesheets--query-2-3"></a>
+<a id="timesheets--query-2"></a>
 Function: `query`
 
 > List the record numbers and states for all timesheet approval objects:
@@ -3563,7 +3563,7 @@ Function: `query`
 <a id="timesheets--get-timesheet-approval-history"></a>
 #### Get Timesheet Approval History
 
-<a id="timesheets--read-2-3"></a>
+<a id="timesheets--read-2"></a>
 Function: `read`
 
 ```xml
@@ -3597,7 +3597,7 @@ Release history:
 
 You can approve all the entries on a timesheet or approve only selected ones. Timesheet entries can be approved if they are in the `Submitted` state.
 
-<a id="timesheets--approve-2"></a>
+<a id="timesheets--approve"></a>
 Function: `approve`
 
 > Approve all entries for the timesheet:
@@ -3664,7 +3664,7 @@ Release history:
 
 You can decline all the entries on a timesheet or decline only selected ones.
 
-<a id="timesheets--decline-2"></a>
+<a id="timesheets--decline"></a>
 Function: `decline`
 
 > Decline all entries for the timesheet:
@@ -3738,7 +3738,7 @@ Transaction rules can be used to automatically post secondary transactions to pr
 <a id="transaction-rules--get-transaction-rule-object-definition"></a>
 ### Get Transaction Rule Object Definition
 
-<a id="transaction-rules--lookup-2"></a>
+<a id="transaction-rules--lookup"></a>
 Function: `lookup`
 
 > List all the fields and relationships for the transaction rule object:
@@ -3761,7 +3761,7 @@ Function: `lookup`
 <a id="transaction-rules--query-and-list-transaction-rules"></a>
 ### Query and List Transaction Rules
 
-<a id="transaction-rules--query-2"></a>
+<a id="transaction-rules--query"></a>
 Function: `query`
 
 > List the record number and description for each transaction rule:
@@ -3794,7 +3794,7 @@ Function: `query`
 <a id="transaction-rules--query-and-list-transaction-rules-legacy"></a>
 ### Query and List Transaction Rules (Legacy)
 
-<a id="transaction-rules--readbyquery-2"></a>
+<a id="transaction-rules--readbyquery"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3821,7 +3821,7 @@ Function: `readByQuery`
 <a id="transaction-rules--get-transaction-rule"></a>
 ### Get Transaction Rule
 
-<a id="transaction-rules--read-2"></a>
+<a id="transaction-rules--read"></a>
 Function: `read`
 
 ```xml
@@ -3847,7 +3847,7 @@ Function: `read`
 <a id="transaction-rules--get-transaction-rule-by-id"></a>
 ### Get Transaction Rule by ID
 
-<a id="transaction-rules--readbyname-2"></a>
+<a id="transaction-rules--readbyname"></a>
 Function: `readByName`
 
 ```xml
@@ -3873,7 +3873,7 @@ Function: `readByName`
 <a id="transaction-rules--query-and-list-transaction-rule-details"></a>
 ### Query and List Transaction Rule Details
 
-<a id="transaction-rules--readbyquery-1-2"></a>
+<a id="transaction-rules--readbyquery-1"></a>
 Function: `readByQuery`
 
 ```xml
@@ -3900,7 +3900,7 @@ Function: `readByQuery`
 <a id="transaction-rules--get-transaction-rule-detail"></a>
 ### Get Transaction Rule Detail
 
-<a id="transaction-rules--read-1-2"></a>
+<a id="transaction-rules--read-1"></a>
 Function: `read`
 
 ```xml
