@@ -1,10 +1,10 @@
 ---
 name: sageintacct-assistant
-description: "Sage Intacct cloud accounting / ERP assistant for consultants and integrators. Use for anything Sage Intacct, even if the user only says \"Intacct\", an object name (APBILL, ARINVOICE, GLBATCH, SODOCUMENT, PODOCUMENT, CUSTOMER, VENDOR, ITEM), a function (readByQuery, query, lookup, getAPISession, create_sotransaction), the xmlgw.phtml gateway, a sender ID, DTD 3.0, Platform Services, Smart Events or the REST API. Capabilities - (1) XML Web Services API integration development: generate and review XML requests and code from a bundled extraction of the Sage Intacct developer portal and Sage's 3.0 request schema: envelope, sessions, errors and recovery, query/readByQuery grammar and paging, formats, multi-entity, limits, 197 object pages (1,694 operations with parameter tables and examples) in 17 modules, the 52 generic and 243 legacy functions, Order Entry, Purchasing and Inventory guidance, and a 36-rule review checklist. The REST API is not reference-backed yet. Trigger on any Sage Intacct question."
+description: "Sage Intacct ERP assistant for consultants and integrators. Use for anything Sage Intacct, even if the user only says \"Intacct\", an object name (APBILL, GLBATCH, SODOCUMENT, CUSTOMER, ITEM), a function (readByQuery, query, lookup), the xmlgw.phtml gateway, a sender ID, DTD 3.0, Platform Services, Smart Events or the REST API. Capabilities - (1) XML Web Services API integration development: generate and review XML requests and code from the bundled developer portal extraction, Sage's 3.0 request schema and a 2026 Release 3 object-definition snapshot: envelope, sessions, errors and recovery, query/readByQuery grammar and paging, formats, multi-entity, limits, 197 object pages (1,694 operations, parameter tables, examples) in 17 modules, 52 generic and 243 legacy functions, exact names and valid values for 632 objects (21,342 fields), Order Entry, Purchasing and Inventory guidance, and a 36-rule review checklist. The REST API is not reference-backed yet. Trigger on any Sage Intacct question."
 compatibility: "Runtime needs file read + grep over the bundled references. Refreshing references needs web access to developer.intacct.com, Sage's intacct_dtd schema from GitHub, optionally a clean developer company for the object-definition dump, and Python 3.10+ (scripts/); none of that is needed to answer questions."
 metadata:
   author: Francois Taljaard
-  version: "2026.10.1"
+  version: "2026.10.2"
   domain: Sage Intacct
 ---
 
@@ -12,8 +12,9 @@ metadata:
 
 > **Version disclaimer:** the bundled references are an extraction of the **Sage Intacct developer portal**
 > (developer.intacct.com, the XML API reference and guides) fetched on **2026-10-13** and of Sage's **DTD 3.0 request
-> schema** (`api.xsd`, 2024-05-07). The portal carries no release stamp, so names and rules are "as documented on that
-> date"; Sage releases quarterly (2026 Release 3 went live 7 August 2026) and labels the XML API **"(Legacy)"**: new
+> schema** (`api.xsd`, 2024-05-07), plus an **object-definition snapshot** (`inspect` and `lookup` results of a clean
+> developer company on **2026 Release 3**, custom fields removed). The portal carries no release stamp, so names and
+> rules are "as documented on that date"; Sage releases quarterly (2026 Release 3 went live 7 August 2026) and labels the XML API **"(Legacy)"**: new
 > objects and features ship on the **REST API** (generally available since 2025 Release 1), which has no bundled
 > reference yet. Every company differs in subscriptions, transaction definitions, custom fields, dimensions,
 > entities and workflows, so tell the user to confirm names and allowed values with `lookup` / `inspect` on their
@@ -29,7 +30,7 @@ model guesses plausibly and wrongly.
 | Request looks like | Go to |
 |---|---|
 | write, **review** or fix code or XML requests against the **XML Web Services API**: connect and authenticate, sessions, list or read bills / invoices / journal entries / customers / vendors / items / orders, create or update a document, query with filters and paging, delta sync, "why do I get XL03000006 / GW-0010 / 429 / BL01001973", transactions and rollback, multi-entity, dates, limits, asynchronous requests, attachments, custom fields | § 3 XML API integration development |
-| an exact name: "which fields does `create` of `APBILL` take", "is it `VENDORID` or `VENDOR`", "what are the `STATE` codes of `SODOCUMENT`", "does `delete_sotransaction` exist", "what does the response of `lookup` look like" | § 3 step 3, `references/xml-api/objects.md`, `objects/`, `functions.md` |
+| an exact name: "which fields does `APBILL` have", "is it `VENDORID` or `VENDOR`", "what values can `SODOCUMENT.STATE` take", "which fields does `create` of `ITEM` take", "does `delete_sotransaction` exist", "how do I join `GLBATCH` to its journal in a `query`" | § 3 step 3, `references/xml-api/snapshot/` (exact names and valid values), `objects.md`, `objects/`, `functions.md` |
 | Order Entry, Purchasing or Inventory Control flows: sales orders, shipments, invoices, purchase orders, receipts, conversions (`createdfrom`), inventory adjustments, warehouse transfers, items, stock on hand, bins, kits, cycle counts, the fulfilment work queue | § 3, reading `references/xml-api/oe-po-inventory.md` first |
 | "review / audit my Intacct integration" | § 3 step 7, `references/xml-api/common-mistakes.md` |
 
@@ -43,10 +44,12 @@ what you can with the caveat that it is not reference-backed, and note that the 
   rule you state must come from a file under `references/xml-api/`; say which file and section. If the references
   do not cover something (rate-limit figures, an error-code catalogue, REST), say so rather than filling the gap
   from memory.
-- **Never invent an object, field, function or value.** Objects and operations come from `objects.md`, fields from
-  the parameter tables in `objects/`, generic-function grammar from `functions.md`, legacy function names from its
-  last section, state codes from the `query` fields tables. Mark anything else "to confirm on your company"
-  (`lookup` / `inspect`). The portal has a few irregularities (`references/xml-api/INDEX.md`, known limits): when a
+- **Never invent an object, field, function or value.** Exact object, field, valid-value and relationship names come
+  from the snapshot (`references/xml-api/snapshot/`, 632 objects as the API reported them on 2026 Release 3; say
+  "verified in the 2026 Release 3 snapshot"); which fields a create or update takes, required flags for a call,
+  meanings and examples come from the parameter tables in `objects/`; operations from `objects.md`; generic-function
+  grammar from `functions.md`; legacy function names from its last section; `readByQuery` state codes from the `query`
+  fields tables. Mark anything in neither source "to confirm on your company" (`lookup` / `inspect`). The portal has a few irregularities (`references/xml-api/INDEX.md`, known limits): when a
   row looks wrong, say so.
 - **Pin the surface and the company first.** XML API (this skill) or REST API (not covered); DTD 3.0; standalone,
   multi-entity shared (top level or entity) or console company; which subscriptions and transaction definitions
@@ -77,8 +80,11 @@ Generate or review XML requests and client code (any language, raw XML shown in 
    to get the function and the section file. In the section file, read the operation's notes, the example XML and
    the `**Parameters**` tables (required flags, allowed values, nested objects, the `Release history:` table), and
    the `` `query` Fields `` table for list filters and state codes. For the grammar of a generic function (`query`,
-   `readByQuery`, `read`, `getAPISession`, `inspect`, `lookup`) read its section in `functions.md`. Never read a
-   section file whole.
+   `readByQuery`, `read`, `getAPISession`, `inspect`, `lookup`) read its section in `functions.md`. For an exact field
+   name, data type, read-only flag, valid-value list or relationship (`OBJECTPATH` for dot notation), read
+   `references/xml-api/snapshot/INDEX.md` once, find the object's row in `snapshot/objects.md` (file, line, lines) and
+   read exactly that range of the `fields-NN.md` bundle; grep a bundle for `` `FIELD` `` to find every object with that
+   field. Never read a section file or a bundle whole.
 4. **Build the request from the rules**: `POST https://api.intacct.com/ia/xml/xmlgw.phtml` (then the session's
    endpoint), `Content-Type: application/xml`; `control` with `senderid`, `password`, a request `controlid`,
    `dtdversion` 3.0, `uniqueid` true for writes, `includewhitespace` false; `operation` with `sessionid` (after one
@@ -138,6 +144,16 @@ Backed by `references/xml-api/api-basics.md` unless another file is named.
 - **Attachments are `SUPDOCID`**, managed with legacy functions; **contact lists need `create_customer`**;
   **inclusive tax and `TAXENTRIES` are AU/GB/ZA only.** (§ 8; `common-mistakes.md` 32-34)
 - **Do not pin TLS certificates.** (§ 2)
+- **`lookup`'s `REQUIRED` describes the object, not a create call**: `SODOCUMENT.DOCNO` and `DOCID` are required
+  *and* read-only in the snapshot; the create parameter tables in `objects/` say what a request must carry.
+  (`snapshot/INDEX.md`)
+- **`inspect` lists document objects once per transaction definition** (`SODOCUMENT`, `PODOCUMENT`, `INVDOCUMENT`,
+  lines, recurring), and `lookup` without `docparid` returns the base fields only. (`snapshot/INDEX.md`)
+- **`lookup`'s `REQUIRED` describes the object, not a create call**: `SODOCUMENT.DOCNO` and `DOCID` are required
+  *and* read-only in the snapshot; the create parameter tables in `objects/` say what a request must carry.
+  (`snapshot/INDEX.md`)
+- **`inspect` lists document objects once per transaction definition** (`SODOCUMENT`, `PODOCUMENT`, `INVDOCUMENT`,
+  lines, recurring), and `lookup` without `docparid` returns the base fields only. (`snapshot/INDEX.md`)
 - **The portal is not perfect**: mixed-case object names, `No` for `Optional`, a `VENDDORID` typo
   (`references/xml-api/INDEX.md`, known limits); say "to confirm on your company" for those.
 
@@ -148,10 +164,12 @@ references/INDEX.md         folders, surfaces and verified dates
 references/xml-api/         INDEX.md (sources, lookup recipes, known limits), api-basics.md (start here),
                             common-mistakes.md, oe-po-inventory.md, functions.md (generated from the 3.0 schema),
                             objects.md (generated catalogue, 1,694 operations), objects/ (generated, 17 files:
-                            notes, examples and parameter tables per portal section)
+                            notes, examples and parameter tables per portal section), snapshot/ (generated from a
+                            2026 Release 3 developer company: INDEX.md, objects.md, fields-01..03.md), snapshot/ (generated from a
+                            2026 Release 3 developer company: INDEX.md, objects.md, fields-01..03.md)
 scripts/                    maintenance only: fetch_developer_portal.py, build_xml_api_reference.py,
-                            build_functions_reference.py, dump_object_definitions.py, build_object_snapshot.py,
-                            package_skill.py; never needed to answer
+                            build_functions_reference.py, dump_object_definitions.py (dump and --pack),
+                            build_object_snapshot.py, package_skill.py; never needed to answer
 evals/evals.json            test prompts per capability
 MAINTENANCE.md              how to refresh the references, run the object-definition dump and add a capability
 ```

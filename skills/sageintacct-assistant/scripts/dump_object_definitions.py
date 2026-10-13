@@ -3,6 +3,7 @@
 
     python scripts/dump_object_definitions.py --out <folder outside the repo> --release "2026 Release 3" [--objects APBILL,VENDOR]
                                               [--batch 10] [--delay 0.5] [--dry-run]
+    python scripts/dump_object_definitions.py --pack <dump folder> --zip sources/sageintacct-assistant/object-definitions-<release>.zip
 
 Run this yourself against a **clean developer or implementation company**; never against a customer's. Credentials
 are read from environment variables only, are never printed, and never reach the output:
@@ -26,7 +27,11 @@ What it writes to --out (and nothing else):
 The `<control>` block of each response (sender ID), the session ID, the endpoint URL, the company ID and the user ID
 are never written; the script refuses to write any file in which one of those values appears. Objects whose name
 is not upper-case letters, digits and underscores are treated as custom (Platform Services) objects and dropped.
-Review `dropped.txt` and the output before sharing or committing it under `sources/sageintacct-assistant/`.
+Review `dropped.txt` and the output before sharing it. `--pack` then writes the zip that is committed under
+`sources/sageintacct-assistant/`: `inspect.xml` with the document objects collapsed (`inspect` lists `SODOCUMENT`,
+`PODOCUMENT`, `INVDOCUMENT`, their lines and recurring variants once per transaction definition, the generic entry
+first and then one per definition labelled with the definition's name, which is company configuration; only the
+first entry is kept), `lookup/*.xml` and `manifest.json`; never `dropped.txt`.
 """
 import argparse
 import json
@@ -38,6 +43,7 @@ import urllib.error
 import urllib.request
 import uuid
 import xml.etree.ElementTree as ET
+import zipfile
 from xml.sax.saxutils import escape
 
 DEFAULT_ENDPOINT = "https://api.intacct.com/ia/xml/xmlgw.phtml"
@@ -143,15 +149,64 @@ def inspect_names(data):
     return out
 
 
+def collapse_inspect(text):
+    """Keep one <type> per typename (the first, generic entry); return {name: entries dropped}."""
+    data = ET.fromstring(text)
+    seen, dropped = set(), {}
+    for parent in list(data.iter()):
+        for child in list(parent):
+            n = child.attrib.get("typename") or child.attrib.get("Name") or child.attrib.get("name")
+            if not n:
+                continue
+            if n in seen:
+                parent.remove(child)
+                dropped[n] = dropped.get(n, 0) + 1
+            else:
+                seen.add(n)
+    data.set("count", str(len(seen)))
+    return ET.tostring(data, encoding="unicode"), dropped
+
+
+def pack(folder, zip_path):
+    """Write the committable zip of a dump folder: collapsed inspect.xml, lookup/*.xml, manifest.json."""
+    with open(os.path.join(folder, "inspect.xml"), encoding="utf-8") as f:
+        inspect_xml, dropped = collapse_inspect(f.read())
+    with open(os.path.join(folder, "manifest.json"), encoding="utf-8") as f:
+        manifest = json.load(f)
+    manifest["inspect_entries_collapsed"] = dropped
+    os.makedirs(os.path.dirname(os.path.abspath(zip_path)) or ".", exist_ok=True)
+    n = 0
+    with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
+        z.writestr("inspect.xml", inspect_xml)
+        z.writestr("manifest.json", json.dumps(manifest, indent=1, sort_keys=True))
+        for name in sorted(os.listdir(os.path.join(folder, "lookup"))):
+            if name.endswith(".xml"):
+                z.write(os.path.join(folder, "lookup", name), "lookup/" + name)
+                n += 1
+    print(f"packed {n} lookups, inspect.xml (per-definition entries dropped: "
+          + ", ".join(f"{k} x{v}" for k, v in dropped.items()) + f") and manifest.json -> {zip_path} "
+          f"({os.path.getsize(zip_path) / 1e6:.1f} MB)")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--out", required=True, help="output folder, outside the repository")
+    ap.add_argument("--out", help="output folder, outside the repository")
+    ap.add_argument("--pack", help="pack an existing dump folder into --zip instead of dumping")
+    ap.add_argument("--zip", help="zip to write with --pack, e.g. sources/sageintacct-assistant/object-definitions-2026-Release-3.zip")
     ap.add_argument("--release", default="not stated", help='the company\'s release, e.g. "2026 Release 3" (Help > About)')
     ap.add_argument("--objects", default=None, help="comma-separated object names instead of inspect *")
     ap.add_argument("--batch", type=int, default=10, help="lookup functions per request")
     ap.add_argument("--delay", type=float, default=0.5, help="seconds between requests")
     ap.add_argument("--dry-run", action="store_true", help="print the first request with placeholders and exit")
     args = ap.parse_args()
+
+    if args.pack:
+        if not args.zip:
+            sys.exit("--pack needs --zip")
+        pack(args.pack, args.zip)
+        return
+    if not args.out:
+        sys.exit("--out is required")
 
     if args.dry_run:
         print(request_xml("<SENDER_ID>", "<SENDER_PASSWORD>", login_xml("<COMPANY_ID>", "<USER_ID>", "<PASSWORD>", ""),

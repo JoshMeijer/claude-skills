@@ -2,7 +2,8 @@
 
 Owner: Francois Taljaard. Format: [Agent Skills](https://agentskills.io/specification).
 
-One capability is implemented: **XML Web Services API integration development**, backed by `references/xml-api/`.
+One capability is implemented: **XML Web Services API integration development**, backed by `references/xml-api/`
+(portal extraction, schema-generated function grammar and a 2026 Release 3 object-definition snapshot).
 This file records the conventions, how to regenerate the references from a fresh portal cache and schema, how to
 produce an object-definition snapshot from a developer company, and how to add a capability.
 
@@ -22,7 +23,7 @@ produce an object-definition snapshot from a developer company, and how to add a
 
 ## File limit and packaging
 
-Claude accepts at most **200 files** in an uploaded skill (this skill has about 35). The generated object
+Claude accepts at most **200 files** in an uploaded skill (this skill has about 40). The generated object
 reference is bundled **per API Reference section** (17 files of up to 500 KB) rather than per object page, and
 `build_xml_api_reference.py` splits a section at page boundaries only if it would exceed `--max-bytes`
 (1.2 MB); keep it that way. Package for upload with `python scripts/package_skill.py skills/sageintacct-assistant dist`
@@ -93,7 +94,9 @@ as `sources/sageintacct-assistant/api.v3.0.xsd`).
 ## Object-definition snapshot from a developer company
 
 The portal documents fields as written by Sage; a company's `lookup` reports them as the API enforces them,
-including newer fields, valid values and relationships. The snapshot is **optional** and must come from a **clean
+including newer fields, valid values and relationships. The current snapshot (`references/xml-api/snapshot/`) was
+dumped on 2026-10-13 from a clean developer company on **2026 Release 3** and is rebuilt from
+`sources/sageintacct-assistant/object-definitions-2026-Release-3.zip`. Refresh it after a release from a **clean
 developer or implementation company**, never a customer's.
 
 1. **Dump**, run by someone with the credentials (the script reads them from environment variables, never prints
@@ -111,28 +114,36 @@ developer or implementation company**, never a customer's.
 2. **Review `dropped.txt` and grep the output** for the company name, user names and any identifier of the
    company before it leaves the machine. Objects whose name is not upper-case letters, digits and underscores are
    treated as Platform Services custom objects and dropped; if a standard object was dropped by that rule, add it
-   back by name with `--objects`.
-3. **Commit the scrubbed dump** as `sources/sageintacct-assistant/object-definitions-<release>/` (`inspect.xml`,
-   `lookup/`, `manifest.json`; not `dropped.txt`) with a row in the README there, so anyone can regenerate the
-   snapshot.
-4. **Build the snapshot**:
+   back by name with `--objects`. `inspect` lists `SODOCUMENT`, `PODOCUMENT`, `INVDOCUMENT`, their line objects and
+   the recurring variants once per transaction definition, labelled with the definition's name: the pack step keeps
+   only the first (generic) entry, so definition names never enter the repository.
+3. **Pack and commit the scrubbed dump**:
+
+   ```bash
+   python skills/sageintacct-assistant/scripts/dump_object_definitions.py --pack <scratch>/intacct-dump \
+       --zip sources/sageintacct-assistant/object-definitions-<release>.zip
+   ```
+
+   The zip holds the collapsed `inspect.xml`, `lookup/*.xml` and `manifest.json` (never `dropped.txt`); add a row
+   with its SHA-256 to the README there, so anyone can regenerate the snapshot (`.gitignore` ignores `*.zip` except
+   under `sources/`).
+4. **Build the snapshot** (the builder reads the zip directly; every file under `snapshot/` is rewritten):
 
    ```bash
    python -I skills/sageintacct-assistant/scripts/build_object_snapshot.py \
-       --dump sources/sageintacct-assistant/object-definitions-<release> \
-       --out skills/sageintacct-assistant/references/xml-api/snapshot --release "2026 Release 3" --verified YYYY-MM-DD
+       --dump sources/sageintacct-assistant/object-definitions-<release>.zip \
+       --out skills/sageintacct-assistant/references/xml-api/snapshot --release "<release>" --verified YYYY-MM-DD
    ```
 
    It writes `snapshot/INDEX.md`, `objects.md` (one row per object with its field and relationship counts and the
-   bundle file and line where it starts) and `fields-NN.md` bundles (per object: the field table with ID, label,
-   type, required, read-only, valid values, description; the relationships table). The builder was written against
-   the documented `lookup` response shape (`Type/Fields/Field/ID|LABEL|DESCRIPTION|REQUIRED|READONLY|DATATYPE|
-   ISCUSTOM|VALIDVALUES`, `Relationships/Relationship/OBJECTPATH|OBJECTNAME|LABEL|RELATIONSHIPTYPE|RELATEDBY`) and
-   must be checked against the first real dump; it refuses to write if a custom field survived the scrub.
-5. **Wire it in**: add the folder to `references/xml-api/INDEX.md` and `references/INDEX.md`, make `SKILL.md` § 3
-   step 3 prefer the snapshot for exact names ("verified in the <release> snapshot") with the portal tables for
-   meanings and examples, add a gotcha for any difference you find between the two, add an eval, and update the
-   README and marketplace descriptions.
+   bundle file, start line and length) and `fields-NN.md` bundles of about 1 MB (per object: the field table with
+   ID, label, type, required, read-only, valid values, description; the relationships table), and refuses to write
+   if a custom field survived the scrub. The 2026 Release 3 run gave 632 objects, 21,342 fields, 2,039
+   relationships in 3 bundles.
+5. **Update the counts** in `references/xml-api/INDEX.md`, `references/INDEX.md`, `SKILL.md` (description, § 2,
+   § 4 gotchas), the README and the marketplace description; diff the new `snapshot/objects.md` against the previous
+   commit and record objects added or removed in the version notes; add a gotcha for any new difference between the
+   snapshot and the portal tables; run the evals.
 
 ## Add a capability
 
